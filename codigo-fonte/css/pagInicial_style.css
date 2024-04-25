@@ -101,7 +101,7 @@ header {
     padding-bottom: 25px;
     background-image: url("../assets/bgImg01.png");
     background-repeat: no-repeat;
-
+    background-size: auto;
 }
 
 .card-group {
@@ -173,4 +173,148 @@ header {
     display: flex !important;
     flex-direction: row;
     justify-content: center;
+}
+
+
+
+/* RESPONSIVIDADE: TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    #logo {
+        margin-left: 5%;
+        width: 10%;
+    }
+
+    #perfil {
+        width: 10%;
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 20%;
+    }
+
+
+    .secPrincipal {
+        background-size: cover;
+        padding-bottom: 0;
+    }
+
+    .card-group {
+        width: 80%;
+        margin: 10% 10%;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tituloTutorial {
+        margin-top: 10%;
+    }
+
+
+    #tutoriais,
+    #quizzes {
+        width: 200px;
+        height: 200px;
+        margin: 40px 50px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* RESPONSIVIDADE: PC */
+@media screen and  (min-width: 900px) {
+    #logo {
+        margin-left: 5%;
+        width: 6%;
+    }
+
+    #perfil {
+        width: 6%;
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 30%;
+    }
+
+
+    .secPrincipal {
+        background-size: cover;
+        background-position-y: 10%;
+        padding-bottom: 0;
+        }
+
+    .card-group {
+        width: 70%;
+        margin: 10% 15% 5% 15%;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tituloTutorial {
+        margin-top: 6%;
+    }
+
+
+
+    #tutoriais,
+    #quizzes {
+        width: 300px;
+        height: 250px;
+        margin: 50px 150px  20px 150px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }

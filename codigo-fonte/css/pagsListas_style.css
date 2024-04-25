@@ -1,26 +1,30 @@
-/* FOLHA DE ESTILOS PAGINICIAL */
+/* FOLHA DE ESTILOS PAGLISTATUTORIAIS E LISTAQUIZZES */
 
 /* CONFIGURAÇÕES GERAIS */
 * {
     font-family: "Open Sans", "Roboto", "Montserrat", "Poppins", sans-serif;
     margin: 0;
 }
+
 body {
     background-color: #A3C8FF !important;
     background-image: url(../assets/bgImg03.png), url(../assets/bgImg05.png);
     background-repeat: no-repeat, no-repeat;
     background-attachment: scroll, fixed;
-    background-position-y: top, bottom;  
+    background-position-y: top, bottom;
 }
+
 h1 {
     font-size: 28px;
     text-align: center;
     font-weight: bold;
     color: #fff !important;
     background: transparent !important;
+    margin: 10px;
 }
-h2 {
-    font-size: 24px;
+
+h4 {
+    font-size: 20px;
     font-weight: lighter;
 }
 
@@ -31,9 +35,11 @@ header {
     background-size: cover;
     background-attachment: scroll;
 }
+
 .cabecalho {
     display: inline;
 }
+
 #perfil {
     width: 15%;
     height: auto;
@@ -45,7 +51,8 @@ header {
 
 /* LISTA */
 .lista {
-    margin-top: 35%;
+    margin-top: 25%;
+    margin-left: 60px;
 }
 
 .lista-box {
@@ -56,17 +63,18 @@ header {
     color: #fff;
     font-weight: lighter;
     background-color: #00288F;
-    
-    margin: 10px;
+    margin: 10px 10px;
     padding: 10px;
     width: 50%;
     border-radius: 20px;
-    
 }
 
- i {
-    color: #ffffff;
+.lista-icon {
+    margin-top: 5%;
+}
+
+.lista-icon i {
+    color: #00288F;
     border-radius: 100%;
     font-size: 45px;
-    margin: 0 30px;
 }

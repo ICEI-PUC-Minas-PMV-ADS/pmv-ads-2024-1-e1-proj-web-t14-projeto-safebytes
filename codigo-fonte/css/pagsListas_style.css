@@ -10,8 +10,8 @@ body {
     background-color: #A3C8FF !important;
     background-image: url(../assets/bgImg03.png), url(../assets/bgImg05.png);
     background-repeat: no-repeat, no-repeat;
-    background-attachment: scroll, fixed;
-    background-position-y: top, bottom;
+    background-attachment: scroll, scroll;
+    background-position-y: top, 140%;
 }
 
 h1 {
@@ -52,7 +52,7 @@ header {
 /* LISTA */
 .lista {
     margin-top: 25%;
-    margin-left: 60px;
+    margin-left: 20%;
 }
 
 .lista-box {
@@ -77,4 +77,69 @@ header {
     color: #00288F;
     border-radius: 100%;
     font-size: 45px;
+}
+
+
+/* RESPONSIVIDADE: TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    body {
+        background-size: 100% 45%;
+        background-position-y: 2%, 190%;
+    }
+
+    #perfil {
+        width: 10%;
+        margin-top: 35px;
+        margin-left: 85%;
+    }
+
+    .lista {
+        margin-top: 25%;
+        margin-left: 25%;
+    }
+
+    .lista-itens {
+        padding: 20px;
+    }
+
+    .lista-icon {
+        margin-top: 3%;
+    }
+}
+
+
+/* RESPONSIVIDADE: PC */
+@media screen and  (min-width: 900px) {
+    body {
+        background-size: 100% 35%;
+        background-position-y: 5%, 120%;
+    }
+
+    h1 {
+        margin-top: 40px;
+    }
+
+    header {
+        background-size: 100% 90%;
+    }
+
+    #perfil {
+        width: 5%;
+        margin-left: 90%;
+    }
+
+    .lista {
+        margin-top: 15%;
+        margin-bottom: 10%;
+        margin-left: 30%;
+    }
+
+    .lista-itens {
+        padding: 20px 5px;
+        text-align: center;
+    }
+
+    .lista-icon {
+        margin-top: 2%;
+    }
 }

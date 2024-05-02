@@ -1,0 +1,117 @@
+.principal {
+    background: linear-gradient(180deg, #b3cdf3 24.32%, #2d5a9e 100%);
+    display: flex;
+    max-width: 560px;
+    padding-bottom: 180px;
+    flex-direction: column;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    fill: #355dc5;
+    overflow: hidden;
+    align-self: stretch;
+    position: relative;
+    aspect-ratio: 3.33;
+    width: 100%;
+    padding-bottom: 33px;
+  }
+
+  .imagem-topo {
+    background-image: url('/imagem/Vector 11.png'); /* Certifique-se de que o caminho está correto */
+    background-size: 100% auto; /* Estica a imagem para cobrir 100% da largura e auto ajusta a altura */
+    background-position: center; /* Centraliza a imagem verticalmente */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:250px; /* Ajuste conforme necessário para a altura desejada */
+    width: 100%;
+}
+
+  .titulo {
+    color: #454545;
+    margin: auto;
+    font: 700 29px Open Sans, sans-serif;
+  }
+
+  .texto {
+    color: #898989;
+    text-align: center;
+    mix-blend-mode: multiply;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 29px;
+    font: 700 18px Open Sans, sans-serif;
+  }
+
+  .quadrados {
+    display: flex;
+    margin: auto;
+    margin-top: 41px;
+    gap: 16px;
+    font-size: 32px;
+    color: #00288f;
+    font-weight: 700;
+    white-space: nowrap;
+    padding: 0 20px;
+  }
+
+  .quadrado-individual {
+    font-family: Open Sans, sans-serif;
+    border-radius: 13px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #fff;
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    width: 65px;               
+    height: 65px;              
+}
+
+  .texto-inferior {
+    color: #e8e8e8;
+    text-align: center;
+    margin-top: 57px;
+    font: 700 20px Open Sans, sans-serif;
+  }
+
+  .botao-verificar {
+    border-radius: 38px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #223d83;
+    width: 100%;
+    max-width: 175px;
+    align-items: center;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    justify-content: center;
+    padding: 21px 60px;
+    font: 700 20px Open Sans, sans-serif;
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  .botao-reenviar {
+    border-radius: 38px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #fff;
+    width: 100%;
+    max-width: 175px;
+    color: #233156;
+    text-align: center;
+    justify-content: center;
+    padding: 21px 60px;
+    font: 700 20px Open Sans, sans-serif;
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+}

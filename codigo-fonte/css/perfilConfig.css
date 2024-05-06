@@ -142,6 +142,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     right: 81%;
+    cursor: pointer;
 }
 .botao .botao-salvar {
     margin-top: 2rem;
@@ -157,4 +158,5 @@ body{
     margin: 1rem 0;
     resize: none;
     left: 81%;
+    cursor: pointer;
 }

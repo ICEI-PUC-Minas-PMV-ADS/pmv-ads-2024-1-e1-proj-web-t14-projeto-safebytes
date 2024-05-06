@@ -74,8 +74,8 @@ body{
 }
 
 .contact form {
-    max-width: 70rem;
-    margin: 1rem auto;
+    max-width: 75rem;
+    margin: 2rem auto;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -86,6 +86,7 @@ body{
     flex-wrap: wrap;
     position: absolute;
     top: 130%;
+    left: 0%;
 }
 
 .contact form .input-box input{
@@ -125,8 +126,35 @@ body{
 
 }
 
-.contact form .btn {
+.botao .botao-cancelar {
     margin-top: 2rem;
     position: absolute;
-    top: 150%;
+    top: 220%;
+    width: 15%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #6697DF;
+    border-radius: 1.3rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+    display: flex;
+    justify-content: space-evenly;
+    right: 81%;
+}
+.botao .botao-salvar {
+    margin-top: 2rem;
+    position: absolute;
+    top: 220%;
+    width: 15%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #00288F;
+    border-radius: 1.3rem;
+    border: 2px black;
+    margin: 1rem 0;
+    resize: none;
+    left: 81%;
 }

@@ -69,6 +69,10 @@ circle:nth-child(2){
 }
 #bgbranco{
     border-radius: 8%;
+    position: absolute;
+    top: 300px;
+    z-index: -1;
+    opacity: 20%;
 }
 
 

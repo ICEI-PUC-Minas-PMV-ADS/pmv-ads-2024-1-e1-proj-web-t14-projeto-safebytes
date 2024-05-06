@@ -6,10 +6,10 @@ body{
 }
 
 #perfil {
-    width: 12%;
+    width: 16%;
     height: auto;
-    margin-top: 105px;
-    margin-left: 590px;
+    margin-top: 208px;
+    margin-left: 573px;
     border-radius: 50%;
     margin-bottom: -50px;
 }
@@ -18,17 +18,15 @@ body{
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-24%, -51%);
+    transform: translate(-26%, -4%);
     border-radius: 5px;
-    width: 300px;
-    height: 200px;
-    justify-content: center;
+    width: 360px;
+    height: 100px;
 }
 
 svg{
-    width: 500px;
-    height: 500px;
-    text-align: center;
+    width: 700px;
+    height: 700px;
 }
 
 circle{
@@ -36,34 +34,34 @@ circle{
     height: 200px;
     fill: none;
     stroke: black;
-    stroke-width: 10;
+    stroke-width: 12;
     transform: translate(5px,5px);
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+    stroke-dasharray: 600;
+    stroke-dashoffset: 900;
 }
 circle:nth-child(1){
     stroke-dashoffset: 0;
-    stroke: #EBDCFF;
+    stroke: #25B8FF;
 }
 circle:nth-child(2){
-    stroke-dashoffset: calc( 300 - 440);
-    stroke: #25B8FF;
+    stroke-dashoffset: calc( 2000 - 1370);
+    stroke: #EBDCFF;
 }
 .number{
     position: absolute;
-    top: 0;
+    top: 25%;
     left: 7%;
     width: 91%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(180deg, #26a5fffd 10%, #ffffff 100%);
+    background: linear-gradient(180deg, #26a5fffd 40%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     stroke: #215F7D;
-    font-size: 26px;
+    font-size: 40px;
 }
 .branco-box{
     background-color: white;
@@ -102,7 +100,7 @@ circle:nth-child(2){
     gap: 2.5rem;
     position: absolute;
     top: 900px;
-    right: 32%;
+    right: 33%;
 }
 .container-box{
     background-color: white;

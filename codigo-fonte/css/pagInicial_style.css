@@ -95,6 +95,15 @@ header {
     margin-bottom: 15px;
 }
 
+.search-box:hover {
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    transition: 0.75s;
+}
+
+
+
 /* SECPRINCIPAL */
 .secPrincipal {
     padding-top: 30px;
@@ -118,6 +127,11 @@ header {
     color: #00288F !important;
 }
 
+.card a {
+    text-decoration: none !important;
+    color: #00288F !important;
+}
+
 .card .card-img-top {
     margin-bottom: 5px;
     width: auto;
@@ -130,12 +144,25 @@ header {
     border-radius: 20%;
 }
 
+.card:hover {
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    transition: 0.5s;
+    scale: 1.1;
+    border: solid 1px #00288F;
+}
+
+
+
 /* SECCONTINUE */
 .secContinue>div {
     position: relative;
     padding: 40px 15px;
     display: flex !important;
     flex-direction: row;
+    color: #00288F;
+    border-radius: 200px;
 }
 
 .secContinue img {
@@ -148,14 +175,17 @@ header {
     margin-left: 15px;
 }
 
-.tituloTutorial>h2,
-.tituloTutorial>h3 {
-    color: #00288F;
-}
-
 .tituloTutorial>h3 {
     font-weight: bold;
 }
+
+.secContinue:hover>div {
+    background: #00298f;
+    color: #fff;
+    transition: 0.6s linear;
+}
+
+
 
 /* SECLISTAS */
 #tutoriais,
@@ -163,6 +193,7 @@ header {
     width: 130px;
     height: 130px;
     margin: 20px 15px;
+    border-radius: 10px;
 }
 
 .secListas>div {
@@ -175,10 +206,28 @@ header {
     justify-content: center;
 }
 
+#tutoriais:hover {
+    scale: 1.10;
+    transition: 0.5s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+#quizzes:hover {
+    scale: 1.10;
+    transition: 0.5s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
 
 
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
+
+    /* HEADER */
     #logo {
         margin-left: 5%;
         width: 10%;
@@ -195,6 +244,7 @@ header {
     }
 
 
+    /* SECPRINCIPAL */
     .secPrincipal {
         background-size: cover;
         padding-bottom: 0;
@@ -214,6 +264,7 @@ header {
     }
 
 
+    /* SECCONTINUE */
     .secContinue {
         margin-top: 0;
     }
@@ -228,10 +279,11 @@ header {
     }
 
     .tituloTutorial {
-        margin-top: 10%;
+        margin-top: 6%;
     }
 
 
+    /* SECLISTAS */
     #tutoriais,
     #quizzes {
         width: 200px;
@@ -247,10 +299,13 @@ header {
 }
 
 
+
 /* RESPONSIVIDADE: PC */
-@media screen and  (min-width: 900px) {
+@media screen and (min-width: 900px) {
+
+    /* HEADER */
     #logo {
-        margin-left: 5%;
+        margin-left: 0%;
         width: 6%;
     }
 
@@ -261,15 +316,16 @@ header {
     .search-box {
         padding: 10px;
         border-radius: 20px;
-        margin: 0 30%;
+        margin: 0 35%;
     }
 
 
+    /* SECPRINCIPAL */
     .secPrincipal {
         background-size: cover;
         background-position-y: 10%;
         padding-bottom: 0;
-        }
+    }
 
     .card-group {
         width: 70%;
@@ -278,6 +334,7 @@ header {
 
     .card {
         margin: 20px;
+        text-align: center;
     }
 
     .card .card-img-top {
@@ -285,7 +342,7 @@ header {
     }
 
 
-
+    /* SECCONTINUE */
     .secContinue {
         margin-top: 0;
     }
@@ -304,12 +361,12 @@ header {
     }
 
 
-
+    /* SECLISTAS */
     #tutoriais,
     #quizzes {
         width: 300px;
         height: 250px;
-        margin: 50px 150px  20px 150px;
+        margin: 50px 150px 20px 150px;
     }
 
     .secListas>div {

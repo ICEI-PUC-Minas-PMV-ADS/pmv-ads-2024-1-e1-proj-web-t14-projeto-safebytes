@@ -63,14 +63,14 @@ body{
     margin-left: 0px;
 }
 
-.contact form {
+.formulario form {
     max-width: 75rem;
     margin: 2rem auto;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.contact form .input-box {
+.formulario form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -79,8 +79,8 @@ body{
     left: 0%;
 }
 
-.contact form .input-box input{
-    width: 60%;
+.formulario form .input-box input{
+    width: 47%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
@@ -91,7 +91,7 @@ body{
     resize: none;
 }
 
-.contact form .btn {
+.formulario form .btn {
     margin-top: 2rem;
     cursor: pointer;
     transition: all 0.3s ease
@@ -102,14 +102,14 @@ body{
     margin-left: 0px;
 }
 
-.contact form {
+.formulario form {
     max-width: 70rem;
     margin: 1rem auto;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-.contact form .input-box {
+.formulario form .input-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -149,4 +149,13 @@ body{
     resize: none;
     left: 81%;
     cursor: pointer;
+}
+.fundo-formulario{
+    background: white;
+    width: 650px;
+    height: 550px;
+    border-radius: 15%;
+    transform: translate( 36%, 50%);
+    z-index: -3;
+    opacity: 50%;
 }

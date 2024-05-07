@@ -1,0 +1,162 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #A3C8FF !important;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.branco-box{
+    background-color: white;
+    border-radius: 10%;
+    position: absolute;
+    top: 300px;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    opacity: 70%;
+    width: 100%;
+    height: 67%;
+    z-index: -2;
+}
+#bgazul{
+    position: absolute;
+    width: 100%;
+    height: 95%;
+    margin-top: -1%;
+    z-index: -1;
+    left: 0%;
+}
+
+#perfil {
+    width: 16%;
+    height: auto;
+    margin-top: 208px;
+    margin-left: 573px;
+    border-radius: 50%;
+    margin-bottom: -50px;
+}
+.trocar-foto .circulo-foto{
+    display: inline-flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: #4240ec;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translate(1100%, -80%);
+}
+.trocar-foto a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: white;
+    border: black;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: white;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    z-index: 1;
+}
+.nickname{
+    position: absolute;
+    font-size: 60px;
+    line-height: 0px;
+    top: 85%;
+    right: 40.5%;
+}
+.heading span {
+    margin-left: 0px;
+}
+
+.contact form {
+    max-width: 75rem;
+    margin: 2rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 130%;
+    left: 0%;
+}
+
+.contact form .input-box input{
+    width: 60%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: white;
+    border-radius: 1.3rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease
+    
+
+}
+.heading span {
+    margin-left: 0px;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.botao .botao-cancelar {
+    margin-top: 2rem;
+    position: absolute;
+    top: 220%;
+    width: 15%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #6697DF;
+    border-radius: 1.3rem;
+    border: 2px solid var(--main-color);
+    margin: 1rem 0;
+    resize: none;
+    display: flex;
+    justify-content: space-evenly;
+    right: 81%;
+    cursor: pointer;
+}
+.botao .botao-salvar {
+    margin-top: 2rem;
+    position: absolute;
+    top: 220%;
+    width: 15%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #00288F;
+    border-radius: 1.3rem;
+    border: 2px black;
+    margin: 1rem 0;
+    resize: none;
+    left: 81%;
+    cursor: pointer;
+}

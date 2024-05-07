@@ -19,14 +19,14 @@
   }
 
   .imagem-topo {
-    background-image: url('/imagem/Vector 11.png'); /* Certifique-se de que o caminho está correto */
-    background-size: 100% auto; /* Estica a imagem para cobrir 100% da largura e auto ajusta a altura */
-    background-position: center; /* Centraliza a imagem verticalmente */
-    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    background-image: url('/imagem/Vector 11.png');
+    background-size: 100% auto; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     display: flex;
     align-items: center;
     justify-content: center;
-    height:250px; /* Ajuste conforme necessário para a altura desejada */
+    height:250px; 
     width: 100%;
 }
 

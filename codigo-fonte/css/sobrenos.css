@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    outline: none;
+    text-decoration: none;
+}
+.botao{
+    background-color: #00288F;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+    transition: transform 0.3s ease; /* Transição suave da escala */
+    box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.5), 
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+
+.botao:hover{
+    background-color: #0e1020;
+    transform: scale(1.1); /* Escala do botão aumentada */
+}
+botao:active {
+    transform: scale(0.9); /* Escala do botão reduzida */
+}
+
+nav{
+    background-color: #355DC5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+    background: linear-gradient(#3c84f0, #7ba3df);
+}
+.search-box{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    background: white;
+    height: 20px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: -2px -2px 2px rgba(255, 255, 255, 0.3), 
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                15px 15px 15px rgba(0, 0, 0, 0.2);
+}
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 40px;
+    width: 90%;
+}
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lupa {
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+
+}
+.titulo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+
+}
+div h2{
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 30px;
+    padding-left: 0%;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+}  
+.fundo-missao{
+    background-color: rgba(500, 500, 500, 0.3);
+    width: 400px;
+    margin-left: 103px;
+    border-radius: 66%/1190%;
+    height: 40px;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
+
+}
+.retangulo1{
+    background-color: #84adea;
+    height: 370px;
+    width: 330px;
+    border-radius: 15%;
+    margin-left: 180%;
+    margin-bottom: 100px;
+    float: left;
+    filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.24))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(10px 10px 10px rgba(0,0,0,0.2));
+
+}
+.retangulo1:hover{
+    transform: scale(1.1); /* Escala do botão aumentada */
+}
+div p{
+    position: absolute;
+    right: 64%;
+    left: 9%;
+    font-size: 23px;
+    text-align: center;
+}
+.img-alvo{
+    position: absolute;
+    right: 4%;
+    top: 17%;
+}

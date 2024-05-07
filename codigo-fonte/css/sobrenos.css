@@ -96,6 +96,8 @@ div h2{
     color: rgba(0, 0, 0, 0.829);
     font-size: 30px;
     padding-left: 0%;
+    position: relative;
+    top: 11%;
     text-align: center;
     justify-content: center;
     align-items: flex-end;
@@ -142,6 +144,8 @@ div p{
 .fundo-abordagem{
     background-color: rgba(500, 500, 500, 0.3);
     width: 400px;
+    position: absolute;
+    top: 130%;
     margin-left: 103px;
     border-radius: 66%/1190%;
     height: 40px;
@@ -177,8 +181,9 @@ div p{
     top: 105%;
 }
 .abordagem{
-    display: flex;
-right: 20%;
+    position: absolute;
+    top: 130%;
+    right: 15%;
 }
 div h2{
     color: rgba(0, 0, 0, 0.829);
@@ -192,8 +197,10 @@ div h2{
     background-color: rgba(500, 500, 500, 0.3);
     width: 400px;
     margin-left: 103px;
-    border-radius: 66%/1190%;
-    height: 40px;
+    border-radius: 150%/1190%;
+    position: absolute;
+    height: 80px;
+    top: 212%;
     filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.3))
             drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
             drop-shadow(15px 15px 15px rgba(0,0,0,0.2));
@@ -210,14 +217,13 @@ div h2{
     filter: drop-shadow(-3px -3px 2px rgba(255, 255, 255, 0.24))
             drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
             drop-shadow(10px 10px 10px rgba(0,0,0,0.2));
-
 }
 .retangulo1:hover{
     transform: scale(1.1); /* Escala do botão aumentada */
 }
 .texto3 p{
     position: absolute;
-    top: 220%;
+    top: 230%;
     right: 64%;
     left: 9%;
     font-size: 23px;
@@ -226,9 +232,13 @@ div h2{
 .img-maos{
     position: absolute;
     right: 7.5%;
-    top: 193%;
+    top: 202%;
 }
-.responsabilidade-social{
-    width: 400px;
-    margin-left: 10%;
+.responsabilidade-social h2{
+    position: absolute;
+    right: 64%;
+    left: 9%;
+    top: 210%;
+    font-size: 30px;
+    text-align: center;
 }

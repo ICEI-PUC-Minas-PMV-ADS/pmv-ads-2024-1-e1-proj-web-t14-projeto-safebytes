@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/perfil style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <title>perfil</title>
 </head>
 
 <body>
     <header>
+        <!-- Barra de Progresso -->
         <div class="box">
             <div class="box-circle">
                 <svg>
@@ -22,42 +24,97 @@
         <div class="number">
             <h2>75%</h2>
         </div>
+
+        <!-- Foto de perfil -->
         <img id="perfil" src="../assets/perfil-foto.jpg" alt="">
+
+        <!-- Imagem de Fundo -->
         <img id="bgazul" src="../assets/bgImg03.png" alt="">
-        <div class="bottom-page">
+
+        <!-- <div class="bottom-page">
             <img src="../assets/Vector 8.svg" alt="">
             <img src="../assets/Vector 9.svg" alt="">
-        </div>
-        <div class="branco">
-            <div class="branco-box">
+        </div> -->
+
+        <!-- Nickname -->
+        <div class="nick">
+            <div class="nick-box">
             </div>
             <div class="nickname">
                 <h6>Nickname</h6>
             </div>
         </div>
+    </header>
+
+    <!-- Opções de Configuração -->
+    <section id="perfilOptions">
         <div class="container">
             <div class="container-box">
-                <div class="container-info">
-                    <a href="#"><i class="bi bi-gear"></i></a>
-                    <h3>Configurar Perfil</h3><a href="#"><i class="bi bi-chevron-compact-right"></i></i></a>
+
+                <div class="wrapper">
+                    <div class="icon">
+                        <i class="bi bi-gear"></i>
+                    </div>
+                    <div class="opcao">
+                        <h3>Configurar Perfil</h3>
+                    </div>
+
+                    <div class="linkIcon">
+                        <a href="#">
+                            <i class="bi bi-chevron-compact-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="container-info">
-                    <a href="#"><i class="bi bi-check2-square"></i></a>
-                    <h3>O que foi feito</h3><a href="#"><i class="bi bi-chevron-compact-right"></i></i></a>
-                    <a href="#"><i class="bi bi-mortarboard"></i></a>
+
+                <div class="wrapper">
+                    <div class="icon">
+                        <i class="bi bi-check2-square"></i>
+                    </div>
+                    <div class="opcao">
+                        <h3>O que foi feito</h3>
+                    </div>
+
+                    <div class="linkIcon">
+                        <a href="#">
+                            <i class="bi bi-chevron-compact-right"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="container-info">
-                    <h3>Certificado</h3><a href="#"><i class="bi bi-lock"></i></a>
-                    <a href="#"><i class="bi bi-door-open"></i></a>
+
+                <div class="wrapper">
+                    <div class="icon">
+                        <i class="bi bi-mortarboard"></i>
+                    </div>
+                    <div class="opcao">
+                        <h3>Certificado</h3>
+                    </div>
+
+                    <div class="linkIcon">
+                        <a href="#">
+                            <i class="bi bi-lock"></i>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="container-info">
-                    <h3>Sair</h3><a href="#"><i class="bi bi-chevron-compact-right"></i></i></a>
+
+                <div class="wrapper">
+                    <div class="icon">
+                        <i class="bi bi-door-open"></i>
+                    </div>
+                    <div class="opcao">
+                        <h3>Sair</h3>
+                    </div>
+
+                    <div class="linkIcon">
+                        <a href="#">
+                            <i class="bi bi-chevron-compact-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-        </div>
-    </header>
+    </section>
+
     <script> src = "js/script.js" </script>
 </body>
 

@@ -3,28 +3,39 @@ html, body {
   padding: 0;
 }
 
-.barra{
-  padding-top: 7%;
-  padding-bottom: 7%;
+/* Estilos gerais */
+body {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #b3cdf3 24.32%, #2d5a9e 100%);
+  max-width: 560px;
   margin: auto;
+  padding-bottom: 100%;
 }
 
-/* icone do Bootstrap */
-i {
- font-size: 40px;
+.cabecalho {
+  background: none;
   color: #fff;
+  padding: 0;
+  margin: 0; 
 }
 
-/* .icone {
-  aspect-ratio: 0.82;
-  object-fit: auto;
-  object-position: center;
-  width: 27px;
-  mix-blend-mode: plus-darker;
-} */
+.titulo {
+  background-image: url(../assets/Vector\ 6.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;    
+  background-size: 100% 100%;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 100%;
+  padding: 0;
+}
 
 .pergunta_titulo {
-  font-family: Open Sans, sans-serif;
   margin-top: 4%;
   flex-grow: 1;
   flex-basis: auto;
@@ -32,69 +43,77 @@ i {
   color: white;
 }
 
-.barra_de_progresso{
+/* ícone do Bootstrap */
+i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.barra {
+  padding-top: 7%;
+  padding-bottom: 7%;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.barra_de_progresso {
   border-radius: 22px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #d9d9d9;
   display: flex;
-  width: 369px;
-  max-width: 100%;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  margin-top: 45px;
-  margin-left: 8px;
+  width: 100%;
+  max-width: 369px;
+  height: 21px;
+  overflow: hidden; 
+  margin: 45px auto 0;
 }
 
 .progresso {
-  border-radius: 22px;
+  border-radius: 22px 0 0 22px; 
   background-color: #00288f;
-  width: 65px;
-  height: 21px;
-  }
+  height: 100%; 
+  width: 25%; 
+}
 
 .numero {
   color: #eae7e7;
   mix-blend-mode: plus-lighter;
-  align-self: start;
-  margin: 6px 0 0 20px;
   font: 600 18px Open Sans, sans-serif;
-  margin-left: 10px;
-  margin-bottom: 70px;
+
+  
 }
 
 .pergunta_quiz {
   border-radius: 14px;
   background-color: rgba(232, 232, 232, 1);
-  align-self: stretch;
   color: #233156;
   text-align: center;
-  justify-content: center;
-  padding: 40px 0px;
-  font: 400 20px Open Sans, sans-serif;
+  padding: 10%;
+  font: 400 130% Open Sans, sans-serif;
   margin: 3%;
-
 }
 
 .true-button, .false-button {
-  display: flex;              
-  justify-content: center;    
-  margin-top: 30px;           
-  width: 100%;                
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
 }
 
 .true-button button, .false-button button {
   border-radius: 18px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  padding: 40px 70px;
+  padding: 8% 42%;
   font: 700 18px Open Sans, sans-serif;
   cursor: pointer;
   border: none;
   outline: none;
-  width: 400px;               
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .true-button button {
@@ -107,23 +126,48 @@ i {
   color: #233156;
 }
 
-.titulo {
-  background-image: url(../assets/Vector\ 6.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;    
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 130px;
-  width: 100%;
-  padding: 0;
+@media (min-width: 600px) {
+  .titulo{
+
+  }
+  .barra_de_progresso {
+    max-width: 500px;
+  }
+  
+  .true-button button, .false-button button {
+    width: 60%;
+  }
 }
 
-.body{
-    background: linear-gradient(180deg, #b3cdf3 24.32%, #2d5a9e 100%);
-    display: flex;
-    max-width: 560px;
-    padding-bottom: 320px;
-    flex-direction: column;
+@media (min-width: 900px) {
+  .titulo{
   }
+  body {
+    max-width: 800px;
+  }
+  
+  .barra_de_progresso {
+    max-width: 600px;
+  }
+  
+  .true-button button, .false-button button {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .titulo{
+
+  }
+  body {
+    max-width: 1000px;
+  }
+  
+  .barra_de_progresso {
+    max-width: 700px;
+  }
+  
+  .true-button button, .false-button button {
+    width: 40%;
+  }
+}

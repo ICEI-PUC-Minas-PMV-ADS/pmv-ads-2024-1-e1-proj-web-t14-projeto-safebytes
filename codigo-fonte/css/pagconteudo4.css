@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "sans-serif";
+    background-color:#A3C8FF
+}
+
+.conteudo {
+    margin: 8px;
+    padding: 8px 4px;
+    background-color: darkblue;
+
+    color: white;
+    height: 120px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border: 2px solid black;
+    padding-left: 30px;
+    border-radius: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+#pesquisar {
+    width: 50%;
+    height: 40px;
+    padding-left: 20px;
+    vertical-align: top;
+margin-left: 160px;
+margin-top: 70px;
+border-radius: 100px;
+font-size: 25px;
+font-weight: bold;
+}
+
+#login {
+    width: 8%;
+    height: 40px;
+    background-color: #00288F;
+    color: white;
+    border: 0px;
+    border-radius: 140px;
+    margin-left: 120px;
+    vertical-align:top;
+    margin-top: 75px;
+
+}
+
+#etapa1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 26px;
+    margin-top:40px;
+}
+.conteudo {
+    background: rgb(0,128,205);
+background: linear-gradient(90deg, rgba(0,128,205,1) 0%, rgba(33,21,241,1) 20%, rgba(43,34,238,1) 37%, rgba(23,19,179,1) 53%, rgba(33,21,241,1) 74%, rgba(0,110,176,1) 100%);
+min-height: 150px;
+padding-top: 50px;
+padding-bottom: 50px;
+font-size: 24px;
+
+}
+
+

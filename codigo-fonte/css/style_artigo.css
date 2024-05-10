@@ -12,18 +12,6 @@ body {
   align-items: center;
   padding: 10px 20px;
 }
-
-@media (min-width: 768px) {
-  .Quem_Somos {
-      padding: 30px;
-      font-size: 18px;
-  }
-
-  .Quem_Somos h1 {
-      font-size: 20px;
-  }
-}
-
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -133,6 +121,10 @@ input:not(:placeholder-shown) ~ .reset {
   cursor: pointer; /* Correção aqui: substituí 'curso' por 'cursor' */
 }
 
+#primeira_parte{
+  text-align: center;
+}
+
 #primeira_parte h1 {
   color: #FFF;
   text-align: center;
@@ -145,62 +137,63 @@ input:not(:placeholder-shown) ~ .reset {
 }
 
 #primeira_parte h2 {
-  position: absolute; /* Posicionamento absoluto para o texto */
-  top: 0; /* Posicionado no topo do contêiner */
+  text-align: left;
   font-size: 15px;
-  right: -200px; /* Alinhado à direita do contêiner */
-  width: 50%; /* Largura do texto, ajuste conforme necessário */
-  text-align: justify; /* Justifica o texto */
-  padding: 200px; /* Espaçamento interno */
-  padding-left: 40px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: auto;
+  width: 20%
 }
 #primeira_parte img{
-  position: absolute;
   width: 248px;
   height: 130px;
   flex-shrink: 0;
   right: 52%;
 }
+#segunda_parte{
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
 #segunda_parte   h1{
   color: #FFF;
-  text-align: center;
   font-family: "Open Sans";
-  margin-top: 170px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   letter-spacing: -1.68px;
 }
-#segunda_parte h2{
+#retangulo{
+  position: absolute;
+  width: 100%; /* Largura do retângulo */
+  height: 500px; /* Altura do retângulo */
+  background-color: #f8f8f8; /* Cor do retângulo */
+  z-index: 1; /* z-index menor para ficar atrás das outras divs */
+  top: 50px; /* Posição vertical do retângulo */
+  left: 0; /* Posição horizontal do retângulo */
+}
+#segunda_parte ul{
 color: #FFF;
-text-align: left;
 font-family: "Open Sans";
-font-size: 12px;
+margin:auto;
+text-align: justify;
+font-size: 10px;
 font-style: normal;
-font-weight: 100px;
-line-height: normal;
-letter-spacing: -0.84px;
-right: -200px;
+
 }
 #segunda_parte img{
-position: absolute;
-right: 20%;
-margin-top: -70px;
+flex-shrink: 0;
+right: 52%;
 width: 200px;
 height: 150px;
 border: none;
 border-radius: 20px;
 
+
 }
-#fundo{
-  position: absolute;
-  width: 400px;
-  width: 50px;
-}
-#terceira_parte h1{
-position:absolute;
-  color: #00288F;
+/* #terceira_parte h1{
+color: #00288F;
 font-family: "Open Sans";
 font-size: 15px;
 top: 600px;
@@ -210,9 +203,6 @@ line-height: normal;
 letter-spacing: -1.05px;
 }
 #terceira_parte h2{
-  position: absolute;
-  top: 700px;
-  right: -20px;
   color: #000;
   font-family: "Open Sans";
   font-size: 15px;
@@ -230,4 +220,4 @@ top: 700px;
 left: 9px;
 gap: 0px;
 opacity: 0px;
-}
+} */

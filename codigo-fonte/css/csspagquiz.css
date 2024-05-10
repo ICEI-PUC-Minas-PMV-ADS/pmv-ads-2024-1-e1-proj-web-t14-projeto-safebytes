@@ -155,9 +155,6 @@ i {
 }
 
 @media (min-width: 1200px) {
-  .titulo{
-
-  }
   body {
     max-width: 1000px;
   }

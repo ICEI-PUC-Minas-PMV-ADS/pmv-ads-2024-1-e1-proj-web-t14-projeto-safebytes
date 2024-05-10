@@ -46,3 +46,25 @@ main img {
     border-radius: 100px;
     border: 5px solid #355DC5;
 }
+
+h2 {
+    font-size: 26px;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+#et1 {
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: yellow;
+}
+ h2 {
+    margin-left: 40px;
+
+ }
+
+ #et1 img {
+    background-color: blue;
+    margin-left: 750px;
+ }

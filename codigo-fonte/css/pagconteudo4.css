@@ -4,9 +4,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "sans-serif";
+    background-color: #6697DF;
     background-image: url(../assets/bgImg07.png);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position-y: -40%;
 }
 
 .conteudo {
@@ -66,6 +68,7 @@ font-weight: bold;
     text-align: center;
     font-size: 26px;
     margin-top:60px;
+    color: white;
 }
 .conteudo {
     background: rgb(0,128,205);
@@ -78,8 +81,10 @@ font-size: 24px;
 
 h1 {
     text-align: center;
-    font-size: 45px;
-    margin-top: 40px;
+    font-size: 55px;
+    margin-top: 90px;
+    margin-bottom: 250px;
+    color: white;
 }
 
 header img {
@@ -97,12 +102,19 @@ a img {
 
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    body {
+        background-position-y: 20px;
+    }
+    
+    
     header img {
         width: 20%;
+        margin-top: 10px;
     }
 
     h1 {
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 100px;
     }
 
     .conteudo {
@@ -125,16 +137,24 @@ width: 570px;
 
 /* RESPONSIVIDADE: CELULAR */
 @media screen and (max-width:600px) {
+    body {
+        background-position-y: 5px;
+        background-size: 100% 24%;
+    }
+    
+    
     header img {
         width: 25%;
     }
 
     h1 {
-        margin-top: 30px;
+        font-size: 35px;
+        margin-top: 0px;
+        margin-bottom: 5px;
     }
 
     #titulo {
-        margin-top: 40px;
+        margin-top: 50px;
         font-size: 20px;
     }
 
@@ -145,7 +165,7 @@ width: 570px;
         padding-top: 0px;
         width: 300px;
         height: 17%;
-        margin: 30px auto;
+        margin: 40px auto;
         padding-top: 25px;
         padding-bottom: 25px;
     }

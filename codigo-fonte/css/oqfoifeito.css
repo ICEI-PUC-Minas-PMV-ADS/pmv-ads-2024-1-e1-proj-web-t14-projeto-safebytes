@@ -4,7 +4,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "sans-serif";
-    background-color:#A3C8FF
+    background-color:#A3C8FF;
+    background-image: url(../assets/bgImg07.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: -22%
 }
 
 header {
@@ -29,42 +33,70 @@ header img {
     border-radius: 100px;
 }
 
+#first {
+    margin: 100px 0px 50px 50px;
+    
+}
+
 #quizzes {
-    background-color: #00288F;
     border-radius: 100px;
-text-align: center;
-width: 15%;
-height: 25%;
-margin: 30px 500px;
-}
-
-.setinha1 {
-    margin-left: 100px;
-    margin-top: 0px;
-    margin-top: 10px;
-}
-
-h2 {
-    font-size: 26px;
-    margin-left: 30px;
-    margin-top: 10px;
-    vertical-align: top;
-    margin-top: 30px;
-    padding-top: 0px;
-    font-weight: bold;
-}
-
-p {
-    display: flex;
-    font-size: 22px;
-    
-}
-
-p {
+    border: #00288F solid 5px;
     background-color: #00288F;
-    margin-left: 1000p
-    
+    width: 15%;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
 }
 
+.options {
+    background-color: #00288F;
+    width: 30%;
+    color: white;
+    border: #00288F solid 5px;
+    border-radius: 100px;
+    margin-bottom: 40px;
+    padding-left: 30px;
+    display: grid;
+    grid-template-columns: 520px 200px;
+    align-items: center;
+}
 
+.icons {
+    font-size: 30px;
+}
+
+#tutoriais {
+    background-color: #355DC5;
+    border-radius: 100px;
+    border: #355DC5 solid 5px;
+    width: 15%;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+#second {
+    margin: 100px 0px 50px 50px;  
+}
+
+#second .options {
+    background-color: #355DC5;
+    border: #355DC5 solid 5px;
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    .options {
+        grid-template-columns: 300px 200px;
+        width: 50%
+    }
+
+    #quizzes, #tutoriais {
+        width: 25%;
+    }
+}
+
+section {
+    text-align: center;
+}
 

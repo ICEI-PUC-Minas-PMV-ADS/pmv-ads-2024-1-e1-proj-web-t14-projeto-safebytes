@@ -55,7 +55,10 @@ h2 {
 
 div {
     display: flex;
+    align-items: center;
 }
-.et1 {
-    margin-left: 
+
+section {
+    display: flex;
+    justify-content: center;
 }

@@ -62,7 +62,7 @@ Todas as imagens presentes no website, se encontram <a href="https://github.com/
 
 ### Códigos 
 
-Os arquivos HTML, CSS e JavaScript do projeto estão organizados <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/tree/main/codigo-fonte/assets](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/tree/main/codigo-fonte">aqui</a>.
+Os arquivos HTML, CSS e JavaScript do projeto estão organizados <a href="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/tree/main/codigo-fonte">aqui</a>.
 
 ### Header e Footer
 

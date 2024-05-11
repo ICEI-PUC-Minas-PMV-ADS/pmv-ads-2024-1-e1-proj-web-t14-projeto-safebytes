@@ -4,11 +4,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "sans-serif";
-    background-color:#A3C8FF;
+    background-color: #A3C8FF;
     background-image: url(../assets/bgImg07.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position-y: -22%
+    background-position-y: -85%
 }
 
 header {
@@ -35,7 +35,7 @@ header img {
 
 #first {
     margin: 100px 0px 50px 50px;
-    
+
 }
 
 #quizzes {
@@ -57,12 +57,13 @@ header img {
     margin-bottom: 40px;
     padding-left: 30px;
     display: grid;
-    grid-template-columns: 520px 200px;
+    grid-template-columns: 250px 200px;
     align-items: center;
 }
 
 .icons {
     font-size: 30px;
+    margin-left: 250px;
 }
 
 #tutoriais {
@@ -76,7 +77,7 @@ header img {
 }
 
 #second {
-    margin: 100px 0px 50px 50px;  
+    margin: 100px 0px 50px 50px;
 }
 
 #second .options {
@@ -86,17 +87,73 @@ header img {
 
 /* RESPONSIVIDADE TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    body {
+        background-position-y: 0px;
+        background-size: 135%;
+    }
+
+    .perfil {
+        margin-left: 315px;
+        margin-top: 15px;
+        width: 10%;
+    }
+
+    header img {
+        width: 40%;
+        margin-top: 15px;
+    }
+
     .options {
-        grid-template-columns: 300px 200px;
+        grid-template-columns: 250px 200px;
         width: 50%
     }
 
-    #quizzes, #tutoriais {
+    #quizzes,
+    #tutoriais {
         width: 25%;
+    }
+
+    .icons {
+        margin-left: 55px;
     }
 }
 
-section {
-    text-align: center;
+/* RESPONSIVIDADE: CELULAR */
+@media screen and (max-width:600px) {
+    body {
+        background-position-y: 0px;
+        background-size: 140%;
+    }
+    header img {
+        margin: 15px 0px 0px 20px;
+        width: 70%;
+    }
+
+.perfil {
+    margin: 20px 0px 0px 25px;
+    width: 13%;
 }
 
+#quizzes, #tutoriais {
+    width: 40%;
+    height: 30px;
+    padding-bottom: 23px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#first, #second {
+    margin-left: 20px;
+}
+
+#first .options, #second .options {
+    width: 80%;
+    font-size: 12px;
+    grid-template-columns: 240px 200px;
+}
+
+.icons {
+    margin-left: 0px;
+    font-size: 25px;
+}
+}

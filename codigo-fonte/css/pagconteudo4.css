@@ -12,6 +12,7 @@ body {
 }
 
 .conteudo {
+    width: 80%;
     margin: 8px;
     padding: 8px 4px;
     background-color: darkblue;
@@ -19,12 +20,10 @@ body {
     color: white;
     height: 120px;
     padding-top: 15px;
-    padding-bottom: 0px;
     border: 2px solid black;
     padding-left: 30px;
     border-radius: 15px;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin: 0 auto;
 }
 
 header {
@@ -32,42 +31,11 @@ header {
     width: 100%;
 }
 
-#pesquisar {
-    width: 50%;
-    height: 40px;
-    padding-left: 20px;
-    vertical-align: top;
-margin-left: 160px;
-margin-top: 70px;
-border-radius: 100px;
-font-size: 25px;
-font-weight: bold;
-}
-
-#login {
-    width: 8%;
-    height: 40px;
-    background-color: #00288F;
-    color: white;
-    border: 0px;
-    border-radius: 140px;
-    margin-left: 120px;
-    vertical-align:top;
-    margin-top: 75px;
-
-}
-
-#etapa1 {
-    text-align: center;
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 100px;
-}
-
 #titulo {
     text-align: center;
     font-size: 26px;
-    margin-top:60px;
+    margin-top:0px;
+    margin-bottom: 0px;
     color: white;
 }
 .conteudo {
@@ -103,7 +71,7 @@ a img {
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
     body {
-        background-position-y: 20px;
+        background-position-y: 0px;
     }
     
     
@@ -138,7 +106,7 @@ width: 570px;
 /* RESPONSIVIDADE: CELULAR */
 @media screen and (max-width:600px) {
     body {
-        background-position-y: 5px;
+        background-position-y: 0px;
         background-size: 100% 24%;
     }
     

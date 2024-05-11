@@ -39,7 +39,7 @@ nav{
 }
 body{
     margin: 0;
-    background: linear-gradient(#3c84f0, #7ba3df);
+    background-image: linear-gradient(#3c84f0, #7ba3df, #3c84f0);
 }
 .search-box{
     position: absolute;
@@ -241,4 +241,133 @@ div h2{
     top: 210%;
     font-size: 30px;
     text-align: center;
+}
+@media screen and (max-width: 800px) {
+    nav{
+        width: 100%;
+    }
+    .search-box{
+        left: 29%;
+        height: 20px;
+        width: 35%;
+        padding: 8px;
+    }
+    .search-btn{
+        width: 150%;
+        height: 0px;
+        position: absolute;
+    }
+    .navigation logo{
+        display: flex;
+        position: absolute;
+        right: 50%;
+    }
+    .botao{
+        padding: 8px 15px;
+        position: relative;
+        right: 14%;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    div h2{
+        font-size: 25px;
+    }  
+    .fundo-missao{
+        width: 250px;
+        margin-left: 60px;
+        border-radius: 30%/190%;
+    }
+    .retangulo1{
+        height: 270px;
+        width: 270px;
+        border-radius: 15%;
+        margin-left: 0%;
+        right: 5%;
+        position: relative;
+        margin-top: 130%;
+    }
+    div p{
+        position: absolute;
+        right: 14%;
+        left: 15%;
+        font-size: 23px;
+        text-align: center;
+    }
+    .img-alvo{
+        position: absolute;
+        right: -25%;
+        top: 40%;
+    }
+    .fundo-abordagem{
+        width: 300px;
+        position: absolute;
+        top: 130%;
+        margin-left: -508px;
+        border-radius: 26%/210%;
+        height: 40px;
+        }
+    .retangulo2{
+        height: 270px;
+        width: 270px;
+        border-radius: 15%;
+        margin-left: 13%;
+        float: center;
+        position: absolute;
+        top: 188%;
+    }
+    .texto2 p{
+        position: absolute;
+        top: 140%;
+        right: 9%;
+        left: 10%;
+    }
+    .img-conexao{
+        position: absolute;
+        right: -42%;
+        top: 162%;
+    }
+    .abordagem{
+        position: absolute;
+        top: 130.5%;
+        right: 26%;
+    }  
+    .fundo-responsabilidade{
+        width: 300px;
+        margin-left: 33px;
+        border-radius: 40%/190%;
+        position: absolute;
+        height: 80px;
+        top: 234%;
+    }
+    .retangulo3{
+        height: 270px;
+        width: 270px;
+        border-radius: 15%;
+        margin-left: 5%;
+        position: absolute;
+        top: 600%;
+    }
+    .texto3 p{
+        position: absolute;
+        top: 249%;
+        right: 9%;
+        left: 9%;
+        font-size: 23px;
+        text-align: center;
+    }
+    .img-maos{
+        position: absolute;
+        right: -10%;
+        top: 283%;
+    }
+    .responsabilidade-social h2{
+        position: absolute;
+        right: 64%;
+        left: 51%;
+        top: 233%;
+        font-size: 25px;
+        display: flex;
+        text-align: center;
+    }
 }

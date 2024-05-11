@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", "sans-serif";
-    background-color:#A3C8FF
+    background-image: url(../assets/bgImg07.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .conteudo {
@@ -90,6 +92,8 @@ a img {
     margin-left: 1570px;
     width: 12%;
 }
+
+
 
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {

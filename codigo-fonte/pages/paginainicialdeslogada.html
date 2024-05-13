@@ -1,54 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pagina Inicial</title>
-  <link rel="stylesheet" href="../css/csspaginadecomeco.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigilância Digital</title>
+    <link rel="stylesheet" href="../css/cssdeslogado.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-  <div class="container">
-    <div class="content">
-  <nav class="navbar">
-    <div class="logo"> <img src="../assets/logo_alta_qualidade.png" alt="Logo"></div>
-    <form class="form">
-      
-      <button type="submit">
-          <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-              <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-      </button>
-      <input class="input" placeholder="Digite o Problema" required="" type="text">
-      <button class="reset" type="reset">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-          </svg>
-      </button>
-    </form>
-    <button class="login-button">Login</button>
-  
-  </nav>
-</div>
-</div>
-  <nav>
-    <div class="quemsomosfoto">
-      <img src="../assets/quemsomos.png" alt="Imagem Quem Somos">
-      <button class="Quem_Somos">Quem Somos</button>
-    </div>
-  </nav>
-     <nav id="artigos">
-      <button class="Phishing">O que é <strong>Phishing??</strong></button>
-      <button class="Email">E-mail Hackeado?<strong> Saiba agir!</strong></button>
-      <button class="Senha">O que são <strong>Senhas Fortes?</strong></button>
-  </nav>
-  <div id="artigo_imagens">
-     <div class="Phishingfoto"><img src="../assets/phishing.jpg" ></div>
-     <div class="Hackedfoto"><img src="../assets/fraud_alert.jpg" ></div>
-     <div class="Senhafoto"><img src="../assets/emailsenha.png" ></div>
-  </div>
-  <div class="bolinhas">
-    <img src="image/bolinhas.svg" alt="bolihnhas" >
-  </div>
+    <header>
+        <input type="search" placeholder="Search">
+        <button>Login</button>
+    </header>
+    
+    <main>
+        <section id="hero">
+            <img src="../assets/quemsomos.png" alt="Cyber security">
+            <button>Quem Somos</button>
+        </section>
+
+        <section id="topics">
+            <div class="topic">
+                <img src="../assets/phishing.jpg" alt="Phishing">
+                <button><i class="fas fa-user-secret"></i> O que é Phishing?</button>
+            </div>
+            <div class="topic">
+                <img src="../assets/fraud_alert.jpg" alt="E-mail Hacked">
+                <button><i class="fas fa-envelope-open-text"></i> E-mail Hackeado? Saiba agir!</button>
+            </div>
+            <div class="topic">
+                <img src="../assets/emailsenha.png" alt="Strong Passwords">
+                <button><i class="fas fa-lock"></i> O que são Senhas Fortes?</button>
+
+            </div>
+        </section>
+
+        <section id="faq">
+            <h2>Perguntas Frequentes</h2>
+            <ol>
+            <ul>O que um vírus pode fazer no meu dispositivo?</ul> 
+            <ul>Posso usar cracks antivírus?</ul> 
+            <ul>Como fazer downloads com segurança?</ul> 
+            <ul>Como os vírus afetam os antivírus? </ul> 
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Entre em contato conosco!</p>
+    </footer>
 </body>
-<script src=""></script>
 </html>

@@ -17,10 +17,12 @@
         <div class="branco-box">
         </div>
         <div class="foto-perfil">
-            <img id="perfil" src="../assets/fotoPerfilConfig.svg" alt="">
+            <img id="perfil" src="../assets/fotoPerfilConfig.svg">
         </div>
         <div class="trocar-foto">
             <div class="circulo-foto">
+                <label for="input-file" class="file-label">update image</label>
+                <input type="file" accept="image/jpeg, image/png, image/jpg, image/svg" id="input-file">
                 <a href="#"><i class="bi bi-camera-fill"></i></a>
             </div>
         </div>
@@ -44,6 +46,20 @@
             <input type="submit" value="Salvar" class="botao-salvar">
         </div>
         </form>
+        <script>
+
+            // let circuloFoto = document.querySelector('.bi bi-camera-fill')
+            // circuloFoto.addEventListener("click", () => {
+            //    alert(`Arquivo selecionado: ${awsadghaiud}`);
+            // })
+
+            let profilePic = document.getElementById("perfil")
+            let input = document.getElementById("input-file")
+            inputFile.onchange = function () {
+                profilePic.src = URL.createObjectURL(inputFile.files[0]);
+            } 
+        </script>
+
 </body>
 
 </html>

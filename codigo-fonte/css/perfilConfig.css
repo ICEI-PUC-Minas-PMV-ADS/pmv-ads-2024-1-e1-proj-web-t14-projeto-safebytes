@@ -5,6 +5,34 @@ body {
     background-attachment: scroll;
 }
 
+.user-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15% 45%;
+}
+#photo{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#file{
+    display: none;
+}
+#uploadbtn{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    transform: translate(-80%);
+    margin-top: 30px;
+    background-color: #6697DF;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+}
+
 .branco-box {
     background-color: white;
     border-radius: 10%;
@@ -23,7 +51,7 @@ body {
     position: absolute;
     width: 100%;
     height: 95%;
-    margin-top: -1%;
+    margin-top: -17%;
     z-index: -1;
     left: 0%;
 }
@@ -82,13 +110,14 @@ label{
 }
 
 
-.trocar-foto i {
-    font-size: 2.5rem;
+
+.user-img i {
+    font-size: 1.6rem;
     color: #00288F;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transform: translate(1560%, -80%);
+    transform: translate(3%, -7%);
 }
 
 .nickname {

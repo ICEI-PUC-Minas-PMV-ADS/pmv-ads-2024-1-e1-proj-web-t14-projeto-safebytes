@@ -21,7 +21,6 @@ Fornecer informações atualizadas sobre as últimas tendências no mundo do cri
 * Emily Gabriela Avelino Rodrigues
 * Maria Eduarda Rodrigues Antunes
 * Rodrigo Macedo Barbosa
-* Jacinara Natasha Ribeiro
 * Kevin Gabriel Lino Gonçalves
 * Emerson Cândido de Carvalho Junior
 

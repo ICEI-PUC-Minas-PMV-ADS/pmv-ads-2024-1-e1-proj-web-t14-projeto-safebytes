@@ -55,26 +55,28 @@ header {
     border-radius: 20px;
 }
 
-.lista-box {
+.listaBox {
     display: flex;
     justify-content: center;
+    padding: 5px;
 }
 
-.lista-itens {
+.listaTitulo {
     color: #fff;
     font-weight: lighter;
     background-color: #00288F;
     margin: 10px 10px;
     padding: 10px;
-    width: 50%;
+    width: 90%;
     border-radius: 20px;
+    text-align: center;
 }
 
-.lista-icon {
+.listaIcon {
     margin-top: 5%;
 }
 
-.lista-icon i {
+.listaIcon i {
     color: #00288F;
     border-radius: 100%;
     font-size: 45px;
@@ -97,11 +99,11 @@ header {
         margin: 30% 10% 10% 10%;
     }
 
-    .lista-itens {
+    .listaTitulo {
         padding: 20px;
     }
 
-    .lista-icon {
+    .listaIcon {
         margin-top: 3%;
     }
 }
@@ -131,12 +133,12 @@ header {
         margin: 10% 30% 10% 30%;
     }
 
-    .lista-itens {
+    .listaTitulo {
         padding: 20px 5px;
         text-align: center;
     }
 
-    .lista-icon {
+    .listaIcon {
         margin-top: 2%;
     }
 }

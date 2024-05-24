@@ -1,0 +1,91 @@
+[
+    {
+      "pergunta": "Crimes virtuais são relacionados somente a hacking?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "O phishing é uma forma comum de crime virtual?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Usar senhas complexas e únicas para cada conta ajuda a aumentar a segurança online?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Um firewall pode proteger uma rede contra todos os tipos de ataques?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "Malware é um software projetado para proteger computadores contra vírus?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "A autenticação de dois fatores (2FA) oferece uma camada extra de segurança?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "É seguro clicar em links recebidos por e-mail de remetentes desconhecidos?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "A engenharia social é uma técnica usada para manipular pessoas a revelar informações confidenciais?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Antivírus são suficientes para proteger seu computador contra todas as ameaças?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "Ransomware é um tipo de malware que criptografa arquivos e exige um resgate para liberá-los?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Trocar senhas regularmente é uma prática recomendada de segurança?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "O uso de redes Wi-Fi públicas é seguro para acessar informações sensíveis?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "O software de proteção contra malware deve ser atualizado regularmente?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "É seguro baixar software de qualquer site?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "Ataques DDoS são projetados para sobrecarregar e paralisar serviços online?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "VPNs (Virtual Private Networks) podem ajudar a proteger a privacidade online?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Keyloggers são ferramentas usadas para proteger a privacidade de dados digitados?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "É uma boa prática compartilhar senhas com amigos para facilitar o acesso às contas?",
+      "resposta_correta": "Falso"
+    },
+    {
+      "pergunta": "Atualizações de software frequentemente incluem correções de segurança importantes?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Spyware é um tipo de software malicioso que monitora as atividades de um usuário sem seu conhecimento?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "O uso de autenticação biométrica (como impressões digitais) pode aumentar a segurança das contas?",
+      "resposta_correta": "Verdadeiro"
+    },
+    {
+      "pergunta": "Backups regulares de dados não são necessários se o computador estiver protegido por um antivírus?",
+      "resposta_correta": "Falso"
+    }
+  ]
+  

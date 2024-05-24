@@ -1,0 +1,66 @@
+/* FOLHA DE ESTILOS PAGINICIAL */
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    font-family: "Open Sans", "Roboto", "Montserrat", "Poppins", sans-serif;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(163, 200, 255, 1) 80%, rgba(53, 93, 197, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: #A3C8FF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+section {
+    background-color: #A3C8FF;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: lighter;
+    text-align: center;
+    color: #00288F;
+}
+
+p {
+    font-size: 14px;
+    color: #00288F;
+    margin-bottom: 5px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #00288F;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00288F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #355DC5;
+    transition: background-color 0.3s;
+}

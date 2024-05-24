@@ -5,6 +5,37 @@ body {
     background-attachment: scroll;
 }
 
+.user-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 15% 45%;
+}
+
+#photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#file {
+    display: none;
+}
+
+#uploadbtn {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    padding: 6px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    transform: translate(-80%);
+    margin-top: 30px;
+    background-color: #6697DF;
+    box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+}
+
 .branco-box {
     background-color: white;
     border-radius: 10%;
@@ -23,7 +54,7 @@ body {
     position: absolute;
     width: 100%;
     height: 95%;
-    margin-top: -1%;
+    margin-top: -17%;
     z-index: -1;
     left: 0%;
 }
@@ -37,6 +68,7 @@ body {
     margin-bottom: -50px;
 }
 
+/*
 .trocar-foto .circulo-foto {
     display: inline-flex;
     background-color: white;
@@ -50,10 +82,44 @@ body {
     cursor: pointer;
     transform: translate(1100%, -80%);
 }
+*/
+/* label{
+    display: block;
+    width:200px;
+    background: #6697DF;
+    color: #fff;
+    padding: 12px;
+    margin: 10px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+*/
+label {
+    display: inline-flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: #4240ec;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translate(1100%, -80%);
+    font-size: 0px;
+}
 
-.trocar-foto i {
-    font-size: 2.5rem;
+#input-file {
+    display: none;
+}
+
+.user-img i {
+    font-size: 1.6rem;
     color: #00288F;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(3%, -7%);
 }
 
 .nickname {
@@ -144,16 +210,46 @@ body {
     left: 81%;
     cursor: pointer;
 }
+
 @media screen and (max-width: 800px) {
     #perfil {
         width: 64%;
         margin-top: 20px;
         margin-left: 64px;
     }
+    .user-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 15% 45%;
+    }
+    
+    #photo {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        transform: translate(-36%);
+    }
+    
+    #uploadbtn {
+        position: absolute;
+        height: 30px;
+        width: 30px;
+        padding: 6px 6px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        transform: translate(-210%);
+        margin-top: 30px;
+        background-color: #6697DF;
+        box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+    }
+
     #bgazul {
         height: 45%;
-        margin-top: -3%;
+        margin-top: -18%;
     }
+
     .branco-box {
         background-color: white;
         border-radius: 10%;
@@ -167,13 +263,14 @@ body {
         height: 67%;
         z-index: -2;
     }
+
     .nickname {
         position: absolute;
         font-size: 50px;
         top: 39%;
         right: 31%;
     }
-    
+
     .nickname i {
         position: absolute;
         left: 110%;
@@ -181,9 +278,11 @@ body {
         font-size: 37px;
         color: #00288F;
     }
+
     .trocar-foto .circulo-foto {
         transform: translate(315%, -90%);
     }
+
     #formulario i {
         position: relative;
         left: 5%;
@@ -191,11 +290,11 @@ body {
         font-size: 40px;
         color: #00288F !important;
     }
-    
+
     .heading span {
         margin-left: 0px;
     }
-    
+
     #formulario {
         max-width: 23rem;
         margin: 2rem auto;
@@ -210,6 +309,7 @@ body {
         left: 1%;
         right: 0%;
     }
+
     #formulario i {
         position: relative;
         left: 5%;
@@ -217,6 +317,7 @@ body {
         font-size: 30px;
         color: #00288F !important;
     }
+
     .input-box input {
         width: 55%;
         padding: 1.5rem;
@@ -228,6 +329,7 @@ body {
         margin: 1.2rem 0;
         resize: none;
     }
+
     .botao .botao-cancelar {
         position: absolute;
         top: 150%;
@@ -236,7 +338,7 @@ body {
         font-size: 1.3rem;
         right: 59%;
     }
-    
+
     .botao .botao-salvar {
         position: absolute;
         top: 150%;

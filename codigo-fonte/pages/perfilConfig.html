@@ -14,36 +14,45 @@
         <img id="bgazul" src="../assets/bgImg03.png" alt="">
     </div>
     <div class="branco">
-        <div class="branco-box">
+        <div class="branco-box"></div>
+        <div class="user-img">
+            <img src="../assets/fotoPerfilConfig.svg" id="photo" alt="profile">
+            <input type="file" id="file">
+            <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
         </div>
-        <div class="foto-perfil">
-            <img id="perfil" src="../assets/fotoPerfilConfig.svg" alt="">
-        </div>
-        <div class="trocar-foto">
-            <div class="circulo-foto">
-                <a href="#"><i class="bi bi-camera-fill"></i></a>
+    </div>
+    <div class="nickname">
+        <h6>Nickname</h6>
+        <a href="#"><i class="bi bi-pencil-fill"></i></a>
+    </div>
+    <section id="formulario">
+        <form action="">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Nome" required><a href="#"><i
+                        class="bi bi-pencil-fill"></i></a>
+                <input type="text" placeholder="Sobrenome" required><a href="#"><i class="bi bi-pencil-fill"></i></a>
+                <input type="email" placeholder="E-mail" required><a href="#"><i class="bi bi-pencil-fill"></i></a>
+                <input type="text" placeholder="Senha"><a href="#"><i class="bi bi-pencil-fill"></i></a>
             </div>
-        </div>
-        <div class="nickname">
-            <h6>Nickname</h6>
-            <a href="#"><i class="bi bi-pencil-fill"></i></a>
-        </div>
-        <section id="formulario">
-            <form action="">
-                <div class="input-box">
-                    <input type="text" name="name" placeholder="Nome" required><a href="#"><i
-                            class="bi bi-pencil-fill"></i></a>
-                    <input type="text" placeholder="Sobrenome" required><a href="#"><i
-                            class="bi bi-pencil-fill"></i></a>
-                    <input type="email" placeholder="E-mail" required><a href="#"><i class="bi bi-pencil-fill"></i></a>
-                    <input type="text" placeholder="Senha"><a href="#"><i class="bi bi-pencil-fill"></i></a>
-                </div>
-        </section>
-        <div class="botao">
-            <input type="submit" value="Cancelar" class="botao-cancelar">
-            <input type="submit" value="Salvar" class="botao-salvar">
-        </div>
-        </form>
+    </section>
+    <div class="botao">
+        <input type="submit" value="Cancelar" class="botao-cancelar">
+        <input type="submit" value="Salvar" class="botao-salvar">
+    </div>
+    </form>
+    <script defer src="../js/fotoperfil.js">
+        // let circuloFoto = document.querySelector('.bi bi-camera-fill')
+        // circuloFoto.addEventListener("click", () => {
+        //    alert(`Arquivo selecionado: ${awsadghaiud}`);
+        // })
+
+        //   let profilePic = document.getElementById("perfil")
+        //  let input = document.getElementById("input-file")
+        //  inputFile.onchange = function () {
+        //      profilePic.src = URL.createObjectURL(inputFile.files[0]);
+        //  } 
+    </script>
+
 </body>
 
 </html>

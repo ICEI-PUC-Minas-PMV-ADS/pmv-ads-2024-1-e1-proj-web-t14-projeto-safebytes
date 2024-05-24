@@ -1,0 +1,377 @@
+/* FOLHA DE ESTILOS PAGINICIAL */
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    font-family: "Open Sans", "Roboto", "Montserrat", "Poppins", sans-serif;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(180deg, rgba(163, 200, 255, 1) 80%, rgba(53, 93, 197, 1) 100%);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 12px;
+}
+
+main {
+    background-color: #A3C8FF;
+}
+
+/* HEADER */
+header {
+    background-color: #355DC5;
+    width: 100%;
+}
+
+.cabecalho {
+    display: inline;
+}
+
+#logo {
+    width: 15%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.search-box {
+    background-color: #fff;
+    display: inline;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#search {
+    border: none;
+}
+
+.search-btn,
+.bi-search {
+    color: #909090;
+    text-decoration: none;
+}
+
+#search-btn {
+    background-color: #fff;
+}
+
+#perfil {
+    width: 15%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.search-box:hover {
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(0, 0, 0, 0.36);
+    transition: 0.75s;
+}
+
+
+
+/* SECPRINCIPAL */
+.secPrincipal {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    background-image: url("../assets/bgImg01.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.card-group {
+    display: flex;
+}
+
+.card {
+    width: 30%;
+    margin-left: 9px;
+    margin-top: 20px;
+    border: none !important;
+    border-radius: 20%;
+    background-color: #ffffffa6 !important;
+    color: #00288F !important;
+}
+
+.card a {
+    text-decoration: none !important;
+    color: #00288F !important;
+}
+
+.card .card-img-top {
+    margin-bottom: 5px;
+    width: auto;
+    height: 80px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.card-body {
+    border-radius: 20%;
+}
+
+.card:hover {
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    transition: 0.5s;
+    scale: 1.1;
+    border: solid 1px #00288F;
+}
+
+
+
+/* SECCONTINUE */
+.secContinue>div {
+    position: relative;
+    padding: 40px 15px;
+    display: flex !important;
+    flex-direction: row;
+    color: #00288F;
+    border-radius: 200px;
+}
+
+.secContinue img {
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.tituloTutorial {
+    margin-left: 15px;
+}
+
+.tituloTutorial>h3 {
+    font-weight: bold;
+}
+
+.secContinue:hover>div {
+    background: #00298f;
+    color: #fff;
+    transition: 0.6s linear;
+}
+
+
+
+/* SECLISTAS */
+#tutoriais,
+#quizzes {
+    width: 130px;
+    height: 130px;
+    margin: 20px 15px;
+    border-radius: 10px;
+}
+
+.secListas>div {
+    position: relative;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tutoriais:hover {
+    scale: 1.10;
+    transition: 0.5s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+#quizzes:hover {
+    scale: 1.10;
+    transition: 0.5s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+
+
+/* RESPONSIVIDADE: TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+
+    /* HEADER */
+    #logo {
+        margin-left: 5%;
+        width: 10%;
+    }
+
+    #perfil {
+        width: 10%;
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 20%;
+    }
+
+
+    /* SECPRINCIPAL */
+    .secPrincipal {
+        background-size: cover;
+        padding-bottom: 0;
+    }
+
+    .card-group {
+        width: 80%;
+        margin: 10% 10%;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+    /* SECCONTINUE */
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tituloTutorial {
+        margin-top: 6%;
+    }
+
+
+    /* SECLISTAS */
+    #tutoriais,
+    #quizzes {
+        width: 200px;
+        height: 200px;
+        margin: 40px 50px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* RESPONSIVIDADE: PC */
+@media screen and (min-width: 900px) {
+
+    /* HEADER */
+    #logo {
+        margin-left: 0%;
+        width: 6%;
+    }
+
+    #perfil {
+        width: 6%;
+    }
+
+    .search-box {
+        padding: 10px;
+        border-radius: 20px;
+        margin: 0 35%;
+    }
+
+
+    /* SECPRINCIPAL */
+    .secPrincipal {
+        background-size: cover;
+        background-position-y: 10%;
+        padding-bottom: 0;
+    }
+
+    .card-group {
+        width: 70%;
+        margin: 10% 15% 5% 15%;
+    }
+
+    .card {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+    /* SECCONTINUE */
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tituloTutorial {
+        margin-top: 6%;
+    }
+
+
+    /* SECLISTAS */
+    #tutoriais,
+    #quizzes {
+        width: 300px;
+        height: 250px;
+        margin: 50px 150px 20px 150px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

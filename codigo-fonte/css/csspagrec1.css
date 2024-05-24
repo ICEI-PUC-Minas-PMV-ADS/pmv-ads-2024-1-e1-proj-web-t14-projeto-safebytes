@@ -126,9 +126,7 @@ body {
   margin-top: 18px;
 }
 
-/* Media Queries para diferentes larguras de tela */
 
-/* Estilos para telas com largura mínima de 600px */
 @media (min-width: 600px) {
   .principal {
       max-width: 800px;
@@ -171,7 +169,6 @@ body {
   }
 }
 
-/* Estilos para telas com largura mínima de 900px */
 @media (min-width: 900px) {
   .principal {
       max-width: 1200px;
@@ -214,7 +211,6 @@ body {
   }
 }
 
-/* Estilos para telas com largura mínima de 1200px */
 @media (min-width: 1200px) {
   .principal {
       max-width: 1400px;
@@ -257,7 +253,6 @@ body {
   }
 }
 
-/* Estilos para telas com largura mínima de 1700px */
 @media (min-width: 1700px) {
   .principal {
       max-width: 1600px;

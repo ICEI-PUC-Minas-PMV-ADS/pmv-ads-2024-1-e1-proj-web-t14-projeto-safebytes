@@ -1,57 +1,103 @@
-// TUTORIAIS
-
-
 // JSON
-var json = '{"tutorial": [{"id": 0,  "titulo": "Proteção contra Malwere", "video": null, "etapas": [{"id": 1, "titulo": null, "descricao": null}, {"id": 2, "titulo": null, "descricao": null}, {"id": 3, "titulo": null, "descricao": null}]}, {"id": 1,  "titulo": "Autenticação de Dois Fatores", "video": null, "etapas": [{"id": 1, "titulo": null, "descricao": null}, {"id": 2, "titulo": null, "descricao": null}, {"id": 3, "titulo": null, "descricao": null}]}, {"id": 2,  "titulo": "Backup de Dados", "video": null, "etapas": [{"id": 1, "titulo": null, "descricao": null}, {"id": 2, "titulo": null, "descricao": null}, {"id": 3, "titulo": null, "descricao": null}]}, {"id": 3,  "titulo": "Autualização de Software", "video": null, "etapas": [{"id": 1, "titulo": null, "descricao": null}, {"id": 2, "titulo": null, "descricao": null}, {"id": 3, "titulo": null, "descricao": null}]}]}';
+var json = '{"tutorial": [{"id": 0,  "titulo": "Proteção contra Malware", "video": "https://www.youtube.com/watch?v=O1Iu_4mMTs8", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 1,  "titulo": "Autenticação de Dois Fatores", "video": "https://www.youtube.com/watch?v=eTwMEgSFvVg", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 2,  "titulo": "Backup de Dados", "video": "https://www.youtube.com/watch?v=OK2u0WEKJCg", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 3,  "titulo": "Atualização de Software", "video": "https://www.youtube.com/watch?v=KIOW1eLItfY", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}]}';
 
 // Conversão do JSON para objeto
 var tutoriais = JSON.parse(json);
 
-// Seleciona a div .lista
-const lista = document.querySelector(".lista");
-
-// Cria uma estrutura HTML para cada elemento da array tutoriais
-for (let i = 0; i < tutoriais.tutorial.length; i++) {
-
-    // Resgata um elemento da array tutorial
-    const tutorial = tutoriais.tutorial[i];
-
-    //Cria uma div com id e classe
+// Função para criar os elementos da lista de tutoriais
+function criarElementoLista(titulo, index) {
     const tutorialDiv = document.createElement("div");
-    tutorialDiv.id = `tutorial${i}`;
+    tutorialDiv.id = `tutorial${index}`;
     tutorialDiv.className = "listaBox";
 
-    //Cria uma div com id e classe
     const tituloDiv = document.createElement("div");
-    tituloDiv.id = `titulo${i}`;
+    tituloDiv.id = `titulo${index}`;
     tituloDiv.className = "listaTitulo";
 
-    //Cria um h4 que recebe o titulo do tutorial
     const H4 = document.createElement("h4");
-    H4.textContent = tutorial.titulo;
+    H4.textContent = titulo;
 
-    // Insere o h4 dentro da div titulo
     tituloDiv.appendChild(H4);
 
-    //Cria uma div com classe
     const iconDiv = document.createElement("div");
     iconDiv.className = "listaIcon";
 
-    // Cria uma tag i com classe
     const icon = document.createElement("i");
     icon.className = "bi bi-arrow-right-circle-fill";
 
-    // Insere a tag i na div icon
     iconDiv.appendChild(icon);
 
-    // Insere a div titulo e div icon na div tutorial
     tutorialDiv.appendChild(tituloDiv);
     tutorialDiv.appendChild(iconDiv);
 
-    // Insere a div tutorial na div lista
-    lista.appendChild(tutorialDiv);
+    return tutorialDiv;
 }
 
+
+// Seleciona a div .lista
+const lista = document.querySelector(".lista");
+console.log(lista)
+
+
+// Cria uma estrutura HTML para cada elemento da array tutoriais
+for (let i = 0; i < tutoriais.tutorial.length; i++) {
+    const tutorial = tutoriais.tutorial[i];
+    const tutorialDiv = criarElementoLista(tutorial.titulo, i);
+    lista.appendChild(tutorialDiv);
+    tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial));
+}
+
+
+const secPrincipal = document.querySelector(".secPrincipal");
+
+function mostrarConteudo(tutorial) {
+    lista.innerHTML = "";
+
+    secPrincipal.innerHTML = '';
+
+    const titulo = tutorial.titulo;
+    const video = tutorial.video;
+    const etapas = tutorial.etapas;
+
+    const H1 = document.createElement("h1");
+    H1.textContent = titulo;
+
+    const videoDiv = document.createElement("div");
+    videoDiv.className = "videoDiv";
+
+    // Video embedding via iframe
+    const frameVideo = document.createElement("iframe");
+    frameVideo.src = video.replace("watch?v=", "embed/");
+    frameVideo.id = "videoTutorial";
+    frameVideo.alt = titulo;
+    frameVideo.allowFullscreen = true;
+
+    videoDiv.appendChild(frameVideo);
+    secPrincipal.appendChild(H1);
+    secPrincipal.appendChild(videoDiv);
+
+    const etapasDiv = document.createElement("div");
+    etapasDiv.className = "etapas";
+
+    etapas.forEach(etapa => {
+        const etapaDiv = document.createElement("div");
+        etapaDiv.id = `etapa${etapa.id}`
+        etapaDiv.className = "etapa";
+
+        const img = document.createElement("img");
+        img.src = etapa.imagem;
+        img.alt = etapa.titulo ? etapa.titulo : "Imagem da Etapa";
+
+        const etapaTitulo = document.createElement("h3");
+        etapaTitulo.textContent = etapa.titulo || '';
+
+        etapaDiv.appendChild(img);
+        etapaDiv.appendChild(etapaTitulo);
+
+        etapasDiv.appendChild(etapaDiv);
+        secPrincipal.appendChild(etapasDiv);
+    });
+}
 
 
 

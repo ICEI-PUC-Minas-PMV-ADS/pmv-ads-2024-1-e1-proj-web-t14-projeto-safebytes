@@ -4,6 +4,15 @@ var json = '{"tutorial": [{"id": 0,  "titulo": "Proteção contra Malware", "vid
 // Conversão do JSON para objeto
 var tutoriais = JSON.parse(json);
 
+
+function voltarInicio() {
+    window.location.href  = 'pagInicial.html';
+}
+
+const botaoPagInicial = document.querySelector(".botaoDiv");
+botaoPagInicial.addEventListener("click", () => voltarInicio());
+
+
 // Função para criar os elementos da lista de tutoriais
 function criarElementoLista(titulo, index) {
     const tutorialDiv = document.createElement("div");
@@ -38,7 +47,6 @@ function criarElementoLista(titulo, index) {
 const lista = document.querySelector(".lista");
 console.log(lista)
 
-
 // Cria uma estrutura HTML para cada elemento da array tutoriais
 for (let i = 0; i < tutoriais.tutorial.length; i++) {
     const tutorial = tutoriais.tutorial[i];
@@ -49,11 +57,13 @@ for (let i = 0; i < tutoriais.tutorial.length; i++) {
 
 
 const secPrincipal = document.querySelector(".secPrincipal");
+const tituloPrincipal = document.querySelector(".tituloPrincipal")
 
 function mostrarConteudo(tutorial) {
-    lista.innerHTML = "";
+    lista.innerHTML = '';
 
     secPrincipal.innerHTML = '';
+    tituloPrincipal.innerHTML = '';
 
     const titulo = tutorial.titulo;
     const video = tutorial.video;
@@ -61,6 +71,8 @@ function mostrarConteudo(tutorial) {
 
     const H1 = document.createElement("h1");
     H1.textContent = titulo;
+
+    tituloPrincipal.appendChild(H1)
 
     const videoDiv = document.createElement("div");
     videoDiv.className = "videoDiv";
@@ -73,7 +85,7 @@ function mostrarConteudo(tutorial) {
     frameVideo.allowFullscreen = true;
 
     videoDiv.appendChild(frameVideo);
-    secPrincipal.appendChild(H1);
+    secPrincipal.appendChild(tituloPrincipal)
     secPrincipal.appendChild(videoDiv);
 
     const etapasDiv = document.createElement("div");
@@ -97,7 +109,26 @@ function mostrarConteudo(tutorial) {
         etapasDiv.appendChild(etapaDiv);
         secPrincipal.appendChild(etapasDiv);
     });
+
+    const botaoLista = document.createElement("div")
+    botaoLista.className = "botaoLista";
+
+    const botaoPagLista = document.createElement("button");
+    botaoPagLista.id = "botaoPagLista";
+    botaoPagLista.textContent = "Voltar";
+    botaoPagLista.addEventListener("click", () => voltarLista());
+
+    const botaoConcluir = document.createElement("button");
+    botaoConcluir.id = "botaoConcluir";
+    botaoConcluir.textContent = "Concluir";
+
+
+    botaoLista.appendChild(botaoPagLista);
+    botaoLista.appendChild(botaoConcluir);
+    secPrincipal.appendChild(botaoLista);
 }
+
+
 
 
 

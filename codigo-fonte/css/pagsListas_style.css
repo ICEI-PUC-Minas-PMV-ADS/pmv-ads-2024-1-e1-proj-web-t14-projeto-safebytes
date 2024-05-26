@@ -23,6 +23,7 @@ h1 {
     margin: 10px;
 }
 
+
 h4 {
     font-size: 20px;
     font-weight: lighter;
@@ -34,18 +35,35 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
+    background-size: 100% 130%;
 }
 
 .cabecalho {
-    display: inline;
+    display: flex;
+    align-items: baseline;
+    padding: 10px 0;
+}
+
+.botaoDiv {
+    margin-left: 2%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
 
 #perfil {
     width: 15%;
     height: auto;
-    margin: 10px 0 15px 80%;
+    margin-left: 80%;
     border-radius: 50%;
+    cursor: pointer;
 }
+
+/* SEC PRINCIPAL */
+.tituloPrincipal {
+    margin: 20px;
+}
+
 
 /* LISTA */
 .lista {
@@ -59,7 +77,10 @@ header {
     display: flex;
     justify-content: center;
     padding: 5px;
+    cursor: pointer;
 }
+
+
 
 .listaTitulo {
     color: #fff;
@@ -82,29 +103,142 @@ header {
     font-size: 45px;
 }
 
+/* CONTEUDO TUTORIAIS */
+.secPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+iframe {
+    width: 360px;
+    height: 215px;
+    border-radius: 30px;
+}
+
+.etapas {
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: #ffffff93;
+    border-radius: 20px;
+}
+
+.etapa {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.etapa img {
+    width: 150px;
+    height: auto;
+}
+
+.etapa:hover {
+    color: #fff;
+    background-color: #00112b;
+    border-radius: 30px;
+    transition: 1s;
+    scale: 1.10;
+}
+
+.botaoLista {
+    width: 85%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#botaoPagLista, #botaoConcluir {
+    width: 25%;
+    color: #fff;
+    background-color: #00112b;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
 
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
     body {
         background-size: 100% 45%;
-        background-position-y: 2%, 190%;
+        background-position-y: -20%, 190%;
+    }
+
+    header {
+        background-size: 100% 150%;
+    }
+
+    .botaoDiv {
+        margin-left: 5%;
+        font-size: 30px;
+        color: #fff;
     }
 
     #perfil {
         width: 10%;
-        margin: 35px 0 0 85%;
+        margin-left: 85%;
     }
 
+    /* SEC PRINCIPAL */
+    .tituloPrincipal {
+        margin: 30px;
+    }
+
+    /* LISTA */
     .lista {
-        margin: 30% 10% 10% 10%;
+        width: 80%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .listaTitulo {
-        padding: 20px;
+    .listaBox {
+        width: 70%;
+        padding: 5px;
+        vertical-align: baseline;
     }
 
-    .listaIcon {
-        margin-top: 3%;
+    /* CONTEUDO TUTORIAIS */
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
+
+    .etapas {
+        width: 60%;
+    }
+
+    .etapa {
+        width: 80%;
+        grid-template-columns: 150px 150px;
+    }
+
+    .etapa img {
+        width: 250px;
+        height: auto;
+    }
+
+    #botaoPagLista, #botaoConcluir {
+        width: 15%;
     }
 }
 
@@ -113,32 +247,63 @@ header {
 @media screen and (min-width: 900px) {
     body {
         background-size: 100% 35%;
-        background-position-y: 5%, 120%;
-    }
-
-    h1 {
-        margin-top: 40px;
+        background-position-y: 0%, 110%;
     }
 
     header {
-        background-size: 100% 90%;
+        background-size: 100% 150%;
+
     }
 
     #perfil {
-        width: 5%;
+        width: 7%;
         margin-left: 90%;
     }
 
+
+    /* LISTA */
     .lista {
-        margin: 10% 30% 10% 30%;
+        width: 70%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .listaBox {
+        width: 70%;
+        padding: 5px;
     }
 
     .listaTitulo {
         padding: 20px 5px;
-        text-align: center;
     }
 
     .listaIcon {
         margin-top: 2%;
+    }
+
+    /* CONTEUDO TUTORIAIS */
+    iframe {
+        width: 760px;
+        height: 415px;
+    }
+
+    .etapas {
+        width: 50%;
+    }
+
+    .etapa {
+        width: 80%;
+        grid-template-columns: 200px 200px;
+    }
+
+    .etapa img {
+        width: 250px;
+        height: auto;
+    }
+
+    #botaoPagLista, #botaoConcluir {
+        width: 10%;
     }
 }

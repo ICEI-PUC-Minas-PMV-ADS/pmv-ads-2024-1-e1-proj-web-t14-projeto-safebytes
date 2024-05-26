@@ -26,6 +26,11 @@ header {
     display: inline-block;
     width: 100%;
 }
+
+img {
+    width: 8%;
+    height: 8%;
+}
 header::before{
     content: '';
     position: absolute;
@@ -100,8 +105,8 @@ main {
     border-radius: 100px;
     color: white;
     width: 25%;
-    margin-top: 4%;
-    height: 40rem;
+    margin-top: 3%;
+    height: 39rem;
 }
 
 #campo1 i {
@@ -182,7 +187,7 @@ footer {
     border: 2px solid white;
     border-radius: 100px;
     width: 40%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 5%;
     color: white;
 }
@@ -201,6 +206,12 @@ footer {
     text-decoration: none;
     color: white;
     font-size: 13px;
+    margin-left: 5.5%;
+    margin-right: 6%;
+}
+
+#opcoes a:hover {
+    color: rgba(255, 255, 255, 0.671);
 }
 
 #cadastrar {
@@ -239,6 +250,7 @@ footer {
 }
 
 .icones {
+    margin-top: 12%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -279,7 +291,7 @@ footer {
     border: none;
     outline: none;
     width: 214px;
-    margin: 0px;
+    height: 1.3rem;
 }
 
 .inputsenha i {
@@ -289,4 +301,105 @@ footer {
     padding-bottom: 5px;
     cursor: pointer;
     color: black;
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    header img {
+        width: 15%;
+        height: 15%;
+    }
+
+    #conteudo {
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    #rodape {
+        width: 55%;
+        margin-top: 5%;
+    }
+
+    label {
+        margin-right: 15%;
+    }
+
+    .decoracao {
+        margin-top: 10%;
+    }
+
+    .icones {
+        margin-top: 13%;
+    }
+}
+
+/* RESPONSIVIDADE: CELULAR */
+@media screen and (max-width:600px) {
+    header img {
+        width: 2%;
+        height: 22%;
+    }
+
+    #conteudo {
+        width: 75%;
+        height: 500px;
+        margin-top: 7%;
+    }
+
+    #rodape {
+        width: 80%;
+        margin-top: 5%;
+        height: 70px;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    #titulo {
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 17%;
+    }
+
+    .inputsenha i {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .inputsenha input {
+
+        width: 83%;
+    }
+
+    #inputemail,
+    .inputsenha {
+        width: 81%;
+    }
+
+    label {
+        margin-right: 27%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 27%;
+        font-size: 15px;
+    }
+
+    .traco1,
+    .traco2 {
+        width: 35%;
+    }
+
+    .bolinha {
+        width: 12px;
+        height: 12px;
+    }
+
+    .icones {
+        font-size: 18px;
+    }
+
 }

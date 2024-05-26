@@ -161,7 +161,7 @@ circle:nth-child(2) {
     font-size: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) and (min-width: 360px) {
     #perfil {
         width: 56%;
         margin-top: 22px;

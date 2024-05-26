@@ -6,11 +6,76 @@ body {
     padding: 0;
     font-family: "Open Sans", "Roboto", "sans-serif";
     background-color: #00288F;
+    background: url('../assets/bg.2.png');
+    background-repeat: no-repeat;
+}
+html::-webkit-scrollbar{
+    width: 0.6rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+}
+html::-webkit-scrollbar-track{
+    background-color: black;
 }
 
 header {
-    background-color: #355DC5;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
     display: inline-block;
+    width: 100%;
+}
+header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(51, 167, 187, 0.256), transparent);
+    z-index: 1000;
+}
+
+#logo {
+    height: 7rem;
+    width: 7rem;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+}
+
+.header,
+#links {
+    display: flex;
+    gap: 88rem;
+}
+
+#links {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#links a {
+    text-decoration: none;
+    outline: none;
+    color: aliceblue;
+}
+
+header #links a::after{
+    content: " ";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.25s;
+}
+
+header #links a:hover::after {
     width: 100%;
 }
 
@@ -19,8 +84,18 @@ main {
     justify-content: center;
 }
 
+/*.overlay{
+    border-image: linear-gradient(
+        hsl(240 100% 20% / .6)
+        hsl(0 100% 20% / .6)
+    ) fill 1;
+}
+*/
+
 #conteudo {
-    background-color: #355ec5;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid white;
     text-align: center;
     border-radius: 100px;
     color: white;
@@ -29,8 +104,16 @@ main {
     height: 40rem;
 }
 
-i {
+#campo1 i {
     color: black;
+    font-size: 17.5px;
+    padding-right: 2px;
+}
+
+#campo2 i {
+    color: black;
+    font-size: 17.5px;
+    padding-right: 2px;
 }
 
 button {
@@ -72,14 +155,19 @@ form {
 }
 
 button {
-    width: 20%;
+    width: 23%;
     height: 2rem;
     background-color: black;
     color: white;
     border: 1px;
     margin-top: 8%;
     font-size: 110%;
+    transition: 0.1s ease;
+}
 
+button:hover {
+    background-color: rgb(26, 25, 25);
+    transform: scale(1.02);
 }
 
 footer {
@@ -89,15 +177,24 @@ footer {
 
 #rodape {
     text-align: center;
-    background-color: #6696dfb4;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid white;
     border-radius: 100px;
     width: 40%;
     margin-top: 3%;
     margin-bottom: 5%;
+    color: white;
+}
+
+#rodape a {
+    color: rgb(103, 119, 209);
+    ;
 }
 
 #caixaopcoes {
     margin-top: 3%;
+    margin-bottom: 5%;
 }
 
 #opcoes a {
@@ -108,6 +205,14 @@ footer {
 
 #cadastrar {
     margin-right: 15%;
+}
+
+#cadastrar:hover {
+    color: rgb(103, 119, 209);
+}
+
+#esqueceu:hover {
+    color: rgb(103, 119, 209);
 }
 
 .decoracao {
@@ -134,12 +239,23 @@ footer {
 }
 
 .icones {
-    margin-top: 12%;
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
-    font-size: 23px;
+}
+
+.icones i {
+    margin-top: 12%;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    font-size: 26px;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icones i:hover {
+    transform: scale(1.2) translate(-2px);
+    color: white;
 }
 
 .containersenha {
@@ -172,8 +288,5 @@ footer {
     margin-right: 9px;
     padding-bottom: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: rgb(24, 23, 23);
+    color: black;
 }

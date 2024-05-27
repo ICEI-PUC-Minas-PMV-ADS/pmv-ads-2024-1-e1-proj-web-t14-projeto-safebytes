@@ -40,8 +40,8 @@ header {
 
 .cabecalho {
     display: flex;
-    align-items: baseline;
-    padding: 10px 0;
+    align-items: center;
+    padding: 5px 0;
 }
 
 .botaoDiv {
@@ -52,7 +52,7 @@ header {
 }
 
 #perfil {
-    width: 15%;
+    width: 16%;
     height: auto;
     margin-left: 80%;
     border-radius: 50%;
@@ -158,6 +158,30 @@ iframe {
     scale: 1.10;
 }
 
+.etapaImg img {
+    width: 200%;
+    height: auto;
+    cursor: pointer;
+}
+
+.tituloSecundario {
+    margin: 20% 20% 10% 20%;
+    text-align: left;
+    color: #00288F;
+}
+
+.conteudoDiv {
+    background-image: url(../assets/bgImg08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    margin: 0 5%;
+    padding: 15% 5%;
+    border-radius: 30px;
+    text-align: justify;
+    color: #fff;
+}
+
 .botaoLista {
     width: 85%;
     margin: 20px;
@@ -179,7 +203,7 @@ iframe {
 @media screen and (max-width: 900px) and (min-width: 600px) {
     body {
         background-size: 100% 45%;
-        background-position-y: -20%, 190%;
+        background-position-y: -5%, 190%;
     }
 
     header {
@@ -194,7 +218,7 @@ iframe {
 
     #perfil {
         width: 10%;
-        margin-left: 85%;
+        margin-left: 88%;
     }
 
     /* SEC PRINCIPAL */
@@ -237,6 +261,19 @@ iframe {
         height: auto;
     }
 
+    .etapaImg img {
+        width: 150%;
+    }
+    
+    .tituloSecundario {
+        margin: 15% 10% 10% 10%;
+    }
+    
+    .conteudoDiv {
+        margin: 0 10%;
+        padding: 10% 5%;
+    }
+
     #botaoPagLista, #botaoConcluir {
         width: 15%;
     }
@@ -256,8 +293,8 @@ iframe {
     }
 
     #perfil {
-        width: 7%;
-        margin-left: 90%;
+        width: 5%;
+        margin-left: 94%;
     }
 
 
@@ -301,6 +338,19 @@ iframe {
     .etapa img {
         width: 250px;
         height: auto;
+    }
+
+    .etapaImg img {
+        width: 80%;
+    }
+    
+    .tituloSecundario {
+        margin: 10% 5% 5%;
+    }
+    
+    .conteudoDiv {
+        margin: 0% 20% 10% 20%;
+        padding: 5% 5%;
     }
 
     #botaoPagLista, #botaoConcluir {

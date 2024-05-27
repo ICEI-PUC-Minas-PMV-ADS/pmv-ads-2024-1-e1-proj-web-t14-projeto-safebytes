@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", "Roboto", "sans-serif";
+    background-color: #00288F;
+    background: url('../assets/bg.2.png');
+    background-repeat: no-repeat;
+}
+html::-webkit-scrollbar{
+    width: 0.6rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+}
+html::-webkit-scrollbar-track{
+    background-color: black;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: inline-block;
+    width: 100%;
+}
+
+img {
+    width: 8%;
+    height: 8%;
+}
+header::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, rgba(51, 167, 187, 0.256), transparent);
+    z-index: 1000;
+}
+
+#logo {
+    height: 7rem;
+    width: 7rem;
+}
+
+.header {
+    display: flex;
+    align-items: baseline;
+    align-items: center;
+}
+
+.header,
+#links {
+    display: flex;
+    gap: 88rem;
+}
+
+#links {
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+#links a {
+    text-decoration: none;
+    outline: none;
+    color: aliceblue;
+}
+
+header #links a::after{
+    content: " ";
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.25s;
+}
+
+header #links a:hover::after {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+/*.overlay{
+    border-image: linear-gradient(
+        hsl(240 100% 20% / .6)
+        hsl(0 100% 20% / .6)
+    ) fill 1;
+}
+*/
+
+#conteudo {
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    border: 2px solid white;
+    text-align: center;
+    border-radius: 100px;
+    color: white;
+    width: 25%;
+    margin-top: 3%;
+    height: 39rem;
+}
+
+#campo1 i {
+    color: black;
+    font-size: 17.5px;
+    padding-right: 2px;
+}
+
+#campo2 i {
+    color: black;
+    font-size: 17.5px;
+    padding-right: 2px;
+}
+
+button {
+    border-radius: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#titulo {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 85px;
+}
+
+#campos {
+    font-size: 15px;
+}
+
+#camposenha {
+    margin-top: 40px;
+}
+
+#campo1,
+#campo2 {
+    margin-right: 40%;
+}
+
+#inputemail {
+    border-radius: 100px;
+    outline: none;
+    border: 1px;
+    width: 250px;
+    height: 1.5rem;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+button {
+    width: 23%;
+    height: 2rem;
+    background-color: black;
+    color: white;
+    border: 1px;
+    margin-top: 8%;
+    font-size: 110%;
+    transition: 0.1s ease;
+}
+
+button:hover {
+    background-color: rgb(26, 25, 25);
+    transform: scale(1.02);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape {
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid white;
+    border-radius: 100px;
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+#rodape a {
+    color: rgb(103, 119, 209);
+    ;
+}
+
+#caixaopcoes {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#opcoes a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-left: 5.5%;
+    margin-right: 6%;
+}
+
+#opcoes a:hover {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+#cadastrar {
+    margin-right: 15%;
+}
+
+#cadastrar:hover {
+    color: rgb(103, 119, 209);
+}
+
+#esqueceu:hover {
+    color: rgb(103, 119, 209);
+}
+
+.decoracao {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.traco1,
+.traco2 {
+    width: 150px;
+    height: 0.1%;
+    border: 1px solid black;
+
+}
+
+.bolinha {
+    border-radius: 100%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+}
+
+.icones {
+    margin-top: 12%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icones i {
+    margin-top: 12%;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    font-size: 26px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icones i:hover {
+    transform: scale(1.2) translate(-2px);
+    color: white;
+}
+
+.containersenha {
+    display: flex;
+    justify-content: center;
+}
+
+.inputsenha {
+    border-radius: 100px;
+    outline: none;
+    border: 1px;
+    width: 250px;
+    height: 1.5rem;
+    margin-top: 2%;
+    padding-left: 2%;
+    background-color: white;
+}
+
+.inputsenha input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 214px;
+    height: 1.3rem;
+}
+
+.inputsenha i {
+    display: absolute;
+    font-size: 17px;
+    margin-right: 9px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+/* RESPONSIVIDADE TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    header img {
+        width: 15%;
+        height: 15%;
+    }
+
+    #conteudo {
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    #rodape {
+        width: 55%;
+        margin-top: 5%;
+    }
+
+    label {
+        margin-right: 15%;
+    }
+
+    .decoracao {
+        margin-top: 10%;
+    }
+
+    .icones {
+        margin-top: 13%;
+    }
+}
+
+/* RESPONSIVIDADE: CELULAR */
+@media screen and (max-width:600px) {
+    header img {
+        width: 2%;
+        height: 22%;
+    }
+
+    #conteudo {
+        width: 75%;
+        height: 500px;
+        margin-top: 7%;
+    }
+
+    #rodape {
+        width: 80%;
+        margin-top: 5%;
+        height: 70px;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    #titulo {
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 17%;
+    }
+
+    .inputsenha i {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    .inputsenha input {
+
+        width: 83%;
+    }
+
+    #inputemail,
+    .inputsenha {
+        width: 81%;
+    }
+
+    label {
+        margin-right: 27%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 27%;
+        font-size: 15px;
+    }
+
+    .traco1,
+    .traco2 {
+        width: 35%;
+    }
+
+    .bolinha {
+        width: 12px;
+        height: 12px;
+    }
+
+    .icones {
+        font-size: 18px;
+    }
+
+}

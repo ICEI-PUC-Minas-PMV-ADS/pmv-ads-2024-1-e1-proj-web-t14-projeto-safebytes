@@ -50,7 +50,7 @@ fetch('../Gersons/tutoriais.json')
             const tutorial = tutoriais.tutorial[i];
             const tutorialDiv = criarElementoLista(tutorial.titulo, i);
             lista.appendChild(tutorialDiv);
-            tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial));
+            tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial, 0));
         }
 
         // Acessa a lista de tutoriais
@@ -60,9 +60,9 @@ fetch('../Gersons/tutoriais.json')
 
         // Mostra o conteudo de cada elemento
         const secPrincipal = document.querySelector(".secPrincipal");
-        const tituloPrincipal = document.querySelector(".tituloPrincipal")
+        const tituloPrincipal = document.querySelector(".tituloPrincipal");
 
-        function mostrarConteudo(tutorial) {
+        function mostrarConteudo(tutorial, etapaIndex) {
             lista.innerHTML = '';
             botaoPagInicial.innerHTML = '';
 
@@ -76,7 +76,7 @@ fetch('../Gersons/tutoriais.json')
             const H1 = document.createElement("h1");
             H1.textContent = titulo;
 
-            tituloPrincipal.appendChild(H1)
+            tituloPrincipal.appendChild(H1);
 
             const videoDiv = document.createElement("div");
             videoDiv.className = "videoDiv";
@@ -88,16 +88,16 @@ fetch('../Gersons/tutoriais.json')
             frameVideo.allowFullscreen = true;
 
             videoDiv.appendChild(frameVideo);
-            secPrincipal.appendChild(tituloPrincipal)
+            secPrincipal.appendChild(tituloPrincipal);
             secPrincipal.appendChild(videoDiv);
 
             const etapasDiv = document.createElement("div");
             etapasDiv.className = "etapas";
 
             // Cria uma div para cada etapa do elemento
-            etapas.forEach(etapa => {
+            etapas.forEach((etapa, index) => {
                 const etapaDiv = document.createElement("div");
-                etapaDiv.id = `etapa${etapa.id}`
+                etapaDiv.id = `etapa${etapa.id}`;
                 etapaDiv.className = "etapa";
 
                 const img = document.createElement("img");
@@ -113,10 +113,10 @@ fetch('../Gersons/tutoriais.json')
                 etapasDiv.appendChild(etapaDiv);
                 secPrincipal.appendChild(etapasDiv);
 
-                etapaDiv.addEventListener("click", () => conteudoEtapa(etapa));
+                etapaDiv.addEventListener("click", () => mostrarEtapa(tutorial, index));
             });
 
-            const botaoLista = document.createElement("div")
+            const botaoLista = document.createElement("div");
             botaoLista.className = "botaoLista";
 
             const botaoPagLista = document.createElement("button");
@@ -127,27 +127,20 @@ fetch('../Gersons/tutoriais.json')
             const botaoConcluir = document.createElement("button");
             botaoConcluir.id = "botaoConcluir";
             botaoConcluir.textContent = "Concluir";
+            botaoConcluir.addEventListener("click", () => voltarInicio());
 
             botaoLista.appendChild(botaoPagLista);
             botaoLista.appendChild(botaoConcluir);
             secPrincipal.appendChild(botaoLista);
         }
 
-        const cabecalho = document.querySelector(".cabecalho")
 
-        function conteudoEtapa(etapa) {
+        // Mostra o conteudo das etapas
+        function mostrarEtapa(tutorial, etapaIndex) {
             secPrincipal.innerHTML = '';
-            cabecalho.style.flexDirection = 'row-reverse';
+          
 
-            const imgDiv = document.createElement("div");
-            imgDiv.className = 'etapaImg';
-
-            const etapaImg = document.createElement("img");
-            etapaImg.src = etapa.imagem;
-            etapaImg.alt = etapa.titulo ? etapa.titulo : "Imagem da Etapa";
-
-            imgDiv.appendChild(etapaImg);
-            cabecalho.appendChild(imgDiv);
+            const etapa = tutorial.etapas[etapaIndex];
 
             secPrincipal.appendChild(tituloPrincipal);
 
@@ -170,7 +163,25 @@ fetch('../Gersons/tutoriais.json')
             conteudoDiv.appendChild(descricao);
 
             secPrincipal.appendChild(tituloSecundario);
-            secPrincipal.appendChild(conteudoDiv)
+            secPrincipal.appendChild(conteudoDiv);
+
+            const botaoProximoDiv = document.createElement("div");
+            botaoProximoDiv.className = 'botaoProximoDiv';
+
+            // Permite a navegação entre as etapas do tutorial
+            const botaoProximo = document.createElement("button");
+            botaoProximo.id = "botaoProximo";
+            botaoProximo.textContent = etapaIndex < tutorial.etapas.length - 1 ? "Avançar" : "Concluir";
+            botaoProximo.addEventListener("click", () => {
+                if (etapaIndex < tutorial.etapas.length - 1) {
+                    mostrarEtapa(tutorial, etapaIndex + 1);
+                } else {
+                    mostrarConteudo(tutorial, 0);
+                }
+            });
+
+            botaoProximoDiv.appendChild(botaoProximo);
+            secPrincipal.appendChild(botaoProximoDiv);
         }
 
     })

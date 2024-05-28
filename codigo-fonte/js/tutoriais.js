@@ -1,134 +1,188 @@
-// JSON
-var json = '{"tutorial": [{"id": 0,  "titulo": "Proteção contra Malware", "video": "https://www.youtube.com/watch?v=O1Iu_4mMTs8", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 1,  "titulo": "Autenticação de Dois Fatores", "video": "https://www.youtube.com/watch?v=eTwMEgSFvVg", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 2,  "titulo": "Backup de Dados", "video": "https://www.youtube.com/watch?v=OK2u0WEKJCg", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}, {"id": 3,  "titulo": "Atualização de Software", "video": "https://www.youtube.com/watch?v=KIOW1eLItfY", "etapas": [{"id": 1, "imagem": "../assets/etapa1.png", "titulo": "Etapa 1", "descricao": null}, {"id": 2, "imagem": "../assets/etapa2.png", "titulo": "Etapa 2", "descricao": null}, {"id": 3, "imagem": "../assets/etapa3.png", "titulo": "Etapa 3", "descricao": null}]}]}';
+// Carrega o JSON a partir do arquivo
+fetch('../Gersons/tutoriais.json')
+    .then(response => response.json())
+    .then(data => {
+        var tutoriais = data;
 
-// Conversão do JSON para objeto
-var tutoriais = JSON.parse(json);
+        // Acessa a página Inicial
+        function voltarInicio() {
+            window.location.href = 'pagInicial.html';
+        }
+
+        const botaoPagInicial = document.querySelector(".botaoDiv");
+        botaoPagInicial.addEventListener("click", () => voltarInicio());
+
+        // Cria elemento da lista
+        function criarElementoLista(titulo, index) {
+            const tutorialDiv = document.createElement("div");
+            tutorialDiv.id = `tutorial${index}`;
+            tutorialDiv.className = "listaBox";
+
+            const tituloDiv = document.createElement("div");
+            tituloDiv.id = `titulo${index}`;
+            tituloDiv.className = "listaTitulo";
+
+            const H4 = document.createElement("h4");
+            H4.textContent = titulo;
+
+            tituloDiv.appendChild(H4);
+
+            const iconDiv = document.createElement("div");
+            iconDiv.className = "listaIcon";
+
+            const icon = document.createElement("i");
+            icon.className = "bi bi-arrow-right-circle-fill";
+
+            iconDiv.appendChild(icon);
+
+            tutorialDiv.appendChild(tituloDiv);
+            tutorialDiv.appendChild(iconDiv);
+
+            return tutorialDiv;
+        }
+
+        // Mostra a lista
+        const lista = document.querySelector(".lista");
+
+        lista.innerHTML = '';
+
+        for (let i = 0; i < tutoriais.tutorial.length; i++) {
+            const tutorial = tutoriais.tutorial[i];
+            const tutorialDiv = criarElementoLista(tutorial.titulo, i);
+            lista.appendChild(tutorialDiv);
+            tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial, 0));
+        }
+
+        // Acessa a lista de tutoriais
+        function mostrarLista() {
+            window.location.href = 'pagTutoriais.html';
+        }
+
+        // Mostra o conteudo de cada elemento
+        const secPrincipal = document.querySelector(".secPrincipal");
+        const tituloPrincipal = document.querySelector(".tituloPrincipal");
+
+        function mostrarConteudo(tutorial, etapaIndex) {
+            lista.innerHTML = '';
+            botaoPagInicial.innerHTML = '';
+
+            secPrincipal.innerHTML = '';
+            tituloPrincipal.innerHTML = '';
+
+            const titulo = tutorial.titulo;
+            const video = tutorial.video;
+            const etapas = tutorial.etapas;
+
+            const H1 = document.createElement("h1");
+            H1.textContent = titulo;
+
+            tituloPrincipal.appendChild(H1);
+
+            const videoDiv = document.createElement("div");
+            videoDiv.className = "videoDiv";
+
+            const frameVideo = document.createElement("iframe");
+            frameVideo.src = video.replace("watch?v=", "embed/");
+            frameVideo.id = "videoTutorial";
+            frameVideo.alt = titulo;
+            frameVideo.allowFullscreen = true;
+
+            videoDiv.appendChild(frameVideo);
+            secPrincipal.appendChild(tituloPrincipal);
+            secPrincipal.appendChild(videoDiv);
+
+            const etapasDiv = document.createElement("div");
+            etapasDiv.className = "etapas";
+
+            // Cria uma div para cada etapa do elemento
+            etapas.forEach((etapa, index) => {
+                const etapaDiv = document.createElement("div");
+                etapaDiv.id = `etapa${etapa.id}`;
+                etapaDiv.className = "etapa";
+
+                const img = document.createElement("img");
+                img.src = etapa.imagem;
+                img.alt = etapa.titulo ? etapa.titulo : "Imagem da Etapa";
+
+                const etapaTitulo = document.createElement("h3");
+                etapaTitulo.textContent = etapa.titulo || '';
+
+                etapaDiv.appendChild(img);
+                etapaDiv.appendChild(etapaTitulo);
+
+                etapasDiv.appendChild(etapaDiv);
+                secPrincipal.appendChild(etapasDiv);
+
+                etapaDiv.addEventListener("click", () => mostrarEtapa(tutorial, index));
+            });
+
+            const botaoLista = document.createElement("div");
+            botaoLista.className = "botaoLista";
+
+            const botaoPagLista = document.createElement("button");
+            botaoPagLista.id = "botaoPagLista";
+            botaoPagLista.textContent = "Voltar";
+            botaoPagLista.addEventListener("click", () => mostrarLista());
+
+            const botaoConcluir = document.createElement("button");
+            botaoConcluir.id = "botaoConcluir";
+            botaoConcluir.textContent = "Concluir";
+            botaoConcluir.addEventListener("click", () => voltarInicio());
+
+            botaoLista.appendChild(botaoPagLista);
+            botaoLista.appendChild(botaoConcluir);
+            secPrincipal.appendChild(botaoLista);
+        }
 
 
-function voltarInicio() {
-    window.location.href  = 'pagInicial.html';
-}
+        // Mostra o conteudo das etapas
+        function mostrarEtapa(tutorial, etapaIndex) {
+            secPrincipal.innerHTML = '';
+          
 
-const botaoPagInicial = document.querySelector(".botaoDiv");
-botaoPagInicial.addEventListener("click", () => voltarInicio());
+            const etapa = tutorial.etapas[etapaIndex];
 
+            secPrincipal.appendChild(tituloPrincipal);
 
-// Função para criar os elementos da lista de tutoriais
-function criarElementoLista(titulo, index) {
-    const tutorialDiv = document.createElement("div");
-    tutorialDiv.id = `tutorial${index}`;
-    tutorialDiv.className = "listaBox";
+            const tituloSecundario = document.createElement("div");
+            tituloSecundario.className = 'tituloSecundario';
 
-    const tituloDiv = document.createElement("div");
-    tituloDiv.id = `titulo${index}`;
-    tituloDiv.className = "listaTitulo";
+            const H2 = document.createElement("h2");
+            H2.textContent = etapa.titulo;
 
-    const H4 = document.createElement("h4");
-    H4.textContent = titulo;
+            tituloSecundario.appendChild(H2);
 
-    tituloDiv.appendChild(H4);
+            const conteudoDiv = document.createElement("div");
+            conteudoDiv.className = 'conteudoDiv';
 
-    const iconDiv = document.createElement("div");
-    iconDiv.className = "listaIcon";
+            const descricao = document.createElement("p");
+            descricao.id = `descricao${etapa.id}`;
+            descricao.className = 'descricao';
+            descricao.textContent = etapa.descricao;
 
-    const icon = document.createElement("i");
-    icon.className = "bi bi-arrow-right-circle-fill";
+            conteudoDiv.appendChild(descricao);
 
-    iconDiv.appendChild(icon);
+            secPrincipal.appendChild(tituloSecundario);
+            secPrincipal.appendChild(conteudoDiv);
 
-    tutorialDiv.appendChild(tituloDiv);
-    tutorialDiv.appendChild(iconDiv);
+            const botaoProximoDiv = document.createElement("div");
+            botaoProximoDiv.className = 'botaoProximoDiv';
 
-    return tutorialDiv;
-}
+            // Permite a navegação entre as etapas do tutorial
+            const botaoProximo = document.createElement("button");
+            botaoProximo.id = "botaoProximo";
+            botaoProximo.textContent = etapaIndex < tutorial.etapas.length - 1 ? "Avançar" : "Concluir";
+            botaoProximo.addEventListener("click", () => {
+                if (etapaIndex < tutorial.etapas.length - 1) {
+                    mostrarEtapa(tutorial, etapaIndex + 1);
+                } else {
+                    mostrarConteudo(tutorial, 0);
+                }
+            });
 
+            botaoProximoDiv.appendChild(botaoProximo);
+            secPrincipal.appendChild(botaoProximoDiv);
+        }
 
-// Seleciona a div .lista
-const lista = document.querySelector(".lista");
-console.log(lista)
-
-// Cria uma estrutura HTML para cada elemento da array tutoriais
-for (let i = 0; i < tutoriais.tutorial.length; i++) {
-    const tutorial = tutoriais.tutorial[i];
-    const tutorialDiv = criarElementoLista(tutorial.titulo, i);
-    lista.appendChild(tutorialDiv);
-    tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial));
-}
-
-
-const secPrincipal = document.querySelector(".secPrincipal");
-const tituloPrincipal = document.querySelector(".tituloPrincipal")
-
-function mostrarConteudo(tutorial) {
-    lista.innerHTML = '';
-
-    secPrincipal.innerHTML = '';
-    tituloPrincipal.innerHTML = '';
-
-    const titulo = tutorial.titulo;
-    const video = tutorial.video;
-    const etapas = tutorial.etapas;
-
-    const H1 = document.createElement("h1");
-    H1.textContent = titulo;
-
-    tituloPrincipal.appendChild(H1)
-
-    const videoDiv = document.createElement("div");
-    videoDiv.className = "videoDiv";
-
-    // Video embedding via iframe
-    const frameVideo = document.createElement("iframe");
-    frameVideo.src = video.replace("watch?v=", "embed/");
-    frameVideo.id = "videoTutorial";
-    frameVideo.alt = titulo;
-    frameVideo.allowFullscreen = true;
-
-    videoDiv.appendChild(frameVideo);
-    secPrincipal.appendChild(tituloPrincipal)
-    secPrincipal.appendChild(videoDiv);
-
-    const etapasDiv = document.createElement("div");
-    etapasDiv.className = "etapas";
-
-    etapas.forEach(etapa => {
-        const etapaDiv = document.createElement("div");
-        etapaDiv.id = `etapa${etapa.id}`
-        etapaDiv.className = "etapa";
-
-        const img = document.createElement("img");
-        img.src = etapa.imagem;
-        img.alt = etapa.titulo ? etapa.titulo : "Imagem da Etapa";
-
-        const etapaTitulo = document.createElement("h3");
-        etapaTitulo.textContent = etapa.titulo || '';
-
-        etapaDiv.appendChild(img);
-        etapaDiv.appendChild(etapaTitulo);
-
-        etapasDiv.appendChild(etapaDiv);
-        secPrincipal.appendChild(etapasDiv);
-    });
-
-    const botaoLista = document.createElement("div")
-    botaoLista.className = "botaoLista";
-
-    const botaoPagLista = document.createElement("button");
-    botaoPagLista.id = "botaoPagLista";
-    botaoPagLista.textContent = "Voltar";
-    botaoPagLista.addEventListener("click", () => voltarLista());
-
-    const botaoConcluir = document.createElement("button");
-    botaoConcluir.id = "botaoConcluir";
-    botaoConcluir.textContent = "Concluir";
-
-
-    botaoLista.appendChild(botaoPagLista);
-    botaoLista.appendChild(botaoConcluir);
-    secPrincipal.appendChild(botaoLista);
-}
-
-
-
-
-
+    })
+    .catch(error => console.error('Erro ao carregar o JSON:', error));

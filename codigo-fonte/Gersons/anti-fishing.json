@@ -1,0 +1,102 @@
+[
+    {
+        "pergunta": "Phishing é uma tentativa de obter informações sensíveis enganando o usuário?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Links em e-mails de remetentes desconhecidos são sempre seguros?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Autenticação de dois fatores (2FA) pode ajudar a proteger contra ataques de phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Phishing só acontece por meio de e-mails?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Verificar o endereço de e-mail do remetente pode ajudar a identificar tentativas de phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Phishing pode ocorrer através de mensagens de texto (SMS)?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "É seguro fornecer informações pessoais em sites desconhecidos recebidos por e-mail?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus não ajudam na proteção contra phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Sempre verificar a URL antes de inserir informações pessoais é uma prática de segurança recomendada?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Phishing é frequentemente usado para roubar credenciais de login?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Nunca é necessário relatar e-mails de phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Treinamento de segurança cibernética pode ajudar a prevenir ataques de phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Ataques de spear phishing são personalizados para o alvo específico?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Desconfiar de mensagens que pedem ações imediatas pode ajudar a evitar phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "É seguro baixar anexos de e-mails desconhecidos?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Phishing é um crime cibernético que pode causar danos financeiros?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Certificados SSL garantem que um site é legítimo e seguro contra phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "O uso de gerenciadores de senhas pode ajudar a prevenir phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Phishing não pode ser evitado por firewalls?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar verificadores de links pode ajudar a identificar sites de phishing?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Emails de phishing geralmente possuem erros gramaticais ou de ortografia?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Phishing pode ser evitado com políticas de segurança rigorosas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Navegadores modernos não possuem recursos para detectar sites de phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Softwares de segurança não precisam ser atualizados regularmente para prevenir phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Redes sociais podem ser usadas para ataques de phishing?",
+        "resposta_correta": "Verdadeiro"
+    }
+]

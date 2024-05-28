@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/csspagquiz.css">
+    <link rel="stylesheet" href="../../css/csspagquiz.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="../js/quiz.js"></script> <!-- Seu script JS -->
 </head>
 <body>
 
 <div class="cabecalho">
     <div class="titulo">
-        <i class="bi bi-chevron-left"></i>
+        <i id="botaoVoltar" class="bi bi-chevron-left"></i>
         <h3 class="pergunta_titulo">É ou não é Crime Virtual ?</h3>
     </div>
 </div>
@@ -50,7 +51,7 @@
     }
 
     function carregarPerguntas() {
-        fetch('../Gersons/perguntas.json')
+        fetch('../../Gersons/eounaoecrime.json')
         .then(response => response.json())
         .then(data => {
             embaralhar(data);
@@ -71,13 +72,11 @@
         }
     }
 
-
     function atualizarBarraProgresso() {
         const progresso = document.querySelector('.progresso');
         const percent = ((perguntaAtual + 1) / 7) * 100;
         progresso.style.width = `${percent}%`;
     }
-
 
     function verificarResposta(resposta) {
         const pergunta = perguntas[perguntaAtual];
@@ -88,19 +87,23 @@
         exibirPergunta();
     }
 
-
     function mostrarResultadoFinal() {
         document.querySelector('.corpo').innerHTML = `
-            <h2>Quiz Completo!</h2>
-            <p>Sua pontuação: ${pontuacao} de ${perguntas.length}</p>
+            <div class="resultado-final">
+                <h2>Quiz Completo!</h2>
+                <p>Sua pontuação: ${pontuacao} de ${perguntas.length}</p>
+            </div>
         `;
     }
-
 
     document.querySelector('.V').addEventListener('click', () => verificarResposta('Verdadeiro'));
     document.querySelector('.F').addEventListener('click', () => verificarResposta('Falso'));
 
     document.addEventListener('DOMContentLoaded', carregarPerguntas);
+
+    document.getElementById('botaoVoltar').addEventListener('click', () => {
+        window.location.href = '../pagListaQuizzes.html';
+    });
 </script>
 
 </body>

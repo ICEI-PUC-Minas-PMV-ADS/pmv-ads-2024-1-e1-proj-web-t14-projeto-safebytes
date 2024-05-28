@@ -40,8 +40,8 @@ header {
 
 .cabecalho {
     display: flex;
-    align-items: baseline;
-    padding: 10px 0;
+    align-items: center;
+    padding: 5px 0;
 }
 
 .botaoDiv {
@@ -52,7 +52,7 @@ header {
 }
 
 #perfil {
-    width: 15%;
+    width: 16%;
     height: auto;
     margin-left: 80%;
     border-radius: 50%;
@@ -158,6 +158,30 @@ iframe {
     scale: 1.10;
 }
 
+.etapaImg img {
+    width: 200%;
+    height: auto;
+    cursor: pointer;
+}
+
+.tituloSecundario {
+    margin: 30% 20% 10% 20%;
+    text-align: left;
+    color: #00288F;
+}
+
+.conteudoDiv {
+    background-image: url(../assets/bgImg08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    margin: 0 5% 5% 5%;
+    padding: 15% 5%;
+    border-radius: 30px;
+    text-align: justify;
+    color: #fff;
+}
+
 .botaoLista {
     width: 85%;
     margin: 20px;
@@ -166,8 +190,12 @@ iframe {
     justify-content: space-around;
 }
 
-#botaoPagLista, #botaoConcluir {
-    width: 25%;
+.botaoProximoDiv {
+    margin: 5%;
+}
+
+#botaoPagLista, #botaoConcluir, #botaoProximo {
+    width: 90px;
     color: #fff;
     background-color: #00112b;
     padding: 10px;
@@ -179,7 +207,7 @@ iframe {
 @media screen and (max-width: 900px) and (min-width: 600px) {
     body {
         background-size: 100% 45%;
-        background-position-y: -20%, 190%;
+        background-position-y: -20%, 160%;
     }
 
     header {
@@ -194,12 +222,7 @@ iframe {
 
     #perfil {
         width: 10%;
-        margin-left: 85%;
-    }
-
-    /* SEC PRINCIPAL */
-    .tituloPrincipal {
-        margin: 30px;
+        margin-left: 88%;
     }
 
     /* LISTA */
@@ -237,8 +260,21 @@ iframe {
         height: auto;
     }
 
-    #botaoPagLista, #botaoConcluir {
-        width: 15%;
+    .etapaImg img {
+        width: 150%;
+    }
+    
+    .tituloSecundario {
+        margin: 25% 10% 5% 10%;
+    }
+    
+    .conteudoDiv {
+        margin: 0 10%;
+        padding: 10% 5%;
+    }
+
+    #botaoPagLista, #botaoConcluir, #botaoProximo {
+        width: 115px;
     }
 }
 
@@ -247,17 +283,16 @@ iframe {
 @media screen and (min-width: 900px) {
     body {
         background-size: 100% 35%;
-        background-position-y: 0%, 110%;
+        background-position-y: -10%, 95%;
     }
 
     header {
         background-size: 100% 150%;
-
     }
 
     #perfil {
-        width: 7%;
-        margin-left: 90%;
+        width: 5%;
+        margin-left: 94%;
     }
 
 
@@ -303,7 +338,24 @@ iframe {
         height: auto;
     }
 
-    #botaoPagLista, #botaoConcluir {
-        width: 10%;
+    .etapaImg img {
+        width: 80%;
+    }
+    
+    .tituloSecundario {
+        margin: 15% 5% 5%;
+    }
+    
+    .conteudoDiv {
+        margin: 0% 20% 0% 20%;
+        padding: 5% 5%;
+    }
+
+    .botaoProximoDiv {
+        margin-bottom: 5%;
+    }
+
+    #botaoPagLista, #botaoConcluir, #botaoProximo {
+        width: 120px;
     }
 }

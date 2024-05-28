@@ -5,13 +5,12 @@ const quizzes = JSON.parse(json);
 const lista = document.querySelector(".lista");
 
 for (let i = 0; i < quizzes.quiz.length; i++) {
-
     const quiz = quizzes.quiz[i];
 
     const quizDiv = document.createElement("div");
     quizDiv.id = `quiz${i}`;
     quizDiv.className = "listaBox";
- 
+
     const tituloDiv = document.createElement("div");
     tituloDiv.id = `titulo${i}`;
     tituloDiv.className = "listaTitulo";
@@ -20,7 +19,7 @@ for (let i = 0; i < quizzes.quiz.length; i++) {
     H4.textContent = quiz.titulo;
 
     tituloDiv.appendChild(H4);
-    
+
     const iconDiv = document.createElement("div");
     iconDiv.className = "listaIcon";
 
@@ -31,6 +30,10 @@ for (let i = 0; i < quizzes.quiz.length; i++) {
 
     quizDiv.appendChild(tituloDiv);
     quizDiv.appendChild(iconDiv);
+
+    quizDiv.addEventListener("click", () => {
+        window.location.href = `quizzes/quiz${quiz.id}.html`;
+    });
 
     lista.appendChild(quizDiv);
 }

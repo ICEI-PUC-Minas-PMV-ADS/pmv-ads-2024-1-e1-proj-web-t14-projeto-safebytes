@@ -1,0 +1,102 @@
+[
+    {
+        "pergunta": "É seguro acessar contas bancárias em redes Wi-Fi públicas?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar uma VPN pode aumentar a segurança ao usar redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Redes Wi-Fi públicas são frequentemente alvo de hackers?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "É seguro realizar compras online em redes Wi-Fi públicas?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Desativar o compartilhamento de arquivos aumenta a segurança em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Conectar-se a uma rede Wi-Fi pública desconhecida não oferece riscos?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "O uso de HTTPS pode ajudar a proteger dados transmitidos em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Evitar acessar informações sensíveis em redes Wi-Fi públicas é uma boa prática de segurança?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Desativar a conexão automática a redes Wi-Fi públicas pode aumentar a segurança?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Compartilhar senhas de redes Wi-Fi públicas com estranhos é seguro?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "É seguro usar aplicativos bancários em redes Wi-Fi públicas?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Conectar-se a redes Wi-Fi públicas com um dispositivo atualizado aumenta a segurança?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Desativar o Bluetooth em redes Wi-Fi públicas pode ajudar a proteger seu dispositivo?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Conectar-se a uma rede Wi-Fi pública com um nome familiar (como 'Free WiFi') é sempre seguro?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar a autenticação de dois fatores (2FA) aumenta a segurança ao acessar contas em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Redes Wi-Fi públicas criptografadas são tão seguras quanto redes privadas?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar um firewall pode ajudar a proteger seu dispositivo em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "É seguro acessar redes sociais em redes Wi-Fi públicas sem precauções adicionais?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Evitar o uso de aplicativos sensíveis em redes Wi-Fi públicas é uma medida de segurança importante?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Dispositivos móveis são mais seguros que laptops ao usar redes Wi-Fi públicas?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar autenticação biométrica pode aumentar a segurança em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Desativar a função de descoberta de redes em dispositivos móveis aumenta a segurança em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "É seguro fazer login em contas pessoais em redes Wi-Fi públicas sem medidas de segurança adicionais?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Usar sites com HTTPS é uma prática recomendada ao navegar em redes Wi-Fi públicas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Conectar-se a redes Wi-Fi públicas conhecidas por serem seguras não oferece riscos?",
+        "resposta_correta": "Falso"
+    }
+]

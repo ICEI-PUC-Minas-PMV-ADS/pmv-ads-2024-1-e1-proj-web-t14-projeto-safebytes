@@ -1,0 +1,102 @@
+[
+    {
+        "pergunta": "Antivírus podem detectar todos os tipos de malware?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Manter o antivírus atualizado é importante para a segurança do sistema?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus gratuitos nunca são eficazes?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem proteger contra ameaças online e offline?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Executar varreduras regulares com o antivírus pode ajudar a manter o sistema seguro?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Um antivírus não pode remover malware já presente no sistema?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus são inúteis contra phishing?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem causar lentidão no sistema?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Usar mais de um antivírus ao mesmo tempo aumenta a segurança do sistema?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem proteger contra ransomware?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus só são necessários para sistemas Windows?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus com proteção em tempo real oferecem defesa contínua contra ameaças?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Desativar o antivírus enquanto navega na internet é uma prática segura?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem detectar e bloquear ataques de keyloggers?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus são eficazes contra ataques de engenharia social?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Um bom antivírus deve ser capaz de realizar atualizações automáticas?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus podem oferecer proteção adicional como firewalls e controle de privacidade?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus são desnecessários se o usuário tiver boas práticas de navegação?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem detectar ameaças em dispositivos removíveis como pen drives?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus gratuitos não oferecem proteção em tempo real?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem proteger contra spywares?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus com tecnologias de machine learning podem identificar novas ameaças?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "A desinstalação do antivírus não afeta a segurança do sistema?",
+        "resposta_correta": "Falso"
+    },
+    {
+        "pergunta": "Antivírus podem bloquear sites maliciosos durante a navegação?",
+        "resposta_correta": "Verdadeiro"
+    },
+    {
+        "pergunta": "Antivírus são a única medida de segurança necessária para um sistema?",
+        "resposta_correta": "Falso"
+    }
+]

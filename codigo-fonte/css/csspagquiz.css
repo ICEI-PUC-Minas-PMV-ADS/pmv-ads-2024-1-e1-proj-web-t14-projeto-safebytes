@@ -126,6 +126,15 @@ i {
   color: #233156;
 }
 
+.resultado-final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
 @media (min-width: 600px) {
   body{
     background-position-y: -5%;
@@ -153,5 +162,6 @@ i {
     width: 50%;
   }
 
-  .p
+
+
 }

@@ -45,28 +45,31 @@ button {
 }
 
 #titulo {
-    padding-top: 30px;
+    padding-top: 30x;
     font-size: 20px;
 }
 
 form {
-    margin-top: 85px;
+    margin-top: 12%;
 }
 
 #campos {
     font-size: 15px;
 }
 
-#camposenha {
-    margin-top: 40px;
+#camposenha,
+#campoemail {
+    margin-top: 5%;
 }
 
 #campo1,
-#campo2 {
+#campo2,
+#campo3 {
     margin-right: 40%;
 }
 
-#inputemail {
+#inputemail,
+#inputnome {
     border-radius: 100px;
     outline: none;
     border: 1px;
@@ -270,7 +273,6 @@ button:hover {
 
     .inputsenha i {
         font-size: 15px;
-        margin-left: 5px;
     }
 
     .inputsenha input {
@@ -278,6 +280,7 @@ button:hover {
         width: 83%;
     }
 
+    #inputnome,
     #inputemail,
     .inputsenha {
         width: 81%;

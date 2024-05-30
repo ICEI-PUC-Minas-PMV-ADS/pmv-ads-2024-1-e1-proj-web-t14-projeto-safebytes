@@ -191,10 +191,14 @@ iframe {
 }
 
 .botaoProximoDiv {
+    width: 85%;
     margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-#botaoPagLista, #botaoConcluir, #botaoProximo {
+#botaoPagLista, #botaoConcluir, #botaoProximo, #botaoSair {
     width: 90px;
     color: #fff;
     background-color: #00112b;
@@ -273,7 +277,7 @@ iframe {
         padding: 10% 5%;
     }
 
-    #botaoPagLista, #botaoConcluir, #botaoProximo {
+    #botaoPagLista, #botaoConcluir, #botaoProximo, #botaoSair {
         width: 115px;
     }
 }
@@ -355,7 +359,7 @@ iframe {
         margin-bottom: 5%;
     }
 
-    #botaoPagLista, #botaoConcluir, #botaoProximo {
+    #botaoPagLista, #botaoConcluir, #botaoProximo, #botaoSair {
         width: 120px;
     }
 }

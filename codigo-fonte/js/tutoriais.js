@@ -9,6 +9,20 @@ fetch('../Gersons/tutoriais.json')
             window.location.href = 'pagInicial.html';
         }
 
+        // Acessa a lista de tutoriais
+        function mostrarLista() {
+            window.location.href = 'pagTutoriais.html';
+        }
+
+        // Salvar progresso
+        function salvarProgresso(tutorialIndex, etapaIndex) {
+            const estado = {
+                tutorialIndex: tutorialIndex,
+                etapaIndex: etapaIndex
+            };
+            localStorage.setItem('progressoTutorial', JSON.stringify(estado));
+        }
+
         const botaoPagInicial = document.querySelector(".botaoDiv");
         botaoPagInicial.addEventListener("click", () => voltarInicio());
 
@@ -51,11 +65,6 @@ fetch('../Gersons/tutoriais.json')
             const tutorialDiv = criarElementoLista(tutorial.titulo, i);
             lista.appendChild(tutorialDiv);
             tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial, 0));
-        }
-
-        // Acessa a lista de tutoriais
-        function mostrarLista() {
-            window.location.href = 'pagTutoriais.html';
         }
 
         // Mostra o conteudo de cada elemento
@@ -132,13 +141,15 @@ fetch('../Gersons/tutoriais.json')
             botaoLista.appendChild(botaoPagLista);
             botaoLista.appendChild(botaoConcluir);
             secPrincipal.appendChild(botaoLista);
+
+            // Salva o tutorial atual
+            salvarProgresso(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
         }
 
 
         // Mostra o conteudo das etapas
         function mostrarEtapa(tutorial, etapaIndex) {
             secPrincipal.innerHTML = '';
-          
 
             const etapa = tutorial.etapas[etapaIndex];
 
@@ -168,6 +179,15 @@ fetch('../Gersons/tutoriais.json')
             const botaoProximoDiv = document.createElement("div");
             botaoProximoDiv.className = 'botaoProximoDiv';
 
+            const botaoSair = document.createElement("button");
+            botaoSair.id = "botaoSair";
+            botaoSair.textContent = 'Sair';
+            botaoSair.addEventListener("click", () => mostrarConteudo(tutorial, 0));
+
+            if (etapaIndex < tutorial.etapas.length - 1) {
+                botaoProximoDiv.appendChild(botaoSair);
+            }
+
             // Permite a navegação entre as etapas do tutorial
             const botaoProximo = document.createElement("button");
             botaoProximo.id = "botaoProximo";
@@ -182,7 +202,17 @@ fetch('../Gersons/tutoriais.json')
 
             botaoProximoDiv.appendChild(botaoProximo);
             secPrincipal.appendChild(botaoProximoDiv);
+
+            salvarProgresso(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
         }
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const tutorialIndex = urlParams.get('tutorial');
+        const etapaIndex = urlParams.get('etapaIndex');
+
+        if (tutorialIndex !== null && etapaIndex !== null) {
+            mostrarConteudo(tutoriais.tutorial[tutorialIndex], parseInt(etapaIndex));
+        }
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
+

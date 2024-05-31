@@ -190,6 +190,8 @@ footer {
 
 button:hover {
     background-color: rgb(24, 23, 23);
+    transition: 00.5s all;
+    transform: scale(1.1);
 }
 
 /* ANIMAÇÃO ICONES*/
@@ -321,5 +323,9 @@ button:hover {
 
     .decoracao {
         margin-top: 30px;
+    }
+
+    button {
+        width: 40%;
     }
 }

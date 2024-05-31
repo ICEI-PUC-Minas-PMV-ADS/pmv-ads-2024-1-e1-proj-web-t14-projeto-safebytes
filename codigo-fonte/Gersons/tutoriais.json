@@ -2,6 +2,7 @@
     "tutorial": [
       {
         "id": 0,
+        "imagem": "../assets/malwareImg.jpg",
         "titulo": "Proteção contra Malware",
         "video": "https://www.youtube.com/watch?v=O1Iu_4mMTs8",
         "etapas": [
@@ -27,6 +28,7 @@
       },
       {
         "id": 1,
+        "imagem": "../assets/2fatoresImg.jpg",
         "titulo": "Autenticação de Dois Fatores",
         "video": "https://www.youtube.com/watch?v=eTwMEgSFvVg",
         "etapas": [
@@ -52,6 +54,7 @@
       },
       {
         "id": 2,
+        "imagem": "../assets/backupImg.jpg",
         "titulo": "Backup de Dados",
         "video": "https://www.youtube.com/watch?v=OK2u0WEKJCg",
         "etapas": [
@@ -77,6 +80,7 @@
       },
       {
         "id": 3,
+        "imagem": "../assets/atualizacaoSoftwareImg.jpg",
         "titulo": "Atualização de Software",
         "video": "https://www.youtube.com/watch?v=KIOW1eLItfY",
         "etapas": [

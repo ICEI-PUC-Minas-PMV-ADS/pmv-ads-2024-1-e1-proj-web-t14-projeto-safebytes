@@ -161,7 +161,7 @@ footer {
     justify-content: center;
 }
 
-.inputsenha {
+#divsenha {
     border-radius: 100px;
     outline: none;
     border: 1px;
@@ -172,7 +172,7 @@ footer {
     background-color: white;
 }
 
-.inputsenha input {
+#divsenha input {
     background-color: transparent;
     border: none;
     outline: none;
@@ -180,7 +180,7 @@ footer {
     height: 1.3rem;
 }
 
-.inputsenha i {
+#divsenha i {
     display: absolute;
     font-size: 17px;
     margin-right: 9px;
@@ -234,6 +234,10 @@ button:hover {
         margin-right: 15%;
     }
 
+    button {
+        width: 30%;
+    }
+
     .decoracao {
         margin-top: 10%;
     }
@@ -273,18 +277,18 @@ button:hover {
         margin-top: 17%;
     }
 
-    .inputsenha i {
+    #divsenha i {
         font-size: 15px;
     }
 
-    .inputsenha input {
+    #divsenha input {
 
         width: 83%;
     }
 
     #inputnome,
     #inputemail,
-    .inputsenha {
+    #divsenha {
         width: 81%;
     }
 
@@ -294,7 +298,7 @@ button:hover {
     }
 
     button {
-        width: 27%;
+        width: 30%;
         font-size: 15px;
     }
 

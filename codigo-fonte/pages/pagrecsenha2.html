@@ -10,7 +10,7 @@
     <main class="password-recovery-container">
         <h3 class="header-title">Recupere sua senha</h3>
         <section class="password-recovery-content">
-          <form>
+          <form action="/send-code" method="post">
             <label for="emailInput" class="email-label">
               Coloque seu email para recuperar sua senha
             </label>
@@ -19,6 +19,7 @@
               <input
                 type="email"
                 id="emailInput"
+                name="email"
                 class="email-input"
                 placeholder="Digite seu email"
                 required

@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, redirect, url_for
+from flask import Flask, request, render_template, flash
 from flask_mail import Mail, Message
 import random
 import sqlite3
@@ -33,6 +33,7 @@ if not all([mail_server, mail_port, mail_username, mail_password, mail_use_tls, 
     raise ValueError("Uma ou mais variáveis de ambiente não estão definidas corretamente.")
 
 app = Flask(__name__)
+app.secret_key = 'supersecretkey'  # Para usar mensagens flash
 
 # Configurações do servidor de e-mail
 app.config['MAIL_SERVER'] = mail_server
@@ -89,10 +90,11 @@ def verify_code():
                        (email, code))
     reset_request = cur.fetchone()
 
-    if reset_request and (datetime.datetime.now() - reset_request['timestamp']).seconds < 3600:
+    if reset_request and (datetime.datetime.now() - datetime.datetime.fromisoformat(reset_request['timestamp'])).seconds < 3600:
         return 'Código verificado com sucesso, agora você pode redefinir sua senha.'
     else:
-        return 'Invalid or expired code', 400
+        flash('Código inválido ou expirado')
+        return render_template('code_verification.html', email=email), 400
 
 if __name__ == '__main__':
     app.run(debug=True)

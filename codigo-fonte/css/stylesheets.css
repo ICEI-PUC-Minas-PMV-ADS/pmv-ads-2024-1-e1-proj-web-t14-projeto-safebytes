@@ -355,7 +355,7 @@ p {
 
 #bg02Div {
     position: relative;
-    bottom: -1px;
+    bottom: -2px;
 }
 
 #bg03Div {
@@ -519,6 +519,23 @@ footer {
         font-size: 18px;
     }
 
+    #quemSomos {
+       top: 50px;
+    }
+    
+    .banner {
+        width: 80%;
+    }
+
+    .sliderWrapper .sliderList .sliderItem img {
+        width: 300px;
+        height: 275px;
+    }
+    
+    .perguntasImg img {
+        width: 60%;
+        height: 60%;
+    }
 
     .artConteiner {
         grid-template-columns: 50% 40%;
@@ -597,6 +614,28 @@ footer {
     p {
         font-size: 20px;
     }
+
+    #quemSomos {
+        top: 50px;
+     }
+     
+     .banner {
+         width: 60%;
+     }
+
+     .sliderWrapper .sliderList {
+        margin: 10px;
+     }
+ 
+     .sliderWrapper .sliderList .sliderItem img {
+         width: 350px;
+         height: 325px;
+     }
+     
+     .perguntasImg img {
+         width: 50%;
+         height: 50%;
+     }
 
     #bg02Div {
         bottom: -2px;

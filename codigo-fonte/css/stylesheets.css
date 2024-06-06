@@ -435,9 +435,9 @@ p {
 .dicasDecoracao {
     display: grid;
     grid-template-columns: 10% 10% 10% 70%;
+    gap: 10px;
     align-items: center;
     padding: 5px;
-
 }
 
 .dicasCircle {
@@ -507,4 +507,168 @@ footer {
 .footerIcon a {
     color: #00288F;
     text-decoration: none;
+}
+
+/* RESPONSIVIDADE: TABLET */
+@media screen and (max-width: 900px) and (min-width: 600px) {
+    h6 {
+        font-size: 20px !important;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+
+    .artConteiner {
+        grid-template-columns: 50% 40%;
+    }
+
+    .artImg {
+        width: 90%;
+        height: auto;
+    }
+
+    .artImg img {
+        width: 80%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .artTxt {
+        text-align: justify;
+        width: 95%;
+        padding-right: 15px;
+    }
+
+    .topicoDiv {
+        padding: 0 10px 10px 10px;
+        margin: 0 20px 10px 20px;
+    }
+
+    .topicoWrapper {
+        margin: 20px 0;
+    }
+
+    .topicoConteiner {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .topicoList {
+        margin-bottom: 20px;
+    }
+
+    .topicoItem {
+        grid-template-columns: 10% 90%;
+    }
+
+    .topicoImg {
+        width: 100%;
+        margin: 0;
+    }
+
+    .topicoImg img {
+        width: 80%;
+    }
+
+    .dicasDiv {
+        margin: 50px;
+    }
+
+    .dicasDecoracao {
+        grid-template-columns: 5% 5% 5% 90%;
+    }
+
+    .dicasItem {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+
+/* RESPONSIVIDADE: PC */
+@media screen and (min-width: 900px) {
+    h6 {
+        font-size: 22px !important;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #bg02Div {
+        bottom: -2px;
+    }
+
+    .artConteiner {
+        grid-template-columns: 35% 50%;
+    }
+
+    .artImg {
+        width: 70%;
+        height: auto;
+    }
+
+    .artImg img {
+        width: 100%;
+    }
+
+    .artTxt {
+        width: 80%;
+    }
+
+    .topicoWrapper {
+        margin: 20px 0;
+    }
+
+    .topicoConteiner {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        align-items: center;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    .topicoList {
+        margin-bottom: 20px;
+    }
+
+    .topicoItem {
+        grid-template-columns: 10% 90%;
+    }
+
+    .topicoImg {
+        width: 100%;
+        margin: 0;
+    }
+
+    .topicoImg img {
+        width: 80%;
+    }
+
+    .artigos02Div {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .dicasDiv {
+        margin: 90px 50px;
+        width: 70%;
+    }
+
+    .dicasConteiner {
+        padding: 40px 20px;
+    }
+
+    .dicasDecoracao {
+        grid-template-columns: 4.5% 4.5% 4.5% 90%;
+    }
+
+    .dicasItem {
+        grid-template-columns: 30% 70%;
+        gap: 20px;
+    }
 }

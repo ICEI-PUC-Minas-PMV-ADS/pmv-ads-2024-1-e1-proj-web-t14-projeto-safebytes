@@ -4,6 +4,48 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
+/*
+input do nickname */
+#campoEditar input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    display: inline-block;
+    position: relative;
+    text-align: center; 
+    margin: auto; 
+    transform: translate(75%);
+    text-align: start;
+}
+
+label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: #4240ec;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translate(1250%, -5%);
+    font-size: 0px;
+}
+
+/*
+icone para clicar e o usuário poder reescrever o prórpio nickname
+*/
+
+label i {
+    position: inherit;
+    left: 110%;
+    bottom: 40%;
+    font-size: 40px;
+    color: #00288F;
+}
 
 .user-img {
     width: 200px;
@@ -34,6 +76,16 @@ body {
     margin-top: 30px;
     background-color: #6697DF;
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
+}
+
+.user-img i {
+    position: relative;
+    font-size: 1.6rem;
+    color: #00288F;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-125%, 43%);
 }
 
 .branco-box {
@@ -68,75 +120,11 @@ body {
     margin-bottom: -50px;
 }
 
-/*
-.trocar-foto .circulo-foto {
-    display: inline-flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: #4240ec;
-    margin: 3rem 1.5rem 3rem 0;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translate(1100%, -80%);
-}
-*/
-/* label{
-    display: block;
-    width:200px;
-    background: #6697DF;
-    color: #fff;
-    padding: 12px;
-    margin: 10px auto;
-    border-radius: 5px;
-    cursor: pointer;
-}
-*/
-label {
-    display: inline-flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: #4240ec;
-    margin: 3rem 1.5rem 3rem 0;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translate(1100%, -80%);
-    font-size: 0px;
-}
 
 #input-file {
     display: none;
 }
 
-.user-img i {
-    font-size: 1.6rem;
-    color: #00288F;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(3%, -7%);
-}
-
-.nickname {
-    position: absolute;
-    font-size: 60px;
-    line-height: 0px;
-    top: 85%;
-    right: 40.5%;
-}
-
-.nickname i {
-    position: absolute;
-    left: 110%;
-    bottom: 40%;
-    font-size: 40px;
-    color: #00288F;
-}
 
 #formulario i {
     position: relative;
@@ -217,20 +205,21 @@ label {
         margin-top: 20px;
         margin-left: 64px;
     }
+
     .user-img {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         margin: 15% 45%;
     }
-    
+
     #photo {
         width: 170px;
         height: 170px;
         border-radius: 50%;
         transform: translate(-36%);
     }
-    
+
     #uploadbtn {
         position: absolute;
         height: 30px;

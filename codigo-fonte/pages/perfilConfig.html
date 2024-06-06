@@ -21,9 +21,9 @@
             <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
         </div>
     </div>
-    <div class="nickname">
-        <h6>Nickname</h6>
-        <a href="#"><i class="bi bi-pencil-fill"></i></a>
+    <div id="campoEditar" class="hidden">
+        <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
+        <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
     </div>
     <section id="formulario">
         <form action="">
@@ -41,16 +41,6 @@
     </div>
     </form>
     <script defer src="../js/fotoperfil.js">
-        // let circuloFoto = document.querySelector('.bi bi-camera-fill')
-        // circuloFoto.addEventListener("click", () => {
-        //    alert(`Arquivo selecionado: ${awsadghaiud}`);
-        // })
-
-        //   let profilePic = document.getElementById("perfil")
-        //  let input = document.getElementById("input-file")
-        //  inputFile.onchange = function () {
-        //      profilePic.src = URL.createObjectURL(inputFile.files[0]);
-        //  } 
     </script>
 
 </body>

@@ -5,14 +5,15 @@
 }
 
 body {
-    background: rgb(163, 200, 255);
+    background: #a3c8ff;
     background: linear-gradient(180deg, rgba(163, 200, 255, 1) 31%, rgba(0, 41, 143, 0.726) 100%);
+    background-repeat: no-repeat;
 }
 
 h1 {
     font-size: 28px;
     text-align: center;
-    font-weight: bold;
+    font-weight: lighter;
     color: #fff !important;
 }
 
@@ -306,6 +307,173 @@ p {
 
 .perguntasText {
     color: #00288F;
+}
+
+
+/* PAGINA ARTIGOS */
+/* MAIN ARTIGOS */
+#mainArtigos {
+    background: rgb(163, 200, 255);
+    background: linear-gradient(0deg, rgba(163, 200, 255, 1) -50%, rgba(0, 41, 143, 0.445) 100%);
+    background-repeat: no-repeat;
+    padding-top: 30px;
+}
+
+.artTitle {
+    margin: 10px 0 40px 0;
+}
+
+.artWrapper {
+    margin: 10px;
+}
+
+.artConteiner {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.artImg {
+    height: 80%;
+}
+
+.artImg img {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+.artTxt {
+    text-align: justify;
+    padding-right: 15px;
+}
+
+
+/* SEÇÃO ARTIGOS01 */
+
+#bg02Div {
+    position: relative;
+    bottom: -1px;
+}
+
+#bg03Div {
+    position: relative;
+    top: -15px;
+}
+
+#secArtigos01 {
+    height: auto;
+    margin: 0;
+    background-color: #050a78;
+    color: #fff;
+    z-index: 1;
+}
+
+.artDiv {
+    margin-bottom: 30px;
+}
+
+.topicoTitle {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.topicoDiv {
+    padding: 0 10px 10px 10px;
+    margin: 0 10px 10px 10px;
+}
+
+.topicoWrapper {
+    margin: 20px 0;
+}
+
+.topicoList {
+    margin-bottom: 20px;
+}
+
+.topicoItem {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.topicoImg {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicoImg img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* SEÇÃO ARTIGOS02 */
+#secArtigos02 {
+    margin-bottom: 30px;
+}
+
+.dicasTitle {
+    margin: 50px 0 40px 0;
+    text-align: center;
+    color: #050a78;
+}
+
+.dicasDiv {
+    margin: 10px;
+    border: solid #00112b 5px;
+    background-color: #00112b;
+    color: #fff;
+}
+
+.dicasDecoracao {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 70%;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.dicasCircle {
+    width: 50%;
+    height: 100%;
+    border-radius: 100%;
+    background: #355DC5;
+}
+
+.dicasBar {
+    width: 90%;
+    height: 15px;
+    border-radius: 30px;
+    background: #355DC5;
+}
+
+.dicasWrapper {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #355DC5;
+}
+
+.dicasItem {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10px;
+    align-items: center;
+}
+
+.dicasItem:nth-child(1) {
+    margin-bottom: 40px;
+}
+
+.dicasIframe iframe {
+    width: 100%;
+    height: auto;
 }
 
 

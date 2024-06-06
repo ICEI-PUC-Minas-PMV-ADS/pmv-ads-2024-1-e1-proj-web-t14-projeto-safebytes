@@ -3,13 +3,95 @@ body {
     background-color: #A3C8FF !important;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
 }
 
+/* input do nickname */
+#campoEditar input[type="text"] {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 11rem;
+    margin-left: 35%;
+    text-align: start;
+}
+
+label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: #4240ec;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 100%;
+
+
+}
+
+label i {
+    position: inherit;
+    left: 110%;
+    bottom: 40%;
+    font-size: 40px;
+    color: #00288F;
+    transform: translate(1150%, -5%);
+    cursor: pointer;
+}
+
+/*
+fim icone para clicar e o usuário poder reescrever o prórpio nickname
+*/
+
+/* inicio fundos pág */
+.container {
+    position: relative;
+    z-index: 2;
+    position: relative;
+    bottom: 27rem;
+    /* Certifique-se de que esteja acima do bgazul */
+}
+
+.bg04div{
+    width: 50%;
+
+}
+
+#bgazul {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: -20%;
+    position: absolute;
+    /* Certifique-se de que esteja acima dos outros elementos */
+}
+
+
+/* fim fundos da pág */
+
+/*início parte de foto do perfil */
 .user-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 15% 45%;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
+}
+
+#perfildiv{
+    display: flex;
+    justify-content: center;
 }
 
 #photo {
@@ -36,114 +118,30 @@ body {
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
 
-.branco-box {
-    background-color: white;
-    border-radius: 10%;
-    position: absolute;
-    top: 300px;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    opacity: 70%;
-    width: 100%;
-    height: 67%;
-    z-index: -2;
-}
-
-#bgazul {
-    position: absolute;
-    width: 100%;
-    height: 95%;
-    margin-top: -17%;
-    z-index: -1;
-    left: 0%;
-}
-
-#perfil {
-    width: 16%;
-    height: auto;
-    margin-top: 208px;
-    margin-left: 573px;
-    border-radius: 50%;
-    margin-bottom: -50px;
-}
-
-/*
-.trocar-foto .circulo-foto {
-    display: inline-flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: #4240ec;
-    margin: 3rem 1.5rem 3rem 0;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translate(1100%, -80%);
-}
-*/
-/* label{
-    display: block;
-    width:200px;
-    background: #6697DF;
-    color: #fff;
-    padding: 12px;
-    margin: 10px auto;
-    border-radius: 5px;
-    cursor: pointer;
-}
-*/
-label {
-    display: inline-flex;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: #4240ec;
-    margin: 3rem 1.5rem 3rem 0;
-    border-radius: 100%;
-    cursor: pointer;
-    transform: translate(1100%, -80%);
-    font-size: 0px;
-}
-
-#input-file {
-    display: none;
-}
-
 .user-img i {
+    position: relative;
     font-size: 1.6rem;
     color: #00288F;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    transform: translate(3%, -7%);
+    transform: translate(-125%, 43%);
 }
 
-.nickname {
-    position: absolute;
-    font-size: 60px;
-    line-height: 0px;
-    top: 85%;
-    right: 40.5%;
+/*fim da parte de foto do perfil */
+
+
+#input-file {
+    display: none;
 }
 
-.nickname i {
-    position: absolute;
-    left: 110%;
-    bottom: 40%;
-    font-size: 40px;
-    color: #00288F;
-}
 
 #formulario i {
     position: relative;
     left: 5%;
     z-index: 4;
     font-size: 40px;
-    color: #00288F !important;
+    color: #00288F;
 }
 
 .heading span {
@@ -151,6 +149,8 @@ label {
 }
 
 #formulario {
+    display: flex;
+    justify-content: center;
     max-width: 75rem;
     margin: 2rem auto;
     text-align: center;
@@ -159,10 +159,10 @@ label {
     height: 550px;
     border-radius: 15%;
     opacity: 50%;
-    position: absolute;
-    top: 120%;
-    left: 28%;
-    stroke: antiquewhite;
+    margin-bottom: -300px;
+    top: -450px;
+    position: relative;
+    
 }
 
 .input-box input {
@@ -181,8 +181,7 @@ label {
     margin-left: 0px;
 }
 
-.botao .botao-cancelar {
-    position: absolute;
+.botao-container .botao-cancelar {
     top: 220%;
     width: 15%;
     padding: 1.5rem;
@@ -196,8 +195,7 @@ label {
     border: 2px black;
 }
 
-.botao .botao-salvar {
-    position: absolute;
+.botao-container .botao-salvar {
     top: 220%;
     width: 15%;
     padding: 1.5rem;
@@ -211,26 +209,52 @@ label {
     cursor: pointer;
 }
 
+.botao-cancelar:hover {
+    background-color: black;
+}
+
+.botao-salvar:hover {
+    background-color: black;
+}
+
+footer {
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #214ab1;
+    padding: 10px 0;
+    display: block;
+
+}
+
+.botao-container {
+    display: flex;
+    justify-content: space-around;
+    /* Espaço uniforme entre os botões */
+}
+
+/*media screen para celulares estilo samsung s20 */
 @media screen and (max-width: 800px) {
     #perfil {
         width: 64%;
         margin-top: 20px;
         margin-left: 64px;
     }
+
     .user-img {
         width: 200px;
         height: 200px;
         border-radius: 50%;
         margin: 15% 45%;
     }
-    
+
     #photo {
         width: 170px;
         height: 170px;
         border-radius: 50%;
         transform: translate(-36%);
     }
-    
+
     #uploadbtn {
         position: absolute;
         height: 30px;

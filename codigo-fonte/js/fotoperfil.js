@@ -61,3 +61,40 @@ novoNicknameInput.addEventListener('input', function () {
     // Ajustando a largura do input baseado no número de caracteres
     this.style.width = ((this.value.length + 1) * 10) + 'px';
 });
+
+// ___________________________________________________________
+// Função para carregar dados do localStorage
+function loadUserData() {
+    const userData = JSON.parse(localStorage.getItem('userProfile')) || {};
+    document.querySelector('input[name="name"]').value = userData.name || '';
+    document.querySelector('input[name="sobrenome"]').value = userData.sobrenome || '';
+    document.querySelector('input[name="email"]').value = userData.email || '';
+    document.querySelector('input[name="senha"]').value = userData.senha || '';
+    document.getElementById('novoNickname').value = userData.nickname || '';
+}
+
+// Função para salvar dados no localStorage
+function submitForm() {
+    const form = document.getElementById('profileForm');
+    const formData = new FormData(form);
+
+    const data = {
+        name: formData.get('name'),
+        sobrenome: formData.get('sobrenome'),
+        email: formData.get('email'),
+        senha: formData.get('senha'),
+        nickname: document.getElementById('novoNickname').value
+    };
+
+    localStorage.setItem('userProfile', JSON.stringify(data));
+    alert('Dados salvos com sucesso!');
+}
+
+// Função para cancelar alterações e recarregar dados
+function cancelChanges() {
+    loadUserData();
+    alert('Alterações canceladas.');
+}
+
+// Carregar dados ao iniciar
+window.onload = loadUserData;

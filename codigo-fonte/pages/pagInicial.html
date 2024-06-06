@@ -6,6 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
 
+  <!-- Modal para entrada de Nickname -->
+  <div id="nicknameModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Escolha um Nickname</h2>
+        <input type="text" id="nicknameInput" placeholder="Nickname" maxlength="8">
+        <button id="saveNickname">Salvar</button>
+    </div>
+</div>
+
   <!-- Link CSS -->
   <link type="text/css" rel="stylesheet" href="../css/pagInicial_style.css">
 
@@ -38,7 +48,7 @@
 
       <!-- Foto de Perfil -->
       <a href="http://127.0.0.1:5501/codigo-fonte/pages/perfil.html">
-      <img id="perfil" src="../assets/perfil.jpg" alt="Foto de Perfil">
+        <img id="perfil" src="../assets/perfil.jpg" alt="Foto de Perfil">
       </a>
     </div>
   </header>

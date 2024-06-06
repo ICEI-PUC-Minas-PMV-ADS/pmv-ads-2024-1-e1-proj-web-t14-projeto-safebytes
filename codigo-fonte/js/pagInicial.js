@@ -42,3 +42,43 @@ fetch('../Gersons/tutoriais.json')
         }
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
+
+/* entrada de nickname */
+
+document.addEventListener("DOMContentLoaded", function () {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const emailLogado = localStorage.getItem("loggedInUserEmail");
+    const user = users.find(user => user.email === emailLogado);
+
+    if (user && !user.nickname) {
+        const modal = document.getElementById("nicknameModal");
+        const closeBtn = document.querySelector(".close");
+        const saveBtn = document.getElementById("saveNickname");
+        const nicknameInput = document.getElementById("nicknameInput");
+
+        modal.style.display = "block";
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        saveBtn.onclick = function () {
+            const nickname = nicknameInput.value.trim();
+
+            if (nickname && /^[a-zA-Z]+$/.test(nickname)) {
+                user.nickname = nickname;
+                localStorage.setItem("users", JSON.stringify(users));
+                modal.style.display = "none";
+                alert("Nickname salvo com sucesso!");
+            } else {
+                alert("O nickname deve conter apenas letras e ter no máximo 8 caracteres.");
+            }
+        }
+    }
+});

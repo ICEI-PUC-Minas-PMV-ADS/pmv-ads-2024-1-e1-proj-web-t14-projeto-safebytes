@@ -30,3 +30,17 @@ document.addEventListener("DOMContentLoaded", function () {
     loginForm.reset();
   });
 });
+
+// Botão de mostrar e esconder a senha
+function mostrarSenha(){
+  var inputsenha = document.getElementById('inputsenha')
+  var btMostrarSenha = document.getElementById('botaoSenha')
+
+  if (inputsenha.type ==='password') {
+      inputsenha.setAttribute('type','text')
+      btMostrarSenha.classList.replace('bi-eye-slash','bi-eye')
+  } else {
+      inputsenha.setAttribute('type','password')
+      btMostrarSenha.classList.replace('bi-eye','bi-eye-slash')
+  }
+}

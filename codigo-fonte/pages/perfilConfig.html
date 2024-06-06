@@ -10,22 +10,29 @@
 </head>
 
 <body>
+
+    <!--background imgs-->
     <div class="container">
-        <img id="bgazul" src="../assets/bgImg03.png" alt="">
-    </div>
-    <div class="branco">
-        <div class="branco-box"></div>
-        <div class="user-img">
-            <img src="../assets/fotoPerfilConfig.svg" id="photo" alt="profile">
+        <span class="user-img">
+            <img src="../assets/perfil.jpg" id="photo" alt="profile">
             <input type="file" id="file">
             <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
+        </span>
+        <img id="bgazul" src="../assets/bgImg03.png" alt="fundo-azul">
+        <div class="branco-box"></div>
+        
+        <!--nickname part-->
+        <div id="campoEditar" class="hidden">
+            <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
+            <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
         </div>
     </div>
-    <div id="campoEditar" class="hidden">
-        <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
-        <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
-    </div>
-    <section id="formulario">
+
+    <!--trocar foto perfil part-->
+    
+
+    <!--formulário part -->
+    <div id="formulario">
         <form action="">
             <div class="input-box">
                 <input type="text" name="name" placeholder="Nome" required><a href="#"><i
@@ -34,12 +41,18 @@
                 <input type="email" placeholder="E-mail" required><a href="#"><i class="bi bi-pencil-fill"></i></a>
                 <input type="text" placeholder="Senha"><a href="#"><i class="bi bi-pencil-fill"></i></a>
             </div>
-    </section>
-    <div class="botao">
-        <input type="submit" value="Cancelar" class="botao-cancelar">
-        <input type="submit" value="Salvar" class="botao-salvar">
+        </form>
     </div>
-    </form>
+
+    <!--footer part-->
+    <footer>
+        <div class="botao-container">
+            <button class="botao-cancelar">Cancelar</button>
+            <button class="botao-salvar">Salvar</button>
+        </div>
+    </footer>
+
+    <!--scrip part-->
     <script defer src="../js/fotoperfil.js">
     </script>
 

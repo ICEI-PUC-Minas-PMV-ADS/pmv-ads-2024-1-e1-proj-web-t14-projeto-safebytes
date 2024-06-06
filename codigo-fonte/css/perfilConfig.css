@@ -3,9 +3,14 @@ body {
     background-color: #A3C8FF !important;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+
 }
-/*
-input do nickname */
+
+/* input do nickname */
 #campoEditar input[type="text"] {
     border: none;
     outline: none;
@@ -13,11 +18,10 @@ input do nickname */
     padding: 0;
     margin: 0;
     font-size: 50px;
-    display: inline-block;
-    position: relative;
-    text-align: center; 
-    margin: auto; 
-    transform: translate(75%);
+    text-align: center;
+    margin: auto;
+    margin-top: 11rem;
+    transform: translate(76%);
     text-align: start;
 }
 
@@ -30,14 +34,9 @@ label {
     border: #4240ec;
     margin: 3rem 1.5rem 3rem 0;
     border-radius: 100%;
-    cursor: pointer;
-    transform: translate(1250%, -5%);
-    font-size: 0px;
-}
 
-/*
-icone para clicar e o usuário poder reescrever o prórpio nickname
-*/
+
+}
 
 label i {
     position: inherit;
@@ -45,13 +44,56 @@ label i {
     bottom: 40%;
     font-size: 40px;
     color: #00288F;
+    transform: translate(1150%, -5%);
+    cursor: pointer;
 }
 
+/*
+fim icone para clicar e o usuário poder reescrever o prórpio nickname
+*/
+
+/* inicio fundos pág */
+.container {
+    position: relative;
+    z-index: 2;
+    /* Certifique-se de que esteja acima do bgazul */
+}
+
+#bgazul {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: -20%;
+    position: absolute;
+    /* Certifique-se de que esteja acima dos outros elementos */
+}
+
+.branco-box {
+    bottom: 0;
+    position: relative;
+    background-color: white;
+    border-radius: 10%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    opacity: 70%;
+    width: 100%;
+    height: 67%;
+    z-index: -2;
+}
+
+/* fim fundos da pág */
+
+/*início parte de foto do perfil */
 .user-img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 15% 45%;
+    margin: 5% 43%;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+    z-index: 3;
 }
 
 #photo {
@@ -88,37 +130,7 @@ label i {
     transform: translate(-125%, 43%);
 }
 
-.branco-box {
-    background-color: white;
-    border-radius: 10%;
-    position: absolute;
-    top: 300px;
-    right: 0%;
-    display: flex;
-    justify-content: center;
-    opacity: 70%;
-    width: 100%;
-    height: 67%;
-    z-index: -2;
-}
-
-#bgazul {
-    position: absolute;
-    width: 100%;
-    height: 95%;
-    margin-top: -17%;
-    z-index: -1;
-    left: 0%;
-}
-
-#perfil {
-    width: 16%;
-    height: auto;
-    margin-top: 208px;
-    margin-left: 573px;
-    border-radius: 50%;
-    margin-bottom: -50px;
-}
+/*fim da parte de foto do perfil */
 
 
 #input-file {
@@ -131,7 +143,7 @@ label i {
     left: 5%;
     z-index: 4;
     font-size: 40px;
-    color: #00288F !important;
+    color: #00288F;
 }
 
 .heading span {
@@ -139,6 +151,9 @@ label i {
 }
 
 #formulario {
+    display: block;
+    justify-content: center;
+    align-items: center;
     max-width: 75rem;
     margin: 2rem auto;
     text-align: center;
@@ -147,10 +162,9 @@ label i {
     height: 550px;
     border-radius: 15%;
     opacity: 50%;
-    position: absolute;
     top: 120%;
     left: 28%;
-    stroke: antiquewhite;
+    margin-bottom: 10rem;
 }
 
 .input-box input {
@@ -169,8 +183,7 @@ label i {
     margin-left: 0px;
 }
 
-.botao .botao-cancelar {
-    position: absolute;
+.botao-container .botao-cancelar {
     top: 220%;
     width: 15%;
     padding: 1.5rem;
@@ -184,8 +197,7 @@ label i {
     border: 2px black;
 }
 
-.botao .botao-salvar {
-    position: absolute;
+.botao-container .botao-salvar {
     top: 220%;
     width: 15%;
     padding: 1.5rem;
@@ -199,6 +211,31 @@ label i {
     cursor: pointer;
 }
 
+.botao-cancelar:hover {
+    background-color: black;
+}
+
+.botao-salvar:hover {
+    background-color: black;
+}
+
+footer {
+    flex-shrink: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #214ab1;
+    padding: 10px 0;
+    display: block;
+
+}
+
+.botao-container {
+    display: flex;
+    justify-content: space-around;
+    /* Espaço uniforme entre os botões */
+}
+
+/*media screen para celulares estilo samsung s20 */
 @media screen and (max-width: 800px) {
     #perfil {
         width: 64%;

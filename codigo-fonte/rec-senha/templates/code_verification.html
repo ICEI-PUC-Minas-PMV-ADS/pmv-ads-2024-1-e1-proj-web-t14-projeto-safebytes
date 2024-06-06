@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Código</title>
+    <link rel="stylesheet" href="../../css/csspagrec1.css">
+</head>
+<body>
+    <main class="principal">
+        <header class="header">
+          <div class="imagem-topo"></div>
+        </header>
+        <h1 class="titulo">Confira o seu e-mail</h1>
+        <p class="texto">
+          O código de confirmação foi enviado para o seu e-mail. Por favor, verifique sua caixa de entrada e insira o código abaixo para continuar.
+        </p>
+        <form action="/verify-code" method="post" class="verification-form">
+          <div class="quadrados">
+            <input type="hidden" name="email" id="email" value="{{email}}">
+            <input type="text" name="code1" id="code1" maxlength="1" class="quadrado-individual" required>
+            <input type="text" name="code2" id="code2" maxlength="1" class="quadrado-individual" required>
+            <input type="text" name="code3" id="code3" maxlength="1" class="quadrado-individual" required>
+            <input type="text" name="code4" id="code4" maxlength="1" class="quadrado-individual" required>
+          </div>
+          <p class="texto-inferior">O código expira em: 03:12</p>
+          <button type="submit" class="botao-verificar">Verificar</button>
+        </form>
+        <form action="/send-code" method="post" class="resend-form">
+          <input type="hidden" name="email" id="email" value="{{email}}">
+          <button type="submit" class="botao-reenviar">Mande novamente</button>
+        </form>
+      </main>
+</body>
+</html>

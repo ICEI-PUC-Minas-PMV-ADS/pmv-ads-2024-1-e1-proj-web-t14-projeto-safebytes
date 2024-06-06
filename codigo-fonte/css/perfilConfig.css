@@ -56,7 +56,14 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 .container {
     position: relative;
     z-index: 2;
+    position: relative;
+    bottom: 27rem;
     /* Certifique-se de que esteja acima do bgazul */
+}
+
+.bg04div{
+    width: 50%;
+
 }
 
 #bgazul {
@@ -68,19 +75,6 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     /* Certifique-se de que esteja acima dos outros elementos */
 }
 
-.branco-box {
-    bottom: 0;
-    position: relative;
-    background-color: white;
-    border-radius: 10%;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    opacity: 70%;
-    width: 100%;
-    height: 67%;
-    z-index: -2;
-}
 
 /* fim fundos da pág */
 
@@ -89,11 +83,15 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin: 5% 35rem;
     display: inline-block;
     justify-content: center;
     position: relative;
     z-index: 3;
+}
+
+#perfildiv{
+    display: flex;
+    justify-content: center;
 }
 
 #photo {
@@ -151,9 +149,8 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 #formulario {
-    display: block;
+    display: flex;
     justify-content: center;
-    align-items: center;
     max-width: 75rem;
     margin: 2rem auto;
     text-align: center;
@@ -162,9 +159,10 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     height: 550px;
     border-radius: 15%;
     opacity: 50%;
-    top: 120%;
-    left: 28%;
-    margin-bottom: 10rem;
+    margin-bottom: -300px;
+    top: -450px;
+    position: relative;
+    
 }
 
 .input-box input {

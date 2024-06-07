@@ -43,7 +43,7 @@ p {
 }
 
 .button {
-    width: 70%;
+    width: 80%;
     height: auto;
     color: #fff;
     background-color: #00112b;
@@ -166,9 +166,9 @@ p {
 
 .sliderWrapper .sliderBtn {
     position: absolute;
-    top: 85%;
-    height: 25px;
-    width: 25px;
+    top: 80%;
+    height: 23px;
+    width: 23px;
     color: #fff;
     border: none;
     outline: none;
@@ -184,21 +184,19 @@ p {
 }
 
 .sliderWrapper .sliderBtn#prevSlide {
-    left: 20px;
-    display: none;
+    left: 10px;
 }
 
 .sliderWrapper .sliderBtn#nextSlide {
-    right: 20px;
+    right: 10px;
 }
 
 .sliderWrapper .sliderList {
     display: grid;
-    gap: 10px;
-    margin-bottom: 30px;
+    margin: 70px 0;
     overflow-x: auto;
     scrollbar-width: none;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .sliderWrapper .sliderList::-webkit-scrollbar {
@@ -208,6 +206,7 @@ p {
 .sliderWrapper .sliderList .sliderItem {
     background: #fff;
     padding-bottom: 5px;
+    margin: 10px;
 }
 
 .sliderWrapper .sliderList .sliderItem .sliderTitle {
@@ -216,60 +215,12 @@ p {
     font-weight: 100;
 }
 
-.destaque {
-    color: #00288F;
-    font-weight: 500;
-}
-
 .sliderWrapper .sliderList .sliderItem img {
     width: 200px;
     height: 175px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     object-fit: cover;
-}
-
-.sliderScrollbar {
-    height: 24px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.sliderScrollbar .scrollbarTrack {
-    height: 2px;
-    width: 100%;
-    background: #ccc;
-    position: relative;
-    border-radius: 4px;
-}
-
-.sliderScrollbar:hover .scrollbarTrack {
-    height: 4px;
-}
-
-.sliderScrollbar .scrollbarThumb:active {
-    cursor: grabbing;
-    height: 8px;
-    top: -2px;
-}
-
-.sliderScrollbar .scrollbarThumb {
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    background: #00288F;
-    border-radius: inherit;
-    cursor: grab;
-}
-
-.sliderScrollbar .scrollbarThumb::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -10px;
-    bottom: -10px;
 }
 
 
@@ -477,6 +428,21 @@ p {
     height: auto;
 }
 
+/* BOTÃO PAGINICIAL */
+#btnConteiner {   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.btnDiv {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+    
+/* PÁGINA DE LOGIN */
 #pagLogin {
     background: radial-gradient(circle at 50% 44%, #050A78 10%, #00288F 39%, #355DC5 75%, #5E8BFF 90%, #A3C8FF 98%);
     background-size: 100% 130%;
@@ -772,6 +738,7 @@ footer {
         font-size: 18px;
     }
 
+    /* PAG INDEX */
     #quemSomos {
         top: 50px;
     }
@@ -790,6 +757,7 @@ footer {
         height: 60%;
     }
 
+    /* PAG ARTIGOS */
     .artConteiner {
         grid-template-columns: 50% 40%;
     }
@@ -855,7 +823,12 @@ footer {
         grid-template-columns: 50% 50%;
     }
 
+    .btnDiv {
+        width: 30%;
+    }
 
+
+    /* PAG LOGIN */
     #conteudo {
         margin-top: 5%;
         width: 50%;
@@ -894,6 +867,7 @@ footer {
         font-size: 20px;
     }
 
+    /* PAG INDEX */
     #quemSomos {
         top: 50px;
     }
@@ -920,6 +894,7 @@ footer {
         bottom: -2px;
     }
 
+    /* PAG ARTIGOS */
     .artConteiner {
         grid-template-columns: 35% 50%;
     }
@@ -988,5 +963,9 @@ footer {
     .dicasItem {
         grid-template-columns: 30% 70%;
         gap: 20px;
+    }
+
+    .btnDiv {
+        width: 20%;
     }
 }

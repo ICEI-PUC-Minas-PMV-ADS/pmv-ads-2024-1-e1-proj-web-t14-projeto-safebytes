@@ -5,9 +5,21 @@ O requisito para a realização dos testes de software foi:
  <li>Navegador da Internet: Chrome, Edge, Opera ou Firefox.</li>
 </ul>
 
-|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável pela elaborar do caso de Teste   |
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
 |----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
-| CT-01: Verificar o sistema de cadastro para novos usuários.  |<ul> <li> RF-01 </li> <br> <li> RF-02 </li> </ul>| Verificar se o sistema de cadastro está sendo feito corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Na homepage do site, clicar no botão de Cadastro. </li> <br> <li> Preencher o formulário com as informações solicitadas. </li> <br> <li> Clicar no botão "Cadastrar". </li> </ol> | xxxxx| xxxxx | 
+| CT-01: Verificar o sistema de cadastro para novos usuários.  |<ul> 
+<li> RF-01 </li> <br> 
+<li> RF-02 </li> </ul>
+| Verificar se o sistema de cadastro está sendo feito corretamente.|
+ <ol> <li> Acessar o Navegador. </li> <br> 
+<li> Acessar o website. </li> <br>
+ <li> Na homepage do site, clicar no botão de Cadastro. </li> <br>
+ <li> Preencher o formulário com as informações solicitadas. </li> <br> 
+<li> Clicar no botão "Cadastrar". </li> </ol> 
+| <ul> <li> O sistema deve verificar se os campos foram preenchidos corretamente. </li> <br>
+<li> O sistema deve verificar se já existe um usuário cadastrado com o mesmo email, e se houver, disparar um alerta informando. </li> <br>
+<li> Após a validação dos dados, o sistema deve disparar uma mensagem de sucesso e redirecionar o usuário para a homepage. </li> </ul> 
+| Emerson | 
 
 
 > **Links Úteis**:

@@ -8,28 +8,33 @@ body.prepend(header);
 
 const logo =
     "<div id ='logo' class='logo'>" +
-        "<img src='../assets/logoPrincipal.png' title='Vigia Virtual' alt='Vigia Virtual'/>"
+    "<a href='index.html' class='searchBtn'>" +
+    "<img src='../assets/logoPrincipal.png' title='Vigia Virtual' alt='Vigia Virtual'/>" +
+    "</a>" +
     "</div>"
 
-header.innerHTML += logo;
-
-const searchBar =
+let searchBar =
     "<div id='searchBox' class='searchBox'>" +
-        "<input id='search'  class='search' type='text' placeholder='Pesquisa...'>" +
-            "<a href='' class='searchBtn'>" +
-                "<i class='bi bi-search'></i>" +
-            "</a>" +
+    "<input id='search'  class='search' type='text' placeholder='Pesquisa...'>" +
+    "<a href='' class='searchBtn'>" +
+    "<i class='bi bi-search'></i>" +
+    "</a>" +
     "</div>"
 
-header.innerHTML += searchBar;
-
-const login =
+let login =
     "<div id='login' class='login'>" +
     "<button id='loginBtn' class='button'> Login </button>"
-    "</div>"
+"</div>"
 
-header.innerHTML += login;
+if (body.id === 'pagLogin') {
+    header.innerHTML += logo;
+} else {
+    header.innerHTML += logo;
+    header.innerHTML += searchBar;
+    header.innerHTML += login;
+    document.querySelector("#loginBtn").addEventListener("click", () => {
+        window.location.href = "login.html";
+    });
+}
 
-document.querySelector("#loginBtn").addEventListener("click", () => {
-    window.location.href = "login.html";
-});
+

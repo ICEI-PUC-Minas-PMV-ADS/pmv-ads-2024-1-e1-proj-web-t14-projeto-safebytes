@@ -43,7 +43,8 @@ p {
 }
 
 .button {
-    width: 90%;
+    width: 70%;
+    height: auto;
     color: #fff;
     background-color: #00112b;
     padding: 10px;
@@ -136,7 +137,7 @@ p {
 
 .quemSomosBtn {
     width: 50%;
-    margin-left: 5%;
+    margin-left: 15.5%;
 }
 
 
@@ -476,6 +477,186 @@ p {
     height: auto;
 }
 
+#pagLogin {
+    background: radial-gradient(circle at 50% 44%, #050A78 10%, #00288F 39%, #355DC5 75%, #5E8BFF 90%, #A3C8FF 98%);
+    background-size: 100% 130%;
+}
+
+#pagLogin main {
+    display: flex;
+    justify-content: center;
+}
+
+#pagLogin i {
+    color: #000;
+}
+
+
+#conteudo {
+    background-color: #355ec5;
+    text-align: center;
+    border-radius: 100px;
+    color: white;
+    width: 25%;
+    margin-top: 3%;
+    height: 39rem;
+}
+
+#titulo {
+    padding-top: 30px;
+    font-size: 20px;
+}
+
+#loginForm {
+    margin-top: 85px;
+}
+
+#campos {
+    font-size: 15px;
+}
+
+#camposenha {
+    margin-top: 40px;
+}
+
+#campo1,
+#campo2 {
+    margin-right: 40%;
+}
+
+#inputemail {
+    border-radius: 100px;
+    outline: none;
+    border: 1px;
+    width: 250px;
+    height: 1.5rem;
+    margin-top: 2%;
+    padding-left: 2%;
+}
+
+#caixaopcoes {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+#opcoes a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    margin-left: 5.5%;
+    margin-right: 6%;
+}
+
+#opcoes a:hover {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+#cadastrar {
+    margin-right: 15%;
+}
+
+.decoracao {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 7%;
+}
+
+.traco1,
+.traco2 {
+    width: 150px;
+    height: 0.1%;
+    border: 1px solid black;
+
+}
+
+.bolinha {
+    border-radius: 100%;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+}
+
+.icones {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.containersenha {
+    display: flex;
+    justify-content: center;
+}
+
+#divsenha {
+    border-radius: 100px;
+    outline: none;
+    border: 1px;
+    width: 250px;
+    height: 1.5rem;
+    margin-top: 2%;
+    padding-left: 2%;
+    background-color: white;
+}
+
+#divsenha input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 214px;
+    height: 1.3rem;
+}
+
+#divsenha i {
+    position: absolute;
+    right: 41%;
+    font-size: 17px;
+    margin-right: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+#termosSec {
+    display: flex;
+    justify-content: center;
+}
+
+#rodape {
+    text-align: center;
+    background-color: #6696dfb4;
+    border-radius: 100px;
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+
+
+/* ANIMAÇÃO ICONES*/
+.bi-instagram:hover {
+    color: white;
+    transition: 00.5s all;
+    transform: scale(1.2);
+}
+
+.bi-facebook:hover {
+    color: white;
+    transition: 00.5s all;
+    transform: scale(1.2);
+}
+
+.bi-google:hover {
+    color: white;
+    transition: 00.5s all;
+    transform: scale(1.2);
+}
+
+
+
 
 /* FOOTER */
 
@@ -509,6 +690,78 @@ footer {
     text-decoration: none;
 }
 
+/* RESPONSIVIDADE: CELULAR */
+@media screen and (max-width:600px) {
+    header img {
+        width: 22%;
+        height: 22%;
+    }
+
+    #conteudo {
+        width: 75%;
+        height: 500px;
+        margin-top: 7%;
+    }
+
+    #rodape {
+        width: 80%;
+        margin-top: 5%;
+        height: 70px;
+        font-size: 13px;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    #titulo {
+        font-size: 18px;
+    }
+
+    form {
+        margin-top: 17%;
+    }
+
+    #divsenha i {
+        right: 20%;
+        font-size: 15px;
+        margin-left: 5px;
+    }
+
+    #divsenha input {
+        width: 83%;
+    }
+
+    #inputemail,
+    #divsenha {
+        width: 81%;
+    }
+
+    #pagLogin label {
+        margin-right: 27%;
+        font-size: 14px;
+    }
+
+    button {
+        width: 27%;
+        font-size: 15px;
+    }
+
+    .traco1,
+    .traco2 {
+        width: 35%;
+    }
+
+    .bolinha {
+        width: 12px;
+        height: 12px;
+    }
+
+    .icones {
+        font-size: 18px;
+    }
+
+}
+
+
 /* RESPONSIVIDADE: TABLET */
 @media screen and (max-width: 900px) and (min-width: 600px) {
     h6 {
@@ -520,9 +773,9 @@ footer {
     }
 
     #quemSomos {
-       top: 50px;
+        top: 50px;
     }
-    
+
     .banner {
         width: 80%;
     }
@@ -531,7 +784,7 @@ footer {
         width: 300px;
         height: 275px;
     }
-    
+
     .perguntasImg img {
         width: 60%;
         height: 60%;
@@ -601,8 +854,34 @@ footer {
     .dicasItem {
         grid-template-columns: 50% 50%;
     }
-}
 
+
+    #conteudo {
+        margin-top: 5%;
+        width: 50%;
+    }
+
+    #rodape {
+        width: 55%;
+        margin-top: 5%;
+    }
+
+    #pagLogin label {
+        margin-right: 15%;
+    }
+
+    .decoracao {
+        margin-top: 10%;
+    }
+
+    .icones {
+        margin-top: 13%;
+    }
+
+    #divsenha i {
+        right: 35%;
+    }
+}
 
 
 /* RESPONSIVIDADE: PC */
@@ -617,25 +896,25 @@ footer {
 
     #quemSomos {
         top: 50px;
-     }
-     
-     .banner {
-         width: 60%;
-     }
+    }
 
-     .sliderWrapper .sliderList {
+    .banner {
+        width: 60%;
+    }
+
+    .sliderWrapper .sliderList {
         margin: 10px;
-     }
- 
-     .sliderWrapper .sliderList .sliderItem img {
-         width: 350px;
-         height: 325px;
-     }
-     
-     .perguntasImg img {
-         width: 50%;
-         height: 50%;
-     }
+    }
+
+    .sliderWrapper .sliderList .sliderItem img {
+        width: 350px;
+        height: 325px;
+    }
+
+    .perguntasImg img {
+        width: 50%;
+        height: 50%;
+    }
 
     #bg02Div {
         bottom: -2px;

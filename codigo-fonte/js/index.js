@@ -1,3 +1,4 @@
+// Configurações do slide
 const initSlider = () => {
     const sliderList = document.querySelector(".sliderWrapper .sliderList");
     const sliderButtons = document.querySelectorAll(".sliderWrapper .sliderBtn");

@@ -1,3 +1,5 @@
+// Funcionalidade Tutoriais
+
 fetch('../Gersons/tutoriais.json')
     .then(response => response.json())
     .then(data => {

@@ -5,10 +5,9 @@ O requisito para a realização dos testes de software foi:
  <li>Navegador da Internet: Chrome, Edge, Opera ou Firefox.</li>
 </ul>
 
-|Caso de Teste                                                 |      Requisitos Associados       | Objetivo do Teste | Passos | Critérios de êxito | Responsável pela elaborar do caso de Teste |
-|:---|:---|
-| CT-01: Verificar o sistema de cadastro para novos usuários.  | <ul> <li> RF-01 </li>       | 
-                                                               |      <li> RF-02 </li> </ul> | 
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável pela elaborar do caso de Teste   |
+|----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
+| CT-01: Verificar o sistema de cadastro para novos usuários.  |RF-01 e RF-02| Verificar se o sistema de cadastro está sendo feito corretamente.| xxxx | xxxxx| xxxxx | 
 
 
 

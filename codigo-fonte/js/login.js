@@ -1,7 +1,3 @@
-const removeSerch = document.querySelector(".searchBox");
-removeSerch.innerHTML = '';
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
 

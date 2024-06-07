@@ -11,6 +11,19 @@ O requisito para a realização dos testes de software foi:
                                                                |      <li> RF-02 </li> </ul> | 
 
 
+
+|ID    | Descrição                | Prioridade |
+|-------|---------------------------------|----|
+| RF- 01 | O sistema deve viabilizar o cadastro no website, exigindo informações como e-mail e senha.| ALTA  | 
+| RF- 02 | O sistema deve permitir o acesso ao website mediante o fornecimento de e-mail e senha durante o processo de login.| ALTA |
+| RF- 03 | A funcionalidade de atualização/recuperação de senha deve estar disponível no sistema| ALTA  | 
+| RF- 04 | O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.| ALTA |
+| RF- 05 |O sistema deve propiciar mecanismos de busca por interesse do usuário.| MEDIA | 
+| RF- 06 | O sistema deve notificar os usuários cadastrados sobre artigos recentes.| ALTA |
+| RF- 07 | O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.| ALTA  | 
+| RF- 08 | O website deve ser capaz de contabilizar o progresso do usuário.| ALTA |
+| RF- 09 |A partir da etapa 1, o sistema deve liberar uma etapa somente a partir da conclusão da anterior.| ALTA  | 
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)

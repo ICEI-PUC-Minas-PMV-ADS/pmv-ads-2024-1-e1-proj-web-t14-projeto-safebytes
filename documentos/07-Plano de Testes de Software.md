@@ -1,17 +1,18 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
+O requisito para a realização dos testes de software foi:
+<ul>
+ <li>Navegador da Internet: Chrome, Edge, Opera ou Firefox.</li>
+</ul>
 
-Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
+|----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
+| CT-01: Verificar o sistema de cadastro para novos usuários.  |<ul> <li> RF-01 </li> <br> <li> RF-02 </li> </ul> | Verificar se o sistema de cadastro está sendo feito corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Na homepage do site, clicar no botão de Cadastro. </li> <br> <li> Preencher o formulário com as informações solicitadas. </li> <br> <li> Clicar no botão "Cadastrar". </li> </ol> | <ul> <li> O sistema deve verificar se os campos foram preenchidos corretamente. </li> <br> <li> O sistema deve verificar se já existe um usuário cadastrado com o mesmo email, e se houver, disparar um alerta informando-o. </li> <br> <li> Após a validação dos dados, o sistema deve disparar uma mensagem de sucesso e redirecionar o usuário para a homepage. </li> </ul> | Emerson | 
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Requisitos Associados | RF-X |
-| Objetivo do Teste | Descrição do objetivo do teste |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
- 
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
+|----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
+| CT-02: Verificar o sistema de login. | <ul> <li> RF-01 <br> <li> RF-02 </li> </ul> | Verificar se o sistema de login está funcionando corretamente. | <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Na homepage do site, clicar no botão de Login. </li> <br> <li> Preencher o formulário com as informações cadastradas anteriormente. </li> <br> <li> Clicar no botão "Entrar". </li> </ol> | <ul> <li> O sistema deve verificar se os dados foram preenchidos corretamente. </li> <li> O sistema deve disparar um alerta se o email informado pelo usuário ainda não estiver cadastrado no sistema. </li> <li> O sistema deve exibir um alerta de erro, se a senha informada pelo usuário não for a mesma cadastrada. </li> <li> Se todos os dados forem preenchidos corretamente, o sistema deve disparar um alerta de "Login feito com sucesso!", e redirecionar o usuário para a homepage do site. | Emerson |
+
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)

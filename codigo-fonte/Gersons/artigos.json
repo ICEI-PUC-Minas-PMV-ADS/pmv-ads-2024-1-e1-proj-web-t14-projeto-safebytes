@@ -1,0 +1,239 @@
+{
+    "artigo" : [
+        {
+            "id": 0,
+            "capa": "../assets/artPhishing.png",
+            "titulo": "O que é Phishing?",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artPhishingMainImg.jpg",
+                    "texto": "O phishing é uma ameaça online que envolve a tentativa de enganar as pessoas para que revelem informações confidenciais, como senhas, informações bancárias ou números de cartão de crédito. Embora o phishing seja frequentemente associado a e-mails falsos, sua abrangência vai muito além disso."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/topicoImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "O termo 'phishing' é uma combinação de 'fishing' (pesca, em inglês) e 'phreaking' (manipulação de sistemas telefônicos), sugerindo a ideia de 'pescar' por informações confidenciais"
+                        },
+                        {
+                            "id": 2,
+                            "topico": "O primeiro caso documentado de phishing ocorreu em meados da década de 1990, quando hackers tentaram roubar contas AOL"
+                        },
+                        {
+                            "id": 3,
+                            "topico": "O phishing evoluiu ao longo dos anos, com táticas cada vez mais sofisticadas, como ataques de spear phishing direcionados a indivíduos ou empresas específicas"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=xOU0O_g1Et4",
+                            "texto": "Assista a este vídeo para aprender como proteger suas informações contra ataques de phishing."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=BKayYNTZLs4",
+                            "texto": "Confira este vídeo sobre os sinais de alerta e as melhores práticas para evitar ser vítima de phishing."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "capa": "../assets/artSenhasFortes.jpg",
+            "titulo": "O que são Senhas Fortes?",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artSenhasFortesMainImg.jpg",
+                    "texto": "Senhas fortes são a primeira linha de defesa contra invasões online. Embora o phishing seja frequentemente associado a e-mails falsos, sua abrangência vai muito além disso. O termo 'phishing' refere-se a uma prática maliciosa na qual os criminosos tentam enganar as pessoas para que revelem informações confidenciais."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artSenhasFortesTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "A senha mais longa do mundo tem mais de 100 caracteres"
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Existem técnicas para criar senhas que são fáceis de lembrar, mas difíceis de hackear"
+                        },
+                        {
+                            "id": 3,
+                            "topico": "A evolução das senhas ao longo da história da computação"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=y-PPErxSISo",
+                            "texto": "Confira este vídeo sobre como criar senhas seguras e proteger suas contas online."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=EVnxfzYmm9I",
+                            "texto": "Veja neste vídeo dicas práticas para manter suas senhas seguras e proteger sua privacidade."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "capa": "../assets/artBoasPraticas.jpg",
+            "titulo": "Regras da Cybersegurança",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artCybersegurancaMainImg.jpg",
+                    "texto": "Conhecer as regras da cibersegurança é fundamental para proteger suas informações online. Embora o phishing seja frequentemente associado a e-mails falsos, sua abrangência vai muito além disso. O termo 'phishing' refere-se a uma prática maliciosa na qual os criminosos tentam enganar as pessoas para que revelem informações confidenciais."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artCybersegurancaTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "A primeira regra da cibersegurança é manter a calma e pensar antes de clicar em links suspeitos"
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Muitos ataques de phishing são personalizados e parecem extremamente convincentes"
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Algumas empresas realizam 'testes de phishing' para treinar seus funcionários e aumentar a conscientização sobre segurança cibernética"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=CU2yQxzkvFg",
+                            "texto": "Confira este vídeo sobre as principais regras de cibersegurança que você deve seguir."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=hK8h30G2QYY",
+                            "texto": "Veja neste vídeo dicas práticas para proteger sua privacidade online e evitar ciberataques."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "capa": "../assets/artDownload.jpg",
+            "titulo": "Tudo sobre Download",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artDownloadMainImg.jpg",
+                    "texto": "O processo de download é uma parte fundamental da experiência online, mas também pode representar riscos à segurança. Embora o phishing seja frequentemente associado a e-mails falsos, sua abrangência vai muito além disso. O termo 'phishing' refere-se a uma prática maliciosa na qual os criminosos tentam enganar as pessoas para que revelem informações confidenciais."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artDownloadTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "O primeiro arquivo de download foi criado em 1971 por um engenheiro da IBM"
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Alguns downloads podem conter malware ou vírus, por isso é importante verificar a fonte antes de baixar"
+                        },
+                        {
+                            "id": 3,
+                            "topico": "No início da internet, os downloads eram muito mais lentos devido à velocidade limitada da conexão"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=HHtG-O984gs",
+                            "texto": "Confira este vídeo que explora os diferentes tipos de downloads e como se proteger contra ameaças online."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=P-rstMMP6ls",
+                            "texto": "Veja neste vídeo dicas para otimizar seus downloads e garantir uma experiência segura na internet."
+                        }
+                    ]
+                }
+            ]
+        },        
+        {
+            "id": 4,
+            "capa": "../assets/artNuvem.jpg",
+            "titulo": "Armazenamento em Nuvem",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artNuvemMainImg.jpg",
+                    "texto": "O armazenamento em nuvem revolucionou a maneira como as pessoas e as empresas gerenciam seus dados, proporcionando conveniência e acessibilidade. Embora o phishing seja frequentemente associado a e-mails falsos, sua abrangência vai muito além disso. O termo 'phishing' refere-se a uma prática maliciosa na qual os criminosos tentam enganar as pessoas para que revelem informações confidenciais."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artNuvemTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "O conceito de armazenamento em nuvem remonta aos anos 1960, mas se popularizou apenas nas últimas décadas"
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Os dados armazenados em nuvem são frequentemente replicados em vários servidores para garantir redundância e segurança"
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Grandes empresas de tecnologia, como Google, Amazon e Microsoft, oferecem serviços de armazenamento em nuvem para consumidores e empresas"
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=dJRy8dLGzE0",
+                            "texto": "Confira este vídeo que explora os benefícios e desafios do armazenamento em nuvem e como escolher o serviço certo para suas necessidades."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=NXCrqRwVHh8",
+                            "texto": "Veja neste vídeo dicas para proteger seus dados armazenados em nuvem e garantir a segurança de suas informações."
+                        }
+                    ]
+                }
+            ]
+        }        
+    ]
+}

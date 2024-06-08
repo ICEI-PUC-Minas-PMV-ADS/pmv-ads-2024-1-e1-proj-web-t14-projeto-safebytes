@@ -2,36 +2,38 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
+### Artigos
 
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
+![8f154677-6b98-428f-9f21-8ab582c320cd](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/ec58b241-07dc-42ff-890c-46b4b24af622)
+![37e0722f-3688-409e-b233-3b3ddad9117d](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/30f0382e-f1d5-456d-b0ff-440a67891ec2)
+![e784b34e-6e99-4b0a-b329-eeabd9c03aee](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/fc3ba91d-e516-4ef6-80d1-631911325e79)
 
 
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
+RF- 04: O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+* <a href="../codigo-fonte/pages/pagArtigos.html">pagArtigos.html</a>
+* <a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/js/artigos.js">artigos.js</a>
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
-
+Acesse a página index.html (página principal), e selecione o card do artigo que deseja ler. Desta forma você poderá vizualizar a pagArtigos.html com o conteúdo referente ao artigo escolhido.
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Emily Gabriela Avelino Rodrigues
 
 
 

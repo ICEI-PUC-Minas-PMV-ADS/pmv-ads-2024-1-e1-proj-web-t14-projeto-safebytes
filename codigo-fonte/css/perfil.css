@@ -1,118 +1,106 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #A3C8FF !important;
+    background-color: #A3C8FF;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    margin: 0;
+}
+/* Header */
+
+
+#bg04div .bi-arrow-left {
+    font-size: 24px; /* Tamanho do ícone */
 }
 
-/* HEADER */
+#seta-voltar{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 20;
+}
+
+
 #perfil {
     width: 16%;
-    height: auto;
-    margin-top: 208px;
-    margin-left: 573px;
     border-radius: 50%;
-    margin-bottom: -50px;
-}
-
-.box {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-26%, -4%);
-    border-radius: 5px;
-    width: 360px;
-    height: 100px;
-}
-
-.box-circle {
-    width: 240px;
-    /* Tamanho original do círculo */
-    height: 240px;
-    /* Tamanho original do círculo */
-}
-
-svg {
-    width: 700px;
-    height: 700px;
-}
-
-circle {
-    width: 200px;
-    height: 200px;
-    fill: none;
-    stroke: black;
-    stroke-width: 12;
-    transform: translate(5px, 5px);
-    stroke-dasharray: 600;
-    stroke-dashoffset: 900;
-}
-
-circle:nth-child(1) {
-    stroke-dashoffset: 0;
-    stroke: #25B8FF;
-}
-
-circle:nth-child(2) {
-    stroke-dashoffset: calc(2000 - 1370);
-    stroke: #EBDCFF;
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
 }
 
 .number {
-    position: absolute;
-    top: 25%;
-    left: 7%;
-    width: 91%;
-    height: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background: linear-gradient(180deg, #26a5fffd 40%, #ffffff 100%);
     -webkit-background-clip: text;
+    margin: 0;
     background-clip: text;
     color: transparent;
-    stroke: #215F7D;
-    font-size: 40px;
+    font-size: 30px;
 }
+
+.foto{
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    justify-content: center;
+    border: 3px solid transparent; /* Adiciona uma borda ao redor do item */
+    padding: 6%; /* Adiciona preenchimento para dar espaço interno à borda */
+}
+
+
+/*------------------------------------------------*/
+/* parte branca */
 
 .nick-box {
     background-color: white;
-    border-radius: 10%;
-    position: absolute;
-    top: 300px;
-    right: 0%;
+    border-radius: 4%;
     display: flex;
     justify-content: center;
     opacity: 70%;
     width: 100%;
-    height: 67%;
     z-index: -2;
 }
 
-#bgazul {
-    position: absolute;
+#caixa-branca{
     width: 100%;
-    height: 95%;
-    margin-top: -1%;
-    z-index: -1;
-    left: 0%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    margin-top: 7%;
 }
 
 .nickname {
-    position: absolute;
+    position: relative;
+    display: flex;
     font-size: 60px;
-    line-height: 0px;
-    top: 85%;
-    right: 40.5%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23rem;
+    margin-bottom: 2rem;
+    height: 3rem;
 }
 
 
 
-/* SECTION perfilOptions */
+/*--------------------------------------------*/
+
+/* footer // caixa de opções*/
+
+footer{
+    bottom: 0;
+
+}
 .container {
-    position: absolute;
-    top: 900px;
-    right: 33%;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .container-box {
@@ -149,7 +137,7 @@ circle:nth-child(2) {
     background-color: #00288F;
     border-radius: 20px;
     color: #ffffff;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .icon {

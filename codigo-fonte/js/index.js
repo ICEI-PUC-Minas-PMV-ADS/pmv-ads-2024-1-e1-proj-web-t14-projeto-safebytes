@@ -9,7 +9,7 @@ function fetchData(url) {
 
 const quemSomosBtn = document.querySelector('#quemSomosBtn');
 quemSomosBtn.addEventListener('click', () => {
-    window.location.href = 'sobrenos.html'
+    window.location.href = 'pagQuemSomos.html'
 })
 
 function createSliderCards(artigos) {

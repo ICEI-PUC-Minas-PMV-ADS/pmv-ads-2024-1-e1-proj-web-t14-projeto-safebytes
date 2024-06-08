@@ -265,7 +265,7 @@ p {
 /* PAGINA QUEM SOMOS */
 #bg05Div {
     position: relative;
-    top: -1px;
+    top: -2px;
 }
 
 #mainQuemSomos {
@@ -278,7 +278,7 @@ p {
     margin: 50px 0;
 }
 
-.quemSomosDiv {
+#pagQuemSomos .quemSomosDiv {
     margin: 150px 0 -150px 0;
 }
 
@@ -289,7 +289,7 @@ p {
     justify-items: center;
     align-items: center;
     gap: 5px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .quemSomosImg img {
@@ -896,6 +896,16 @@ footer {
         width: 30%;
     }
 
+    /* PAG QUEM SOMOS */
+    #mainQuemSomos {
+        top: -300px;
+    }
+
+    #pagQuemSomos .quemSomosDiv {
+        margin: 250px 0 -200px 0;
+    }
+
+
 
     /* PAG LOGIN */
     #conteudo {
@@ -1036,5 +1046,28 @@ footer {
 
     .btnDiv {
         width: 20%;
+    }
+
+    /* PAG QUEM SOMOS */
+    #mainQuemSomos {
+        top: -450px;
+    }
+
+    #pagQuemSomos .quemSomosDiv {
+        margin: 400px 0 -300px 0;
+    }
+
+
+    .quemSomosImg img {
+        width: 70%;
+    }
+
+
+    #visaoDiv .quemSomosImg img {
+        width: 80%;
+    }
+
+    #visaoDiv {
+        gap: 100px;
     }
 }

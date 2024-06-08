@@ -24,6 +24,7 @@ h2 {
 
 h3 {
     font-size: 22px;
+    margin-bottom: 0 !important;
 }
 
 h4 {
@@ -261,6 +262,74 @@ p {
     color: #00288F;
 }
 
+/* PAGINA QUEM SOMOS */
+#bg05Div {
+    position: relative;
+    top: -1px;
+}
+
+#mainQuemSomos {
+    position: relative;
+    z-index: 1;
+    top: -170px;
+}
+
+.quemSomosTitle {
+    margin: 50px 0;
+}
+
+.quemSomosDiv {
+    margin: 150px 0 -150px 0;
+}
+
+.quemSomosItem {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+.quemSomosImg img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#missaoTitle,
+#visaoTitle,
+#valoresTitle {
+    color: #fff;
+    text-align: center;
+    background-color: #355ec5;
+    padding: 1px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+#missaoTxt,
+#visaoTxt,
+#valoresTxt {
+    text-align: justify;
+}
+
+#visaoDiv .quemSomosImg {
+    grid-column: 2;
+    grid-row: 1;
+    margin-left: 20px;
+}
+
+#visaoDiv .quemSomosImg img {
+    width: 100%;
+    height: auto;
+}
+
+#visaoDiv .quemSomosTxt {
+    grid-column: 1;
+    grid-row: 1;
+}
 
 /* PAGINA ARTIGOS */
 /* MAIN ARTIGOS */
@@ -429,7 +498,7 @@ p {
 }
 
 /* BOTÃO PAGINICIAL */
-#btnConteiner {   
+#btnConteiner {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -441,7 +510,7 @@ p {
     justify-content: center;
 }
 
-    
+
 /* PÁGINA DE LOGIN */
 #pagLogin {
     background: radial-gradient(circle at 50% 44%, #050A78 10%, #00288F 39%, #355DC5 75%, #5E8BFF 90%, #A3C8FF 98%);

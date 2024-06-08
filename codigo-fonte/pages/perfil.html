@@ -26,6 +26,9 @@
     <header>
         <!-- Imagem de Fundo -->
         <div id="bg04div">
+            <div class="foto">
+                <img id="perfil" src="../assets/perfil.jpg" alt="Foto de perfil">
+            </div>
             <a href="../pages/pagInicial.html"><i id="seta-voltar" class="bi bi-arrow-left"></i></a><svg
                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 320">
                 <path fill="#325CC8" fill-opacity="1"
@@ -38,9 +41,7 @@
                 </span>
         </div>
         <!-- Foto de perfil -->
-        <div class="foto">
-            <img id="perfil" src="../assets/perfil.jpg" alt="Foto de perfil">
-        </div>
+        
         </div>
     </header>
 
@@ -128,6 +129,29 @@
             }
         }
     });
+
+    document.getElementById('logoutButton').addEventListener('click', function () {
+    // Limpar dados de autenticação do localStorage
+    localStorage.removeItem('userEmail');
+    localStorage.removeItem('userPassword');
+
+    // Obter o email do usuário atualmente logado
+    const currentUserEmail = localStorage.getItem('userEmail');
+
+    // Obter o email associado à foto de perfil atualmente armazenada
+    const profileImageEmail = localStorage.getItem('profileImageEmail');
+
+    // Verificar se o usuário está fazendo logout da mesma conta em que a foto de perfil foi definida
+    if (currentUserEmail !== profileImageEmail) {
+        // Se não for a mesma conta, remover a foto de perfil do localStorage
+        localStorage.removeItem('profileImage');
+        localStorage.removeItem('profileImageEmail');
+    }
+
+    // Redirecionar para a página de login
+    window.location.href = "../pages/login.html";
+});
+
 </script>
 
 </html>

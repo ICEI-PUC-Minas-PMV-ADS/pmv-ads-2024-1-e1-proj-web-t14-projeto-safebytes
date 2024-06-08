@@ -32,15 +32,6 @@ function carregarNick() {
 
 carregarNick();
 
-document.getElementById('logoutButton').addEventListener('click', function () {
-    // Limpar dados de autenticação do localStorage
-    localStorage.removeItem('userEmail');
-    localStorage.removeItem('userPassword');
-
-    // Redirecionar para a página de login
-    window.location.href = "../pages/login.html";
-});
-
 
         // Adicionar evento de clique para a opção "Configurar Perfil"
         document.getElementById('configurarPerfil').addEventListener('click', function () {

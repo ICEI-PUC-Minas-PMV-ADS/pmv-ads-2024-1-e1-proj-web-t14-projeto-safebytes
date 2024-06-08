@@ -13,6 +13,86 @@ O requisito para a realização dos testes de software foi:
 |----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
 | CT-02: Verificar o sistema de login. | <ul> <li> RF-01 <br> <li> RF-02 </li> </ul> | Verificar se o sistema de login está funcionando corretamente. | <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Na homepage do site, clicar no botão de Login. </li> <br> <li> Preencher o formulário com as informações cadastradas anteriormente. </li> <br> <li> Clicar no botão "Entrar". </li> </ol> | <ul> <li> O sistema deve verificar se os dados foram preenchidos corretamente. </li> <li> O sistema deve disparar um alerta se o email informado pelo usuário ainda não estiver cadastrado no sistema. </li> <li> O sistema deve exibir um alerta de erro, se a senha informada pelo usuário não for a mesma cadastrada. </li> <li> Se todos os dados forem preenchidos corretamente, o sistema deve disparar um alerta de "Login feito com sucesso!", e redirecionar o usuário para a homepage do site. | Emerson |
 
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-03: Verificar o funcionamento da página Index</td>
+  <td>
+   <ul>
+    <li>RF- 01	O sistema deve viabilizar o cadastro no website, exigindo informações como e-mail e senha.</li>
+    <li>RF- 02	O sistema deve permitir o acesso ao website mediante o fornecimento de e-mail e senha durante o processo de login.</li>
+    <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
+   </ul>
+  </td>
+  <td>
+   Certificar que através da página index.html seja possível acessar:
+  <ul>
+   <li>A página de login</li>
+   <li>A página de cadastro</li>
+   <li>A página Quem Somos</li>
+   <li>A página de artigos</li>
+   <li>Os modals da seção "Perguntas Frequentes"</li>
+  </ul>
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar a página quemSomos.html</li>
+    <li>Acessar a página pagArtigos.html com o conteúdo que corresponde a cada card</li>
+    <li>Vizualizar o modal de cada pergunta frequente</li>
+    <li>Acessar a página login.html</li>
+    <li>Acessar a página cadastro.html</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-04: Verificar o funcionamento dos Artigos</td>
+  <td>
+   <ul>
+    <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que cada card de artigo presente na página index.html direcione o usuário a página pagArtigos.html, e o conteúdo presente na página esteja correto
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar cada um dos cards de artigos</li>
+    <li>Ler o conteúdo</li>
+    <li>Dar play no iframe</li>
+    <li>Clicar no botão "Concluir"</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)

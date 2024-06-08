@@ -6,16 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página Inicial</title>
 
-  <!-- Modal para entrada de Nickname -->
-  <div id="nicknameModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Escolha um Nickname</h2>
-        <input type="text" id="nicknameInput" placeholder="Nickname" maxlength="8">
-        <button id="saveNickname">Salvar</button>
-    </div>
-</div>
-
   <!-- Link CSS -->
   <link type="text/css" rel="stylesheet" href="../css/pagInicial_style.css">
 
@@ -31,6 +21,7 @@
 
 </head>
 
+
 <body id="pagInicial">
   <!-- Cabeçalho -->
   <header>
@@ -45,6 +36,16 @@
           <i class="bi bi-search"></i>
         </a>
       </div>
+
+        <!-- Modal para entrada de Nickname -->
+  <div id="nicknameModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Escolha um Nickname</h2>
+        <input type="text" id="nicknameInput" placeholder="Nickname" maxlength="8">
+        <button id="saveNickname">Salvar</button>
+    </div>
+</div>
 
       <!-- Foto de Perfil -->
       <a href="http://127.0.0.1:5501/codigo-fonte/pages/perfil.html">
@@ -126,6 +127,45 @@
     crossorigin="anonymous"></script>
 
   <script>
+    /* entrada de nickname */
+
+document.addEventListener("DOMContentLoaded", function () {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const emailLogado = localStorage.getItem("loggedInUserEmail");
+    const user = users.find(user => user.email === emailLogado);
+
+    if (user && !user.nickname) {
+        const modal = document.getElementById("nicknameModal");
+        const closeBtn = document.querySelector(".close");
+        const saveBtn = document.getElementById("saveNickname");
+        const nicknameInput = document.getElementById("nicknameInput");
+
+        modal.style.display = "block";
+
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        saveBtn.onclick = function () {
+            const nickname = nicknameInput.value.trim();
+
+            if (nickname && /^[a-zA-Z]+$/.test(nickname)) {
+                user.nickname = nickname;
+                localStorage.setItem("users", JSON.stringify(users));
+                modal.style.display = "none";
+                alert("Nickname salvo com sucesso!");
+            } else {
+                alert("O nickname deve conter apenas letras e ter no máximo 8 caracteres.");
+            }
+        }
+    }
+});
   </script>
 </body>
 

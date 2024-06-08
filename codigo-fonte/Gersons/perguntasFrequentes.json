@@ -1,0 +1,32 @@
+{
+    "perguntasFrequentes": {
+        "id": 0,
+        "titulo": "Perguntas Frequentes",
+        "perguntas": [
+            {
+                "id": 1,
+                "imagem": "../assets/etapa1.png",
+                "pergunta": "O que um vírus pode fazer no meu dispositivo?",
+                "resposta": "Um vírus pode roubar suas informações pessoais, danificar seu sistema, espionar suas atividades, se espalhar para outros dispositivos, exigir resgate pelo desbloqueio de arquivos, realizar ataques de negação de serviço, enviar spam e realizar outras atividades prejudiciais. Para se proteger, mantenha seu software atualizado, use antivírus confiáveis, evite clicar em links suspeitos e faça cópias de segurança regularmente."
+            },
+            {
+                "id": 2,
+                "imagem": "../assets/etapa2.png",
+                "pergunta": "Posso usar dois antivírus ao mesmo tempo?",
+                "resposta": "Não é recomendado usar dois antivírus ao mesmo tempo, pois eles podem entrar em conflito e reduzir a eficácia de ambos, causando lentidão no sistema e interferindo nas operações. Em vez disso, é melhor escolher um antivírus confiável e garantir que ele esteja sempre atualizado e configurado corretamente."
+            },
+            {
+                "id": 3,
+                "imagem": "../assets/etapa3.png",
+                "pergunta": "Como fazer dowloads com segurança?",
+                "resposta": "Para fazer downloads com segurança, sempre opte por fontes confiáveis e evite sites duvidosos. Antes de baixar, verifique se o site é legítimo e leia comentários de outros usuários. Mantenha seu antivírus atualizado e evite clicar em links suspeitos."
+            },
+            {
+                "id": 4,
+                "imagem": "../assets/etapa4.png",
+                "pergunta": "Como os vírus afetam os arquivos?",
+                "resposta": "Os vírus podem afetar os arquivos de diversas maneiras, como corrompendo-os, excluindo-os, criptografando-os ou adicionando código malicioso. Isso pode resultar na perda de dados, danos ao sistema operacional ou na propagação do vírus para outros dispositivos."
+            }
+        ]
+    }
+}

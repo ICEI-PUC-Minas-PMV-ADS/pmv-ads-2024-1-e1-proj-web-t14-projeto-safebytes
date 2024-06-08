@@ -13,7 +13,7 @@ function createQuemSomosTitle(quemSomos) {
     const H1 = document.createElement('h1');
     H1.innerHTML = quemSomos.titulo;
 
-    quemSomosTitle.appendChild(H1)
+    quemSomosTitle.appendChild(H1);
 }
 
 function createQuemSomosItem(quemSomos) {
@@ -28,7 +28,7 @@ function createQuemSomosItem(quemSomos) {
             const quemSomosImgDiv = document.createElement('div');
             quemSomosImgDiv.className = 'quemSomosImg';
 
-            const quemSomosImg = document.createElement('img')
+            const quemSomosImg = document.createElement('img');
             quemSomosImg.src = secao.imagem;
             quemSomosImg.id = secao.id;
             quemSomosImg.alt = `Quem Somos - ${secao.titulo}` || 'Missão';
@@ -60,7 +60,7 @@ function createQuemSomosItem(quemSomos) {
             quemSomosItem.appendChild(quemSomosImgDiv);
             quemSomosItem.appendChild(quemSomosTxt);
 
-            quemSomosList.appendChild(quemSomosItem)
+            quemSomosList.appendChild(quemSomosItem);
         });
     } else {
         console.error('A propriedade secoes está indefinida ou quemSomos não é um objeto.');
@@ -70,10 +70,12 @@ function createQuemSomosItem(quemSomos) {
 function init() {
     fetchData('../Gersons/quemSomos.json')
         .then(data => {
-            const quemSomos = data.quemSomos[0];
-            createQuemSomosTitle(quemSomos)
+            const quemSomos = data.quemSomos;
+            createQuemSomosTitle(quemSomos);
             createQuemSomosItem(quemSomos);
         });
 }
 
-init();
+document.addEventListener('DOMContentLoaded', () => {
+    init();
+});

@@ -226,9 +226,25 @@ p {
 
 
 /* SEÇÃO PERGUNTAS FREQUENTES */
+.modal-content {
+    background-color: #355ec5 !important;
+    color: #fff !important;
+}
+
+.modal-header {
+    border-bottom: 0.5px solid #050a78 !important;
+}
+
+.modal-footer {
+    margin-top: 20px;
+    border-top: 0.5px solid #050a78 !important;
+}
+.modal-footer .button {
+    width: 30%;
+}
 
 #perguntasSec {
-    margin-bottom: 70px;
+    margin: 70px 0;
 }
 
 .perguntasMainTitle h2 {
@@ -249,8 +265,17 @@ p {
 }
 
 .perguntasItem {
-    width: 90%;
+    width: 80%;
     text-align: center;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.perguntasItem:hover {
+    background-color: #a3c8ffa8;
+    border-radius: 10px;
+    transition: 0.75s;
+    scale: 1.1;
 }
 
 .perguntasImg img {

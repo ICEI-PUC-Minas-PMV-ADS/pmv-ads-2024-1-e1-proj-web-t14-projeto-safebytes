@@ -19,8 +19,62 @@
   <!-- Tutoriais JavaScript -->
   <script defer type="module" src="../js/pagInicial.js"></script>
 
-</head>
+  <style>
+    /* CSS para o pop-up */
+    #nicknamePopup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #000;
+      padding: 20px;
+      background-color: #fff;
+      z-index: 1000;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
 
+    #overlay {
+      display: none;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+    }
+
+    .popup-container {
+      font-family: Arial, sans-serif;
+    }
+
+    .popup-container h2 {
+      text-align: center;
+    }
+
+    .popup-container label,
+    .popup-container input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    .popup-container button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .popup-container button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
 
 <body id="pagInicial">
   <!-- Cabeçalho -->
@@ -37,15 +91,16 @@
         </a>
       </div>
 
-        <!-- Modal para entrada de Nickname -->
-  <div id="nicknameModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Escolha um Nickname</h2>
-        <input type="text" id="nicknameInput" placeholder="Nickname" maxlength="8">
-        <button id="saveNickname">Salvar</button>
-    </div>
-</div>
+      <!-- Modal para entrada de Nickname -->
+      <div id="overlay"></div>
+      <div id="nicknamePopup" class="popup-container">
+        <h2>Defina seu Nickname</h2>
+        <form id="nicknameForm">
+          <label for="nickname">Nickname:</label>
+          <input type="text" id="nickname" name="nickname" maxlength="8" pattern="[A-Za-z]+" required>
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
 
       <!-- Foto de Perfil -->
       <a href="http://127.0.0.1:5501/codigo-fonte/pages/perfil.html">
@@ -95,7 +150,6 @@
   <section class="secContinue">
     <div id="continuarTutorial">
       <!-- Capa -->
-
       <img src="../assets/imgTutoriais2.jpg" id="capaTutorial" alt="Capa do Tutorial">
 
       <!-- Título -->
@@ -128,46 +182,27 @@
 
   <script>
     /* entrada de nickname */
+    // JavaScript para exibir e ocultar o pop-up
+    document.getElementById('nicknameForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var nickname = document.getElementById('nickname').value;
+      if (/^[A-Za-z]{1,8}$/.test(nickname)) {
+        localStorage.setItem('nickname', nickname);
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('nicknamePopup').style.display = 'none';
+      } else {
+        alert('Nickname inválido. Use apenas letras e até 8 caracteres.');
+      }
+    });
 
-document.addEventListener("DOMContentLoaded", function () {
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    const emailLogado = localStorage.getItem("loggedInUserEmail");
-    const user = users.find(user => user.email === emailLogado);
-
-    if (user && !user.nickname) {
-        const modal = document.getElementById("nicknameModal");
-        const closeBtn = document.querySelector(".close");
-        const saveBtn = document.getElementById("saveNickname");
-        const nicknameInput = document.getElementById("nicknameInput");
-
-        modal.style.display = "block";
-
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-        }
-
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-        saveBtn.onclick = function () {
-            const nickname = nicknameInput.value.trim();
-
-            if (nickname && /^[a-zA-Z]+$/.test(nickname)) {
-                user.nickname = nickname;
-                localStorage.setItem("users", JSON.stringify(users));
-                modal.style.display = "none";
-                alert("Nickname salvo com sucesso!");
-            } else {
-                alert("O nickname deve conter apenas letras e ter no máximo 8 caracteres.");
-            }
-        }
-    }
-});
+    // Verificar se o nickname já está definido ao carregar a página
+    document.addEventListener('DOMContentLoaded', function () {
+      if (!localStorage.getItem('nickname')) {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('nicknamePopup').style.display = 'block';
+      }
+    });
   </script>
 </body>
-
 
 </html>

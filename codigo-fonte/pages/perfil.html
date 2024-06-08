@@ -28,6 +28,18 @@
 
         <!-- Foto de perfil -->
         <img id="perfil" src="../assets/perfil.jpg" alt="Foto de perfil">
+        <script>
+            // Carregar a imagem de perfil do localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+        const perfilImg = document.getElementById('perfil');
+        if (perfilImg) {
+            perfilImg.setAttribute('src', storedImage);
+        }
+    }
+});
+        </script>
 
         <!-- Imagem de Fundo -->
         <img id="bgazul" src="../assets/bgImg03.png" alt="Imagem de fundo">

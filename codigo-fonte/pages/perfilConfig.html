@@ -30,7 +30,7 @@
             <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
             <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
         </span>
-        
+
         <div id="formulario">
             <form id="perfilForm">
                 <div class="input-box">
@@ -43,67 +43,97 @@
                 </div>
             </form>
         </div>
-        </div>
+    </div>
 
-        <footer>
-            <div class="botao-container">
-                <button class="botao-cancelar" onclick="cancelChanges()">Cancelar</button>
-                <button class="botao-salvar" onclick="saveChangesAndUpdateLogin()">Salvar</button>
-            </div>
-        </footer>
+    <footer>
+        <div class="botao-container">
+            <button class="botao-cancelar" onclick="cancelChanges()">Cancelar</button>
+            <button class="botao-salvar" onclick="saveChangesAndUpdateLogin()">Salvar</button>
+        </div>
+    </footer>
     </div>
 </body>
 
 </html>
 
 <script defer src="../js/fotoperfil.js"></script>
+<script defer src="../js/perfil.js"></script>
+
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const imgDiv = document.querySelector('.user-img');
+        const img = document.querySelector('#photo');
+        const file = document.querySelector('#file');
+        const uploadbtn = document.querySelector('#uploadbtn');
 
-        
-        function saveChangesAndUpdateLogin() {
-            // Obter os dados do usuário
-            const nickname = document.getElementById('novoNickname').value;
-            const name = document.getElementById('nome').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('senha').value;
+        file.addEventListener('change', function () {
+            const chosenFile = this.files[0];
+            if (chosenFile) {
+                const reader = new FileReader();
 
-            // Criar objeto de usuário
-            const user = {
-                nome: name,
-                email: email,
-                senha: password,
-                nickname: nickname
-            };
-
-            // Obter a lista de usuários do localStorage ou criar uma nova se não existir
-            let users = JSON.parse(localStorage.getItem("users")) || [];
-
-            // Verificar se o usuário já existe na lista
-            const existingUserIndex = users.findIndex(u => u.email === email);
-
-            if (existingUserIndex !== -1) {
-                // Se o usuário já existir, atualizar seus dados
-                users[existingUserIndex] = user;
-            } else {
-                // Caso contrário, adicionar o novo usuário à lista
-                users.push(user);
+                reader.addEventListener('load', function () {
+                    img.setAttribute('src', reader.result);
+                    // Salvar a imagem de perfil no localStorage
+                    localStorage.setItem('profileImage', reader.result);
+                });
+                reader.readAsDataURL(chosenFile);
             }
+        });
 
-            // Salvar a lista atualizada de usuários no localStorage
-            localStorage.setItem("users", JSON.stringify(users));
-
-            // Alertar que as alterações foram salvas com sucesso
-            alert('Alterações salvas com sucesso!');
-
-            // Redirecionar para a página inicial
-            window.location.href = "../pages/pagInicial.html";
+        // Carregar a imagem de perfil do localStorage ao carregar a página
+        const storedImage = localStorage.getItem('profileImage');
+        if (storedImage) {
+            img.setAttribute('src', storedImage);
         }
-        function cancelChanges() {
-            // Redirecionar para a página inicial
-            window.location.href = "../pages/pagInicial.html";
+    });
+
+    function saveChangesAndUpdateLogin() {
+        // Obter os dados do usuário
+        const nickname = document.getElementById('novoNickname').value;
+        const name = document.getElementById('nome').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('senha').value;
+
+        // Criar objeto de usuário
+        const user = {
+            nome: name,
+            email: email,
+            senha: password,
+            nickname: nickname
+        };
+
+        // Obter a lista de usuários do localStorage ou criar uma nova se não existir
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+
+        // Verificar se o usuário já existe na lista
+        const existingUserIndex = users.findIndex(u => u.email === email);
+
+        if (existingUserIndex !== -1) {
+            // Se o usuário já existir, atualizar seus dados
+            users[existingUserIndex] = user;
+        } else {
+            // Caso contrário, adicionar o novo usuário à lista
+            users.push(user);
         }
-        
-    </script>
+
+        // Salvar a lista atualizada de usuários no localStorage
+        localStorage.setItem("users", JSON.stringify(users));
+
+        // Alertar que as alterações foram salvas com sucesso
+        alert('Alterações salvas com sucesso!');
+
+        // Redirecionar para a página inicial
+        window.location.href = "../pages/pagInicial.html";
+    }
+
+    function cancelChanges() {
+        // Redirecionar para a página inicial
+        alert('Alterações canceladas.');
+        window.location.href = "../pages/pagInicial.html";
+    }
+</script>
+
+</script>
 </body>
 
 </html>

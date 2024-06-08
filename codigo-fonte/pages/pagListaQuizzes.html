@@ -26,12 +26,16 @@
         <div class="cabecalho">
             <!-- Botão voltar para página Inicial  -->
             <div class="botaoDiv">
+                <a href="../pages/pagInicial.html">
                 <i id="botaoPagInicial" class="bi bi-chevron-compact-left"></i>
+            </a>
             </div>
 
             <div class="perfilDiv">
                 <!-- Foto de Perfil  -->
+                <a href="../pages/perfil.html">
                 <img id="perfil" src="../assets/perfil.jpg" alt="Foto de Perfil">
+                </a>
             </div>
         </div>
     </header>
@@ -52,4 +56,16 @@
         </script>
 </body>
 
+<script>
+    // Carregar a imagem de perfil do localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+        const perfilImg = document.getElementById('perfil');
+        if (perfilImg) {
+            perfilImg.setAttribute('src', storedImage);
+        }
+    }
+});
+</script>
 </html>

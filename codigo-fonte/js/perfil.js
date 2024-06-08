@@ -42,8 +42,8 @@ document.getElementById('logoutButton').addEventListener('click', function () {
 });
 
 
-// Adicionar evento de clique para a opção "Configurar Perfil"
-document.getElementById('configurarPerfil').addEventListener('click', function () {
-    window.location.href = "../pages/perfilConfig.html";
-});
+        // Adicionar evento de clique para a opção "Configurar Perfil"
+        document.getElementById('configurarPerfil').addEventListener('click', function () {
+            window.location.href = "../pages/perfilConfig.html";
+        });
 

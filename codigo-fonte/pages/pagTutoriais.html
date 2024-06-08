@@ -31,7 +31,9 @@
 
             <div class="perfilDiv">
                 <!-- Foto de Perfil  -->
+                <a href="../pages/perfil.html">
                 <img id="perfil" src="../assets/perfil.jpg" alt="Foto de Perfil">
+                </a>
             </div>
         </div>
     </header>
@@ -41,7 +43,7 @@
         <div class="tituloPrincipal">
             <h1>Lista de Tutoriais Disponíveis</h1>
         </div>
-     
+
 
         <!-- Lista de Tutoriais -->
         <div class="lista">
@@ -49,5 +51,18 @@
         </div>
     </main>
 </body>
+
+<script>
+    // Carregar a imagem de perfil do localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+        const perfilImg = document.getElementById('perfil');
+        if (perfilImg) {
+            perfilImg.setAttribute('src', storedImage);
+        }
+    }
+});
+</script>
 
 </html>

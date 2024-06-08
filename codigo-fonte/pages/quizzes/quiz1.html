@@ -89,12 +89,19 @@
 
     function mostrarResultadoFinal() {
         document.querySelector('.corpo').innerHTML = `
-        <div class="resultado-final">
+            <div class="resultado-final">
                 <h2>Quiz Completo!</h2>
                 <p>Sua pontuação: ${pontuacao} de ${perguntas.length}</p>
+                <div class="true-button">
+                    <button class="concluir">Concluir</button>
+                </div>
             </div>
         `;
+        document.querySelector('.concluir').addEventListener('click', () => {
+            window.location.href = '../pagListaQuizzes.html';
+        });
     }
+
 
     document.querySelector('.V').addEventListener('click', () => verificarResposta('Verdadeiro'));
     document.querySelector('.F').addEventListener('click', () => verificarResposta('Falso'));

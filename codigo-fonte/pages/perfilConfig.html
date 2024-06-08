@@ -18,56 +18,92 @@
         </svg>
     </div>
 
-    <!--background imgs-->
     <div class="container">
-        <div>
-            <div id="perfildiv">
-                <span class="user-img">
-                    <img src="../assets/perfil.jpg" id="photo" alt="profile">
-                    <input type="file" id="file">
-                    <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
-                </span>
-            </div>
+        <div id="perfildiv">
+            <span class="user-img">
+                <img src="../assets/perfil.jpg" id="photo" alt="profile">
+                <input type="file" id="file">
+                <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
+            </span>
         </div>
-
-        <!--nickname part-->
-        <div id="campoEditar" class="hidden">
+        <span id="campoEditar" class="hidden">
             <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
             <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
+        </span>
+        
+        <div id="formulario">
+            <form id="perfilForm">
+                <div class="input-box">
+                    <input type="text" id="nome" placeholder="Nome" required>
+                    <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                    <input type="email" id="email" placeholder="E-mail" required>
+                    <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                    <input type="password" id="senha" placeholder="Senha">
+                    <a href="#"><i class="bi bi-pencil-fill"></i></a>
+                </div>
+            </form>
         </div>
-    </div>
+        </div>
 
-    <!--trocar foto perfil part-->
-
-
-    <!--formulário part -->
-    <div id="formulario">
-        <form action="">
-            <div class="input-box">
-                <input type="text" name="name" placeholder="Nome" required><a href="#"><i
-                        class="bi bi-pencil-fill"></i></a>
-                <input type="text" name="sobrenome" placeholder="Sobrenome" required><a href="#"><i
-                        class="bi bi-pencil-fill"></i></a>
-                <input type="email" name="email" placeholder="E-mail" required><a href="#"><i
-                        class="bi bi-pencil-fill"></i></a>
-                <input type="password" name="senha" placeholder="Senha"><a href="#"><i
-                        class="bi bi-pencil-fill"></i></a>
+        <footer>
+            <div class="botao-container">
+                <button class="botao-cancelar" onclick="cancelChanges()">Cancelar</button>
+                <button class="botao-salvar" onclick="saveChangesAndUpdateLogin()">Salvar</button>
             </div>
-        </form>
+        </footer>
     </div>
+</body>
 
-    <!--footer part-->
-    <footer>
-        <div class="botao-container">
-            <button class="botao-cancelar">Cancelar</button>
-            <button class="botao-salvar" onclick="submitForm()">Salvar</button>
-        </div>
-    </footer>
+</html>
 
-    <!--scrip part-->
-    <script defer src="../js/fotoperfil.js">
+<script defer src="../js/fotoperfil.js"></script>
+<script>
+
+        
+        function saveChangesAndUpdateLogin() {
+            // Obter os dados do usuário
+            const nickname = document.getElementById('novoNickname').value;
+            const name = document.getElementById('nome').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('senha').value;
+
+            // Criar objeto de usuário
+            const user = {
+                nome: name,
+                email: email,
+                senha: password,
+                nickname: nickname
+            };
+
+            // Obter a lista de usuários do localStorage ou criar uma nova se não existir
+            let users = JSON.parse(localStorage.getItem("users")) || [];
+
+            // Verificar se o usuário já existe na lista
+            const existingUserIndex = users.findIndex(u => u.email === email);
+
+            if (existingUserIndex !== -1) {
+                // Se o usuário já existir, atualizar seus dados
+                users[existingUserIndex] = user;
+            } else {
+                // Caso contrário, adicionar o novo usuário à lista
+                users.push(user);
+            }
+
+            // Salvar a lista atualizada de usuários no localStorage
+            localStorage.setItem("users", JSON.stringify(users));
+
+            // Alertar que as alterações foram salvas com sucesso
+            alert('Alterações salvas com sucesso!');
+
+            // Redirecionar para a página inicial
+            window.location.href = "../pages/pagInicial.html";
+        }
+        function cancelChanges() {
+            // Redirecionar para a página inicial
+            window.location.href = "../pages/pagInicial.html";
+        }
+        
     </script>
-
 </body>
 
 </html>

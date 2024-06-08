@@ -1,51 +1,40 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #A3C8FF !important;
+    background-color: #A3C8FF;
     background-repeat: no-repeat;
     background-attachment: scroll;
-    min-height: 100vh;
     margin: 0px;
-    padding: 0px;
     overflow-x: hidden;
-
 }
 
 /* input do nickname */
+#campoEditar {
+    display: inline-flex;
+    justify-content: center; /* Alinhar o contêiner ao centro horizontal */
+    align-items: center; /* Alinhar o contêiner ao centro vertical */
+    height: 10vh; /* Garantir que o contêiner ocupe toda a altura da página */
+    width: 100%; /* Garantir que o contêiner ocupe toda a largura da página */
+}
+
 #campoEditar input[type="text"] {
     border: none;
     outline: none;
     background-color: transparent;
-    padding: 0;
-    margin: 0;
     font-size: 50px;
-    text-align: center;
-    margin: auto;
-    margin-top: 11rem;
-    margin-left: 35%;
-    text-align: start;
+    text-align: start; /* Alinhamento do texto à esquerda */
+    max-width: 100%; /* Definir uma largura máxima para o campo de entrada */
+    border: 0px 0px 20px 20px solid transparent; /* Adiciona uma borda ao redor do item */
+    padding: 2%; /* Adiciona preenchimento para dar espaço interno à borda */
 }
 
-label {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    border: #4240ec;
-    margin: 3rem 1.5rem 3rem 0;
-    border-radius: 100%;
-
-
-}
-
-label i {
-    position: inherit;
-    left: 110%;
-    bottom: 40%;
+#campoEditar label i {
     font-size: 40px;
     color: #00288F;
-    transform: translate(1150%, -5%);
     cursor: pointer;
+    margin-left: 330px;
+    display: inline-flex;
+    border: 3px solid transparent; /* Adiciona uma borda ao redor do item */
+    padding: 15px; /* Adiciona preenchimento para dar espaço interno à borda */
 }
 
 /*
@@ -55,43 +44,36 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 /* inicio fundos pág */
 .container {
     position: relative;
-    z-index: 2;
-    position: relative;
-    bottom: 27rem;
+    bottom: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px; /* Apenas para dar uma altura à container para fins de demonstração */
     /* Certifique-se de que esteja acima do bgazul */
 }
 
 .bg04div{
     width: 50%;
-
 }
-
-#bgazul {
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    top: -20%;
-    position: absolute;
-    /* Certifique-se de que esteja acima dos outros elementos */
-}
-
-
 /* fim fundos da pág */
 
 /*início parte de foto do perfil */
-.user-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: inline-block;
-    justify-content: center;
-    position: relative;
-    z-index: 3;
-}
-
 #perfildiv{
     display: flex;
     justify-content: center;
+    border: 3px solid transparent; /* Adiciona uma borda ao redor do item */
+    padding: 6%; /* Adiciona preenchimento para dar espaço interno à borda */
+}
+
+.user-img label {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: #4240ec;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 100%;
 }
 
 #photo {
@@ -118,16 +100,6 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
 
-.user-img i {
-    position: relative;
-    font-size: 1.6rem;
-    color: #00288F;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(-125%, 43%);
-}
-
 /*fim da parte de foto do perfil */
 
 
@@ -144,25 +116,15 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     color: #00288F;
 }
 
-.heading span {
-    margin-left: 0px;
-}
-
 #formulario {
-    display: flex;
     justify-content: center;
-    max-width: 75rem;
+    margin-top: 10px;
     margin: 2rem auto;
     text-align: center;
     background: rgba(8, 70, 184, 0.527);
     width: 650px;
-    height: 550px;
-    border-radius: 15%;
-    opacity: 50%;
-    margin-bottom: -300px;
-    top: -450px;
-    position: relative;
-    
+    height: 415px;
+    border-radius: 25%;
 }
 
 .input-box input {
@@ -177,35 +139,25 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     resize: none;
 }
 
-.heading span {
-    margin-left: 0px;
-}
-
 .botao-container .botao-cancelar {
-    top: 220%;
     width: 15%;
-    padding: 1.5rem;
+    padding: 1.5%;
     font-size: 1.6rem;
     color: white;
     background: #6697DF;
     border-radius: 3rem;
-    right: 81%;
     cursor: pointer;
-    resize: none;
     border: 2px black;
 }
 
 .botao-container .botao-salvar {
-    top: 220%;
     width: 15%;
-    padding: 1.5rem;
+    padding: 1.5%;
     font-size: 1.6rem;
     color: white;
     background: #00288F;
     border-radius: 3rem;
     border: 2px black;
-    resize: none;
-    left: 81%;
     cursor: pointer;
 }
 
@@ -223,7 +175,7 @@ footer {
     width: 100%;
     background-color: #214ab1;
     padding: 10px 0;
-    display: block;
+    margin-top: 9rem;
 
 }
 

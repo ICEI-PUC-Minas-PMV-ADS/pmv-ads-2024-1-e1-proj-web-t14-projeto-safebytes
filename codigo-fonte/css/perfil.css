@@ -1,0 +1,152 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #A3C8FF;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin: 0;
+}
+/* Header */
+
+
+#bg04div .bi-arrow-left {
+    font-size: 24px; /* Tamanho do ícone */
+}
+
+#seta-voltar{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    position: absolute;
+    z-index: 20;
+}
+
+
+#perfil {
+    width: 15%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 6rem;
+}
+
+
+.foto{
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #26a5fffd 40%, #ffffff 100%);
+    -webkit-background-clip: text;
+    margin: 0;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
+}
+
+
+/*------------------------------------------------*/
+/* parte branca */
+
+.nick-box {
+    background-color: white;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    opacity: 70%;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: -2;
+}
+
+#caixa-branca{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    margin-top: 7%;
+}
+
+.nickname {
+    position: relative;
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23rem;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+
+
+
+/*--------------------------------------------*/
+
+/* footer // caixa de opções*/
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.container-box {
+    background-color: white;
+    border-radius: 20px;
+    width: auto;
+    margin: 0 0 30px 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 250px 50px;
+    justify-items: left;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: #45464621 solid;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: #454646bb;
+}
+
+.wrapper:nth-child(4) {
+    border-bottom: none;
+}
+
+.wrapper:hover,
+.wrapper:hover a {
+    background-color: #00288F;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.icon {
+    margin: 30px;
+    font-size: 20px;
+}
+
+.linkIcon {
+    font-size: 20px;
+}
+
+
+/*media query celular */
+/*@media screen and (min-width: 360px) and (min-height: 772px) and (max-width: 360) and (max-height: 844px) {
+
+}*/
+/*@media screen and (max-width: 767px) {*/

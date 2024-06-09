@@ -1,20 +1,20 @@
-const imgDiv = document.querySelector('.user-img');
-const img = document.querySelector('#photo');
-const file = document.querySelector('#file');
-const uploadbtn = document.querySelector('#uploadbtn');
+//const imgDiv = document.querySelector('.user-img');
+//const img = document.querySelector('#photo');
+//const file = document.querySelector('#file');
+//const uploadbtn = document.querySelector('#uploadbtn');
+//
+//file.addEventListener('change', function () {
+//    const chosedfile = this.files[0];
+ //   if (chosedfile) {
+  //      const reader = new FileReader();
 
-file.addEventListener('change', function () {
-    const chosedfile = this.files[0];
-    if (chosedfile) {
-        const reader = new FileReader();
+//        reader.addEventListener('load', function () {
+//            img.setAttribute('src', reader.result);
+ //       })
+ //       reader.readAsDataURL(chosedfile);
+ //   }
 
-        reader.addEventListener('load', function () {
-            img.setAttribute('src', reader.result);
-        })
-        reader.readAsDataURL(chosedfile);
-    }
-
-})
+//})
 
 // Função para salvar os dados do perfil no armazenamento local
 function salvarPerfil() {
@@ -90,14 +90,6 @@ function submitForm() {
     alert('Dados salvos com sucesso!');
 }
 
-// Função para cancelar alterações e recarregar dados
-function cancelChanges() {
-    loadUserData();
-    alert('Alterações canceladas.');
-}
-
-// Carregar dados ao iniciar
-window.onload = loadUserData;
 
 
 

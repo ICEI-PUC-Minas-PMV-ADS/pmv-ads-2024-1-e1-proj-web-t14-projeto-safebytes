@@ -7,7 +7,7 @@
     <title>Tutoriais</title>
 
     <!-- Link CSS -->
-    <link type="text/css" rel="stylesheet" href="../css/pagsListas_style.css">
+    <link type="text/css" rel="stylesheet" href="../css/stylesheets.css">
 
     <!-- Bootstrap 5.3 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,31 +17,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Tutoriais JavaScript -->
+    <script defer src="../js/header.js"></script>
     <script defer src="../js/tutoriais.js"></script>
 </head>
 
 <body id="pagTutoriais">
-    <!-- Cabeçalho -->
-    <header>
-        <div class="cabecalho">
-            <!-- Botão voltar para página Inicial  -->
-            <div class="botaoDiv">
-                <i id="botaoPagInicial" class="bi bi-chevron-compact-left"></i>
-            </div>
-
-            <div class="perfilDiv">
-                <!-- Foto de Perfil  -->
-                <img id="perfil" src="../assets/perfil.jpg" alt="Foto de Perfil">
-            </div>
-        </div>
-    </header>
-
-    <main class="secPrincipal">
+    <div id="bg06Div">
+        <svg id="bg06" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 320">
+            <path fill="#355DC5" fill-opacity="1"
+                d="M0,320L30,293.3C60,267,120,213,180,186.7C240,160,300,160,360,181.3C420,203,480,245,540,245.3C600,245,660,203,720,186.7C780,171,840,181,900,208C960,235,1020,277,1080,288C1140,299,1200,277,1260,256C1320,235,1380,213,1410,202.7L1440,192L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+    </div>
+    <main class="secPrincipalTutoriais">
         <!-- Título -->
         <div class="tituloPrincipal">
-            <h1>Lista de Tutoriais Disponíveis</h1>
+            <h1>Tutoriais</h1>
         </div>
-     
+
 
         <!-- Lista de Tutoriais -->
         <div class="lista">
@@ -49,5 +42,18 @@
         </div>
     </main>
 </body>
+
+<script>
+    // Carregar a imagem de perfil do localStorage ao carregar a página
+    document.addEventListener('DOMContentLoaded', function () {
+        const storedImage = localStorage.getItem('profileImage');
+        if (storedImage) {
+            const perfilImg = document.getElementById('perfil');
+            if (perfilImg) {
+                perfilImg.setAttribute('src', storedImage);
+            }
+        }
+    });
+</script>
 
 </html>

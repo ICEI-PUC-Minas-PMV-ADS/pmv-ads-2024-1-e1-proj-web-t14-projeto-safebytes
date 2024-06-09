@@ -10,10 +10,16 @@ body {
 /* input do nickname */
 #campoEditar {
     display: inline-flex;
-    justify-content: center; /* Alinhar o contêiner ao centro horizontal */
-    align-items: center; /* Alinhar o contêiner ao centro vertical */
-    height: 10vh; /* Garantir que o contêiner ocupe toda a altura da página */
-    width: 100%; /* Garantir que o contêiner ocupe toda a largura da página */
+    justify-content: center;
+    /* Alinhar o contêiner ao centro horizontal */
+    align-items: center;
+    /* Alinhar o contêiner ao centro vertical */
+    height: 10vh;
+    /* Garantir que o contêiner ocupe toda a altura da página */
+    width: 100%;
+    /* Garantir que o contêiner ocupe toda a largura da página */
+    border: 0px 0px 20px 20px solid transparent;
+    /* Adiciona uma borda ao redor do item */
 }
 
 #campoEditar input[type="text"] {
@@ -21,10 +27,15 @@ body {
     outline: none;
     background-color: transparent;
     font-size: 50px;
-    text-align: start; /* Alinhamento do texto à esquerda */
-    max-width: 100%; /* Definir uma largura máxima para o campo de entrada */
-    border: 0px 0px 20px 20px solid transparent; /* Adiciona uma borda ao redor do item */
-    padding: 2%; /* Adiciona preenchimento para dar espaço interno à borda */
+    text-align: start;
+    /* Alinhamento do texto à esquerda */
+    max-width: 100%;
+    /* Definir uma largura máxima para o campo de entrada */
+
+}
+
+#novoNickname::placeholder {
+    color: rgb(43, 40, 40);
 }
 
 #campoEditar label i {
@@ -33,8 +44,10 @@ body {
     cursor: pointer;
     margin-left: 330px;
     display: inline-flex;
-    border: 3px solid transparent; /* Adiciona uma borda ao redor do item */
-    padding: 15px; /* Adiciona preenchimento para dar espaço interno à borda */
+    border: 20px solid transparent;
+    /* Adiciona uma borda ao redor do item */
+    padding: 1px;
+    /* Adiciona preenchimento para dar espaço interno à borda */
 }
 
 /*
@@ -42,27 +55,33 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 */
 
 /* inicio fundos pág */
-.container {
-    position: relative;
-    bottom: 25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 450px; /* Apenas para dar uma altura à container para fins de demonstração */
-    /* Certifique-se de que esteja acima do bgazul */
-}
 
-.bg04div{
+.bg04div {
     width: 50%;
 }
+
 /* fim fundos da pág */
 
 /*início parte de foto do perfil */
-#perfildiv{
+#perfildiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-bottom: 5rem;
+
+}
+
+.container {
     display: flex;
     justify-content: center;
-    border: 3px solid transparent; /* Adiciona uma borda ao redor do item */
-    padding: 6%; /* Adiciona preenchimento para dar espaço interno à borda */
+    align-items: center;
+
+}
+
+.user-img {
+    max-width: 12rem;
+    min-height: 12rem;
 }
 
 .user-img label {
@@ -77,8 +96,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 #photo {
-    width: 200px;
-    height: 200px;
+    width: 100%;
     border-radius: 50%;
 }
 
@@ -99,6 +117,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     background-color: #6697DF;
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
+
 
 /*fim da parte de foto do perfil */
 
@@ -124,7 +143,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     background: rgba(8, 70, 184, 0.527);
     width: 650px;
     height: 415px;
-    border-radius: 25%;
+    border-radius: 35px;
 }
 
 .input-box input {
@@ -147,7 +166,8 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     background: #6697DF;
     border-radius: 3rem;
     cursor: pointer;
-    border: 2px black;
+    border: 1px black;
+    min-width: 17%;
 }
 
 .botao-container .botao-salvar {
@@ -157,8 +177,9 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     color: white;
     background: #00288F;
     border-radius: 3rem;
-    border: 2px black;
+    border: 1px black;
     cursor: pointer;
+    min-width: 17%;
 }
 
 .botao-cancelar:hover {
@@ -170,13 +191,10 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 footer {
-    flex-shrink: 0;
-    bottom: 0;
     width: 100%;
     background-color: #214ab1;
     padding: 10px 0;
     margin-top: 9rem;
-
 }
 
 .botao-container {
@@ -185,142 +203,93 @@ footer {
     /* Espaço uniforme entre os botões */
 }
 
-/*media screen para celulares estilo samsung s20 */
-@media screen and (max-width: 800px) {
-    #perfil {
-        width: 64%;
-        margin-top: 20px;
-        margin-left: 64px;
+/*media query celular */
+/* @media screen and (min-width: 360px) and (max-width: 390px)  and (min-height: 772px) and (max-height: 926px) {
+*/
+@media screen and (max-width: 767px) {
+
+    .botao-container .botao-cancelar,
+    .botao-container .botao-salvar {
+        width: 40%;
+        min-width: 28%;
+    }
+
+    #perfildiv {
+        margin-bottom: 1rem;
+
     }
 
     .user-img {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        margin: 15% 45%;
-    }
-
-    #photo {
-        width: 170px;
-        height: 170px;
-        border-radius: 50%;
-        transform: translate(-36%);
-    }
-
-    #uploadbtn {
-        position: absolute;
-        height: 30px;
-        width: 30px;
-        padding: 6px 6px;
-        border-radius: 50%;
-        cursor: pointer;
-        color: white;
-        transform: translate(-210%);
-        margin-top: 30px;
-        background-color: #6697DF;
-        box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
-    }
-
-    #bgazul {
-        height: 45%;
-        margin-top: -18%;
-    }
-
-    .branco-box {
-        background-color: white;
-        border-radius: 10%;
-        position: absolute;
-        top: -50px;
-        right: 0%;
-        display: flex;
-        justify-content: center;
-        opacity: 70%;
-        width: 100%;
-        height: 67%;
-        z-index: -2;
-    }
-
-    .nickname {
-        position: absolute;
-        font-size: 50px;
-        top: 39%;
-        right: 31%;
-    }
-
-    .nickname i {
-        position: absolute;
-        left: 110%;
-        bottom: 40%;
-        font-size: 37px;
-        color: #00288F;
-    }
-
-    .trocar-foto .circulo-foto {
-        transform: translate(315%, -90%);
-    }
-
-    #formulario i {
-        position: relative;
-        left: 5%;
-        z-index: 4;
-        font-size: 40px;
-        color: #00288F !important;
-    }
-
-    .heading span {
-        margin-left: 0px;
+        max-width: 4rem;
+        min-height: 4rem;
     }
 
     #formulario {
-        max-width: 23rem;
         margin: 2rem auto;
-        text-align: center;
-        background: rgba(8, 70, 184, 0.527);
-        width: 300px;
-        height: 425px;
-        border-radius: 10%;
-        opacity: 50%;
+        width: 350px;
+        height: 358px;
+        border-radius: 30px;
+        justify-content: space-between;
+    }
+
+    .input-box input {
+        width: 30%;
+        font-size: 1.2rem;
+        border-radius: 1.3rem;
         position: absolute;
-        top: 66%;
-        left: 1%;
-        right: 0%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
     }
 
     #formulario i {
         position: relative;
-        left: 5%;
+        left: 20vw;
         z-index: 4;
         font-size: 30px;
-        color: #00288F !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20%;
     }
 
-    .input-box input {
-        width: 55%;
-        padding: 1.5rem;
-        font-size: 1rem;
-        color: var(--text-color);
-        background: white;
-        border-radius: 1.3rem;
-        border: 2px solid var(--main-color);
-        margin: 1.2rem 0;
-        resize: none;
+    #uploadbtn {
+        height: 20px;
+        width: 20px;
+        transform: translate(-70%);
+        margin-top: 20px;
     }
 
-    .botao .botao-cancelar {
+    .user-img {
+        max-width: 6.5rem;
+        min-height: 6.5rem;
+    }
+
+    #campoEditar {
+        display: inline-flex;
+        justify-content: center;
+        /* Alinhar o contêiner ao centro horizontal */
+        align-items: center;
+        /* Alinhar o contêiner ao centro vertical */
+        height: 0vh;
+        margin-top: 35px;
+
+    }
+#formulario i, input{
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+    #campoEditar label i {
+        font-size: 30px;
+        color: #00288F;
+        cursor: pointer;
+        display: inline-flex;
         position: absolute;
-        top: 150%;
-        width: 35%;
-        padding: 1rem;
-        font-size: 1.3rem;
-        right: 59%;
     }
 
-    .botao .botao-salvar {
-        position: absolute;
-        top: 150%;
-        width: 35%;
-        padding: 1rem;
-        font-size: 1.3rem;
-        left: 60%;
+    #campoEditar input[type="text"] {
+        font-size: 35px;
     }
 }

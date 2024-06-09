@@ -37,3 +37,4 @@ for (let i = 0; i < quizzes.quiz.length; i++) {
 
     lista.appendChild(quizDiv);
 }
+

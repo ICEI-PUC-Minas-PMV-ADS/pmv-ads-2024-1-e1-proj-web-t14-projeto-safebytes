@@ -68,7 +68,7 @@ fetch('../Gersons/tutoriais.json')
         }
 
         // Mostra o conteudo de cada elemento
-        const secPrincipal = document.querySelector(".secPrincipal");
+        const secPrincipal = document.querySelector(".secPrincipalTutoriais");
         const tituloPrincipal = document.querySelector(".tituloPrincipal");
 
         function mostrarConteudo(tutorial, etapaIndex) {

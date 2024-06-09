@@ -8,6 +8,7 @@ body {
     background: #a3c8ff;
     background: linear-gradient(180deg, rgba(163, 200, 255, 1) 31%, rgba(0, 41, 143, 0.726) 100%);
     background-repeat: no-repeat;
+    height: auto !important;
 }
 
 h1 {
@@ -731,6 +732,126 @@ p {
     transform: scale(1.2);
 }
 
+
+/* PÁGINA INICIAL */
+.secInicialPag {
+    padding-top: 30px;
+    padding-bottom: 25px;
+}
+
+.card-group {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card {
+    margin-top: 40px;
+    border: none !important;
+    border-radius: 20%;
+    background-color: #ffffffa6 !important;
+    color: #00288F !important;
+    cursor: pointer;
+}
+
+.card a {
+    text-decoration: none !important;
+    color: #00288F !important;
+}
+
+.card .card-img-top {
+    margin-bottom: 5px;
+    width: auto;
+    height: 80px;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+.card-body {
+    border-radius: 20%;
+}
+
+.card:hover {
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    transition: 0.2s;
+    scale: 1.1;
+    border: solid 1px #00288F;
+}
+
+/* SECCONTINUE */
+.secContinue {
+    cursor: pointer;
+}
+
+.secContinue>div {
+    position: relative;
+    padding: 40px 15px;
+    margin: 40px 0;
+    display: flex !important;
+    flex-direction: row;
+    color: #00288F;
+    border-radius: 200px;
+}
+
+.secContinue img {
+    width: 100px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.tituloTutorial {
+    margin-left: 15px;
+}
+
+.tituloTutorial>h3 {
+    font-weight: bold;
+}
+
+.secContinue:hover>div {
+    background: #00298f;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+/* SECLISTAS */
+#tutoriais,
+#quizzes {
+    width: 130px;
+    height: 130px;
+    margin: 20px 15px;
+    border-radius: 10px;
+}
+
+.secListas>div {
+    position: relative;
+    padding: 15px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tutoriais:hover {
+    scale: 1.10;
+    transition: 0.25s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+#quizzes:hover {
+    scale: 1.10;
+    transition: 0.25s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+
 /* PÁGINAS QUIZZES E TUTORIAIS */
 #bg06Div {
     position: relative;
@@ -751,7 +872,7 @@ p {
 
 /* SEC PRINCIPAL */
 .tituloPrincipal {
-    margin: 20px 0 50px 0;
+    margin: 20px 0 80px 0;
 }
 
 /* LISTA */
@@ -791,7 +912,8 @@ p {
 }
 
 /* CONTEUDO TUTORIAIS */
-.secPrincipal {
+.secPrincipalTutoriais,
+.secPrincipalQuizzes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1161,8 +1283,6 @@ footer {
         margin: 250px 0 -200px 0;
     }
 
-
-
     /* PAG LOGIN */
     #conteudo {
         margin-top: 5%;
@@ -1190,6 +1310,55 @@ footer {
         right: 35%;
     }
 
+    /* PÁGINA INICIAL */
+    /* SECPRINCIPAL */
+    .card-group {
+        width: 80%;
+        margin: 10% 10%;
+    }
+
+    .card {
+        margin: 20px;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+    /* SECCONTINUE */
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .tituloTutorial {
+        margin-top: 6%;
+    }
+
+
+    /* SECLISTAS */
+    #tutoriais,
+    #quizzes {
+        width: 200px;
+        height: 200px;
+        margin: 40px 50px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     /* PÁGINAS TUTORIAIS E QUIZZES */
     .botaoDiv {
         margin-left: 5%;
@@ -1201,6 +1370,10 @@ footer {
         bottom: 500px;
     }
 
+    #pagQuizzes main {
+        bottom: 500px;
+    }
+
     .tituloPrincipal {
         margin: 0;
     }
@@ -1209,7 +1382,7 @@ footer {
     .lista {
         width: 80%;
         margin: 130px;
-       
+
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1227,7 +1400,7 @@ footer {
         height: 315px;
     }
 
- 
+
     .etapas {
         width: 60%;
     }
@@ -1255,6 +1428,10 @@ footer {
         padding: 10% 5%;
     }
 
+    .botaoProximoDiv {
+        margin: 40px;
+    }
+
     #botaoPagLista,
     #botaoConcluir,
     #botaoProximo,
@@ -1272,6 +1449,11 @@ footer {
 
     p {
         font-size: 20px;
+    }
+
+    #perfil {
+        width: 80%;
+        margin-left: 20px;
     }
 
     /* PAG INDEX */
@@ -1399,11 +1581,68 @@ footer {
         gap: 100px;
     }
 
+    /* PÁGINA INICIAL */
+    .card-group {
+        width: 70%;
+        margin: 10% 15% 5% 15%;
+    }
+
+    .card {
+        margin: 20px;
+        text-align: center;
+    }
+
+    .card .card-img-top {
+        height: 60%;
+    }
+
+
+    /* SECCONTINUE */
+    .secContinue {
+        margin-top: 0;
+    }
+
+    .secContinue>div {
+        margin: 0 15%;
+    }
+
+    .secContinue img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .tituloTutorial {
+        margin-top: 6%;
+    }
+
+
+    /* SECLISTAS */
+    #tutoriais,
+    #quizzes {
+        width: 300px;
+        height: 250px;
+        margin: 50px 150px 20px 150px;
+    }
+
+    .secListas>div {
+        padding: 20px 15px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
     /* PÁGINAS TUTORIAIS E QUIZZES */
+    #pagTutoriais main {
+        bottom: 1000px;
+    }
+
+    #pagQuizzes main {
+        bottom: 1000px;
+    }
+
     /* LISTA */
     .lista {
         width: 70%;
-        margin-top: 10%;
+        margin-top: 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1426,6 +1665,14 @@ footer {
     #pagTutoriais iframe {
         width: 760px;
         height: 415px;
+    }
+
+    .videoDiv {
+        margin-top: 10px;
+    }
+
+    .tituloSecundario {
+        margin-bottom: 0;
     }
 
     .etapas {
@@ -1456,7 +1703,7 @@ footer {
     }
 
     .botaoProximoDiv {
-        margin-bottom: 5%;
+        margin: 40px;
     }
 
     #botaoPagLista,

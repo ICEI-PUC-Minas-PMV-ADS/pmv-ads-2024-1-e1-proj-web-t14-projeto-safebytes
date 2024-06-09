@@ -103,6 +103,40 @@ O requisito para a realização dos testes de software foi:
   <th>Responsável</th>
  </tr>
  <tr>
+  <td>CT-05: Verificar o funcionamento da seção "Perguntas Frequentes"</td>
+  <td>
+   <ul>
+    <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que cada pergunta frequente possua um modal com as respostas correspondentes a elas.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar cada uma das perguntas</li>
+    <li>Ler o conteúdo</li>
+    <li>Fechar o modal a partir dos botões "Fechar" e "X"</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
   <td>CT-06: Verificar o funcionamento dos Tutoriais</td>
   <td>
    <ul>

@@ -209,13 +209,10 @@ O requisito para a realização dos testes de software foi:
 <table>
   <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
   <td>
-   <ul>
-   </ul>
-  </td>
-  <td>
     <li> | RNF-O7 | O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
    <ul>
    </td>
+    <td>
     <li>
 Assegurar que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
    </li>
@@ -262,7 +259,7 @@ Garantir que o usuário não possa inserir imagens menores que 300x300.
  </tr>
 </table>
 <table>
-  <td>CT-09: Tipos de arquivos aceitos na foto de perfil</td>
+  <td>CT-09: Alteração nos dados e login posteiormente com os dados inseridos</td>
   <td>
    <ul>
     <li>| RF-10 | O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos.</li>

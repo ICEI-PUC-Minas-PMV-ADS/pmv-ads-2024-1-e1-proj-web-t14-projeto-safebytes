@@ -214,9 +214,11 @@ O requisito para a realização dos testes de software foi:
    </ul>
   </td>
   <td>
-   * Garantir que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
-* Garantir que o usuário não possa inserir imagens maiores que 2MB.
-* Garantir que o usuário não possa inserir imagens menores que 300x300.
+   <ul>
+Garantir que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
+Garantir que o usuário não possa inserir imagens maiores que 2MB.
+Garantir que o usuário não possa inserir imagens menores que 300x300.
+   </ul>
   </td>
   <td>
    <ol>
@@ -229,11 +231,13 @@ O requisito para a realização dos testes de software foi:
    </ol>
    </td>
   <td>
-* O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
-* O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
-* O usuário deve ser impedido de selecionar arquivos menores que 300x300.
-* Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
-  </td>
+   <ul>
+ O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
+ O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
+ O usuário deve ser impedido de selecionar arquivos menores que 300x300.
+ Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+   </ul>
+   </td>
   <td>Maria Eduarda Rodrigues Antunes</td>
  </tr>
 </table>

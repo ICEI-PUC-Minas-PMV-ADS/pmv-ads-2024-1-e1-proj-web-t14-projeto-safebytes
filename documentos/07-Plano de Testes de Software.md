@@ -206,4 +206,32 @@ O requisito para a realização dos testes de software foi:
   <td>Emily Gabriela</td>
  </tr>
 </table>
+  <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
+  <td>
+   <ul>
+    <li>|RNF-O7| O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que o usuário não tenha a possibilidade de inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg; não possa inserir imagens maiores que 2MB; não possa inserir imagens menores que 300x300.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página perfilConfig.html</li>
+    <li>Clicar no botão de trocar imagem</li>
+    <li>Verificar que o explorador de arquivos só mostra documentos de imagens.</li>
+    <li>Escolher uma imagem menor que 300x300 e verificar se a ação é cancelada com um alerta explicativo.</li>
+    <li>Escolher uma imagem maior que 2MB e verificar se a ação é cancelada com um alerta explicativo.</li>
+    <li>Ao escolher uma imagem dentro desses requisitos -- maior que 300x300 e menor que 2MB -- a troca será efetuada temporareamente até que o usuário clique no botão 'Salvar' no final da página</li>
+   </ol>
+   </td>
+  <td>
+* O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
+* O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
+* O usuário deve ser impedido de selecionar arquivos menores que 300x300.
+* Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+  </td>
+  <td>Maria Eduarda Rodrigues Antunes</td>
+ </tr>
+</table>
 

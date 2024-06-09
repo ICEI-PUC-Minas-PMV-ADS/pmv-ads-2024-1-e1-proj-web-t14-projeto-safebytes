@@ -1096,3 +1096,15 @@ footer {
         gap: 100px;
     }
 }
+
+/* PAGINA LOGIN */
+
+#loginForm button {
+    width: 30%;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+#divsenha i {
+    margin-right: 3%;
+}

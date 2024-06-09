@@ -74,7 +74,32 @@ Sendo assim, redirecionado à página inicial:
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/061d6ae5-2b01-4d61-a2c7-a5e7aa68a7b3)
 
-Responsável: Maria Eduarda Rodrigues Antunes
+ #### Responsável: Maria Eduarda Rodrigues Antunes
+
+
+ #### Alteração nos dados de login na configuração de perfil
+
+ O usuário entra em 'Configurar Perfil' através da página perfil.html e insere os dados nos respectivos campos: nickname, nome, e-mail e senha.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/e1eb52ff-b7ea-4d1a-a1e0-b6553cb1a4d6)
+
+O usuário clica em 'Salvar' no final da página Configuração de perfil e recebe uma notificação de que as alterações foram armazenadas.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/7c107bc4-a124-4f9b-b128-79cc7360175d)
+
+O usuário pode optar por 'Sair' na página de perfil e logo depois ser redirecionado à página de login.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/999d78cb-595f-4a1e-8e57-f55dc33992b1)
+
+O usuário insere seus novos dados,  -- nesse caso os relevantes para efetuar o login, e-mail e senha -- e recebe uma notificação de sucesso ao efetuar o login seguido do redirecionamento à página principal.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/72fa5e98-2e33-448a-a863-f8c4f588e9f5)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/d05e5ae9-7f73-4ca6-966f-c70534822f46)
+
+#### Responsável: Maria Eduarda Rodrigues Antunes
+
+ 
 
 
 

@@ -33,3 +33,49 @@ Usuário preenche os dados corretamente e realiza login com sucesso.
 E por fim, ele é redirecionado a página inicial, já logado.
 
 ![teste-login4](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/165968928/5a63cb9a-39d9-4f49-9602-a4066989d8ea)
+
+
+#### Troca da foto de perfil
+
+<h3>CT-08: Tipos de arquivos aceitos na foto de perfil</h3>
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/02244d19-7752-44b0-a544-7263cacb02f2)
+
+Após clicar na opção Configuração de Perfil o usuário irá para essa página na qual pode alterar à vontade sua foto de perfil, desde que atenda alguns requisitos, como tamanho máximo e largura e altura mínimas.
+
+Restrições de imagem:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/787927dc-bf76-4c7e-a81e-f5a10a098f93)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/ccea155c-7203-49eb-9c26-526103be086a)
+
+Caso atenda, a alteração é efetuada e salva de modo temporário no localStorage até que o usuário efetue o salvamento no botão Salvar abaixo:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/82383a14-2290-41c9-b656-7c2d33419613)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/22c186a3-ed98-426b-8d8d-5d9afcc0997c)
+
+Ao ser redirecionado o ícone do perfil já estará alterado:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/161a46f0-2f36-4547-a453-86e3cd66c442)
+
+Assim como em outras diversas páginas nas quais existem o ícone e o atalho para a página de perfil:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/e04141b0-2b8d-46a8-aad7-1052afe8e976)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/792b5f5a-9ac4-4601-b035-b443f4100b56)
+
+Caso o usuário decida cancelar a alteração, a imagem antes salva no localStorage é deletada e as páginas permanecem com o ícone anterior ao processo de modificação.
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/1dee1a49-4789-492e-bb5e-da903b302f7b)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/52e9ba66-73a5-4c52-9548-7ec29156fcb7)
+
+Sendo assim, redirecionado à página inicial:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/061d6ae5-2b01-4d61-a2c7-a5e7aa68a7b3)
+
+Responsável: Maria Eduarda Rodrigues Antunes
+
+
+
+

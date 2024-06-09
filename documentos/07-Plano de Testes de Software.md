@@ -302,3 +302,6 @@ Garantir que o usuário consiga efetuar login novamente mesmo ao alterar seus da
  </tr>
 </table>
 
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
+|----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
+| CT-10: Verificar o sistema de quizzes.  |<ul> <li> RF-07 </li> <br> </ul> | Verificar se o sistema de quizzes está funcionando corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Ir para a lista de quizzes. </li> <br> <li> Selecionar um quiz de seu interesse. </li> <br> <li> Marcar as alternativas. </li> </ol> | <ul> <li> O sistema deve verificar as respostas corretamente. </li> <br> <li> A barra de progresso deve progredir de acordo com a quantidade de perguntas </li> <br> <li> Após o fim do quiz, deve ser informado a quantidade de respostas corretas o usuário obteve. </li> </ul> | Arthur Chain | 

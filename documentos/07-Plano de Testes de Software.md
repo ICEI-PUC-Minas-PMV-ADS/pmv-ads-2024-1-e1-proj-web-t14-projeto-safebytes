@@ -206,14 +206,24 @@ O requisito para a realização dos testes de software foi:
   <td>Emily Gabriela</td>
  </tr>
 </table>
+<table>
   <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
   <td>
    <ul>
-    <li>|RNF-O7| O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
    </ul>
   </td>
   <td>
-   Garantir que o usuário não tenha a possibilidade de inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg; não possa inserir imagens maiores que 2MB; não possa inserir imagens menores que 300x300.
+    <li> | RNF-O7 | O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
+   <ul>
+    <li>
+Garantir que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
+   </li>
+    <li>
+Garantir que o usuário não possa inserir imagens maiores que 2MB.
+     </li>
+    <li>
+Garantir que o usuário não possa inserir imagens menores que 300x300.
+    </li>
   </td>
   <td>
    <ol>
@@ -226,11 +236,64 @@ O requisito para a realização dos testes de software foi:
    </ol>
    </td>
   <td>
-* O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
-* O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
-* O usuário deve ser impedido de selecionar arquivos menores que 300x300.
-* Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+   <ul>
+    <li>
+ O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
+    </li>
+    <li>
+ O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
+    </li>
+    <li>
+ O usuário deve ser impedido de selecionar arquivos menores que 300x300.
+    </li>
+    <li>
+ Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+   </li>
+   </ul>
+   </td>
+  <td>Maria Eduarda Rodrigues Antunes</td>
+ </tr>
+</table>
+<table>
+  <td>CT-09: Tipos de arquivos aceitos na foto de perfil</td>
+  <td>
+   <ul>
+    <li>| RF-10 | O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos.</li>
+   </ul>
   </td>
+  <td>
+   <ul>
+    <li>
+Garantir que o usuário consiga trocar seus dados em alguma página da plataforma, nesse caso, a de configuração de perfil.
+   </li>
+    <li>
+Garantir que o usuário consiga efetuar login novamente mesmo ao alterar seus dados na página de configuração de perfil.
+     </li>
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página perfilConfig.html</li>
+    <li>Inserir novos dados nos campos de inserção respectivo de cada categoria: nickname, nome, e-mail e senha</li>
+    <li>Verificar se o sistema responde com um alerta de que as alterações foram submetidas</li>
+    <li>Ir para a página perfil.html</li>
+    <li>Clicar no botão 'Sair'</li>
+    <li>Ser redirecionado à página de login</li>
+    <li>Efetuar o login com os dados de e-mail e senha inseridos previamente na página de configuração de perfil do usuário</li>
+   </ol>
+   </td>
+  <td>
+   <ul>
+    <li>
+ A plataforma deve ter uma página com os campos de alteração de dados.
+    </li>
+    <li>
+ O usuário deve poder salvar as alterações.
+    </li>
+    <li>
+ O usuário deve conseguir efetuar um login com os dados inseridos.
+    </li>
+   </ul>
+   </td>
   <td>Maria Eduarda Rodrigues Antunes</td>
  </tr>
 </table>

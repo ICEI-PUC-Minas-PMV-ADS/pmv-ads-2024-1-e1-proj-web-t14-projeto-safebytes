@@ -206,6 +206,7 @@ O requisito para a realização dos testes de software foi:
   <td>Emily Gabriela</td>
  </tr>
 </table>
+<table>
   <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
   <td>
    <ul>

@@ -91,7 +91,7 @@ O usuário pode optar por 'Sair' na página de perfil e logo depois ser redireci
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/999d78cb-595f-4a1e-8e57-f55dc33992b1)
 
-O usuário insere seus novos dados,  -- nesse caso os relevantes para efetuar o login, e-mail e senha -- e recebe uma notificação de sucesso ao efetuar o login seguido do redirecionamento à página principal.
+O usuário insere seus novos dados,  -- nesse caso os relevantes para efetuar o login, e-mail e senha -- e recebe uma notificação de sucesso ao efetuar o login, seguido do redirecionamento à página principal.
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/72fa5e98-2e33-448a-a863-f8c4f588e9f5)
 

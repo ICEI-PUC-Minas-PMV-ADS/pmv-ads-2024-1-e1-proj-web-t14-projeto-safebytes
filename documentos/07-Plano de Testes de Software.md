@@ -178,7 +178,7 @@ O requisito para a realização dos testes de software foi:
   <th>Responsável</th>
  </tr>
  <tr>
-  <td>CT-07: Verificar se o sistema salva o último tutorial visualiazado</td>
+  <td>CT-07: Verificar se o sistema salva o último tutorial visualizado</td>
   <td>
    <ul>
     <li>RF- 08	O website deve ser capaz de contabilizar o progresso do usuário.</li>
@@ -207,9 +207,3 @@ O requisito para a realização dos testes de software foi:
  </tr>
 </table>
 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)

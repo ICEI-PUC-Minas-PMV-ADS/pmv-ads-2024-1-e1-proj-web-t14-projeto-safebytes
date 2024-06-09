@@ -209,11 +209,13 @@ O requisito para a realização dos testes de software foi:
   <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
   <td>
    <ul>
-    <li>|RNF-O7| O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
+    <li>RNF-O7 O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
    </ul>
   </td>
   <td>
-   Garantir que o usuário não tenha a possibilidade de inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg; não possa inserir imagens maiores que 2MB; não possa inserir imagens menores que 300x300.
+   * Garantir que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
+* Garantir que o usuário não possa inserir imagens maiores que 2MB.
+* Garantir que o usuário não possa inserir imagens menores que 300x300.
   </td>
   <td>
    <ol>

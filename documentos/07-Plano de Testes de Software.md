@@ -217,17 +217,12 @@ O requisito para a realização dos testes de software foi:
    <ul>
     <li>
 Garantir que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
-    </ul>
    </li>
     <li>
-   <ul>
 Garantir que o usuário não possa inserir imagens maiores que 2MB.
-</ul>
      </li>
     <li>
-   <ul>
 Garantir que o usuário não possa inserir imagens menores que 300x300.
-   </ul>
     </li>
   </td>
   <td>

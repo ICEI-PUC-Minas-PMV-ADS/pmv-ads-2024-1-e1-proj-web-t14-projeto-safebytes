@@ -27,11 +27,12 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      border: 1px solid #000;
+      border: 1px solid #3c6171;
       padding: 20px;
-      background-color: #fff;
+      border-radius: 35px;
+      background-color: #6e86e2;
       z-index: 1000;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 10px rgb(0, 0, 0);
     }
 
     #overlay {
@@ -41,7 +42,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.745);
       z-index: 999;
     }
 
@@ -55,23 +56,31 @@
 
     .popup-container label,
     .popup-container input {
-      display: block;
+      display: flex;
       width: 100%;
       margin: 10px 0;
+      outline: none;
+      border-radius: 15px;
+      text-decoration: none;
+    }
+
+    .popup-container input {
+      padding-left: 11px;
     }
 
     .popup-container button {
-      width: 100%;
+      width: 50%;
       padding: 10px;
-      background: #007BFF;
+      background: black;
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 14px;
       cursor: pointer;
+      margin-left: 24%;
     }
 
     .popup-container button:hover {
-      background: #0056b3;
+      background: #14266e;
     }
   </style>
 </head>

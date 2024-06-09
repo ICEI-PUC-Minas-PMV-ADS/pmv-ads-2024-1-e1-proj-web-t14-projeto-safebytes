@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Verifica se o usuário já existe
     const userExists = users.some((user) => user.email === email);
     if (userExists) {
-      alert("Usuário já existe");
+      alert("Usuário já existe!");
       return;
     }
 
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Salva a lista de usuários no localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("Usuário cadastrado com sucesso");
+    alert("Usuário cadastrado com sucesso!");
 
     // Limpa o formulário
     registerForm.reset();

@@ -236,7 +236,7 @@ O usuário, após clicar no botão "Salvar" ao final da página de configuraçã
 Maria Eduarda Rodrigues Antunes
 
 
-#### Troca da foto de perfil
+#### Alteração na imagem de perfil
 
 ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/02244d19-7752-44b0-a544-7263cacb02f2)
 

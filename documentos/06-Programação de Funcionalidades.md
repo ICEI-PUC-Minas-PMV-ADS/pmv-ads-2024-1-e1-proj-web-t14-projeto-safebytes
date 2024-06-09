@@ -191,3 +191,25 @@ Emily Gabriela Avelino Rodrigues
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
+### Quizzes
+
+
+#### Requisito Atendido
+
+RF- 07: O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.
+
+#### Artefatos da Funcionalidade
+
+*<a href=".././codigo-fonte/pages/quizzes/quiz0.html">quiz0.html</a>
+*<a href="../codigo-fonte/css/csspagquiz.css">csspagquiz.css</a>
+
+#### Estrutura de Dados
+
+* <a href="../codigo-fonte/Gersons/eounaoecrime.json">quiz0</a> * <a href="../codigo-fonte/Gersons/segurancaredepublica.json">quiz1</a>* <a href="../codigo-fonte/Gersons/anti-fishing.json">quiz2</a>* <a href="../codigo-fonte/Gersons/antivirus.json">quiz3</a>
+#### Instruções de acesso
+
+Na página da lista de quizzes você terá opções de temas de quizzes para se testar o conhecimento. Ao clickar em um interessante, você será direcionado à página do quiz com a temática escolhida.
+
+#### Responsável
+
+Arthur Chain

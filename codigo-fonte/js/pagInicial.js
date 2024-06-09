@@ -44,3 +44,35 @@ fetch('../Gersons/tutoriais.json')
         }
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
+
+/* entrada de nickname */
+// JavaScript para exibir e ocultar o pop-up
+document.getElementById('nicknameForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    var nickname = document.getElementById('nickname').value;
+    if (/^[A-Za-z]{1,8}$/.test(nickname)) {
+        localStorage.setItem('nickname', nickname);
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('nicknamePopup').style.display = 'none';
+    } else {
+        alert('Nickname inválido. Use apenas letras e até 8 caracteres.');
+    }
+});
+
+// Verificar se o nickname já está definido ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    if (!localStorage.getItem('nickname')) {
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('nicknamePopup').style.display = 'block';
+    }
+});
+// Carregar a imagem de perfil do localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const storedImage = localStorage.getItem('profileImage');
+    if (storedImage) {
+        const perfilImg = document.getElementById('perfil');
+        if (perfilImg) {
+            perfilImg.setAttribute('src', storedImage);
+        }
+    }
+});

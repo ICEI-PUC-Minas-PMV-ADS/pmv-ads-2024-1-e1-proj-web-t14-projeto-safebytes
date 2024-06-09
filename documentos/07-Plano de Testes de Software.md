@@ -236,10 +236,18 @@ Garantir que o usuário não possa inserir imagens menores que 300x300.
    </td>
   <td>
    <ul>
+    <li>
  O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
+    </li>
+    <li>
  O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
+    </li>
+    <li>
  O usuário deve ser impedido de selecionar arquivos menores que 300x300.
+    </li>
+    <li>
  Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+   </li>
    </ul>
    </td>
   <td>Maria Eduarda Rodrigues Antunes</td>

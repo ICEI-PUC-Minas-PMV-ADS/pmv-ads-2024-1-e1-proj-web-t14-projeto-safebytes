@@ -301,8 +301,29 @@ Assim como em outras diversas páginas nas quais existem o ícone e o atalho par
 Maria Eduarda Rodrigues Antunes
 
 
+### Cadastro
 
+![alt text](img/paginaquiz.png)
 
+#### Requisito Atendido
+
+RF- 07:	O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.	
+
+#### Artefatos da Funcionalidade
+
+*<a href="../codigo-fonte/pages/quizzes/quiz0.html">quiz0.html</a>
+*<a href="../codigo-fonte/css/csspagquiz.css">csspagquiz.css</a>
+
+#### Estrutura de Dados
+*<a href="../codigo-fonte/Gersons/eounaoecrime.json">quiz0</a>*<a href="../codigo-fonte/Gersons/segurancaredepublica.json">quiz1</a>*<a href="../codigo-fonte/Gersons/anti-fishing.json">quiz2</a>*<a href="../codigo-fonte/Gersons/antivirus.json">quiz3</a>
+
+#### Instruções de acesso
+
+A partir da Lista de Quizzes, onde você vai escolher o tema e será direcionado para a página de quiz temática. Também futuramente a partir da tela inicial do site.
+
+#### Responsável
+
+Arthur Chain
 
 
 

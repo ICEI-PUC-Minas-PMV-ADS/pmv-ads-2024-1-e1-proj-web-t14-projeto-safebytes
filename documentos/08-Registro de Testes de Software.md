@@ -112,7 +112,7 @@ De acordo com a quantidade de perguntas que o usuário vai respondendo, a barra 
 
 ![Captura de tela 2024-06-09 192325](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/151800637/b4db67e1-407e-4bcc-ae7b-f3d735ba4b62)
 
-E no final, é verificado a quantidade de acertos do usuário no tema e aparece a opção do usuário voltar pra página inicial.
+E no final, é verificado a quantidade de acertos do usuário no tema e aparece a opção do usuário voltar pra página lista de quizzes.
 
 ![Captura de tela 2024-06-09 192342](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/151800637/904b2269-82bd-4f4e-b3ec-69e875a06a00)
 

@@ -212,7 +212,24 @@ Emily Gabriela Avelino Rodrigues
 
 #### Instruções de acesso
 
-O usuário após clicar no botão salvar ao final da página de configuração de perfil conseguirá fazer login com o novo e-mail e senha.
+1. **Acessando a Página de Configuração do Perfil**
+   - Clique na opção "Configuração de Perfil" no menu do usuário.
+
+2. **Atualizando os Dados de Login**
+   - Na página de configuração, preencha os campos com as novas informações:
+     - Nome
+     - E-mail
+     - Senha
+       
+3. **Salvando as Alterações**
+   - Após atualizar os dados, clique no botão "Salvar" no final da página para aplicar as mudanças.
+
+4. **Verificando as Alterações**
+   - Você será redirecionado de volta à página inicial.
+   - Vá para a página de perfil do usuário e clique em "Sair".
+   - Utilize os novos dados de login (e-mail e senha) na próxima vez que fizer login no sistema.
+
+O usuário, após clicar no botão "Salvar" ao final da página de configuração de perfil, conseguirá fazer login com o novo e-mail e senha.
 
 #### Responsável
 
@@ -252,7 +269,7 @@ Assim como em outras diversas páginas nas quais existem o ícone e o atalho par
 
 #### Requisito atendido
 
-| RF-10  |O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos. | ALTA |
+|RNF-O7| O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil. | MÉDIA |
 
 #### Artefatos da funcionalidade
 

@@ -301,7 +301,7 @@ Assim como em outras diversas páginas nas quais existem o ícone e o atalho par
 Maria Eduarda Rodrigues Antunes
 
 
-### Cadastro
+### Quiz
 
 ![alt text](img/paginaquiz.png)
 

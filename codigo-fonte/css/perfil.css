@@ -27,7 +27,8 @@ body {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 6rem;
+    margin-top: 11rem;
+    min-width: 7rem;
 }
 
 
@@ -72,7 +73,6 @@ body {
     justify-content: center;
     align-items: flex-end;
     top: 0;
-    margin-top: 7%;
 }
 
 .nickname {
@@ -81,7 +81,7 @@ body {
     font-size: 60px;
     justify-content: center;
     align-items: center;
-    margin-top: 23rem;
+    margin-top: 35%;
     margin-bottom: 2rem;
     height: 3rem;
 }
@@ -149,4 +149,28 @@ body {
 /*@media screen and (min-width: 360px) and (min-height: 772px) and (max-width: 360) and (max-height: 844px) {
 
 }*/
-/*@media screen and (max-width: 767px) {*/
+@media screen and (max-width: 1200px) {
+    #perfil {
+        margin-top: 2rem;
+        min-width: 13rem;
+    }
+    .number {
+        margin: 40px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .number {
+        margin: 40px;
+    }
+    #perfil {
+        margin-top: 2rem;
+        min-width: 12rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    #perfil {
+        margin-top: 2rem;
+        min-width: 5rem;
+    }
+
+}

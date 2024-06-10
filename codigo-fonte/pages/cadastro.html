@@ -28,22 +28,25 @@
                             <i class="bi bi-person-fill"></i> <label> Nome </label>
                         </div>
                     </div>
-                    <input id="inputnome" type="text" name="signup">
+                    <input id="inputnome" type="text" name="signup" required="true">
                     <div id="campoemail">
                         <div id="campo2">
                             <i class="bi bi-envelope-fill"></i> <label> E-mail </label>
                         </div>
                     </div>
-                    <input id="inputemail" type="email" name="login">
+                    <input id="inputemail" type="email" name="login" required="true">
                     <div id="camposenha">
                         <div id="campo3">
                             <i class="bi bi-lock-fill"></i> <label> Senha </label>
                         </div>
                         <div class="containersenha">
                             <div id="divsenha">
-                                <input id="inputsenha" type="password" name="password"> <i class="bi bi-eye-slash" id="botaoSenha" onclick="mostrarSenha()"></i>
+                                <input id="inputsenha" type="password" name="password">
                             </div>
                         </div>
+                        <!-- Caixa de requisitos da senha -->
+                        <div id="requisitosSenha" style="display: none;">A senha deve conter pelo menos 8 caracteres,
+                            incluindo pelo menos um número e sem sequências numéricas.</div>
                         <div id="caixaopcoes">
                             <div id="opcoes">
                                 <a id="cadastrar" href="../pages/login.html">Login</a>
@@ -82,6 +85,10 @@
                     Condições.</a></p>
         </div>
     </footer>
+</body>
+
+</html>
+
 
 
 

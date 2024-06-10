@@ -206,4 +206,102 @@ O requisito para a realização dos testes de software foi:
   <td>Emily Gabriela</td>
  </tr>
 </table>
+<table>
+  <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
+  <td>
+    <li> | RNF-O7 | O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
+   <ul>
+   </td>
+    <td>
+    <li>
+Assegurar que o usuário não possa inserir formatos que não sejam image/png, image/jpeg, image/jfif, image/jpg.
+   </li>
+    <li>
+Garantir que o usuário não possa inserir imagens maiores que 2MB.
+     </li>
+    <li>
+Garantir que o usuário não possa inserir imagens menores que 300x300.
+    </li>
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página perfilConfig.html</li>
+    <li>Clicar no botão de trocar imagem</li>
+    <li>Verificar que o explorador de arquivos só mostra documentos de imagens.</li>
+    <li>Escolher uma imagem menor que 300x300 e verificar se a ação é cancelada com um alerta explicativo.</li>
+    <li>Escolher uma imagem maior que 2MB e verificar se a ação é cancelada com um alerta explicativo.</li>
+    <li>Ao escolher uma imagem dentro desses requisitos -- maior que 300x300 e menor que 2MB -- a troca será efetuada temporareamente até que o usuário clique no botão 'Salvar' no final da página</li>
+   </ol>
+   </td>
+  <td>
+   <ul>
+    <li>
+ O usuário deve ser impedido de selecionar itens com formatos não permitidos (por exemplo, PDF).
+    </li>
+    <li>
+ O usuário deve ser impedido de selecionar arquivos maiores que 2MB.
+    </li>
+    <li>
+ O usuário deve ser impedido de selecionar arquivos menores que 300x300.
+    </li>
+    <li>
+ Se uma imagem atender a todos os requisitos, o ícone do perfil deve ser atualizado com a nova imagem escolhida.
+   </li>
+   <li>
+ Caso o usuário efetue o salvamento da modificação na foto de perfil, o ícone do perfil deve ser atualizado com a nova imagem escolhida em todas as páginas as quais há um ícone da foto de perfil e, posteriormente, ele dever ser redirecionado à página inicial.
+   </li>
+    <li>
+ Caso o usuário cancele modificação na foto de perfil, o ícone do perfil deve permanecer com a imagem pre-existente em todas as páginas as quais há um ícone da foto de perfil e, posteriormente, ele deve ser redirecionado à página inicial.
+   </li>
+   </ul>
+   </td>
+  <td>Maria Eduarda Rodrigues Antunes</td>
+ </tr>
+</table>
+<table>
+  <td>CT-09: Alteração nos dados e login posteiormente com os dados inseridos</td>
+  <td>
+   <ul>
+    <li>| RF-10 | O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos.</li>
+   </ul>
+  </td>
+  <td>
+   <ul>
+    <li>
+Garantir que o usuário consiga trocar seus dados em alguma página da plataforma, nesse caso, a de configuração de perfil.
+   </li>
+    <li>
+Garantir que o usuário consiga efetuar login novamente mesmo ao alterar seus dados na página de configuração de perfil.
+     </li>
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página perfilConfig.html</li>
+    <li>Inserir novos dados nos campos de inserção respectivo de cada categoria: nickname, nome, e-mail e senha</li>
+    <li>Verificar se o sistema responde com um alerta de que as alterações foram submetidas</li>
+    <li>Ir para a página perfil.html</li>
+    <li>Clicar no botão 'Sair'</li>
+    <li>Ser redirecionado à página de login</li>
+    <li>Efetuar o login com os dados de e-mail e senha inseridos previamente na página de configuração de perfil do usuário</li>
+   </ol>
+   </td>
+  <td>
+   <ul>
+    <li>
+ A plataforma deve ter uma página com os campos de alteração de dados.
+    </li>
+    <li>
+ O usuário deve poder salvar as alterações.
+    </li>
+    <li>
+ O usuário deve conseguir efetuar um login com os dados inseridos.
+    </li>
+   </ul>
+   </td>
+  <td>Maria Eduarda Rodrigues Antunes</td>
+ </tr>
+</table>
 
+|Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
+|----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
+| CT-10: Verificar o sistema de quizzes.  |<ul> <li> RF-07 </li> <br> </ul> | Verificar se o sistema de quizzes está funcionando corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Ir para a lista de quizzes. </li> <br> <li> Selecionar um quiz de seu interesse. </li> <br> <li> Marcar as alternativas. </li> </ol> | <ul> <li> O sistema deve verificar as respostas corretamente. </li> <br> <li> A barra de progresso deve progredir de acordo com a quantidade de perguntas </li> <br> <li> Após o fim do quiz, deve ser informado a quantidade de respostas corretas o usuário obteve. </li> </ul> | Arthur Chain | 

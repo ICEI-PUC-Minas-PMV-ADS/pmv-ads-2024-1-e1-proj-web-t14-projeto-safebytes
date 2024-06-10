@@ -191,3 +191,139 @@ Emily Gabriela Avelino Rodrigues
 > - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
 > - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
 
+#### Alteração nos dados de login na configuração de perfil
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/e1eb52ff-b7ea-4d1a-a1e0-b6553cb1a4d6)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/7c107bc4-a124-4f9b-b128-79cc7360175d)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/999d78cb-595f-4a1e-8e57-f55dc33992b1)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/72fa5e98-2e33-448a-a863-f8c4f588e9f5)
+
+#### Requisito atendido
+
+| RF-10  |O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos. | ALTA |
+
+#### Artefatos da funcionalidade
+
+*<a href="../codigo-fonte/pages/perfilConfig.html">perfilConfig.html</a>
+*<a href="../codigo-fonte/pages/login.html">login.html</a>
+
+#### Instruções de acesso
+
+1. **Acessando a Página de Configuração do Perfil**
+   - Clique na opção "Configuração de Perfil" no menu do usuário.
+
+2. **Atualizando os Dados de Login**
+   - Na página de configuração, preencha os campos com as novas informações:
+     - Nome
+     - E-mail
+     - Senha
+       
+3. **Salvando as Alterações**
+   - Após atualizar os dados, clique no botão "Salvar" no final da página para aplicar as mudanças.
+
+4. **Verificando as Alterações**
+   - Você será redirecionado de volta à página inicial.
+   - Vá para a página de perfil do usuário e clique em "Sair".
+   - Utilize os novos dados de login (e-mail e senha) na próxima vez que fizer login no sistema.
+
+O usuário, após clicar no botão "Salvar" ao final da página de configuração de perfil, conseguirá fazer login com o novo e-mail e senha.
+
+#### Responsável
+
+Maria Eduarda Rodrigues Antunes
+
+
+#### Alteração na imagem de perfil
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/02244d19-7752-44b0-a544-7263cacb02f2)
+
+Após clicar na opção Configuração de Perfil o usuário irá para essa página na qual pode alterar à vontade sua foto de perfil, desde que atenda alguns requisitos, como tamanho máximo e largura e altura mínimas.
+
+Restrições de imagem:
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/787927dc-bf76-4c7e-a81e-f5a10a098f93)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/ccea155c-7203-49eb-9c26-526103be086a)
+
+1. Tamanho máximo: 2MB
+2. Largura mínima: 300px
+3. Altura mínima: 300px
+
+Caso atenda, a alteração é efetuada e salva de modo temporário no localStorage até que o usuário efetue o salvamento no botão Salvar abaixo:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/82383a14-2290-41c9-b656-7c2d33419613)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/22c186a3-ed98-426b-8d8d-5d9afcc0997c)
+
+Ao ser redirecionado o ícone do perfil já estará alterado:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/161a46f0-2f36-4547-a453-86e3cd66c442)
+
+Assim como em outras diversas páginas nas quais existem o ícone e o atalho para a página de perfil:
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/e04141b0-2b8d-46a8-aad7-1052afe8e976)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/99978185/792b5f5a-9ac4-4601-b035-b443f4100b56)
+
+#### Requisito atendido
+
+|RNF-O7| O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil. | MÉDIA |
+
+#### Artefatos da funcionalidade
+
+*<a href="../codigo-fonte/pages/perfil.html">perfil.html</a>
+*<a href="../codigo-fonte/pages/perfilConfig.html">perfilConfig.html</a>
+
+#### Instruções de acesso
+
+1. **Acessando a Página de Configuração do Perfil**
+   - Clique na opção "Configuração de Perfil" no menu do usuário.
+
+2. **Alterando a Foto de Perfil**
+   - Na página de configuração, clique no ícone da câmera sobre a foto de perfil atual.
+   - Selecione a nova foto de perfil a partir do seu dispositivo. A foto deve atender aos seguintes requisitos:
+     - Tamanho máximo: 2MB
+     - Largura mínima: 300px
+     - Altura mínima: 300px
+
+3. **Salvando a Alteração**
+   - A nova foto de perfil será exibida na página. Se estiver satisfeito com a alteração, clique no botão "Salvar" para aplicar a mudança permanentemente.
+   - A alteração será temporariamente salva no localStorage até que você clique no botão "Salvar".
+
+4. **Verificando a Alteração**
+   - Após clicar em "Salvar", você será redirecionado de volta à página inicial.
+   - O ícone de perfil será atualizado em todas as páginas onde ele aparece, refletindo a nova foto.
+
+#### Responsável
+
+Maria Eduarda Rodrigues Antunes
+
+
+### Quiz
+
+![alt text](img/paginaquiz.png)
+
+#### Requisito Atendido
+
+RF- 07:	O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.	
+
+#### Artefatos da Funcionalidade
+
+*<a href="../codigo-fonte/pages/quizzes/quiz0.html">quiz0.html</a>
+*<a href="../codigo-fonte/css/csspagquiz.css">csspagquiz.css</a>
+
+#### Estrutura de Dados
+*<a href="../codigo-fonte/Gersons/eounaoecrime.json">quiz0 </a>*<a href="../codigo-fonte/Gersons/segurancaredepublica.json">quiz1 </a>*<a href="../codigo-fonte/Gersons/anti-fishing.json">quiz2 </a>*<a href="../codigo-fonte/Gersons/antivirus.json">quiz3</a>
+
+#### Instruções de acesso
+
+A partir da Lista de Quizzes, onde você vai escolher o tema e será direcionado para a página de quiz temática. Também futuramente a partir da tela inicial do site.
+
+#### Responsável
+
+Arthur Chain
+
+
+

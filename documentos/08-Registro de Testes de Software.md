@@ -117,6 +117,54 @@ E no final, é verificado a quantidade de acertos do usuário no tema e aparece 
 ![Captura de tela 2024-06-09 192342](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/151800637/904b2269-82bd-4f4e-b3ec-69e875a06a00)
 
 
+### CT-03: Verificar o funcionamento da página Index
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-03, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/74a638d6-813d-409a-b5bc-4edd7268e595
+
+### CT-04: Verificar o funcionamento dos Artigos
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-04, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/9195d3fc-9e22-4780-ab27-f95ddb17e0aa
+
+### CT-05: Verificar o funcionamento da seção "Perguntas Frequentes"
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-05, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/2eb0ea45-1b9e-49d6-80b9-687fed3503aa
+
+### CT-06: Verificar o funcionamento dos Tutoriais
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-06, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/3fca43b4-cb0b-4ce4-ad7b-6108b80df221
+
+### CT-07: Verificar se o sistema salva o último tutorial visualizado
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-07, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/acafa2ec-c592-42c9-a2f8-8eef0d6a7b28
+
+
+
+
+
+
+
+
+
 
 
 

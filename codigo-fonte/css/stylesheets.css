@@ -6,7 +6,7 @@
 
 body {
     background: #a3c8ff;
-    background: linear-gradient(180deg, rgba(163, 200, 255, 1) 31%, rgba(0, 41, 143, 0.726) 100%);
+    background: linear-gradient(180deg, rgba(163, 200, 255, 1) 31%, rgba(14, 65, 193, 0.879) 100%);
     background-repeat: no-repeat;
     height: auto !important;
 }
@@ -42,21 +42,6 @@ h6 {
 
 p {
     font-size: 12px;
-}
-
-.button {
-    width: 80%;
-    height: auto;
-    color: #fff;
-    background-color: #00112b;
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-}
-
-.button:hover {
-    border: 1px solid #00112b;
-    background-color: #00112b85;
 }
 
 
@@ -555,6 +540,21 @@ p {
 
 
 /* PÁGINA DE LOGIN */
+
+.entrar-login {
+    width: 50%;
+    height: auto;
+    color: #fff;
+    background-color: #00112b;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.entrar-login:hover {
+    background-color: #1f1f1f;
+}
+
 #pagLogin {
     background: radial-gradient(circle at 50% 44%, #050A78 10%, #00288F 39%, #355DC5 75%, #5E8BFF 90%, #A3C8FF 98%);
     background-size: 100% 130%;
@@ -589,10 +589,6 @@ p {
     margin-top: 85px;
 }
 
-#campos {
-    font-size: 15px;
-}
-
 #camposenha {
     margin-top: 40px;
 }
@@ -607,9 +603,8 @@ p {
     outline: none;
     border: 1px;
     width: 250px;
-    height: 1.5rem;
     margin-top: 2%;
-    padding-left: 2%;
+    padding-left: 2.5%;
 }
 
 #caixaopcoes {
@@ -675,9 +670,7 @@ p {
     outline: none;
     border: 1px;
     width: 250px;
-    height: 1.5rem;
     margin-top: 2%;
-    padding-left: 2%;
     background-color: white;
 }
 
@@ -685,17 +678,7 @@ p {
     background-color: transparent;
     border: none;
     outline: none;
-    width: 214px;
-    height: 1.3rem;
-}
-
-#divsenha i {
-    position: absolute;
-    right: 41%;
-    font-size: 17px;
-    margin-right: 10px;
-    padding-bottom: 5px;
-    cursor: pointer;
+    width: 231px;
 }
 
 #termosSec {

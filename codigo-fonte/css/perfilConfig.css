@@ -68,7 +68,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 
 }
 
@@ -80,8 +80,8 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 .user-img {
-    max-width: 12rem;
-    min-height: 12rem;
+    max-width: 30%;
+    min-height: auto;
 }
 
 .user-img label {

@@ -93,9 +93,117 @@ O requisito para a realização dos testes de software foi:
  </tr>
 </table>
 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-05: Verificar o funcionamento da seção "Perguntas Frequentes"</td>
+  <td>
+   <ul>
+    <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que cada pergunta frequente possua um modal com as respostas correspondentes a elas.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar cada uma das perguntas</li>
+    <li>Ler o conteúdo</li>
+    <li>Fechar o modal a partir dos botões "Fechar" e "X"</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-06: Verificar o funcionamento dos Tutoriais</td>
+  <td>
+   <ul>
+    <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
+    <li>RF- 07	O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que cada tutorial presente na página tutoriais.html possua seu vídeo e suas etapas, com a possibilidade de navegação entre elas e conclusão do tutorial.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Realizar o processo de cadastro e/ou login</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página tutoriais.html, clicando no card "Tutoriais"</li>
+    <li>Selecionar cada um dos tutoriais presentes na página</li>
+    <li>Dar play no iframe</li>
+    <li>Acessar a primeira etapa</li>
+    <li>Avançar entre as etapas</li>
+    <li>Testar as possibilidades de navegação entre elas</li>
+    <li>Concluir o Tutorial</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-07: Verificar se o sistema salva o último tutorial visualizado</td>
+  <td>
+   <ul>
+    <li>RF- 08	O website deve ser capaz de contabilizar o progresso do usuário.</li>
+   </ul>
+  </td>
+  <td>
+   Garantir que a seção "Continuar Tutorial", da página pagInicial.html, mude a partir do acesso a um tutorial. Armazenando a capa e o título do último tutorial acessado.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Realizar o processo de cadastro e/ou login</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página tutoriais.html, clicando no card "Tutoriais"</li>
+    <li>Selecionar um tutorial</li>
+    <li>Sair deste tutorial</li>
+    <li>Acessar novamente a página pagInicial.html</li>
+    <li>Garantir que a seção agora tem a capa e o título do tutorial selecionado anteriormente</li>
+    <li>Garantir que selecionando ela você seja direcionado para o tutorial correto</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+

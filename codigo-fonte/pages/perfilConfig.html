@@ -11,21 +11,22 @@
 
 <body>
     <div id="bg04div">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 320">
+        <div class="container">
+            <div id="perfildiv">
+                <span class="user-img">
+                    <img src="../assets/perfil.jpg" id="photo" alt="profile">
+                    <input type="file" id="file" accept="image/png, image/jpeg, image/jpg, image/jfif" >
+                    <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
+                </span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 810 320">
             <path fill="#325CC8" fill-opacity="1" d="M0,64L48,101.3C96,139,
             192,213,288,245.3C384,277,480,267,576,218.7C672,171,768,85,864,48C960,11,1056,21,1152,32C1248,43,1344,53,1392,58.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,
             0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
         </svg>
     </div>
 
-    <div class="container">
-        <div id="perfildiv">
-            <span class="user-img">
-                <img src="../assets/perfil.jpg" id="photo" alt="profile">
-                <input type="file" id="file">
-                <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
-            </span>
-        </div>
+
         <span id="campoEditar" class="hidden">
             <label for="novoNickname" id="editarLabel"><i id="editarIcone" class="bi bi-pencil-fill"></i></a></label>
             <input placeholder="Nickname" type="text" id="novoNickname" maxlength="8">
@@ -60,22 +61,45 @@
 <script defer src="../js/perfil.js"></script>
 
 <script>
+    // Variável global para armazenar a imagem temporária
+    let tempImage = null;
+
     document.addEventListener('DOMContentLoaded', function () {
-        const imgDiv = document.querySelector('.user-img');
         const img = document.querySelector('#photo');
         const file = document.querySelector('#file');
-        const uploadbtn = document.querySelector('#uploadbtn');
+        const MAX_SIZE_MB = 2; // Tamanho máximo de arquivo em MB
+        const MIN_WIDTH = 300;
+        const MIN_HEIGHT = 300;
 
         file.addEventListener('change', function () {
             const chosenFile = this.files[0];
+
             if (chosenFile) {
+                // Verificar o tamanho do arquivo
+                const fileSizeMB = chosenFile.size / (1024 * 1024);
+                if (fileSizeMB > MAX_SIZE_MB) {
+                    alert(`O arquivo é muito grande. O tamanho máximo permitido é ${MAX_SIZE_MB} MB.`);
+                    file.value = ''; // Limpar o input de arquivo
+                    return;
+                }
+
                 const reader = new FileReader();
 
                 reader.addEventListener('load', function () {
-                    img.setAttribute('src', reader.result);
-                    // Salvar a imagem de perfil no localStorage
-                    localStorage.setItem('profileImage', reader.result);
+                    const tempImg = new Image();
+                    tempImg.src = reader.result;
+
+                    tempImg.onload = function () {
+                        if (tempImg.width < MIN_WIDTH || tempImg.height < MIN_HEIGHT) {
+                            alert(`As dimensões da imagem são muito pequenas. As dimensões mínimas permitidas são ${MIN_WIDTH}x${MIN_HEIGHT} pixels.`);
+                            file.value = ''; // Limpar o input de arquivo
+                        } else {
+                            tempImage = reader.result; // Armazenar a imagem temporariamente
+                            img.setAttribute('src', reader.result);
+                        }
+                    };
                 });
+
                 reader.readAsDataURL(chosenFile);
             }
         });
@@ -88,11 +112,19 @@
     });
 
     function saveChangesAndUpdateLogin() {
+        console.log("Botão Salvar clicado"); // Adiciona log para debug
+        // Salvar a imagem de perfil temporária no localStorage
+        if (tempImage) {
+            localStorage.setItem('profileImage', tempImage);
+        }
+
         // Obter os dados do usuário
         const nickname = document.getElementById('novoNickname').value;
         const name = document.getElementById('nome').value;
         const email = document.getElementById('email').value;
         const password = document.getElementById('senha').value;
+
+        console.log("Dados do usuário", { nickname, name, email, password }); // Adiciona log para debug
 
         // Criar objeto de usuário
         const user = {
@@ -127,13 +159,12 @@
     }
 
     function cancelChanges() {
-        // Redirecionar para a página inicial
+        // Redirecionar para a página inicial sem salvar a imagem de perfil
         alert('Alterações canceladas.');
         window.location.href = "../pages/pagInicial.html";
     }
 </script>
 
-</script>
 </body>
 
 </html>

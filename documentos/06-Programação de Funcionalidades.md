@@ -1,6 +1,55 @@
 # Programação de Funcionalidades
 
-Implementação da aplicação descritas por meio dos requisitos codificados. 
+### Cadastro
+
+![pagina-cadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/165968928/497aa3ab-5f9e-4755-80fb-7ece3646c054)
+
+#### Requisito Atendido
+
+RF-01: O sistema deve viabilizar o cadastro no website, exigindo informações como e-mail e senha.	
+
+#### Artefatos da Funcionalidade
+
+*<a href="../codigo-fonte/pages/cadastro.html">cadastro.html</a>
+*<a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+*<a href="../codigo-fonte/js/cadastro.js">cadastro.js</a>
+
+#### Estrutura de Dados
+*<a href="../codigo-fonte/js/cadastro.js">cadastro.js</a>
+
+#### Instruções de acesso
+
+Acesse a página index.html (página principal), e selecione o botão de cadastro no canto superior direito, ou através da página de login, selecione o botão "Cadastrar-se".
+
+#### Responsável
+
+Emerson Cândido de Carvalho Junior
+
+### Login
+
+![pagina-login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/165968928/194f706a-c58f-4942-b620-0ee0b9cad7b9)
+
+#### Requisito atendido
+
+RF-02: O sistema deve permitir o acesso ao website mediante o fornecimento de e-mail e senha durante o processo de login.
+
+#### Artefatos da funcionalidade
+
+*<a href="../codigo-fonte/pages/login.html">login.html</a>
+*<a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+*<a href="../codigo-fonte/js/login.js">login.js</a>
+
+#### Estrutura de Dados
+*<a href="../codigo-fonte/js/cadastro.js">login.js</a>
+
+#### Instruções de acesso
+
+Acesse a página index.html (página principal), e selecione o botão de login no canto superior direito, ou através da página de cadastro, selecione o botão "Login".
+
+#### Responsável
+
+Emerson Cândido de Carvalho Junior
+
 
 ### Artigos
 

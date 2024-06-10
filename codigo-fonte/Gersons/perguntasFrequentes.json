@@ -6,7 +6,7 @@
             {
                 "id": 1,
                 "imagem": "../assets/etapa1.png",
-                "pergunta": "O que um vírus pode fazer no meu dispositivo?",
+                "pergunta": "O que o vírus pode fazer no meu dispositivo?",
                 "resposta": "Um vírus pode roubar suas informações pessoais, danificar seu sistema, espionar suas atividades, se espalhar para outros dispositivos, exigir resgate pelo desbloqueio de arquivos, realizar ataques de negação de serviço, enviar spam e realizar outras atividades prejudiciais. Para se proteger, mantenha seu software atualizado, use antivírus confiáveis, evite clicar em links suspeitos e faça cópias de segurança regularmente."
             },
             {

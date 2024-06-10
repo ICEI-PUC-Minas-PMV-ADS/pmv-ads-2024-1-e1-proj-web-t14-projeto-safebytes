@@ -38,7 +38,3 @@ for (let i = 0; i < quizzes.quiz.length; i++) {
     lista.appendChild(quizDiv);
 }
 
-// Adiciona evento de clique à imagem de perfil
-document.getElementById('perfilquiz').addEventListener('click', function () {
-    window.location.href = '../pages/perfil.html';
-});

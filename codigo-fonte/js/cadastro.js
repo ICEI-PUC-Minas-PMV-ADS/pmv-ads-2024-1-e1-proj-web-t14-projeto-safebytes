@@ -72,10 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verifica se o usuário já existe
     const userExists = users.some((user) => user.email === email);
-<<<<<<< HEAD
+      
     if (userExists) {
       alert("Usuário já existe!");
-=======
 
     // Verifica a validade da senha
     const validPassword = isValidPassword(senha);
@@ -96,7 +95,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     } else if (!validPassword) {
       alert("A senha não atende aos requisitos. Por favor, use uma senha com pelo menos 8 caracteres, contendo pelo menos um número e sem sequências numéricas.");
->>>>>>> 6144eb44aea05345e1dab265f5885227a83f51ba
       return;
     }
 
@@ -106,14 +104,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Salva a lista de usuários no localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
-<<<<<<< HEAD
     alert("Usuário cadastrado com sucesso!");
 
     // Limpa o formulário
     registerForm.reset();
 
     window.location.href = "../pages/login.html";
-=======
+      
     // Armazena um indicador de autenticação na sessionStorage
     sessionStorage.setItem('isLoggedIn', 'true');
 
@@ -121,8 +118,8 @@ document.addEventListener("DOMContentLoaded", function () {
     window.location.href = "../pages/pagInicial.html";
 
     alert("Usuário cadastrado com sucesso");
->>>>>>> 6144eb44aea05345e1dab265f5885227a83f51ba
-  });
+  }});
+
 });
 
 // FIM CADASTRO 

@@ -15,7 +15,7 @@
             <div id="perfildiv">
                 <span class="user-img">
                     <img src="../assets/perfil.jpg" id="photo" alt="profile">
-                    <input type="file" id="file" accept="image/png, image/jpeg, image/jpg, image/jfif" >
+                    <input type="file" id="file" accept="image/jpg, image/jpeg, image/png, image/jfif " >
                     <label for="file" id="uploadbtn"><i class="bi bi-camera-fill"></i></label>
                 </span>
             </div>
@@ -61,6 +61,34 @@
 <script defer src="../js/perfil.js"></script>
 
 <script>
+    // ___________________________________________________________
+// Função para carregar dados do localStorage
+function loadUserData() {
+    const userData = JSON.parse(localStorage.getItem('userProfile')) || {};
+    document.querySelector('input[name="name"]').value = userData.name || '';
+    document.querySelector('input[name="sobrenome"]').value = userData.sobrenome || '';
+    document.querySelector('input[name="email"]').value = userData.email || '';
+    document.querySelector('input[name="senha"]').value = userData.senha || '';
+    document.getElementById('novoNickname').value = userData.nickname || '';
+}
+
+// Função para salvar dados no localStorage
+function submitForm() {
+    const form = document.getElementById('profileForm');
+    const formData = new FormData(form);
+
+    const data = {
+        name: formData.get('name'),
+        sobrenome: formData.get('sobrenome'),
+        email: formData.get('email'),
+        senha: formData.get('senha'),
+        nickname: document.getElementById('novoNickname').value
+    };
+
+    localStorage.setItem('userProfile', JSON.stringify(data));
+    alert('Dados salvos com sucesso!');
+}
+
     // Variável global para armazenar a imagem temporária
     let tempImage = null;
 

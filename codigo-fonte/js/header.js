@@ -45,7 +45,7 @@ const botaoVoltar =
     "<i id='botaoPagInicial' class='bi bi-chevron-compact-left'>" + "</i>" +
     "</div>"
 
-if (body.id === 'pagLogin') {
+if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
     header.innerHTML += logo;
 
 } else if (body.id === 'pagInicial') {

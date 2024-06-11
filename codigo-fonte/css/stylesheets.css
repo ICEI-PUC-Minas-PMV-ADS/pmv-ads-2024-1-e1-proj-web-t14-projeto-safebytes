@@ -551,7 +551,7 @@ p {
 }
 
 
-/* PÁGINA DE LOGIN */
+/* PÁGINAA DE LOGIN E CADASTRO */
 .entrar-login {
     width: 50%;
     height: auto;
@@ -566,20 +566,21 @@ p {
     background-color: #1f1f1f;
 }
 
-#pagLogin {
+#pagLogin,
+#pagCadastro {
     background: radial-gradient(circle at 50% 44%, #050A78 10%, #00288F 39%, #355DC5 75%, #5E8BFF 90%, #A3C8FF 98%);
     background-size: 100% 130%;
 }
 
-#pagLogin main {
+#pagLogin main,
+#pagCadastro main {
     display: flex;
     justify-content: center;
 }
 
 #pagLogin i {
-    color: #000;
+    color: #fff;
 }
-
 
 #conteudo {
     background-color: #355ec5;
@@ -596,26 +597,33 @@ p {
     font-size: 20px;
 }
 
-#loginForm {
-    margin-top: 85px;
+#loginForm,
+#registerForm {
+    margin-top: 50px;
 }
 
+#camponome,
+#campoemail,
 #camposenha {
-    margin-top: 40px;
+    margin-top: 15px;
 }
 
 #campo1,
-#campo2 {
-    margin-right: 40%;
+#campo2,
+#campo3 {
+    margin-right: 45%;
+    margin-bottom: 3%;
 }
 
-#inputemail {
+#inputemail,
+#inputnome {
     border-radius: 100px;
     outline: none;
     border: 1px;
-    width: 250px;
-    margin-top: 2%;
-    padding-left: 2.5%;
+    width: 245px;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding: 5px;
 }
 
 #caixaopcoes {
@@ -680,8 +688,9 @@ p {
     border-radius: 100px;
     outline: none;
     border: 1px;
-    width: 250px;
-    margin-top: 2%;
+    width: 245px;
+    margin-bottom: 5px;
+    padding: 5px;
     background-color: white;
 }
 
@@ -707,6 +716,8 @@ p {
     padding: 20px;
 }
 
+
+
 /* ANIMAÇÃO ICONES*/
 .bi-instagram:hover {
     color: white;
@@ -725,7 +736,6 @@ p {
     transition: 00.5s all;
     transform: scale(1.2);
 }
-
 
 /* PÁGINA INICIAL */
 #bg07Div svg {
@@ -1131,7 +1141,7 @@ footer {
 
     #conteudo {
         width: 75%;
-        height: 500px;
+        height: 550px;
         margin-top: 7%;
     }
 
@@ -1162,7 +1172,7 @@ footer {
         width: 83%;
     }
 
-    #inputemail,
+    #inputnome, #inputemail,
     #divsenha {
         width: 81%;
     }
@@ -1322,7 +1332,7 @@ footer {
         margin-top: 5%;
     }
 
-    #pagLogin label {
+    #pagLogin label, #pagCadastro label {
         margin-right: 15%;
     }
 
@@ -1707,7 +1717,7 @@ footer {
         margin-left: 25%;
         margin-right: 25%;
         margin-top: 20%;
-        
+
     }
 
     .secListas div {

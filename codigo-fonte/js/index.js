@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="button" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="button" data-bs-dismiss="modal">Fechar</button>
                     </div>
                 </div>
             </div>

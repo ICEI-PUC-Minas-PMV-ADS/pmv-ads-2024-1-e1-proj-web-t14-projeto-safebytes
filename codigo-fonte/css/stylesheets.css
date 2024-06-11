@@ -44,6 +44,19 @@ p {
     font-size: 12px;
 }
 
+.button {
+    width: 80%;
+    padding: 10px 15px;
+    background-color: #050a78;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+}
+
+.button:hover {
+    background-color: #050b789a;
+    border: 0.5px solid #00112b;
+}
 
 /* HEADER */
 .header {
@@ -141,7 +154,7 @@ p {
 
 .quemSomosBtn {
     width: 50%;
-    margin-left: 15.5%;
+    margin-left: 10%;
 }
 
 
@@ -1488,6 +1501,14 @@ footer {
         font-size: 20px;
     }
 
+    .header {
+        grid-template-columns: 85px 250px 100px;
+    }
+
+    .searchBtn {
+        margin-left: 20px;
+    }
+
     #perfil {
         width: 80%;
         margin-left: 20px;
@@ -1504,6 +1525,11 @@ footer {
 
     .banner {
         width: 60%;
+    }
+
+    .quemSomosBtn {
+        width: 30%;
+        margin-left: 8%;
     }
 
     .sliderWrapper .sliderList {

@@ -1,5 +1,17 @@
-// Funcionalidade Tutoriais
+document.getElementById("quiz0").addEventListener('click', () => {
+    window.location.href = './quizzes/quiz0.html'
+});
 
+document.getElementById("quiz2").addEventListener('click', () => {
+    window.location.href = './quizzes/quiz2.html'
+});
+
+document.getElementById("quiz3").addEventListener('click', () => {
+    window.location.href = './quizzes/quiz3.html'
+});
+
+
+// Funcionalidade Tutoriais
 fetch('../Gersons/tutoriais.json')
     .then(response => response.json())
     .then(data => {

@@ -23,9 +23,6 @@ fetch('../Gersons/tutoriais.json')
             localStorage.setItem('progressoTutorial', JSON.stringify(estado));
         }
 
-        const botaoPagInicial = document.querySelector(".botaoDiv");
-        botaoPagInicial.addEventListener("click", () => voltarInicio());
-
         // Cria elemento da lista
         function criarElementoLista(titulo, index) {
             const tutorialDiv = document.createElement("div");

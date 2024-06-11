@@ -41,12 +41,18 @@ const fotoPerfil =
     "</div>"
 
 const botaoVoltar =
-    "<div class='botaoDiv'>" +
+    "<div id='botaoDiv' class='botaoDiv'>" +
     "<i id='botaoPagInicial' class='bi bi-chevron-compact-left'>" + "</i>" +
     "</div>"
 
 if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
     header.innerHTML += logo;
+
+} else if (body.id === 'quizPag') {
+    header.innerHTML += botaoVoltar;
+    document.querySelector("#botaoDiv").addEventListener("click", () => {
+        window.location.href = "../pagListaQuizzes.html";
+    });
 
 } else if (body.id === 'pagInicial') {
     header.innerHTML += logo02;
@@ -55,6 +61,9 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
 } else if (body.id === 'pagTutoriais' || body.id === 'pagQuizzes') {
     header.innerHTML += botaoVoltar;
     header.innerHTML += fotoPerfil;
+    document.querySelector(".botaoDiv").addEventListener("click", () => {
+        window.location.href = "pagInicial.html";
+    });
 
 } else {
     header.innerHTML += logo;

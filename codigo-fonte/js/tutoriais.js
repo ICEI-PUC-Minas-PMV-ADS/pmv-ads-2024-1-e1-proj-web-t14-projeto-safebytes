@@ -1,20 +1,16 @@
-// Carrega o JSON a partir do arquivo
 fetch('../Gersons/tutoriais.json')
     .then(response => response.json())
     .then(data => {
         var tutoriais = data;
 
-        // Acessa a página Inicial
         function voltarInicio() {
             window.location.href = 'pagInicial.html';
         }
 
-        // Acessa a lista de tutoriais
         function mostrarLista() {
             window.location.href = 'pagTutoriais.html';
         }
 
-        // Salvar progresso
         function salvarProgresso(tutorialIndex, etapaIndex) {
             const estado = {
                 tutorialIndex: tutorialIndex,
@@ -23,7 +19,20 @@ fetch('../Gersons/tutoriais.json')
             localStorage.setItem('progressoTutorial', JSON.stringify(estado));
         }
 
-        // Cria elemento da lista
+        function salvarEstadoEtapas(tutorialIndex, etapaIndex) {
+            const progresso = JSON.parse(localStorage.getItem('estadoEtapas')) || {};
+            if (!progresso[tutorialIndex]) {
+                progresso[tutorialIndex] = [];
+            }
+            progresso[tutorialIndex][etapaIndex] = true;
+            localStorage.setItem('estadoEtapas', JSON.stringify(progresso));
+        }
+
+        function verificarEstadoEtapas(tutorialIndex, etapaIndex) {
+            const progresso = JSON.parse(localStorage.getItem('estadoEtapas')) || {};
+            return progresso[tutorialIndex] && progresso[tutorialIndex][etapaIndex];
+        }
+
         function criarElementoLista(titulo, index) {
             const tutorialDiv = document.createElement("div");
             tutorialDiv.id = `tutorial${index}`;
@@ -52,9 +61,7 @@ fetch('../Gersons/tutoriais.json')
             return tutorialDiv;
         }
 
-        // Mostra a lista
         const lista = document.querySelector(".lista");
-
         lista.innerHTML = '';
 
         for (let i = 0; i < tutoriais.tutorial.length; i++) {
@@ -64,14 +71,11 @@ fetch('../Gersons/tutoriais.json')
             tutorialDiv.addEventListener("click", () => mostrarConteudo(tutorial, 0));
         }
 
-        // Mostra o conteudo de cada elemento
         const secPrincipal = document.querySelector(".secPrincipalTutoriais");
         const tituloPrincipal = document.querySelector(".tituloPrincipal");
 
         function mostrarConteudo(tutorial, etapaIndex) {
             lista.innerHTML = '';
-            botaoPagInicial.innerHTML = '';
-
             secPrincipal.innerHTML = '';
             tituloPrincipal.innerHTML = '';
 
@@ -100,7 +104,6 @@ fetch('../Gersons/tutoriais.json')
             const etapasDiv = document.createElement("div");
             etapasDiv.className = "etapas";
 
-            // Cria uma div para cada etapa do elemento
             etapas.forEach((etapa, index) => {
                 const etapaDiv = document.createElement("div");
                 etapaDiv.id = `etapa${etapa.id}`;
@@ -119,7 +122,11 @@ fetch('../Gersons/tutoriais.json')
                 etapasDiv.appendChild(etapaDiv);
                 secPrincipal.appendChild(etapasDiv);
 
-                etapaDiv.addEventListener("click", () => mostrarEtapa(tutorial, index));
+                if (index === 0 || verificarEstadoEtapas(tutoriais.tutorial.indexOf(tutorial), index - 1)) {
+                    etapaDiv.addEventListener("click", () => mostrarEtapa(tutorial, index));
+                } else {
+                    etapaDiv.style.opacity = '0.5';
+                }
             });
 
             const botaoLista = document.createElement("div");
@@ -133,18 +140,25 @@ fetch('../Gersons/tutoriais.json')
             const botaoConcluir = document.createElement("button");
             botaoConcluir.id = "botaoConcluir";
             botaoConcluir.textContent = "Concluir";
-            botaoConcluir.addEventListener("click", () => voltarInicio());
+            botaoConcluir.addEventListener("click", () => {
+                const tutorialIndex = tutoriais.tutorial.indexOf(tutorial);
+                const todasEtapasCompletas = tutorial.etapas.every((etapa, index) => verificarEstadoEtapas(tutorialIndex, index));
+                if (todasEtapasCompletas) {
+                    localStorage.removeItem('progressoTutorial');
+                    localStorage.removeItem('estadoEtapas');
+                    window.location.href = 'pagInicial.html';
+                } else {
+                    alert("Ainda há etapas não concluídas!");
+                }
+            });        
 
             botaoLista.appendChild(botaoPagLista);
             botaoLista.appendChild(botaoConcluir);
             secPrincipal.appendChild(botaoLista);
 
-            // Salva o tutorial atual
             salvarProgresso(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
         }
 
-
-        // Mostra o conteudo das etapas
         function mostrarEtapa(tutorial, etapaIndex) {
             secPrincipal.innerHTML = '';
 
@@ -185,15 +199,17 @@ fetch('../Gersons/tutoriais.json')
                 botaoProximoDiv.appendChild(botaoSair);
             }
 
-            // Permite a navegação entre as etapas do tutorial
             const botaoProximo = document.createElement("button");
             botaoProximo.id = "botaoProximo";
             botaoProximo.textContent = etapaIndex < tutorial.etapas.length - 1 ? "Avançar" : "Concluir";
             botaoProximo.addEventListener("click", () => {
                 if (etapaIndex < tutorial.etapas.length - 1) {
+                    salvarEstadoEtapas(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
                     mostrarEtapa(tutorial, etapaIndex + 1);
                 } else {
-                    mostrarConteudo(tutorial, 0);
+                    localStorage.removeItem('progressoTutorial');
+                    localStorage.removeItem('estadoEtapas');
+                    voltarInicio();
                 }
             });
 
@@ -212,6 +228,3 @@ fetch('../Gersons/tutoriais.json')
         }
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
-
-
-

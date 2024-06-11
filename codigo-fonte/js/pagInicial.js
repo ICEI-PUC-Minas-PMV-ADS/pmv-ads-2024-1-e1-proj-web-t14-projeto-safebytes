@@ -10,12 +10,10 @@ document.getElementById("quiz3").addEventListener('click', () => {
     window.location.href = './quizzes/quiz3.html'
 });
 
-
 // Funcionalidade Tutoriais
 fetch('../Gersons/tutoriais.json')
     .then(response => response.json())
     .then(data => {
-
         var tutoriais = data;
 
         function secContinuar(tutorialIndex, etapaIndex) {
@@ -31,7 +29,7 @@ fetch('../Gersons/tutoriais.json')
             capaTutorial.alt = 'Capa' + tutoriais.tutorial[tutorialIndex].titulo;
 
             const H2 = document.createElement('h2');
-            H2.textContent = 'Continue o Tutorial:'
+            H2.textContent = 'Continue o Tutorial:';
 
             const H3 = document.createElement('h3');
             H3.textContent = tutoriais.tutorial[tutorialIndex].titulo;
@@ -44,18 +42,27 @@ fetch('../Gersons/tutoriais.json')
             const continuarTutorial = document.getElementById('continuarTutorial');
             continuarTutorial.addEventListener('click', () => {
                 window.location.href = `pagTutoriais.html?tutorial=${tutorialIndex}&etapaIndex=${etapaIndex}`;
-            })
+            });
         }
 
         if (localStorage.getItem('progressoTutorial')) {
             const progressoSalvo = JSON.parse(localStorage.getItem('progressoTutorial'));
-
             const tutorialIndex = progressoSalvo.tutorialIndex;
             const etapaIndex = progressoSalvo.etapaIndex;
-            secContinuar(tutorialIndex, etapaIndex);
+
+            if (etapaIndex < tutoriais.tutorial[tutorialIndex].etapas.length - 1) {
+                secContinuar(tutorialIndex, etapaIndex);
+            } else {
+                const continuarTutorialDiv = document.querySelector('#continuarTutorial');
+                continuarTutorialDiv.innerHTML = '';
+            }
         }
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
+
+
+
+
 
 /* entrada de nickname */
 // JavaScript para exibir e ocultar o pop-up

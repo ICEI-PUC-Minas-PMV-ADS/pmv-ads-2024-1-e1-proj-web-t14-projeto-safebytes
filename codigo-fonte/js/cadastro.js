@@ -72,9 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Verifica se o usuário já existe
     const userExists = users.some((user) => user.email === email);
-      
-    if (userExists) {
-      alert("Usuário já existe!");
 
     // Verifica a validade da senha
     const validPassword = isValidPassword(senha);
@@ -103,24 +100,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Salva a lista de usuários no localStorage
     localStorage.setItem("users", JSON.stringify(users));
-
-    alert("Usuário cadastrado com sucesso!");
-
-    // Limpa o formulário
-    registerForm.reset();
-
-    window.location.href = "../pages/login.html";
-      
     // Armazena um indicador de autenticação na sessionStorage
     sessionStorage.setItem('isLoggedIn', 'true');
 
     // Redireciona o usuário para a página principal
     window.location.href = "../pages/pagInicial.html";
 
+    window.location.href = "../pages/login.html";
     alert("Usuário cadastrado com sucesso");
-  }});
-
+  });
 });
+
+// Botão de mostrar e esconder a senha
+function mostrarSenha(){
+    var inputsenha = document.getElementById('inputsenha')
+    var btMostrarSenha = document.getElementById('botaoSenha')
+
+    if (inputsenha.type ==='password') {
+        inputsenha.setAttribute('type','text')
+        btMostrarSenha.classList.replace('bi-eye-slash','bi-eye')
+    } else {
+        inputsenha.setAttribute('type','password')
+        btMostrarSenha.classList.replace('bi-eye','bi-eye-slash')
+    }
+}
 
 // FIM CADASTRO 
 
@@ -156,5 +159,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// FIM LOGIN 
+// Botão de mostrar e esconder a senha
+function mostrarSenha(){
+  var inputsenha = document.getElementById('inputsenha')
+  var btMostrarSenha = document.getElementById('botaoSenha')
 
+  if (inputsenha.type ==='password') {
+      inputsenha.setAttribute('type','text')
+      btMostrarSenha.classList.replace('bi-eye-slash','bi-eye')
+  } else {
+      inputsenha.setAttribute('type','password')
+      btMostrarSenha.classList.replace('bi-eye','bi-eye-slash')
+  }
+}
+
+// FIM LOGIN

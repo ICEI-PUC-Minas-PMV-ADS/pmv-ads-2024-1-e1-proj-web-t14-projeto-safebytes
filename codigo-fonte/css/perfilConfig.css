@@ -80,7 +80,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 .user-img {
-    max-width: 30%;
+    max-width: 12.2rem;
     min-height: auto;
 }
 
@@ -275,11 +275,11 @@ footer {
         position: absolute;
     }
     #uploadbtn {
-        height: 50px;
-        width: 50px;
+        height: 40px;
+        width: 40px;
     }
     .user-img label {
-        font-size: 30px;
+        font-size: 20px;
     }
     
 }

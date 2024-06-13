@@ -19,6 +19,7 @@
     <!-- Quizzes JavaScript -->
     <script defer src="../js/header.js"></script>
     <script defer src="../js/quizzes.js"></script>
+    <script defer src="../js/perfil.js"></script>
 </head>
 
 <body id="pagQuizzes">
@@ -47,18 +48,4 @@
     </script>
     
 </body>
-
-<script>
-    // Carregar a imagem de perfil do localStorage ao carregar a página
-    document.addEventListener('DOMContentLoaded', function () {
-        const storedImage = localStorage.getItem('profileImage');
-        if (storedImage) {
-            const perfilImg = document.getElementById('perfil');
-            if (perfilImg) {
-                perfilImg.setAttribute('src', storedImage);
-            }
-        }
-    });
-</script>
-
 </html>

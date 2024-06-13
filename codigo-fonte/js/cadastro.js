@@ -128,36 +128,39 @@ function mostrarSenha(){
 // FIM CADASTRO 
 
 // LOGIN
-
 document.addEventListener("DOMContentLoaded", function () {
   const loginForm = document.getElementById("loginForm");
 
   loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
+      event.preventDefault();
 
-    const email = document.getElementById("inputemail").value;
-    const senha = document.getElementById("inputsenha").value;
+      const email = document.getElementById("inputemail").value;
+      const senha = document.getElementById("inputsenha").value;
 
-    // Carrega os usuários do localStorage
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+      // Carrega os usuários do localStorage
+      let users = JSON.parse(localStorage.getItem("users")) || [];
 
-    // Respostas do Login
-    const userExists = users.some(
-      (user) => user.email === email && user.senha === senha && user.email != ""
-    );
-    const incorrectPassword = users.some(
-      (user) => user.email === email && user.senha != senha
-    );
-    if (userExists) {
-      alert("Login feito com sucesso!");
-      window.location.href = "../pages/pagInicial.html";
-    } else if (incorrectPassword) {
-      alert("Senha incorreta!");
-    } else {
-      alert("Este usuário não existe!");
-    }
+      // Respostas do Login
+      const userExists = users.some(
+          (user) => user.email === email && user.senha === senha && user.email != ""
+      );
+      const incorrectPassword = users.some(
+          (user) => user.email === email && user.senha != senha
+      );
+
+      if (userExists) {
+          alert("Login feito com sucesso!");
+          // Salva o e-mail do usuário logado no localStorage
+          localStorage.setItem("loggedInUserEmail", email);
+          window.location.href = "../pages/pagInicial.html";
+      } else if (incorrectPassword) {
+          alert("Senha incorreta!");
+      } else {
+          alert("Este usuário não existe!");
+      }
   });
 });
+
 
 // Botão de mostrar e esconder a senha
 function mostrarSenha(){

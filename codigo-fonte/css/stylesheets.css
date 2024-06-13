@@ -1219,6 +1219,69 @@ p {
     background: black;
 }
 
+/* PÁGINA O QUE FOI FEITO */
+.progressDiv {
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.progressBox {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 25%;
+    margin-top: 80%;
+    background: #f7f7f7af;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.progressCircle svg {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+#pagOqFoiFeito circle {
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke: #00112b86;
+    stroke-width: 10;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+
+#pagOqFoiFeito circle:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #00112b3a;
+}
+
+#pagOqFoiFeito circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - 308);
+    stroke: #00298f;
+}
+
+.progressNumber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00298f;
+}
+
+
+
 /* FOOTER */
 footer {
     margin: 30px 0;

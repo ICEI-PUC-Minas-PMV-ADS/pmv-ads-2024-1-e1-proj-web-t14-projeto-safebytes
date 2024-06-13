@@ -11,12 +11,20 @@ fetch('../Gersons/tutoriais.json')
             window.location.href = 'pagTutoriais.html';
         }
 
-        function salvarProgresso(tutorialIndex, etapaIndex) {
+        function continuarTutorial(tutorialIndex, etapaIndex) {
             const estado = {
                 tutorialIndex: tutorialIndex,
                 etapaIndex: etapaIndex
             };
             localStorage.setItem('progressoTutorial', JSON.stringify(estado));
+        }
+
+        function tutorialConcluido(tutorialIndex) {
+            const concluidos = JSON.parse(localStorage.getItem('tutoriaisConcluidos')) || [];
+            if (!concluidos.includes(tutorialIndex)) {
+                concluidos.push(tutorialIndex);
+                localStorage.setItem('tutoriaisConcluidos', JSON.stringify(concluidos));
+            }
         }
 
         function salvarEstadoEtapas(tutorialIndex, etapaIndex) {
@@ -146,6 +154,7 @@ fetch('../Gersons/tutoriais.json')
                 if (todasEtapasCompletas) {
                     localStorage.removeItem('progressoTutorial');
                     localStorage.removeItem('estadoEtapas');
+                    tutorialConcluido(tutorialIndex);
                     window.location.href = 'pagInicial.html';
                 } else {
                     alert("Ainda há etapas não concluídas!");
@@ -156,7 +165,7 @@ fetch('../Gersons/tutoriais.json')
             botaoLista.appendChild(botaoConcluir);
             secPrincipal.appendChild(botaoLista);
 
-            salvarProgresso(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
+            continuarTutorial(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
         }
 
         function mostrarEtapa(tutorial, etapaIndex) {
@@ -207,16 +216,15 @@ fetch('../Gersons/tutoriais.json')
                     salvarEstadoEtapas(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
                     mostrarEtapa(tutorial, etapaIndex + 1);
                 } else {
-                    localStorage.removeItem('progressoTutorial');
-                    localStorage.removeItem('estadoEtapas');
-                    voltarInicio();
+                    salvarEstadoEtapas(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
+                    mostrarConteudo(tutorial);
                 }
             });
 
             botaoProximoDiv.appendChild(botaoProximo);
             secPrincipal.appendChild(botaoProximoDiv);
 
-            salvarProgresso(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
+            continuarTutorial(tutoriais.tutorial.indexOf(tutorial), etapaIndex);
         }
 
         const urlParams = new URLSearchParams(window.location.search);

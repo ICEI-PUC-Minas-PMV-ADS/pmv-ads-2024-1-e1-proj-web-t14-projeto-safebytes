@@ -65,6 +65,13 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
         window.location.href = "pagInicial.html";
     });
 
+} else if (body.id === 'pagOqFoiFeito') {
+    header.innerHTML += botaoVoltar;
+    header.innerHTML += fotoPerfil;
+    document.querySelector(".botaoDiv").addEventListener("click", () => {
+        window.location.href = "perfil.html";
+    });
+
 } else {
     header.innerHTML += logo;
     header.innerHTML += searchBar;

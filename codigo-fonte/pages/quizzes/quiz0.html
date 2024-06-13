@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/stylesheets.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script defer src="../../js/header.js"></script>
-    <script defer src="../js/quiz.js"></script> <!-- Seu script JS -->
+    <script defer src="../../js/quiz.js"></script> <!-- Seu script JS -->
 </head>
 
 <body id="quizPag">
@@ -105,7 +105,15 @@
             </div>
         `;
             document.querySelector('.concluir').addEventListener('click', () => {
-                window.location.href = '../pagListaQuizzes.html';
+                fetch('../../Gersons/quizzes.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const quizzes = data;
+                        const quizIndex = quizzes.quiz[0].id;
+                        quizzesConcluidos(quizIndex);
+                        window.location.href = '../pagListaQuizzes.html';
+                    })
+                    .catch(error => console.error('Erro ao carregar o JSON:', error));
             });
         }
 

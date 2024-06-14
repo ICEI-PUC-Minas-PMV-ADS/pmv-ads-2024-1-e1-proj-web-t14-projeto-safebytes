@@ -925,10 +925,22 @@ margin-top: 15%;
 
 .catalogoFiltros {
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    background: #ffffff9f;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.filtrosText {
+    margin: 10px;
+}
+
+.filtrosbtn {
+    display: grid;
+    grid-template-columns: 30% 30% 30% 10%;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .catalogoWrapper {
@@ -948,10 +960,22 @@ margin-top: 15%;
 }
 
 .filterBtn {
+    width: 100%;
     color: #fff;
     border: none;
     padding: 5px;
     border-radius: 5px;
+    text-align: center;
+}
+
+.clearFilter {
+    width: 100%;
+    color: #00288F;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    background: transparent;
 }
 
 #filter1 {
@@ -978,6 +1002,11 @@ margin-top: 15%;
     background: #00298f;
 }
 
+#filter4:hover {
+    background: #7575724d;
+}
+
+
 .catalogoItem {
     background: #fff;
     padding-bottom: 5px;
@@ -1003,9 +1032,9 @@ margin-top: 15%;
 
 .catalogoItem:hover {
     transition: 1.1s;
-    -webkit-box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
-    -moz-box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
-    box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
+    -webkit-box-shadow: 7px 35px 300px -23px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 7px 35px 300px -23px rgba(0, 0, 0, 0.85);
+    box-shadow: 7px 35px 300px -23px rgba(0, 0, 0, 0.85);
     scale: 1.1;
 }
 

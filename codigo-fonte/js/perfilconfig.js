@@ -50,105 +50,68 @@ document.addEventListener('DOMContentLoaded', function () {
             img.setAttribute('src', user.profileImage);
         }
     }
-});
 
-function saveChanges() {
-    // Salvar a imagem de perfil temporária no localStorage
-    if (tempImage) {
-        const email = localStorage.getItem('loggedInUserEmail');
-        if (email) {
-            // Obter a lista de usuários do localStorage ou criar uma nova se não existir
-            let users = JSON.parse(localStorage.getItem("users")) || [];
-
-            // Verificar se o usuário já existe na lista
-            const existingUserIndex = users.findIndex(u => u.email === email);
-
-            if (existingUserIndex !== -1) {
-                // Se o usuário já existir, atualizar seus dados com a nova imagem
-                users[existingUserIndex].profileImage = tempImage;
-                localStorage.setItem("users", JSON.stringify(users));
-                alert('Alterações salvas com sucesso!');
-            } else {
-                alert('Usuário não encontrado.');
-            }
-        } else {
-            alert('Usuário não está logado.');
-        }
-    }
-    // Redirecionar para a página inicial
-    window.location.href = "../pages/pagInicial.html";
-}
-
-function cancelChanges() {
-    // Redirecionar para a página inicial sem salvar a imagem de perfil
-    alert('Alterações canceladas.');
-    window.location.href = "../pages/pagInicial.html";
-}
-
-
-//mostrar nickname no placeholder
-
-document.addEventListener('DOMContentLoaded', function () {
-    // Recuperar o email logado do localStorage
+    // Mostrar nickname no placeholder
+    var inputNickname = document.getElementById('novoNickname');
     var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
-
-    // Recuperar o objeto users do localStorage
     var usersString = localStorage.getItem('users');
     var users = JSON.parse(usersString);
-
-    // Encontrar o usuário correspondente ao email logado
-    var user = users.find(function (user) {
+    var user = users.find(function(user) {
         return user.email === loggedInUserEmail;
     });
 
-    // Verificar se encontrou o usuário e atualizar o placeholder
     if (user && user.nickname) {
-        var inputNickname = document.getElementById('novoNickname');
-        if (inputNickname) {
-            inputNickname.placeholder = user.nickname;
-        } else {
-            console.error('Elemento com id "novoNickname" não encontrado.');
-        }
+        inputNickname.placeholder = user.nickname;
     } else {
         console.error(`Não foi possível encontrar o usuário com o email ${loggedInUserEmail} ou o usuário não possui um nickname.`);
     }
 });
 
-//salvar nickname
+// Salvar alterações no perfil
 function saveChanges() {
+    // Recupera o email logado
+    var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+
+    // Recupera o objeto users do localStorage
+    var usersString = localStorage.getItem('users');
+    var users = JSON.parse(usersString);
+
+    // Encontra o usuário correspondente pelo email
+    var user = users.find(function(user) {
+        return user.email === loggedInUserEmail;
+    });
+
+    // Atualiza a foto de perfil se houver uma imagem temporária
+    if (tempImage) {
+        if (user) {
+            user.profileImage = tempImage;
+        }
+    }
+
+    // Atualiza o nickname se houver um novo nickname no input
     var inputNickname = document.getElementById('novoNickname');
     var newNickname = inputNickname.value.trim();
-
     if (newNickname && /^[A-Za-z]{1,8}$/.test(newNickname)) {
-        // Recupera o email logado
-        var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
-
-        // Recupera o objeto users do localStorage
-        var usersString = localStorage.getItem('users');
-        var users = JSON.parse(usersString);
-
-        // Encontra o usuário correspondente pelo email
-        var user = users.find(function (user) {
-            return user.email === loggedInUserEmail;
-        });
-
-        // Atualiza o nickname se encontrar o usuário
         if (user) {
             user.nickname = newNickname;
-            localStorage.setItem('users', JSON.stringify(users)); // Atualiza o localStorage com o novo nickname
             localStorage.setItem('nickname', newNickname); // Atualiza o nickname no localStorage (opcional)
             inputNickname.value = ''; // Limpa o valor do input
             inputNickname.placeholder = newNickname; // Atualiza o placeholder com o novo nickname
-            console.log('Nickname atualizado com sucesso:', newNickname);
-
-            // Redireciona para a página de perfil após salvar as alterações
-            window.location.href = '../pages/perfil.html';
-        } else {
-            console.error(`Não foi possível encontrar o usuário com o email ${loggedInUserEmail}`);
         }
-    } else {
-        alert('Nickname inválido. Use apenas letras e até 8 caracteres.');
     }
+
+    // Salva as alterações no localStorage
+    localStorage.setItem('users', JSON.stringify(users));
+    console.log('Alterações salvas:', users);
+
+    // Redireciona para a página de perfil após salvar as alterações
+    window.location.href = '../pages/perfil.html';
+}
+
+// Cancela as alterações e redireciona para a página inicial
+function cancelChanges() {
+    alert('Alterações canceladas.');
+    window.location.href = '../pages/pagInicial.html';
 }
 
 

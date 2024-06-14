@@ -1,13 +1,18 @@
-// Carregar a imagem de perfil do localStorage ao carregar a página
-    document.addEventListener('DOMContentLoaded', function () {
-        const storedImage = localStorage.getItem('profileImage');
-        if (storedImage) {
+// Carregar a imagem de perfil do usuário logado ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    const email = localStorage.getItem('loggedInUserEmail');
+    if (email) {
+        let users = JSON.parse(localStorage.getItem("users")) || [];
+        const user = users.find(u => u.email === email);
+        if (user && user.profileImage) {
             const perfilImg = document.getElementById('perfil');
             if (perfilImg) {
-                perfilImg.setAttribute('src', storedImage);
+                perfilImg.setAttribute('src', user.profileImage);
             }
         }
-    });
+    }
+});
+
 
     document.getElementById('logoutButton').addEventListener('click', function () {
         // Limpar dados de autenticação do localStorage

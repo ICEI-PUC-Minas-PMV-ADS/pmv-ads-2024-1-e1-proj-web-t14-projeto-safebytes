@@ -61,16 +61,23 @@ fetch('../Gersons/tutoriais.json')
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
 
+//entrada de nickname
 
+// Verificar se o objeto users já está definido no localStorage
+var users = JSON.parse(localStorage.getItem('users')) || [];
 
-
-/* entrada de nickname */
-// JavaScript para exibir e ocultar o pop-up
+// Manipular a submissão do formulário de nickname
 document.getElementById('nicknameForm').addEventListener('submit', function (event) {
     event.preventDefault();
-    var nickname = document.getElementById('nickname').value;
+    var nickname = document.getElementById('nickname').value.trim(); // Remover espaços em branco antes e depois
     if (/^[A-Za-z]{1,8}$/.test(nickname)) {
-        localStorage.setItem('nickname', nickname);
+        // Adicionar o novo nickname ao objeto users sem modificar estruturas existentes
+        users.push({
+            nickname: nickname
+        });
+        localStorage.setItem('users', JSON.stringify(users)); // Salva o objeto users no localStorage
+        localStorage.setItem('nickname', nickname); // Salva o nickname no localStorage
+        console.log(users); // Exibe o objeto users no console
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('nicknamePopup').style.display = 'none';
     } else {
@@ -83,8 +90,20 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!localStorage.getItem('nickname')) {
         document.getElementById('overlay').style.display = 'block';
         document.getElementById('nicknamePopup').style.display = 'block';
+    } else {
+        var storedNickname = localStorage.getItem('nickname').trim(); // Remover espaços em branco antes e depois
+        if (!users.find(user => user.nickname === storedNickname)) {
+            users.push({
+                nickname: storedNickname
+            });
+            localStorage.setItem('users', JSON.stringify(users)); // Atualiza o objeto users no localStorage
+            console.log(users); // Exibe o objeto users no console
+        }
     }
 });
+
+//fim entrada de nickname
+
 // Carregar a imagem de perfil do localStorage ao carregar a página
 document.addEventListener('DOMContentLoaded', function () {
     const storedImage = localStorage.getItem('profileImage');

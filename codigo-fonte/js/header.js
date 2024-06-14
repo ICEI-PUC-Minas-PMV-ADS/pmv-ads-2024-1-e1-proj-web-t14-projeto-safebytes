@@ -71,8 +71,9 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
         header.innerHTML += botaoVoltar;
         header.innerHTML += fotoPerfil;
         document.querySelector(".botaoDiv").addEventListener("click", () => {
-            window.location.href = "pagInicial.html";
+            window.location.href = "pagCatalogo.html";
         });
+
     } else {
         header.innerHTML += logo;
         header.innerHTML += searchBar;

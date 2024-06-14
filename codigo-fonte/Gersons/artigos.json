@@ -4,6 +4,7 @@
             "id": 0,
             "capa": "../assets/artPhishing.png",
             "titulo": "O que é Phishing?",
+            "keywords": ["phishing", "seguranca"],
             "secoes": [
                 {
                     "id": 1,
@@ -51,6 +52,7 @@
             "id": 1,
             "capa": "../assets/artSenhasFortes.jpg",
             "titulo": "O que são Senhas Fortes?",
+            "keywords": ["protecao", "seguranca"],
             "secoes": [
                 {
                     "id": 1,
@@ -98,6 +100,7 @@
             "id": 2,
             "capa": "../assets/artBoasPraticas.jpg",
             "titulo": "Regras da Cybersegurança",
+            "keywords": ["regras", "dados"],
             "secoes": [
                 {
                     "id": 1,
@@ -145,6 +148,7 @@
             "id": 3,
             "capa": "../assets/artDownload.jpg",
             "titulo": "Tudo sobre Download",
+            "keywords": ["protecao", "seguranca"],
             "secoes": [
                 {
                     "id": 1,
@@ -192,6 +196,7 @@
             "id": 4,
             "capa": "../assets/artNuvem.jpg",
             "titulo": "Armazenamento em Nuvem",
+            "keywords": ["dados", "armazenamento"],
             "secoes": [
                 {
                     "id": 1,
@@ -239,6 +244,7 @@
             "id": 5,
             "capa": "../assets/artWifi.jpg",
             "titulo": "Segurança em Redes Wi-Fi",
+            "keywords": ["protecao", "seguranca"],
             "secoes": [
                 {
                     "id": 1,
@@ -286,6 +292,7 @@
             "id": 6,
             "capa": "../assets/artMobile.jpg",
             "titulo": "Segurança em Dispositivos Móveis",
+            "keywords": ["dados", "dispositivo"],
             "secoes": [
                 {
                     "id": 1,
@@ -333,6 +340,7 @@
             "id": 7,
             "capa": "../assets/artRedesSociais.jpg",
             "titulo": "Segurança em Redes Sociais",
+            "keywords": ["redes", "seguranca"],
             "secoes": [
                 {
                     "id": 1,
@@ -380,6 +388,7 @@
             "id": 8,
             "capa": "../assets/artDados.jpg",
             "titulo": "Proteção de Dados Pessoais",
+            "keywords": ["dados", "protecao"],
             "secoes": [
                 {
                     "id": 1,
@@ -427,6 +436,7 @@
             "id": 9,
             "capa": "../assets/artIot.jpg",
             "titulo": "Segurança em Internet das Coisas (IoT)",
+            "keywords": ["iot", "seguranca"],
             "secoes": [
                 {
                     "id": 1,

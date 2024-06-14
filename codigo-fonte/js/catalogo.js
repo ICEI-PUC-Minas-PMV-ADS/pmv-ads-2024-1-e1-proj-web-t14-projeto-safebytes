@@ -14,6 +14,7 @@ function createCards(artigos) {
         const catalogoItem = document.createElement('div')
         catalogoItem.className = 'catalogoItem';
         catalogoItem.id = `item ${artigo.id}`;
+        catalogoItem.dataset.keywords = artigo.keywords.join('').toLowerCase();
 
         const catalogoImgDiv = document.createElement('div');
         catalogoImgDiv.className = 'catalogoImg';
@@ -43,11 +44,46 @@ function createCards(artigos) {
     });
 }
 
+function artigosFiltros(filtro) {
+    const catalogoItems = document.querySelectorAll('.catalogoItem');
+
+    catalogoItems.forEach(item => {
+        const keywords = item.dataset.keywords;
+        const match = keywords.includes(filtro.toLowerCase());
+
+        if (match) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
+function limparFiltro() {
+    const catalogoItems = document.querySelectorAll('.catalogoItem');
+    catalogoItems.forEach(item => {
+        item.style.display = 'block';
+    });
+}
+
 function init() {
     fetchData('../Gersons/artigos.json')
         .then(data => {
             const artigos = data.artigo;
             createCards(artigos);
+
+            const filtrosBtn = document.querySelectorAll('.filterBtn');
+            filtrosBtn.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filtro = button.getAttribute('data-filter');
+                    artigosFiltros(filtro);
+                });
+            });
+
+            const limparBtn = document.querySelector('.clearFilter');
+            limparBtn.addEventListener('click', () => {
+                limparFiltro();
+            })
         });
 }
 

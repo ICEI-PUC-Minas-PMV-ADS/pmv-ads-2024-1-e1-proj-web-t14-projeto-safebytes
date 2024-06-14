@@ -68,7 +68,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-bottom: 8.5rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -80,7 +80,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 .user-img {
-    max-width: 18.75rem;
+    max-width: 12rem;
     min-height: auto;
 }
 
@@ -91,7 +91,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     border: #4240ec;
     margin: 3rem 1.5rem 3rem 0;
     border-radius: 100%;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 #photo {
@@ -105,14 +105,14 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 
 #uploadbtn {
     position: absolute;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     padding: 6px 6px;
     border-radius: 50%;
     cursor: pointer;
     color: white;
-    transform: translate(-100%);
-    margin-top: 30px;
+    transform: translate(-80%);
+    margin-top: 25px;
     background-color: #6697DF;
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }

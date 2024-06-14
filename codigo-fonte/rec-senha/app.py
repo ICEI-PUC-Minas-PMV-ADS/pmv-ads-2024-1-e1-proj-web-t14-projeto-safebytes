@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, flash
+from flask import Flask, request, render_template, flash, redirect, url_for
 from flask_mail import Mail, Message
 import random
 import sqlite3
@@ -91,7 +91,7 @@ def verify_code():
     reset_request = cur.fetchone()
 
     if reset_request and (datetime.datetime.now() - datetime.datetime.fromisoformat(reset_request['timestamp'])).seconds < 3600:
-        return 'Código verificado com sucesso, agora você pode redefinir sua senha.'
+        return render_template('RedefinirSenha.html', email=email)
     else:
         flash('Código inválido ou expirado')
         return render_template('code_verification.html', email=email), 400

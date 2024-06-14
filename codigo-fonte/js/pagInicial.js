@@ -10,6 +10,19 @@ document.getElementById("quiz3").addEventListener('click', () => {
     window.location.href = './quizzes/quiz3.html'
 });
 
+document.getElementById('firstBtn').addEventListener('click', () => {
+    window.location.href = 'pagCatalogo.html'
+});
+
+document.getElementById('secondBtn').addEventListener('click', () => {
+    window.location.href = 'pagCatalogo.html'
+});
+
+document.getElementById('thirdBtn').addEventListener('click', () => {
+    window.location.href = 'pagCatalogo.html'
+});
+
+
 // Funcionalidade Tutoriais
 fetch('../Gersons/tutoriais.json')
     .then(response => response.json())

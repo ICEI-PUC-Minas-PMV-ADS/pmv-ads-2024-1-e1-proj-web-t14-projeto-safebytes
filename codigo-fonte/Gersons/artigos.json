@@ -234,6 +234,241 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": 5,
+            "capa": "../assets/artWifi.jpg",
+            "titulo": "Segurança em Redes Wi-Fi",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artWifiMainImg.jpg",
+                    "texto": "A segurança em redes Wi-Fi é essencial para proteger dados pessoais e empresariais. Redes inseguras podem ser facilmente invadidas, comprometendo a privacidade e a integridade dos dados transmitidos."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artWifiTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "A criptografia WPA3 oferece melhor proteção contra ataques de força bruta em comparação com seus predecessores WPA e WPA2."
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Redes públicas de Wi-Fi, como as de cafeterias e aeroportos, são alvos frequentes de ataques man-in-the-middle."
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Configurar uma senha forte e única para sua rede Wi-Fi é uma das formas mais eficazes de protegê-la."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=abcd1234",
+                            "texto": "Assista a este vídeo para aprender como configurar a segurança de sua rede Wi-Fi doméstica."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=efgh5678",
+                            "texto": "Veja neste vídeo dicas sobre como se proteger ao usar redes Wi-Fi públicas."
+                        }
+                    ]
+                }
+            ]
+        }, 
+        {
+            "id": 6,
+            "capa": "../assets/artMobile.jpg",
+            "titulo": "Segurança em Dispositivos Móveis",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artMobileMainImg.jpg",
+                    "texto": "Com o aumento do uso de smartphones e tablets, a segurança em dispositivos móveis tornou-se uma prioridade. Protegê-los contra ameaças é essencial para manter seus dados seguros."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artMobileTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "Aplicativos maliciosos podem se disfarçar como aplicativos legítimos para enganar os usuários."
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Muitas brechas de segurança em dispositivos móveis ocorrem devido à falta de atualizações de software."
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Usar autenticação multifator é uma maneira eficaz de proteger contas em dispositivos móveis."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=qrst7890",
+                            "texto": "Assista a este vídeo para aprender dicas de segurança para seu smartphone."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=uvwx1122",
+                            "texto": "Veja neste vídeo como identificar aplicativos maliciosos e proteger seu dispositivo móvel."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "capa": "../assets/artRedesSociais.jpg",
+            "titulo": "Segurança em Redes Sociais",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artRedesSocMainImg.jpg",
+                    "texto": "Redes sociais são uma parte integral da vida moderna, mas também representam riscos significativos para a privacidade e a segurança. Proteger suas informações pessoais é fundamental."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artRedesSocTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "Perfis falsos são frequentemente usados para coletar informações pessoais e lançar ataques de engenharia social."
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Configurações de privacidade podem ajudar a limitar quem tem acesso às suas informações nas redes sociais."
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Usar senhas fortes e únicas para cada conta de rede social é crucial para evitar acessos não autorizados."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=yzyz3344",
+                            "texto": "Assista a este vídeo para aprender como proteger suas contas de redes sociais contra hackers."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=abcd5566",
+                            "texto": "Veja neste vídeo como ajustar as configurações de privacidade em várias plataformas de redes sociais."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "capa": "../assets/artDados.jpg",
+            "titulo": "Proteção de Dados Pessoais",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artDadosMainImg.jpg",
+                    "texto": "A proteção de dados pessoais é crucial na era digital. Com o aumento das violações de dados e o uso indevido de informações pessoais, saber como proteger seus dados é essencial."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artDadosTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "A GDPR (Regulamentação Geral de Proteção de Dados) da União Europeia é uma das leis mais rigorosas de proteção de dados do mundo."
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Dados pessoais incluem informações como nome, endereço, número de telefone e até mesmo endereços IP."
+                        },
+                        {
+                            "id": 3,
+                            "topico": "Empresas que violam leis de proteção de dados podem enfrentar multas substanciais e danos à reputação."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=abcd1234",
+                            "texto": "Confira este vídeo que explica a importância da proteção de dados pessoais e como garantir a segurança das suas informações."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=efgh5678",
+                            "texto": "Veja neste vídeo dicas sobre como proteger seus dados pessoais online e evitar vazamentos de informações."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "capa": "../assets/artIot.jpg",
+            "titulo": "Segurança em Internet das Coisas (IoT)",
+            "secoes": [
+                {
+                    "id": 1,
+                    "imagem": "../assets/artIotMainImg.jpg",
+                    "texto": "A Internet das Coisas (IoT) conecta dispositivos cotidianos à internet, tornando-os mais inteligentes e eficientes. No entanto, essa conectividade traz consigo novos desafios de segurança que precisam ser abordados para proteger dados e privacidade."
+                },
+                {
+                    "id": 2,
+                    "titulo": "Curiosidades",
+                    "imagem": "../assets/artIotTopicImg.jpg",
+                    "topicos": [
+                        {
+                            "id": 1,
+                            "topico": "Estima-se que haverá mais de 75 bilhões de dispositivos IoT conectados globalmente até 2025."
+                        },
+                        {
+                            "id": 2,
+                            "topico": "Muitos dispositivos IoT vêm com senhas padrão fracas que devem ser alteradas imediatamente para melhorar a segurança."
+                        },
+                        {
+                            "id": 3,
+                            "topico": "A falta de atualizações de firmware em dispositivos IoT pode deixar brechas de segurança abertas para ataques."
+                        }
+                    ]
+                },
+                {
+                    "id": 3,
+                    "titulo": "Indicações",
+                    "indicacoes": [
+                        {
+                            "id": 1,
+                            "video": "https://www.youtube.com/watch?v=abcd1234",
+                            "texto": "Confira este vídeo para entender os riscos e benefícios da Internet das Coisas e como proteger seus dispositivos IoT."
+                        },
+                        {
+                            "id": 2,
+                            "video": "https://www.youtube.com/watch?v=efgh5678",
+                            "texto": "Veja neste vídeo dicas sobre como configurar e manter a segurança dos seus dispositivos IoT."
+                        }
+                    ]
+                }
+            ]
         }        
     ]
 }

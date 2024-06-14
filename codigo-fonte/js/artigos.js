@@ -18,10 +18,10 @@ function createMainArt(artigo, artigoIndex) {
     artImg.alt = artigo[artigoIndex].titulo || 'Imagem Artigo';
     const artTxt = `<p>${artigo[artigoIndex].secoes[0].texto}</p>`;
 
-    artTitleDiv.innerHTML = artTitle; // Use "=" em vez de "+=" para evitar a duplicação do conteúdo
-    artImgDiv.innerHTML = ''; // Limpe o conteúdo antes de adicionar a nova imagem
+    artTitleDiv.innerHTML = artTitle;
+    artImgDiv.innerHTML = '';
     artImgDiv.appendChild(artImg);
-    artTxtDiv.innerHTML = artTxt; // Use "=" em vez de "+=" para evitar a duplicação do conteúdo
+    artTxtDiv.innerHTML = artTxt;
 }
 
 function createSection01(artigo, artigoIndex) {
@@ -33,22 +33,22 @@ function createSection01(artigo, artigoIndex) {
     ];
 
     const topicoTitle = `<h2>${artigo[artigoIndex].secoes[1].titulo}</h2>`;
-    topicoTitleDiv.innerHTML = topicoTitle; 
+    topicoTitleDiv.innerHTML = topicoTitle;
 
     artigo[artigoIndex].secoes[1].topicos.forEach((topico, i) => {
         if (topicoTxtDivs[i]) {
             const topicoTxt = `<h5>${topico.topico}</h5>`;
-            topicoTxtDivs[i].innerHTML = topicoTxt; 
+            topicoTxtDivs[i].innerHTML = topicoTxt;
         }
     });
 
     const topicoImgDiv = document.querySelector('.topicoImg')
 
-    const topicoImg =  document.createElement("img");
+    const topicoImg = document.createElement("img");
     topicoImg.src = artigo[artigoIndex].secoes[1].imagem;
     topicoImg.alt = artigo[artigoIndex].titulo || 'Imagem Artigo';
 
-    topicoImgDiv.appendChild(topicoImg); 
+    topicoImgDiv.appendChild(topicoImg);
 }
 
 function createSection02(artigo, artigoIndex) {
@@ -74,11 +74,11 @@ function createSection02(artigo, artigoIndex) {
             dicaIframe.alt = artigo[artigoIndex].titulo;
             dicaIframe.allowFullscreen = true;
 
-            dicasIframeDivs[i].innerHTML = ''; // Limpe o conteúdo antes de adicionar o novo iframe
+            dicasIframeDivs[i].innerHTML = '';
             dicasIframeDivs[i].appendChild(dicaIframe);
 
             const dicasTxt = `<h6>${indicacao.texto}</h6>`;
-            dicasTxtDivs[i].innerHTML = dicasTxt; // Use "=" em vez de "+=" para evitar a duplicação do conteúdo
+            dicasTxtDivs[i].innerHTML = dicasTxt;
         }
     });
 }
@@ -110,7 +110,19 @@ function init() {
 
 init();
 
-const artButton = document.querySelector('#artButton');
-artButton.addEventListener('click', () => {
-    window.location.href = "index.html";
-})
+document.addEventListener('DOMContentLoaded', function () {
+    const email = localStorage.getItem('loggedInUserEmail');
+    if (email) {
+        const artButton = document.querySelector('#artButton');
+        artButton.addEventListener('click', () => {
+            window.location.href = "pagInicial.html";
+        });
+    } else {
+        const artButton = document.querySelector('#artButton');
+        artButton.addEventListener('click', () => {
+            window.location.href = "index.html";
+        });
+    }
+});
+
+

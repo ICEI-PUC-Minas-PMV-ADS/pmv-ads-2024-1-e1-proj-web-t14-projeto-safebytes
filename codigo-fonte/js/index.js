@@ -1,3 +1,10 @@
+const email = localStorage.getItem('loggedInUserEmail');
+if (email) {
+    localStorage.removeItem('loggedInUserEmail');
+}
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const quemSomosBtn = document.querySelector('#quemSomosBtn');
     quemSomosBtn.addEventListener('click', () => {
@@ -17,37 +24,41 @@ document.addEventListener('DOMContentLoaded', () => {
         const sliderListDiv = document.querySelector('.sliderWrapper .sliderList');
         const fragment = document.createDocumentFragment();
 
-        artigos.forEach((artigo, index) => {
+        const maxArtigos = 4;
+
+        for (let index = 0; index < maxArtigos && index < artigos.length; index++) {
+            const artigo = artigos[index];
+            
             const sliderItem = document.createElement('div');
             sliderItem.className = 'sliderItem';
             sliderItem.id = `sliderItem${artigo.id}`;
-
+        
             const sliderImgDiv = document.createElement('div');
             sliderImgDiv.className = 'sliderImg';
-
+        
             const sliderImg = document.createElement('img');
             sliderImg.src = artigo.capa;
             sliderImg.alt = artigo.titulo;
-
+        
             sliderImgDiv.appendChild(sliderImg);
-
+        
             const sliderTitleDiv = document.createElement('div');
             sliderTitleDiv.className = 'sliderTitle';
-
+        
             const sliderTitle = document.createElement('h6');
             sliderTitle.innerHTML = artigo.titulo;
-
+        
             sliderTitleDiv.appendChild(sliderTitle);
-
+        
             sliderItem.appendChild(sliderImgDiv);
             sliderItem.appendChild(sliderTitleDiv);
-
+        
             sliderItem.addEventListener('click', () => {
                 window.location.href = `pagArtigos.html?artigoIndex=${index}`;
             });
 
             fragment.appendChild(sliderItem);
-        });
+        };
 
         sliderListDiv.appendChild(fragment);
     }

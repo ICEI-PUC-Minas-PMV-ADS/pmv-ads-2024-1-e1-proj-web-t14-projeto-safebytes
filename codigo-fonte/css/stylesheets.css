@@ -55,7 +55,7 @@ p {
 
 .button:hover {
     background-color: #050b789a;
-    border: 0.5px solid #00112b;
+    border: 0.1px solid #00112b;
 }
 
 /* HEADER */
@@ -212,7 +212,7 @@ p {
     margin: 70px 0;
     overflow-x: auto;
     scrollbar-width: none;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .sliderWrapper .sliderList::-webkit-scrollbar {
@@ -747,7 +747,8 @@ p {
 
 /* PÁGINA INICIAL */
 .secCards {
-    padding-top: 30px;
+    height: 50vh;
+    padding-top: 100px;
     padding-bottom: 25px;
     background: #355DC5;
 }
@@ -808,12 +809,13 @@ p {
 
 .secContinue {
     cursor: pointer;
+    height: 50vh;
 }
 
 .secContinue #continuarTutorial {
     position: relative;
     padding: 40px 15px;
-    margin: 70px 0 70px 0;
+    margin: 60px 0 90px 0;
     display: flex !important;
     flex-direction: row;
     color: #00288F;
@@ -842,14 +844,30 @@ p {
 }
 
 /* SECLISTAS */
+.secListas {
+    height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.secListasTxt {
+    width: 80%;
+    text-align: center;
+    color: #00288f;
+}
+
 #tutoriais,
 #quizzes {
     width: 80%;
-    margin: 50px 20px 200px 20px;
+    margin: 30px 20px 0px 20px;
     border-radius: 10px;
 }
 
-.secListas div {
+.secListas #listasImg {
     display: grid;
     grid-template-columns: 50% 50%;
     justify-content: center;
@@ -876,6 +894,118 @@ p {
 
 .carousel-caption {
     color: #00112b;
+}
+
+.carousel-caption .button {
+    width: 50%;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+/* PÁGINA CATALOGO */
+.bannerMain .bannerDiv .banner {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0 50px;
+}
+
+.banner img {
+    width: 95%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.catalogoMain {
+    width: 90%;
+    margin: 5%;
+}
+
+.catalogoFiltros {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.catalogoWrapper {
+    display: grid;
+    grid-template-columns: 95%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalogoList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    margin-top: 60px;
+}
+
+.filterBtn {
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#filter1 {
+    background: #00112bb2;
+}
+
+#filter2 {
+    background: #050b78b2;
+}
+
+#filter3 {
+    background: #00298fb2;
+}
+
+#filter1:hover {
+    background: #00112b;
+}
+
+#filter2:hover {
+    background: #050b78;
+}
+
+#filter3:hover {
+    background: #00298f;
+}
+
+.catalogoItem {
+    background: #fff;
+    padding-bottom: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.catalogoTitle {
+    width: 100%;
+    padding: 10px;
+    color: #00298f;
+    text-align: center;
+    font-weight: 100;
+}
+
+.catalogoImg img {
+    width: 100%;
+    height: 175px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    object-fit: cover;
+}
+
+.catalogoItem:hover {
+    transition: 1.1s;
+    -webkit-box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
+    -moz-box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
+    box-shadow: 7px 35px 300px -23px rgba(0,0,0,0.85);
+    scale: 1.1;
 }
 
 
@@ -1310,7 +1440,6 @@ footer {
     border-radius: 20px;
 }
 
-
 .footerIcon a {
     color: #00288F;
     text-decoration: none;
@@ -1539,12 +1668,6 @@ footer {
         top: -2px;
     }
 
-    .secInicialPag,
-    .secContinue,
-    .secListas {
-        bottom: 335px;
-    }
-
     /* SECPRINCIPAL */
     .card-group {
         width: 80%;
@@ -1565,7 +1688,7 @@ footer {
         margin-top: 0;
     }
 
-    .secContinue>div {
+    .secContinue #continuarTutorial {
         margin: 0 15%;
     }
 
@@ -1587,7 +1710,7 @@ footer {
         margin: 40px 50px;
     }
 
-    .secListas>div {
+    .secListas #listasImg {
         padding: 20px 15px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1681,9 +1804,6 @@ footer {
         width: 115px;
     }
 
-    #pagInicial footer {
-        margin-top: -250px;
-    }
 
     /* PÁGINAS QUIZ */
     .quizTitle {
@@ -1872,12 +1992,6 @@ footer {
     }
 
     /* PÁGINA INICIAL */
-    .secInicialPag,
-    .secContinue,
-    .secListas {
-        bottom: 535px;
-    }
-
     .card-group {
         width: 70%;
         margin: 10% 15% 5% 15%;
@@ -1898,7 +2012,7 @@ footer {
         margin-top: 0;
     }
 
-    .secContinue>div {
+    .secContinue #continuarTutorial {
         margin: 0 15%;
     }
 
@@ -1921,7 +2035,7 @@ footer {
 
     }
 
-    .secListas div {
+    .secListas #listasImg {
         grid-template-columns: 40% 40%;
     }
 
@@ -2031,9 +2145,5 @@ footer {
     .true-button button,
     .false-button button {
         max-width: 10%;
-    }
-
-    #pagInicial footer {
-        margin-top: -420px;
     }
 }

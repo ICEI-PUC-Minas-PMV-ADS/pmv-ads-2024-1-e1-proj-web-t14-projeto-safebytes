@@ -746,21 +746,15 @@ p {
 }
 
 /* PÁGINA INICIAL */
-#bg07Div svg {
-    position: relative;
-    top: -2px;
-}
-
-.secInicialPag,
-.secContinue,
-.secListas {
-    position: relative;
-    bottom: 190px;
-}
-
-.secInicialPag {
+.secCards {
     padding-top: 30px;
     padding-bottom: 25px;
+    background: #355DC5;
+}
+
+.secCards .secCardsTxt {
+    color: #fff;
+    text-align: center;
 }
 
 .card-group {
@@ -806,17 +800,24 @@ p {
 }
 
 /* SECCONTINUE */
+#bg07Div svg {
+    width: 200%;
+    position: relative;
+    top: -2px;
+}
+
 .secContinue {
     cursor: pointer;
 }
 
-.secContinue>div {
+.secContinue #continuarTutorial {
     position: relative;
     padding: 40px 15px;
-    margin: 40px 0;
+    margin: 70px 0 70px 0;
     display: flex !important;
     flex-direction: row;
     color: #00288F;
+    background: #ffffff80;
     border-radius: 200px;
 }
 
@@ -834,7 +835,7 @@ p {
     font-weight: bold;
 }
 
-.secContinue:hover>div {
+#continuarTutorial:hover {
     background: #00298f;
     color: #fff;
     transition: 0.5s ease-in-out;
@@ -844,7 +845,7 @@ p {
 #tutoriais,
 #quizzes {
     width: 80%;
-    margin: 20px;
+    margin: 50px 20px 200px 20px;
     border-radius: 10px;
 }
 
@@ -871,6 +872,10 @@ p {
     -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
     -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
     box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+}
+
+.carousel-caption {
+    color: #00112b;
 }
 
 
@@ -1280,15 +1285,9 @@ p {
     color: #00298f;
 }
 
-
-
 /* FOOTER */
 footer {
     margin: 30px 0;
-}
-
-#pagInicial footer {
-    margin-top: -150px;
 }
 
 .footerTxt {

@@ -39,3 +39,34 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('configurarPerfil').addEventListener('click', function () {
         window.location.href = "../pages/perfilConfig.html";
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Passo 1: Recuperar o objeto users do localStorage
+        const usersString = localStorage.getItem('users');
+        const users = JSON.parse(usersString);
+    
+        // Passo 2: Recuperar o email logado
+        const loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+    
+        // Passo 3: Encontrar o usuário pelo email
+        let userWithEmail = users.find(user => user.email === loggedInUserEmail);
+    
+        // Passo 4: Verificar se encontrou o usuário e atualizar o nickname na tela
+        if (userWithEmail) {
+            const userNicknameElement = document.getElementById('userNickname');
+            if (userNicknameElement) {
+                // Exibir o nickname na tela
+                if (userWithEmail.nickname) {
+                    userNicknameElement.textContent = userWithEmail.nickname;
+                } else {
+                    console.error(`O usuário com email ${loggedInUserEmail} não possui um nickname.`);
+                }
+            } else {
+                console.error(`Elemento com id 'userNickname' não encontrado.`);
+            }
+        } else {
+            console.error(`Não foi possível encontrar o usuário com o email ${loggedInUserEmail}`);
+        }
+    });
+    

@@ -60,47 +60,75 @@ fetch('../Gersons/tutoriais.json')
     })
     .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-
-//entrada de nickname
+//entrada nickname
 
 // Verificar se o objeto users já está definido no localStorage
 var users = JSON.parse(localStorage.getItem('users')) || [];
+
+// Verificar se o nickname já está definido ao carregar a página
+document.addEventListener('DOMContentLoaded', function () {
+    var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+
+    // Encontrar o usuário com base no email logado
+    var userWithEmail = users.find(user => user.email === loggedInUserEmail);
+
+    if (!userWithEmail || !userWithEmail.nickname) {
+        // Se não houver usuário com o email logado OU se o usuário existir mas não tiver nickname definido
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('nicknamePopup').style.display = 'block';
+    } else {
+        // Se o usuário existe e possui um nickname definido, atualizar o nickname na página de perfil
+        var userNicknameElement = document.getElementById('userNickname');
+        if (userNicknameElement) {
+            userNicknameElement.textContent = userWithEmail.nickname;
+        } else {
+            console.error(`Elemento com id 'userNickname' não encontrado.`);
+        }
+    }
+});
 
 // Manipular a submissão do formulário de nickname
 document.getElementById('nicknameForm').addEventListener('submit', function (event) {
     event.preventDefault();
     var nickname = document.getElementById('nickname').value.trim(); // Remover espaços em branco antes e depois
     if (/^[A-Za-z]{1,8}$/.test(nickname)) {
-        // Adicionar o novo nickname ao objeto users sem modificar estruturas existentes
-        users.push({
-            nickname: nickname
-        });
+        var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+
+        // Verificar se já existe um usuário com esse email no array users
+        var userIndex = users.findIndex(user => user.email === loggedInUserEmail);
+
+        if (userIndex !== -1) {
+            // Atualizar o nickname do usuário existente
+            users[userIndex].nickname = nickname;
+        } else {
+            // Criar um novo objeto de usuário com o nickname
+            users.push({
+                nome: '', // Incluir outros campos necessários, se houver
+                email: loggedInUserEmail,
+                senha: '', // Incluir a senha, se necessário
+                nickname: nickname
+            });
+        }
+
         localStorage.setItem('users', JSON.stringify(users)); // Salva o objeto users no localStorage
         localStorage.setItem('nickname', nickname); // Salva o nickname no localStorage
         console.log(users); // Exibe o objeto users no console
         document.getElementById('overlay').style.display = 'none';
         document.getElementById('nicknamePopup').style.display = 'none';
+
+        // Atualizar o nickname na página de perfil
+        var userNicknameElement = document.getElementById('userNickname');
+        if (userNicknameElement) {
+            userNicknameElement.textContent = nickname;
+        }
     } else {
         alert('Nickname inválido. Use apenas letras e até 8 caracteres.');
     }
 });
 
-// Verificar se o nickname já está definido ao carregar a página
-document.addEventListener('DOMContentLoaded', function () {
-    if (!localStorage.getItem('nickname')) {
-        document.getElementById('overlay').style.display = 'block';
-        document.getElementById('nicknamePopup').style.display = 'block';
-    } else {
-        var storedNickname = localStorage.getItem('nickname').trim(); // Remover espaços em branco antes e depois
-        if (!users.find(user => user.nickname === storedNickname)) {
-            users.push({
-                nickname: storedNickname
-            });
-            localStorage.setItem('users', JSON.stringify(users)); // Atualiza o objeto users no localStorage
-            console.log(users); // Exibe o objeto users no console
-        }
-    }
-});
+
+
+
 
 //fim entrada de nickname
 

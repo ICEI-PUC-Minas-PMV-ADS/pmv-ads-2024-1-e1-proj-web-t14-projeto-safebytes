@@ -154,23 +154,27 @@ body {
         margin-top: 2rem;
         min-width: 13rem;
     }
-    .number {
-        margin: 40px;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .number {
-        margin: 40px;
-    }
     #perfil {
-        margin-top: 2rem;
-        min-width: 12rem;
-    }
-}
-@media screen and (max-width: 800px) {
-    #perfil {
-        margin-top: 2rem;
-        min-width: 5rem;
+        width: 23%;
+        min-width: 7rem;
     }
 
+    .number {
+        margin: 40px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .number {
+        margin: 40px;
+    }
+    #perfil {
+        margin-top: 3rem;
+        min-width: 18rem;
+    }
+}
+@media screen and (min-width: 100px) and (max-width: 800px) {
+    #perfil {
+        margin-top: 1rem;
+        min-width: 6rem;
+    }
 }

@@ -77,10 +77,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const validPassword = isValidPassword(senha);
 
     // Verifica a validade do email
-    const validEmail = email.endsWith("@gmail.com");
+    const validEmail = email.endsWith("@gmail.com") || email.endsWith("@outlook.com") || email.endsWith("@hotmail.com") || email.endsWith("@yahoo.com");
 
     if (!validEmail) {
-      alert("O email deve terminar com @gmail.com.");
+      alert("Por favor, insira um email válido!");
       return;
     }
 
@@ -111,17 +111,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Botão de mostrar e esconder a senha
+// Botão de mostrar e esconder a senha do Cadastro
 function mostrarSenha(){
-    var inputsenha = document.getElementById('inputsenha')
-    var btMostrarSenha = document.getElementById('botaoSenha')
+    let inputPass = document.getElementById('inputsenha')
+    let btMostrarSenha = document.getElementById('botaoSenha')
 
     if (inputsenha.type ==='password') {
         inputsenha.setAttribute('type','text')
-        btMostrarSenha.classList.replace('bi-eye-slash','bi-eye')
+        btMostrarSenha.classList.replace('bi-toggle-off','bi-toggle-on')
     } else {
         inputsenha.setAttribute('type','password')
-        btMostrarSenha.classList.replace('bi-eye','bi-eye-slash')
+        btMostrarSenha.classList.replace('bi-toggle-on','bi-toggle-off')
     }
 }
 
@@ -161,18 +161,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-// Botão de mostrar e esconder a senha
-function mostrarSenha(){
-  var inputsenha = document.getElementById('inputsenha')
-  var btMostrarSenha = document.getElementById('botaoSenha')
+// Botão de mostrar e esconder a senha do Login
+function mostrarSenhaLogin(){
+  let inputPass = document.getElementById('inputsenha')
+  let btMostrarSenha = document.getElementById('botaoSenhaLogin')
 
   if (inputsenha.type ==='password') {
       inputsenha.setAttribute('type','text')
-      btMostrarSenha.classList.replace('bi-eye-slash','bi-eye')
+      btMostrarSenha.classList.replace('bi-toggle-off','bi-toggle-on')
   } else {
       inputsenha.setAttribute('type','password')
-      btMostrarSenha.classList.replace('bi-eye','bi-eye-slash')
+      btMostrarSenha.classList.replace('bi-toggle-on','bi-toggle-off')
   }
 }
 

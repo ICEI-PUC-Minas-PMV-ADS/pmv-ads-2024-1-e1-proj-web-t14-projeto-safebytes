@@ -1552,6 +1552,10 @@ footer {
         font-size: 18px;
     }
 
+    .header {
+        grid-template-columns: 85px 250px 100px;
+    }
+
     #logo {
         width: 85px;
     }
@@ -1559,6 +1563,14 @@ footer {
     #perfil {
         width: 85%;
         margin-left: 15px;
+    }
+
+    #searchBox {
+        width: 100%;
+    }
+    
+    .searchBtn {
+        margin-left: 65px !important;
     }
 
     /* PAG INDEX */
@@ -1733,6 +1745,28 @@ footer {
         margin-bottom: 20px;
     }
 
+    /* PÁGINA CATÁLOGO */
+    .bannerMain .bannerDiv .banner {
+        width: 100%;
+    }
+
+    .catalogoMain {
+        width: 75%;
+        margin: 10% 12.5%;
+    }
+
+    .filtrosbtn {
+        grid-template-columns: 25% 25% 25% 10%;
+    }
+    
+    .catalogoTitle {
+        padding: 20px;
+    }
+    
+    .catalogoImg img {
+        height: 275px;
+    }
+
     /* PÁGINAS TUTORIAIS E QUIZZES */
     .botaoDiv {
         margin-left: 5%;
@@ -1850,11 +1884,11 @@ footer {
     }
 
     .header {
-        grid-template-columns: 85px 250px 100px;
+        grid-template-columns: 85px 350px 100px;
     }
 
     .searchBtn {
-        margin-left: 20px;
+        margin-left: 100px !important;
     }
 
     #perfil {
@@ -2050,6 +2084,28 @@ footer {
 
     .secListas #listasImg {
         grid-template-columns: 40% 40%;
+    }
+
+    /* PÁGINA CATÁLOGO */
+    .bannerMain .bannerDiv .banner {
+        width: 100%;
+    }
+
+    .catalogoMain {
+        width: 75%;
+        margin: 10% 12.5%;
+    }
+
+    .filtrosbtn {
+        grid-template-columns: 20% 20% 20% 10%;
+    }
+    
+    .catalogoTitle {
+        padding: 20px;
+    }
+    
+    .catalogoImg img {
+        height: 375px;
     }
 
     /* PÁGINAS TUTORIAIS E QUIZZES */

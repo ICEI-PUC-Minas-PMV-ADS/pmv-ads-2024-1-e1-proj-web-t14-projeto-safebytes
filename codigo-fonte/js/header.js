@@ -23,9 +23,7 @@ const logo02 =
 const searchBar =
     "<div id='searchBox' class='searchBox'>" +
     "<input id='searchInput'  class='search' type='text' placeholder='Pesquisa...'>" +
-    "<a href='' id='searchButton' class='searchBtn'>" +
-    "<i class='bi bi-search'></i>" +
-    "</a>" +
+    "<i id='searchButton' class='bi bi-search searchBtn'></i>" +
     "</div>"
 
 const login =

@@ -94,7 +94,7 @@ p {
     border-radius: 30px;
 }
 
-#search {
+#searchInput {
     border: none;
     outline: none;
     width: 50%;
@@ -111,7 +111,6 @@ p {
     display: flex;
     justify-content: end;
 }
-
 
 .botaoDiv {
     margin-left: 2%;

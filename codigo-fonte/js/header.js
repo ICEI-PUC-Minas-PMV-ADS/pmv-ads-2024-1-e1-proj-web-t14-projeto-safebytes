@@ -22,8 +22,8 @@ const logo02 =
 
 const searchBar =
     "<div id='searchBox' class='searchBox'>" +
-    "<input id='search'  class='search' type='text' placeholder='Pesquisa...'>" +
-    "<a href='' class='searchBtn'>" +
+    "<input id='searchInput'  class='search' type='text' placeholder='Pesquisa...'>" +
+    "<a href='' id='searchButton' class='searchBtn'>" +
     "<i class='bi bi-search'></i>" +
     "</a>" +
     "</div>"
@@ -58,8 +58,16 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
     header.innerHTML += logo02;
     header.innerHTML += fotoPerfil;
 
-} else if (body.id === 'pagTutoriais' || body.id === 'pagQuizzes' || body.id === 'pagCatalogo') {
+} else if (body.id === 'pagTutoriais' || body.id === 'pagQuizzes') {
     header.innerHTML += botaoVoltar;
+    header.innerHTML += fotoPerfil;
+    document.querySelector(".botaoDiv").addEventListener("click", () => {
+        window.location.href = "pagInicial.html";
+    });
+
+} else if (body.id === 'pagCatalogo') {
+    header.innerHTML += botaoVoltar;
+    header.innerHTML += searchBar;
     header.innerHTML += fotoPerfil;
     document.querySelector(".botaoDiv").addEventListener("click", () => {
         window.location.href = "pagInicial.html";

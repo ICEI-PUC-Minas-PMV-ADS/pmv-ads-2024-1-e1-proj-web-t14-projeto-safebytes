@@ -59,6 +59,25 @@ function artigosFiltros(filtro) {
     });
 }
 
+function searchInArticles(searchTerm) {
+    const catalogoItems = document.querySelectorAll('.catalogoItem');
+    const lowerCaseSearchTerm = searchTerm.toLowerCase().trim();
+
+    catalogoItems.forEach(item => {
+        const keywords = item.dataset.keywords;
+        const title = item.querySelector('.catalogoTitle').textContent.toLowerCase();
+
+        const keywordsMatch = keywords.includes(lowerCaseSearchTerm);
+        const titleMatch = title.includes(lowerCaseSearchTerm);
+
+        if (keywordsMatch || titleMatch) {
+            item.style.display = 'block';
+        } else {
+            item.style.display = 'none';
+        }
+    });
+}
+
 function limparFiltro() {
     const catalogoItems = document.querySelectorAll('.catalogoItem');
     catalogoItems.forEach(item => {
@@ -83,7 +102,13 @@ function init() {
             const limparBtn = document.querySelector('.clearFilter');
             limparBtn.addEventListener('click', () => {
                 limparFiltro();
-            })
+            });
+
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', () => {
+                const searchTerm = searchInput.value;
+                searchInArticles(searchTerm);
+            });
         });
 }
 

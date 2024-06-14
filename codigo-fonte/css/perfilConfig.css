@@ -68,7 +68,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -80,7 +80,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
 }
 
 .user-img {
-    max-width: 12.2rem;
+    max-width: 12rem;
     min-height: auto;
 }
 
@@ -88,11 +88,10 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 4rem;
-    height: 4rem;
     border: #4240ec;
     margin: 3rem 1.5rem 3rem 0;
     border-radius: 100%;
+    font-size: 18px;
 }
 
 #photo {
@@ -113,7 +112,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     cursor: pointer;
     color: white;
     transform: translate(-80%);
-    margin-top: 30px;
+    margin-top: 25px;
     background-color: #6697DF;
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
@@ -243,11 +242,17 @@ footer {
         min-height: auto;
         margin-top: 1.5rem;
     }
+    #perfildiv {
+        margin-bottom: 3rem;
+    }
     #uploadbtn {
         height: 20px;
         width: 20px;
         transform: translate(-69%);
         margin-top: 5px;
+    }
+    .user-img label {
+        font-size: 14px;
     }
 }
 @media screen and (min-width: 600px) and (max-width: 900px) {
@@ -281,5 +286,16 @@ footer {
     .user-img label {
         font-size: 20px;
     }
-    
+    .user-img {
+        max-width: 25%;
+        min-height: auto;
+        margin-top: 1.5rem;
+    }
+    #perfildiv {
+        margin-bottom: 3rem;
+    }
+    #uploadbtn {
+        transform: translate(-80%);
+        margin-top: 11px;
+    }
 }

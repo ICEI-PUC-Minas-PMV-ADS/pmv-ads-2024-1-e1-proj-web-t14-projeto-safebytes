@@ -37,9 +37,11 @@
                             <i class="bi bi-lock-fill"></i> <label> Senha </label>
                         </div>
                         <div class="containersenha">
-                            <div id="divsenha">
                                 <input id="inputsenha" type="password" name="password">
-                            </div>
+                        </div>
+                        <div id="funcaoMostrarSenha">
+                            <i class="bi bi-toggle-off" id="botaoSenha" onclick="mostrarSenha()"></i>
+                            <span id="legendaMostrarSenha">Mostrar Senha</span>
                         </div>
                         <!-- Caixa de requisitos da senha -->
                         <div id="requisitosSenha" style="display: none;">A senha deve conter pelo menos 8 caracteres,
@@ -67,18 +69,11 @@
 
             </form>
 
-            <div class="icones">
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-google"></i>
-            </div>
-        </div>
-
     </main>
 
     <section id="termosSec">
         <div id="rodape">
-            <p>Ao criar uma conta ou fazer login, você concorda com nossos <a href="https://www.google.com">Termos e
+            <p>Ao criar uma conta ou fazer login, você concorda com nossos <a href="../pages/index.html">Termos e
                     Condições.</a></p>
         </div>
     </section>

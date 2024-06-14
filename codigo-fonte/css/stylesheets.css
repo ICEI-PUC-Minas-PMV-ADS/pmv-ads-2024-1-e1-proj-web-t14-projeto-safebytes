@@ -556,6 +556,16 @@ p {
     color: black;
 }
 
+#pagCadastro button{
+    cursor: pointer;
+}
+
+#pagLogin #inputsenha,
+#pagLogin #inputemail {
+    height: 1.7rem;
+}
+
+
 .entrar-login {
     width: 50%;
     height: auto;
@@ -619,8 +629,15 @@ p {
     margin-bottom: 3%;
 }
 
+#pagLogin #campo1 {
+margin-top: 15%;
+}
+#pagLogin h1{
+    margin-top: 5%;
+}
 #inputemail,
-#inputnome {
+#inputnome,
+#inputsenha {
     border-radius: 100px;
     outline: none;
     border: 1px;
@@ -630,9 +647,27 @@ p {
     padding: 5px;
 }
 
+#funcaoMostrarSenha {
+    display: flex;
+    justify-content: center;
+}
+
+#funcaoMostrarSenha i{
+    font-size: 16px;
+    color: white !important;
+    cursor: pointer;
+}
+
 #caixaopcoes {
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 5%;
+}
+
+#funcaoMostrarSenha span {
+    font-size: 14px;
+    margin-left: 2%;
+    margin-right: 27%;
+    font-style: normal;
 }
 
 #opcoes a {
@@ -688,23 +723,6 @@ p {
     justify-content: center;
 }
 
-#divsenha {
-    border-radius: 100px;
-    outline: none;
-    border: 1px;
-    width: 245px;
-    margin-bottom: 5px;
-    padding: 5px;
-    background-color: white;
-}
-
-#divsenha input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 231px;
-}
-
 #termosSec {
     display: flex;
     justify-content: center;
@@ -724,25 +742,8 @@ p {
     color: black;
 }
 
-
-
-/* ANIMAÇÃO ICONES*/
-.bi-instagram:hover {
-    color: white;
-    transition: 00.5s all;
-    transform: scale(1.2);
-}
-
-.bi-facebook:hover {
-    color: white;
-    transition: 00.5s all;
-    transform: scale(1.2);
-}
-
-.bi-google:hover {
-    color: white;
-    transition: 00.5s all;
-    transform: scale(1.2);
+#pagLogin #termosSec a{
+    color: rgba(128, 0, 128, 0.664);
 }
 
 /* PÁGINA INICIAL */
@@ -1475,20 +1476,15 @@ footer {
         margin-top: 17%;
     }
 
-    #divsenha i {
-        right: 20%;
-        font-size: 15px;
-        margin-left: 5px;
-    }
-
-    #divsenha input {
-        width: 83%;
-    }
-
     #inputnome,
     #inputemail,
-    #divsenha {
+    #inputsenha {
         width: 81%;
+    }
+
+    #pagLogin #rodape p, 
+    #pagCadastro #rodape p{
+        padding-top: 7.5%;
     }
 
     #pagLogin label {
@@ -1655,13 +1651,6 @@ footer {
         margin-top: 10%;
     }
 
-    .icones {
-        margin-top: 13%;
-    }
-
-    #divsenha i {
-        right: 35%;
-    }
 
     /* PÁGINA INICIAL */
     #bg07Div svg {
@@ -1985,10 +1974,6 @@ footer {
         width: 30%;
         height: 40px;
         padding-bottom: 10px;
-    }
-
-    #divsenha i {
-        margin-right: 3%;
     }
 
     /* PÁGINA INICIAL */

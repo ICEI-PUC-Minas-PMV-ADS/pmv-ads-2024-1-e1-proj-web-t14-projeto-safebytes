@@ -13,28 +13,52 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+// funcionalidade de logout
+document.addEventListener('DOMContentLoaded', function () {
+    function logout() {
+        console.log('Logout iniciado');
 
-    document.getElementById('logoutButton').addEventListener('click', function () {
-        // Limpar dados de autenticação do localStorage
-        localStorage.removeItem('userEmail');
-        localStorage.removeItem('userPassword');
-
-        // Obter o email do usuário atualmente logado
-        const currentUserEmail = localStorage.getItem('userEmail');
-
-        // Obter o email associado à foto de perfil atualmente armazenada
-        const profileImageEmail = localStorage.getItem('profileImageEmail');
-
-        // Verificar se o usuário está fazendo logout da mesma conta em que a foto de perfil foi definida
-        if (currentUserEmail !== profileImageEmail) {
-            // Se não for a mesma conta, remover a foto de perfil do localStorage
-            localStorage.removeItem('profileImage');
-            localStorage.removeItem('profileImageEmail');
-        }
+        // Remover o email do usuário do localStorage para efetuar o logout
+        localStorage.removeItem('loggedInUserEmail');
+        console.log('Email removido do localStorage');
 
         // Redirecionar para a página de login
         window.location.href = "../pages/login.html";
-    });
+    }
+
+    const logoutButton = document.getElementById('logoutButton');
+
+    if (logoutButton) {
+        console.log('#logoutButton encontrado');
+        logoutButton.addEventListener('click', function (e) {
+            e.preventDefault(); // Impedir o comportamento padrão do link, se necessário
+            logout();
+        });
+    } else {
+        console.log('#logoutButton não encontrado');
+    }
+});
+
+// se o usuário não tiver logado ele não consegue permanecer nessa página
+document.addEventListener('DOMContentLoaded', function () {
+    // Verificar se o usuário está logado ao carregar a página
+    const loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+    if (!loggedInUserEmail) {
+        // Redirecionar para a página de login sem manter no histórico
+        window.location.replace("../pages/login.html");
+
+        // Limpar qualquer entrada da página não autorizada no histórico de navegação
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        } else {
+            // Alternativa para navegadores que não suportam replaceState
+            window.location.replace("../pages/login.html");
+        }
+    }
+});
+
+// fim da funcionalidade de logout
+
     // Adicionar evento de clique para a opção "Configurar Perfil"
     document.getElementById('configurarPerfil').addEventListener('click', function () {
         window.location.href = "../pages/perfilConfig.html";

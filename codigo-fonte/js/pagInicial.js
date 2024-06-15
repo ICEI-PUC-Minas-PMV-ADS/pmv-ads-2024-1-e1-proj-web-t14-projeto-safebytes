@@ -106,6 +106,8 @@ document.getElementById('nicknameForm').addEventListener('submit', function (eve
     var nickname = document.getElementById('nickname').value.trim(); // Remover espaços em branco antes e depois
     if (/^[A-Za-z]{1,8}$/.test(nickname)) {
         var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+        var usersString = localStorage.getItem('users');
+        var users = JSON.parse(usersString);
 
         // Verificar se já existe um usuário com esse email no array users
         var userIndex = users.findIndex(user => user.email === loggedInUserEmail);
@@ -139,11 +141,26 @@ document.getElementById('nicknameForm').addEventListener('submit', function (eve
     }
 });
 
+// Verificar se o usuário já possui um nickname definido
+document.addEventListener('DOMContentLoaded', function () {
+    var loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+    var usersString = localStorage.getItem('users');
+    var users = JSON.parse(usersString);
 
+    var user = users.find(function(user) {
+        return user.email === loggedInUserEmail;
+    });
 
-
-
-//fim entrada de nickname
+    if (user && user.nickname) {
+        // Se o usuário já tiver um nickname definido, oculte o pop-up
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('nicknamePopup').style.display = 'none';
+    } else {
+        // Caso contrário, exiba o pop-up para definir o nickname
+        document.getElementById('overlay').style.display = 'block';
+        document.getElementById('nicknamePopup').style.display = 'block';
+    }
+});
 
 // Carregar a imagem de perfil do localStorage ao carregar a página
 document.addEventListener('DOMContentLoaded', function () {

@@ -38,7 +38,7 @@ function saveChanges() {
     var usersString = localStorage.getItem('users');
     var users = usersString ? JSON.parse(usersString) : []; // Verifica se existem dados válidos no localStorage
 
-    var userIndex = users.findIndex(function(user) {
+    var userIndex = users.findIndex(function (user) {
         return user.email === loggedInUserEmail;
     });
 
@@ -47,7 +47,7 @@ function saveChanges() {
 
         if (nome !== "" || senha !== "") {
             var senhaDigitada = prompt("Digite sua senha para confirmar as alterações:");
-            
+
             if (senhaDigitada === senhaAtual) {
                 // Atualiza os dados sensíveis apenas se a senha for correta
                 updateUserData(nome, email, senha, newNickname, userIndex);
@@ -111,14 +111,14 @@ function redirectToHomePage() {
 }
 
 // Lógica para manipular a imagem de perfil
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const img = document.querySelector('#photo');
     const file = document.querySelector('#file');
     const MAX_SIZE_MB = 2; // Tamanho máximo de arquivo em MB
     const MIN_WIDTH = 300;
     const MIN_HEIGHT = 300;
 
-    file.addEventListener('change', function() {
+    file.addEventListener('change', function () {
         const chosenFile = this.files[0];
 
         if (chosenFile) {
@@ -132,11 +132,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const reader = new FileReader();
 
-            reader.addEventListener('load', function() {
+            reader.addEventListener('load', function () {
                 const tempImg = new Image();
                 tempImg.src = reader.result;
 
-                tempImg.onload = function() {
+                tempImg.onload = function () {
                     if (tempImg.width < MIN_WIDTH || tempImg.height < MIN_HEIGHT) {
                         alert(`As dimensões da imagem são muito pequenas. As dimensões mínimas permitidas são ${MIN_WIDTH}x${MIN_HEIGHT} pixels.`);
                         file.value = ''; // Limpar o input de arquivo
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var usersString = localStorage.getItem('users');
     var users = usersString ? JSON.parse(usersString) : []; // Verifica se existem dados válidos no localStorage
 
-    var user = users.find(function(user) {
+    var user = users.find(function (user) {
         return user.email === loggedInUserEmail;
     });
 
@@ -164,7 +164,14 @@ document.addEventListener('DOMContentLoaded', function() {
         img.setAttribute('src', user.profileImage);
     }
 
-    // Mostrar nickname no placeholder
+    // placeholders da pag. perfilConfig.html
+
+    // placeholders com os dados do usuário logado
+    document.getElementById('nome').placeholder = user.nome;
+    document.getElementById('email').placeholder = user.email;
+    document.getElementById('senha').placeholder = "Senha"; // Não mostrar a senha, apenas placeholder genérico, pois a informação é sensível
+    
+    // nickname no placeholder
     var inputNickname = document.getElementById('novoNickname');
     if (user && user.nickname) {
         inputNickname.placeholder = user.nickname;
@@ -172,5 +179,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error(`Não foi possível encontrar o usuário com o email ${loggedInUserEmail} ou o usuário não possui um nickname.`);
     }
 });
+
 
 

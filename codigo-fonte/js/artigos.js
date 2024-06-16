@@ -112,17 +112,30 @@ init();
 
 document.addEventListener('DOMContentLoaded', function () {
     const email = localStorage.getItem('loggedInUserEmail');
-    if (email) {
-        const artButton = document.querySelector('#artButton');
+    const artButton = document.querySelector('#artButton');
+
+    if (artButton) {
         artButton.addEventListener('click', () => {
-            window.location.href = "pagInicial.html";
-        });
-    } else {
-        const artButton = document.querySelector('#artButton');
-        artButton.addEventListener('click', () => {
-            window.location.href = "index.html";
+            const urlParams = new URLSearchParams(window.location.search);
+            const artigoIndex = urlParams.get('artigoIndex');
+
+            if (artigoIndex !== null && !isNaN(artigoIndex) && artigoIndex >= 0) {
+                let artigosConcluidos = JSON.parse(localStorage.getItem('artigosConcluidos')) || [];
+                const artigoIndexInt = parseInt(artigoIndex);
+                
+                if (!artigosConcluidos.includes(artigoIndexInt)) {
+                    artigosConcluidos.push(artigoIndexInt);
+                    localStorage.setItem('artigosConcluidos', JSON.stringify(artigosConcluidos));
+                }
+
+                if (email) {
+                    window.location.href = "pagInicial.html";
+                } else {
+                    window.location.href = "index.html";
+                }
+            } else {
+                console.error('Índice de artigo inválido:', artigoIndex);
+            }
         });
     }
 });
-
-

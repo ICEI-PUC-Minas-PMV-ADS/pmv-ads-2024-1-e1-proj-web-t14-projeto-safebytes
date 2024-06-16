@@ -749,7 +749,7 @@ p {
 
 /* PÁGINA INICIAL */
 .secCards {
-    height: 50vh;
+    height: 60vh;
     padding-top: 100px;
     padding-bottom: 25px;
     background: #355DC5;
@@ -804,7 +804,7 @@ p {
 
 /* SECCONTINUE */
 #bg07Div svg {
-    width: 200%;
+    width: 100%;
     position: relative;
     top: -2px;
 }
@@ -853,7 +853,7 @@ p {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 0 0 90px;
 }
 
 .secListasTxt {
@@ -862,10 +862,11 @@ p {
     color: #00288f;
 }
 
+#artigos,
 #tutoriais,
 #quizzes {
     width: 80%;
-    margin: 30px 20px 0px 20px;
+    margin: 30px 15px 0px 15px;
     border-radius: 10px;
 }
 
@@ -876,6 +877,14 @@ p {
     justify-items: center;
     justify-self: center;
     align-items: center;
+}
+
+#artigos:hover {
+    scale: 1.10;
+    transition: 0.25s;
+    -webkit-box-shadow: -3px 3px 42px 3px rgba(15, 57, 172, 0.36);
+    -moz-box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
+    box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
 }
 
 #tutoriais:hover {
@@ -899,7 +908,7 @@ p {
 }
 
 .carousel-caption .button {
-    width: 50%;
+    width: 40%;
     padding: 4px;
     margin-top: 5px;
 }
@@ -1442,7 +1451,7 @@ p {
 }
 
 #pagOqFoiFeito circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - 308);
+    stroke-dashoffset: calc(440 - 0);
     stroke: #00298f;
 }
 
@@ -1752,6 +1761,7 @@ footer {
         margin: 400px 0 50px;
     }
 
+    #artigos,
     #tutoriais,
     #quizzes {
         width: 95%;
@@ -1759,7 +1769,7 @@ footer {
     }
 
     .secListas #listasImg {
-        grid-template-columns: 25% 25%;
+        grid-template-columns: 25% 25% 25%;
         gap: 60px;
     }
 
@@ -2120,6 +2130,7 @@ footer {
         margin: 400px 0 100px;
     }
 
+    #artigos,
     #tutoriais,
     #quizzes {
         width: 95%;
@@ -2127,7 +2138,7 @@ footer {
     }
 
     .secListas #listasImg {
-        grid-template-columns: 25% 25%;
+        grid-template-columns: 25% 25% 25%;
         gap: 60px;
     }
 

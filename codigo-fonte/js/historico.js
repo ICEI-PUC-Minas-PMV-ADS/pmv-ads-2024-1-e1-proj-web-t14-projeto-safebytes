@@ -163,6 +163,90 @@ async function atualizarBarraProgresso() {
     }
 }
 
+async function carregarArtJson() {
+    try {
+        const data = await fetchData('../Gersons/artigos.json');
+        artigo = data.artigo;
+        return artigo;
+
+    } catch (error) {
+        console.error('Erro ao carregar os dados dos artigos:', error);
+        throw error;
+    }
+}
+
+async function createArtCards() {
+    try {
+        const data = localStorage.getItem('artigosConcluidos');
+
+        if (!data) {
+            throw new Error('Não há Artigos Concluídos!')
+        }
+
+        const ids = JSON.parse(data);
+
+        const artigos = await carregarArtJson();
+
+        const catalogoList = document.querySelector('.catalogoList');
+
+        catalogoList.innerHTML = '';
+
+        ids.forEach((id) => {
+            const artigo = artigos.find(a => a.id === id);
+
+            if (artigo) {
+                const catalogoItem = document.createElement('div')
+                catalogoItem.className = 'catalogoItem';
+                catalogoItem.id = `item ${artigo.id}`;
+                catalogoItem.dataset.keywords = artigo.keywords.join('').toLowerCase();
+        
+                const catalogoImgDiv = document.createElement('div');
+                catalogoImgDiv.className = 'catalogoImg';
+        
+                const catalogoImg = document.createElement('img');
+                catalogoImg.src = artigo.capa;
+                catalogoImg.alt = artigo.titulo;
+        
+                catalogoImgDiv.appendChild(catalogoImg);
+        
+                const catalogoTitleDiv = document.createElement('div');
+                catalogoTitleDiv.className = 'catalogoTitle';
+        
+                const catalogoTitle = document.createElement('h6')
+                catalogoTitle.innerHTML = artigo.titulo;
+        
+                catalogoTitleDiv.appendChild(catalogoTitle);
+        
+                catalogoItem.appendChild(catalogoImgDiv);
+                catalogoItem.appendChild(catalogoTitleDiv);
+        
+                catalogoItem.addEventListener('click', () => {
+                    window.location.href = `pagArtigos.html?artigoIndex=${index}`;
+                });
+        
+                catalogoList.appendChild(catalogoItem);
+            }
+        });
+    } catch (error) {
+        console.error('Erro ao gerar cards de artigos concluídos:', error);
+    }
+}
+
+async function carregarTutorialJson() {
+    try {
+        const data = await fetchData('../Gersons/tutoriais.json');
+        tutorial = data.tutorial;
+        return tutorial;
+    } catch (error) {
+        console.error('Erro ao carregar os dados dos tutoriais:', error);
+        throw error;
+    }
+}
+
+// async function createTutorialCards() {
+
+// }
+
 atualizacaoConstante();
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -173,6 +257,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log('Quizzes Concluídos', await quizzesConcluidos());
         console.log('Total Concluído', await totalConcluidos());
         await atualizarBarraProgresso();
+        await createArtCards();
     } catch (error) {
         console.error('Erro ao executar o código principal:', error);
     }

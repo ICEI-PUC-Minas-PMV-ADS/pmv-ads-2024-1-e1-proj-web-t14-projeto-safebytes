@@ -1407,6 +1407,10 @@ p {
 }
 
 /* PÁGINA O QUE FOI FEITO */
+#historicoMain {
+    height: 50vh;
+}
+
 .progressDiv {
     margin-bottom: 300px;
     display: flex;

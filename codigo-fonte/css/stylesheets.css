@@ -905,6 +905,18 @@ p {
 }
 
 /* PÁGINA CATALOGO */
+#pagCatalogo .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.bannerMain {
+    margin-top: 100px;
+}
+
 .bannerMain .bannerDiv .banner {
     display: flex;
     justify-content: center;
@@ -1693,9 +1705,81 @@ footer {
         margin-top: 10%;
     }
 
+     /* PÁGINA INICIAL */
+     .secCards {
+        height: 600px;
+    }
+
+    .card-group {
+        width: 90%;
+        grid-template-columns: 20% 20% 20%;
+        gap: 20px;
+        margin: 5% 5%;
+    }
+
+    .card .card-img-top {
+        height: 150px;
+    }
+
+    /* SECCONTINUE */
+    #bg07Div svg {
+        width: 100%;
+        top: -2px;
+    }
+
+    .secContinue {
+        cursor: pointer;
+        height: 10vh;
+    }
+
+    .secContinue #continuarTutorial {
+        width: 60%;
+        margin: 5% 20%;
+    }
+
+    .secContinue img {
+        width: 140px;
+        height: 120px;
+    }
+
+    .tituloTutorial {
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    /* SECLISTAS */
+    .secListas {
+        margin: 400px 0 50px;
+    }
+
+    #tutoriais,
+    #quizzes {
+        width: 95%;
+        margin: 60px 0;
+    }
+
+    .secListas #listasImg {
+        grid-template-columns: 25% 25%;
+        gap: 60px;
+    }
+
+
+    .carousel-caption {
+        height: 150px;
+    }
+
+    .carousel-caption .button {
+        width: 20%;
+        padding: 4px;
+        margin-top: 5px;
+    }
 
 
     /* PÁGINA CATÁLOGO */
+    .bannerMain {
+        margin-top: 150px;
+    }
+
     .bannerMain .bannerDiv .banner {
         width: 100%;
     }
@@ -2048,7 +2132,11 @@ footer {
     }
 
     .carousel-item {
-        height: 70vh;
+        height: 75vh;
+    }
+
+    .carousel-item img {
+        height: 90vh;
     }
 
     .carousel-caption {
@@ -2056,20 +2144,28 @@ footer {
     }
 
     .carousel-caption .button {
-        width: 50%;
+        width: 20%;
         padding: 4px;
         margin-top: 5px;
     }
 
 
     /* PÁGINA CATÁLOGO */
+    .bannerMain {
+        margin-top: 155px;
+    }
+
     .bannerMain .bannerDiv .banner {
         width: 100%;
     }
 
+    .banner img {
+        width: 65%;
+    }
+
     .catalogoMain {
-        width: 75%;
-        margin: 10% 12.5%;
+        width: 65%;
+        margin: 2% 17.5%;
     }
 
     .filtrosbtn {

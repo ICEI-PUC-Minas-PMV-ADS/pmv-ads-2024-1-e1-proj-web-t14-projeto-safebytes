@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Inicial</title>
+
+  <!-- Link CSS -->
+  <link type="text/css" rel="stylesheet" href="../css/stylesheets.css">
+
+  <!-- Bootstrap 5.3 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons v1.11.3  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Tutoriais JavaScript -->
+  <script defer src="../js/header.js"></script>
+  <script defer type="module" src="../js/pagInicial.js"></script>
+  <script defer src="../js/footer.js"></script>
+  <script defer src="../js/perfil.js"></script>
+  <script defer src="../js/cadastro.js"></script>
+</head>
+
+<body id="pagInicial">
+
+  <!-- Modal para entrada de Nickname -->
+  <div id="overlay"></div>
+  <div id="nicknamePopup" class="popup-container">
+    <h2>Defina seu Nickname:</h2>
+    <form id="nicknameForm">
+      <input type="text" id="nickname" name="nickname" maxlength="8" pattern="[A-Za-z]+" required>
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+
+  <!-- Conteúdo Principal -->
+  <main class="secArtigos">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../assets/carouselImg.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5>Wi-Fi Público: Segurança ou Ilusão?</h5>
+            <button id="firstBtn" type="button" class="button">Saiba Mais!</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/carouselImg1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5>Segurança em Rede!</h5>
+            <button id="secondBtn" type="button" class="button">Saiba Mais!</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../assets/carouselImg2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption  d-md-block">
+            <h5>Proteção em Movimento!</h5>
+            <button id="thirdBtn" type="button" class="button">Saiba Mais!</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <section class="secCards">
+    <div class="secCardsTxt">
+      <div class="secCardsTitle">
+        <h2>Quizzes</h2>
+      </div>
+      <div class="secCardsP">
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </div>
+
+    <!-- Cards Quizzes Recomendados -->
+    <div class="card-group">
+      <div id="quiz0" class="card">
+        <img src="../assets/quizDesafioCiberSeguro.jpg" class="card-img-top" alt="Desafio CiberSeguro">
+        <div class="card-body">
+          <h6 class="card-title">É ou não é Crime Virtual ?</h6>
+        </div>
+      </div>
+
+      <div id="quiz2" class="card">
+        <img src="../assets/quizAntiPhishing.jpg" class="card-img-top" alt="Quiz Anti-Phishing">
+        <div class="card-body">
+          <a href="./quizzes/quiz2.html">
+            <h6 class="card-title">Quiz Anti-Phishing </h6>
+          </a>
+        </div>
+      </div>
+
+      <div id="quiz3" class="card">
+        <img src="../assets/quizDesafioAntiVirus.png" class="card-img-top" alt="Desafio Antivírus">
+        <div class="card-body">
+          <a href="./quizzes/quiz3.html">
+            <h6 class="card-title">Desafio Antivírus</h6>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção "Continue o Tutorial" -->
+  <section class="secContinue">
+    <div id="bg07Div">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#355DC5" fill-opacity="1"
+          d="M0,224L40,208C80,192,160,160,240,176C320,192,400,256,480,250.7C560,245,640,171,720,154.7C800,139,880,181,960,202.7C1040,224,1120,224,1200,192C1280,160,1360,96,1400,64L1440,32L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+      </svg>
+    </div>
+
+    <div id="continuarTutorial">
+      <!-- Capa -->
+      <img src="../assets/imgTutoriais2.jpg" id="capaTutorial" alt="Capa do Tutorial">
+
+      <!-- Título -->
+      <span class="tituloTutorial">
+        <h2>Inicie sua jornada!</h2>
+        <h3>Os tutoriais estão logo ali ;)</h3>
+      </span>
+    </div>
+  </section>
+
+  <!-- Seção "Quizzes e Tutoriais" -->
+  <section class="secListas">
+    <div class="secListasTxt">
+      <div class="secListasTitle">
+        <h2>Lorem ipsum dolor sit.</h2>
+      </div>
+      <div class="secListasP">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit?</p>
+      </div>
+    </div>
+    <div id="listasImg">
+      <!-- Tutoriais -->
+      <a href="pagTutoriais.html"><img id="tutoriais" src="../assets/imgTutoriais.png" alt="Tutoriais"
+          style="height: 73%;"></a>
+
+      <!-- Quizzes -->
+      <a href="pagListaQuizzes.html"><img id="quizzes" src="../assets/quizzesCard.jpg" alt="Quizzes"
+          style="max-width: 110%; height: auto;"></a>
+    </div>
+  </section>
+
+  <!-- Bootstrap 5.3 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

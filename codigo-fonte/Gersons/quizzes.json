@@ -3,6 +3,7 @@
         {
             "id": 0,
             "titulo": "É ou não é Crime Virtual?",
+            "imagem": "../assets/quizDesafioCiberSeguro.jpg",
             "perguntas": [
                 {
                     "id": 1,
@@ -73,6 +74,7 @@
         {
             "id": 1,
             "titulo": "Quiz Segurança na Rede de Wifi Pública",
+            "imagem": "../assets/quizWifiPublico.jpg",
             "perguntas": [
                 {
                     "id": 1,
@@ -143,6 +145,7 @@
         {
             "id": 2,
             "titulo": "Quiz Anti-Phishing",
+            "imagem": "../assets/quizAntiPhishing.jpg",
             "perguntas": [
                 {
                     "id": 1,
@@ -213,6 +216,7 @@
         {
             "id": 3,
             "titulo": "Desafio Antivírus",
+            "imagem": "../assets/quizDesafioAntiVirus.png",
             "perguntas": [
                 {
                     "id": 1,

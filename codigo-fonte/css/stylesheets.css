@@ -1408,11 +1408,10 @@ p {
 
 /* PÁGINA O QUE FOI FEITO */
 #historicoMain {
-    height: 50vh;
+    height: 45vh;
 }
 
 .progressDiv {
-    margin-bottom: 300px;
     display: flex;
     justify-content: center;
     justify-items: center;
@@ -1469,6 +1468,56 @@ p {
     justify-content: center;
     align-items: center;
     color: #00298f;
+}
+
+.secText {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.secText h2 {
+    color: #fff;
+}
+
+#historicoArtigosSec {
+    margin-bottom: 80px;
+}
+
+.historicoTutorialMain, .historicoQuizzesMain {
+    margin: 15% 5%;
+}
+
+.historicoTutorialList, .historicoQuizzesList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.historicoTutorialItem, .historicoQuizzesItem {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.historicoTutorialImg, .historicoQuizzesImg {
+    margin: 5px 0;
+}
+
+.historicoTutorialImg img, .historicoQuizzesImg img {
+    border-radius: 100%;
+    width: 125px;
+    height: 125px;
+}
+
+.historicoTutorialText, .historicoQuizzesText {
+    text-align: center;
+    color: #ffffff;
+    margin: 10px 0;
 }
 
 /* FOOTER */

@@ -304,11 +304,7 @@ async function createArtCards() {
 
                 catalogoItem.appendChild(catalogoImgDiv);
                 catalogoItem.appendChild(catalogoTitleDiv);
-
-                catalogoItem.addEventListener('click', () => {
-                    window.location.href = `pagArtigos.html?artigoIndex=${id}`;
-                });
-
+                
                 catalogoList.appendChild(catalogoItem);
             }
         });

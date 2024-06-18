@@ -967,7 +967,7 @@ p {
 
 .catalogoWrapper {
     display: grid;
-    grid-template-columns: 95%;
+    grid-template-columns: 100%;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -1029,11 +1029,14 @@ p {
 }
 
 
+#pagCatalogo .catalogoItem {
+    cursor: pointer;
+}
+
 .catalogoItem {
     background: #fff;
     padding-bottom: 5px;
     margin: 10px;
-    cursor: pointer;
 }
 
 .catalogoTitle {
@@ -1052,7 +1055,7 @@ p {
     object-fit: cover;
 }
 
-.catalogoItem:hover {
+#pagCatalogo .catalogoItem:hover {
     transition: 1.1s;
     -webkit-box-shadow: 7px 35px 300px -23px rgba(0, 0, 0, 0.85);
     -moz-box-shadow: 7px 35px 300px -23px rgba(0, 0, 0, 0.85);
@@ -1407,6 +1410,11 @@ p {
 }
 
 /* PÁGINA O QUE FOI FEITO */
+#bg09Div {
+    position: relative;
+    top: -2px;
+}
+
 #historicoMain {
     height: 45vh;
 }
@@ -1476,15 +1484,39 @@ p {
     color: #00298f;
 }
 
+
+#historicoMain .secText {
+    margin-top: -180px;
+    z-index: 1;
+
+}
+
 .secText {
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 10px;
+}
+
+.secTitle {
+    text-align: center;
+    margin: 10px;
 }
 
 .secText h2 {
     color: #fff;
+
+}
+
+.historicoProgressWrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.historicoProgressImg img {
+    width: 100%;
+    height: 100%;
 }
 
 #historicoArtigosSec {
@@ -1979,6 +2011,27 @@ footer {
     .false-button button {
         width: 60%;
     }
+
+    /* PÁGINA O QUE FOI FEITO */
+    #historicoMain {
+        height: 30vh;
+        margin-bottom: 100px;
+    }
+
+    #historicoMain .secText {
+        margin-top: -500px;
+    }
+
+    .progressBox {
+        margin-top: 250px;
+    }
+
+    .historicoTutorialImg img,
+    .historicoQuizzesImg img {
+        width: 225px;
+        height: 225px;
+    }
+
 }
 
 
@@ -2363,4 +2416,27 @@ footer {
     .false-button button {
         max-width: 10%;
     }
+
+    /* PÁGINA O QUE FOI FEITO */
+    #historicoMain {
+        height: 30vh;
+        margin-bottom: 100px;
+    }
+
+    #historicoMain .secText {
+        margin-top: -700px;
+    }
+
+    .progressBox {
+        margin-top: 290px;
+        margin-bottom: 100px;
+        width: 55%;
+    }
+
+    .historicoTutorialImg img,
+    .historicoQuizzesImg img {
+        width: 250px;
+        height: 250px;
+    }
+
 }

@@ -64,6 +64,9 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = "../pages/perfilConfig.html";
     });
 
+    document.querySelector('.setaVoltar').addEventListener('click', function () {
+        window.location.href = "pagInicial.html";
+    });
 
     document.addEventListener('DOMContentLoaded', function () {
         // Passo 1: Recuperar o objeto users do localStorage

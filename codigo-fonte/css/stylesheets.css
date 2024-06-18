@@ -73,9 +73,10 @@ p {
 }
 
 #perfil {
-    width: 50%;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 #logo {
@@ -1409,6 +1410,135 @@ p {
     background: black;
 }
 
+/* PÁGINA PERFIL */
+#pagPerfil .setaVoltar {
+    position: absolute;
+    width: 50px;
+    top: 10px;
+    left: 10px;
+    font-size: xx-large;
+   
+}
+
+.setaVoltar {
+    z-index: 20;
+}
+
+.setaVoltar i {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer !important;
+}
+
+#pagPerfil .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagPerfil #perfil {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 2%;
+    border-radius: 50%;
+    margin-left: 0;
+}
+
+/*------------------------------------------------*/
+/* parte branca */
+
+#pagPerfil .nick-box {
+    background-color: white;
+    border-radius: 4%;
+    display: flex;
+    justify-content: center;
+    opacity: 70%;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: -2;
+}
+
+#pagPerfil #caixa-branca {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+}
+
+#pagPerfil .nickname {
+    position: relative;
+    display: flex;
+    font-size: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+
+/*-------------------------------------------*/
+/*  // caixa de opções*/
+#perfilOptions {
+    margin: 200px 0 270px;
+}
+
+#pagPerfil .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#pagPerfil .container-box {
+    background-color: white;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 0 30px 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#pagPerfil .wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    justify-items: left;
+    align-items: center;
+    white-space: nowrap;
+    border-bottom: #45464621 solid;
+}
+
+#pagPerfil .wrapper a {
+    text-decoration: none;
+    color: #454646bb;
+}
+
+#pagPerfil .wrapper:nth-child(4) {
+    border-bottom: none;
+}
+
+#pagPerfil .wrapper:hover,
+#pagPerfil .wrapper:hover a {
+    background-color: #00288F;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+#pagPerfil .icon {
+    margin: 30px;
+    font-size: 20px;
+}
+
+#pagPerfil .linkIcon {
+    font-size: 20px;
+}
+
+
 /* PÁGINA O QUE FOI FEITO */
 #bg09Div {
     position: relative;
@@ -2012,6 +2142,26 @@ footer {
         width: 60%;
     }
 
+    /* PÁGINA PERFIL */
+    .setaVoltar {
+        width: 50px;
+        font-size: xx-large;
+        top: 20px;
+    }
+
+     #pagPerfil #perfil {
+        width: 150px;
+        height: 150px;
+        top: 6%;
+    }
+
+    #pagPerfil .container-box {
+        width: 65%;
+        margin-bottom: 50px;
+    }
+
+
+
     /* PÁGINA O QUE FOI FEITO */
     #historicoMain {
         height: 30vh;
@@ -2416,6 +2566,7 @@ footer {
     .false-button button {
         max-width: 10%;
     }
+
 
     /* PÁGINA O QUE FOI FEITO */
     #historicoMain {

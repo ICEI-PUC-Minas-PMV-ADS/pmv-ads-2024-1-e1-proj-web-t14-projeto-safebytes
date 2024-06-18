@@ -5,14 +5,16 @@ body {
     background-attachment: scroll;
     margin: 0;
 }
+
 /* Header */
 
 
 #bg04div .bi-arrow-left {
-    font-size: 24px; /* Tamanho do ícone */
+    font-size: 24px;
+    /* Tamanho do ícone */
 }
 
-#seta-voltar{
+#seta-voltar {
     margin-left: 2rem;
     margin-top: 2rem;
     position: absolute;
@@ -20,8 +22,9 @@ body {
 }
 
 
-#perfil {
-    width: 15%;
+#pagPerfil #perfil {
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -32,14 +35,14 @@ body {
 }
 
 
-.foto{
+#pagPerfil .foto {
     display: flex;
     justify-content: center;
 
 
 }
 
-.number {
+#pagPerfil .number {
     display: flex;
     justify-content: center;
     background: linear-gradient(180deg, #26a5fffd 40%, #ffffff 100%);
@@ -54,7 +57,7 @@ body {
 /*------------------------------------------------*/
 /* parte branca */
 
-.nick-box {
+#pagPerfil .nick-box {
     background-color: white;
     border-radius: 4%;
     display: flex;
@@ -65,7 +68,7 @@ body {
     z-index: -2;
 }
 
-#caixa-branca{
+#pagPerfil #caixa-branca {
     width: 100%;
     position: absolute;
     display: flex;
@@ -75,7 +78,7 @@ body {
     top: 0;
 }
 
-.nickname {
+#pagPerfil .nickname {
     position: relative;
     display: flex;
     font-size: 60px;
@@ -92,13 +95,13 @@ body {
 
 /* footer // caixa de opções*/
 
-.container {
+#pagPerfil .container {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.container-box {
+#pagPerfil .container-box {
     background-color: white;
     border-radius: 20px;
     width: auto;
@@ -108,7 +111,7 @@ body {
     justify-items: center;
 }
 
-.wrapper {
+#pagPerfil .wrapper {
     width: 100%;
     display: grid;
     grid-template-columns: 100px 250px 50px;
@@ -118,29 +121,29 @@ body {
     border-bottom: #45464621 solid;
 }
 
-.wrapper a {
+#pagPerfil .wrapper a {
     text-decoration: none;
     color: #454646bb;
 }
 
-.wrapper:nth-child(4) {
+#pagPerfil .wrapper:nth-child(4) {
     border-bottom: none;
 }
 
-.wrapper:hover,
-.wrapper:hover a {
+#pagPerfil .wrapper:hover,
+#pagPerfil .wrapper:hover a {
     background-color: #00288F;
     border-radius: 20px;
     color: #ffffff;
     transition: 0.2s;
 }
 
-.icon {
+#pagPerfil .icon {
     margin: 30px;
     font-size: 20px;
 }
 
-.linkIcon {
+#pagPerfil .linkIcon {
     font-size: 20px;
 }
 
@@ -150,31 +153,44 @@ body {
 
 }*/
 @media screen and (max-width: 1200px) {
-    #perfil {
+    #pagPerfil #perfil {
         margin-top: 2rem;
         min-width: 13rem;
     }
-    #perfil {
-        width: 23%;
-        min-width: 7rem;
+
+    #pagPerfil #perfil {
+        width: 200px;
+        height: 200px;
     }
 
-    .number {
+    #pagPerfil .number {
         margin: 40px;
     }
 }
+
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
-    .number {
+    #pagPerfil .number {
         margin: 40px;
     }
-    #perfil {
+
+    #pagPerfil #perfil {
         margin-top: 4rem;
         min-width: 18rem;
     }
+
+    
 }
+
 @media screen and (min-width: 100px) and (max-width: 800px) {
-    #perfil {
+    #pagPerfil #perfil {
         margin-top: 1rem;
         min-width: 6rem;
     }
+
+    #pagPerfil #perfil {
+        width: 90px;
+        height: 90px;
+    }
+
+    
 }

@@ -120,13 +120,21 @@ document.addEventListener('DOMContentLoaded', function () {
             const artigoIndex = urlParams.get('artigoIndex');
 
             if (artigoIndex !== null && !isNaN(artigoIndex) && artigoIndex >= 0) {
-                let artigosConcluidos = JSON.parse(localStorage.getItem('artigosConcluidos')) || [];
+                let users = JSON.parse(localStorage.getItem('users')) || [];
+
                 const artigoIndexInt = parseInt(artigoIndex);
-                
-                if (!artigosConcluidos.includes(artigoIndexInt)) {
-                    artigosConcluidos.push(artigoIndexInt);
-                    localStorage.setItem('artigosConcluidos', JSON.stringify(artigosConcluidos));
-                }
+
+                users = users.map(user => {
+                    if (user.email === email) {
+                        user.artigosConcluidos = user.artigosConcluidos || [];
+                        if (!user.artigosConcluidos.includes(artigoIndexInt)) {
+                            user.artigosConcluidos.push(artigoIndexInt);
+                        }
+                    }
+                    return user;
+                });
+
+                localStorage.setItem('users', JSON.stringify(users));
 
                 if (email) {
                     window.location.href = "pagInicial.html";

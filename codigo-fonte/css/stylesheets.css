@@ -1411,6 +1411,12 @@ p {
     height: 45vh;
 }
 
+#historicoArtigosSec,
+#historicoTutoriaisSec,
+#historicoQuizzesSec {
+    display: none;
+}
+
 .progressDiv {
     display: flex;
     justify-content: center;
@@ -1485,17 +1491,20 @@ p {
     margin-bottom: 80px;
 }
 
-.historicoTutorialMain, .historicoQuizzesMain {
+.historicoTutorialMain,
+.historicoQuizzesMain {
     margin: 15% 5%;
 }
 
-.historicoTutorialList, .historicoQuizzesList {
+.historicoTutorialList,
+.historicoQuizzesList {
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
 }
 
-.historicoTutorialItem, .historicoQuizzesItem {
+.historicoTutorialItem,
+.historicoQuizzesItem {
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -1504,17 +1513,20 @@ p {
     margin: 20px 0;
 }
 
-.historicoTutorialImg, .historicoQuizzesImg {
+.historicoTutorialImg,
+.historicoQuizzesImg {
     margin: 5px 0;
 }
 
-.historicoTutorialImg img, .historicoQuizzesImg img {
+.historicoTutorialImg img,
+.historicoQuizzesImg img {
     border-radius: 100%;
     width: 125px;
     height: 125px;
 }
 
-.historicoTutorialText, .historicoQuizzesText {
+.historicoTutorialText,
+.historicoQuizzesText {
     text-align: center;
     color: #ffffff;
     margin: 10px 0;
@@ -1767,8 +1779,8 @@ footer {
         margin-top: 10%;
     }
 
-     /* PÁGINA INICIAL */
-     .secCards {
+    /* PÁGINA INICIAL */
+    .secCards {
         height: 600px;
     }
 

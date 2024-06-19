@@ -7,19 +7,19 @@
                 "id": "missao",
                 "imagem": "../assets/missaoImg.jpg",
                 "titulo": "Missão",
-                "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime est pariatur quo eius explicabo voluptates fugiat, eaque natus error quae quos rerum minus, inventore mollitia. Incidunt officia adipisci praesentium?"
+                "texto": "Nossa missão é capacitar indivíduos com o conhecimento e as ferramentas necessárias para proteger seus dados e sistemas contra ameaças cibernéticas. Através de artigos educativos, quizzes interativos e tutoriais práticos, buscamos promover uma cultura de segurança digital acessível a todos."
             },
             {
                 "id": "visao",
                 "imagem": "../assets/visaoImg.jpg",
                 "titulo": "Visão",
-                "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime est pariatur quo eius explicabo voluptates fugiat, eaque natus error quae quos rerum minus, inventore mollitia. Incidunt officia adipisci praesentium?"
+                "texto": "Ser reconhecidos como uma fonte de informação e educação em cibersegurança confiável, contribuindo para um mundo digital mais seguro e resiliente. Aspiramos a criar uma comunidade global informada e proativa na defesa contra ataques cibernéticos."
             },
             {
                 "id": "valores",
                 "imagem": "../assets/valoresImg.jpg",
                 "titulo": "Valores",
-                "texto": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maxime est pariatur quo eius explicabo voluptates fugiat, eaque natus error quae quos rerum minus, inventore mollitia. Incidunt officia adipisci praesentium?"
+                "texto": "Nossos valores fundamentais orientam cada ação: educação acessível e inovadora em cibersegurança, transparência total, comunidade colaborativa e resiliente, e integridade incansável em todas as interações."
             }
         ]
     }

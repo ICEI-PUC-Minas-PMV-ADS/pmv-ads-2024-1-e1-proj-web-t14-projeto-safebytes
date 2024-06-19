@@ -5,10 +5,12 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background: #a3c8ff;
     background: linear-gradient(180deg, rgba(163, 200, 255, 1) 31%, rgba(14, 65, 193, 0.879) 100%);
     background-repeat: no-repeat;
-    height: auto !important;
 }
 
 h1 {
@@ -76,7 +78,7 @@ p {
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 #logo {
@@ -816,7 +818,6 @@ p {
 }
 
 .secContinue #continuarTutorial {
-    position: relative;
     padding: 40px 15px;
     margin: 60px 0 90px 0;
     display: flex !important;
@@ -1417,7 +1418,7 @@ p {
     top: 10px;
     left: 10px;
     font-size: xx-large;
-   
+
 }
 
 .setaVoltar {
@@ -1430,13 +1431,15 @@ p {
     cursor: pointer !important;
 }
 
-#pagPerfil .foto {
+#pagPerfil .foto,
+#pagPerfilConfig .foto {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#pagPerfil #perfil {
+#pagPerfil #perfil,
+#pagPerfilConfig #perfil {
     position: absolute;
     width: 80px;
     height: 80px;
@@ -1536,6 +1539,126 @@ p {
 
 #pagPerfil .linkIcon {
     font-size: 20px;
+}
+
+/* PÁGINA PERFIL CONFIG */
+#pagPerfilConfig #campoEditar {
+    display: grid;
+    grid-template-columns: 45% 5%;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #00288F;
+}
+
+#pagPerfilConfig #campoEditar input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#pagPerfilConfig #campoEditar input:not(:placeholder-shown){
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+}
+
+#pagPerfilConfig .bg04div {
+    width: 50%;
+}
+
+#pagPerfilConfig .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#pagPerfilConfig #file {
+    display: none;
+}
+
+#pagPerfilConfig #uploadbtn {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 2%;
+    right: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #00112b;
+    color: #fff;
+}
+
+#pagPerfilConfig #input-file {
+    display: none;
+}
+
+#pagPerfilConfig #formulario i {
+    position: relative;
+    left: 2%;
+    z-index: 4;
+    font-size: 20px;
+    color: #00288F;
+}
+
+#pagPerfilConfig #formSec {
+    display: flex;
+    justify-content: center;
+}
+
+#pagPerfilConfig #formulario {
+    width: 90%;
+    height: auto;
+}
+
+#pagPerfilConfig form {
+    margin-top: 0;
+}
+
+#pagPerfilConfig #formulario #perfilForm {
+    display: grid;
+    grid-template-columns: 60% 5%;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    background: #00112b;
+    border-radius: 15px;
+}
+
+#pagPerfilConfig .input-box {
+    width: 100%;
+}
+
+#pagPerfilConfig .inputItem {
+    width: 110%;
+    margin: 15px 0;
+    background: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));
+    border-radius: 10px;
+}
+
+#pagPerfilConfig .input-box input {
+    margin: 15px 0;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));
+}
+
+#pagPerfilConfig .botao-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 65%;
+}
+
+#pagPerfilConfig .botao-container .button {
+    width: 45%;
 }
 
 
@@ -2149,10 +2272,11 @@ footer {
         top: 20px;
     }
 
-     #pagPerfil #perfil {
+    #pagPerfil #perfil,
+    #pagPerfilConfig #perfil {
         width: 150px;
         height: 150px;
-        top: 6%;
+        top: 2%;
     }
 
     #pagPerfil .container-box {
@@ -2160,6 +2284,31 @@ footer {
         margin-bottom: 50px;
     }
 
+    /* PÁGINA PERFIL CONFIG */
+    #pagPerfilConfig #uploadbtn {
+        top: 3%;
+        right: 38%;
+    }
+
+    #pagPerfilConfig #campoEditar {
+        grid-template-columns: 38% 5%;
+    }
+
+    #pagPerfilConfig #formulario {
+        width: 70%;
+    }
+
+    #pagPerfilConfig .input-box input {
+        margin-right: 30%;
+    }
+
+    #pagPerfilConfig .botao-container {
+        margin-bottom: 50%;
+    }
+
+    #pagPerfilConfig .botao-container .button {
+        width: 35%;
+    }
 
 
     /* PÁGINA O QUE FOI FEITO */
@@ -2566,6 +2715,59 @@ footer {
     .false-button button {
         max-width: 10%;
     }
+
+    /* PÁGINA PERFIL */
+    .setaVoltar {
+        width: 50px;
+        font-size: xx-large;
+        top: 20px;
+    }
+
+    #pagPerfil #perfil,
+    #pagPerfilConfig #perfil {
+        width: 250px;
+        height: 250px;
+        top: 16%;
+    }
+
+    #pagPerfil .wrapper {
+        grid-template-columns: 30% 65% 10%;
+    }
+
+    #pagPerfil .container-box {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    /* PÁGINA PERFIL CONFIG */
+    #pagPerfilConfig #uploadbtn {
+        width: 80px;
+        height: 80px;
+        top: 18%;
+        right: 38%;
+        font-size: xx-large;
+    }
+
+    #pagPerfilConfig #campoEditar {
+        grid-template-columns: 28% 5%;
+    }
+
+    #pagPerfilConfig #formulario {
+        width: 50%;
+    }
+
+    #pagPerfilConfig .input-box input {
+        margin-right: 45%;
+    }
+
+    #pagPerfilConfig .botao-container {
+        margin-bottom: 20%;
+    }
+
+    #pagPerfilConfig .botao-container .button {
+        width: 15%;
+    }
+
 
 
     /* PÁGINA O QUE FOI FEITO */

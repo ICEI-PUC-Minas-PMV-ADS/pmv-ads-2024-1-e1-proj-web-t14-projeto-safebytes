@@ -8,83 +8,63 @@ body {
 }
 
 /* input do nickname */
-#campoEditar {
+#pagPerfilConfig #campoEditar {
     display: inline-flex;
     justify-content: center;
-    /* Alinhar o contêiner ao centro horizontal */
     align-items: center;
-    /* Alinhar o contêiner ao centro vertical */
     height: 10vh;
-    /* Garantir que o contêiner ocupe toda a altura da página */
     width: 100%;
-    /* Garantir que o contêiner ocupe toda a largura da página */
     border: 0px 0px 20px 20px solid transparent;
-    /* Adiciona uma borda ao redor do item */
 }
 
-#campoEditar input[type="text"] {
+#pagPerfilConfig #campoEditar input[type="text"] {
     border: none;
     outline: none;
     background-color: transparent;
     font-size: 50px;
     text-align: start;
-    /* Alinhamento do texto à esquerda */
     max-width: 100%;
-    /* Definir uma largura máxima para o campo de entrada */
-
 }
 
-#novoNickname::placeholder {
+#pagPerfilConfig #novoNickname::placeholder {
     color: rgb(55, 62, 168)
 }
 
-#campoEditar label i {
+#pagPerfilConfig #campoEditar label i {
     font-size: 40px;
     color: #00288F;
     cursor: pointer;
     margin-left: 330px;
     display: inline-flex;
     border: 20px solid transparent;
-    /* Adiciona uma borda ao redor do item */
     padding: 1px;
-    /* Adiciona preenchimento para dar espaço interno à borda */
 }
 
-/*
-fim icone para clicar e o usuário poder reescrever o prórpio nickname
-*/
-
-/* inicio fundos pág */
-
-.bg04div {
+#pagPerfilConfig .bg04div {
     width: 50%;
 }
 
-/* fim fundos da pág */
-
-/*início parte de foto do perfil */
-#perfildiv {
+#pagPerfilConfig #perfildiv {
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
-    margin-bottom: 2rem;
-
+    width: 90px;
+    height: 90px;
 }
 
-.container {
+#pagPerfilConfig .container {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.user-img {
+#pagPerfilConfig .user-img {
     max-width: 12rem;
     min-height: auto;
 }
 
-.user-img label {
+#pagPerfilConfig .user-img label {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -94,16 +74,17 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     font-size: 18px;
 }
 
-#photo {
-    width: 100%;
-    border-radius: 50%;
+#pagPerfilConfig #photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
 }
 
-#file {
+#pagPerfilConfig #file {
     display: none;
 }
 
-#uploadbtn {
+#pagPerfilConfig #uploadbtn {
     position: absolute;
     height: 30px;
     width: 30px;
@@ -117,16 +98,11 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     box-shadow: 2px 4px 4px rgb(0, 0, 0, 0.644);
 }
 
-
-/*fim da parte de foto do perfil */
-
-
-#input-file {
+#pagPerfilConfig #input-file {
     display: none;
 }
 
-
-#formulario i {
+#pagPerfilConfig #formulario i {
     position: relative;
     left: 5%;
     z-index: 4;
@@ -134,7 +110,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     color: #00288F;
 }
 
-#formulario {
+#pagPerfilConfig #formulario {
     justify-content: center;
     margin-top: 10px;
     margin: 2rem auto;
@@ -145,7 +121,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     border-radius: 35px;
 }
 
-.input-box input {
+#pagPerfilConfig .input-box input {
     width: 47%;
     padding: 1.5rem;
     font-size: 1.6rem;
@@ -157,7 +133,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     resize: none;
 }
 
-.botao-container .botao-cancelar {
+#pagPerfilConfig .botao-container .botao-cancelar {
     width: 15%;
     padding: 1.5%;
     font-size: 1.6rem;
@@ -169,7 +145,7 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     min-width: 17%;
 }
 
-.botao-container .botao-salvar {
+#pagPerfilConfig .botao-container .botao-salvar {
     width: 15%;
     padding: 1.5%;
     font-size: 1.6rem;
@@ -181,25 +157,24 @@ fim icone para clicar e o usuário poder reescrever o prórpio nickname
     min-width: 17%;
 }
 
-.botao-cancelar:hover {
+#pagPerfilConfig .botao-cancelar:hover {
     background-color: black;
 }
 
-.botao-salvar:hover {
+#pagPerfilConfig .botao-salvar:hover {
     background-color: black;
 }
 
-footer {
+#pagPerfilConfig footer {
     width: 100%;
     background-color: #214ab1;
     padding: 10px 0;
     margin-top: 9rem;
 }
 
-.botao-container {
+#pagPerfilConfig .botao-container {
     display: flex;
     justify-content: space-around;
-    /* Espaço uniforme entre os botões */
 }
 
 /*media query celular */
@@ -210,90 +185,109 @@ footer {
         text-align: left;
         width: 350px;
     }
+
     .input-box input {
         margin-left: 10%;
     }
+
     .botao-container .botao-cancelar {
         width: 35%;
     }
-    
+
     .botao-container .botao-salvar {
         width: 35%;
     }
+
     #campoEditar label i {
         margin-left: 14rem;
         margin-top: 0rem;
         border-right: 10px solid transparent;
         /* Adiciona uma borda ao redor do item */
         font-size: 37px;
-    } 
+    }
+
     #campoEditar {
         display: flex;
         align-items: center;
         justify-self: center;
         justify-content: space-evenly;
     }
-    .nickspace{
+
+    .nickspace {
         width: 76%;
         position: absolute;
     }
+
     .user-img {
         max-width: 25%;
         min-height: auto;
         margin-top: 1.5rem;
     }
+
     #perfildiv {
         margin-bottom: 3rem;
     }
+
     #uploadbtn {
         height: 20px;
         width: 20px;
         transform: translate(-69%);
         margin-top: 5px;
     }
+
     .user-img label {
         font-size: 14px;
     }
 }
+
 @media screen and (min-width: 600px) and (max-width: 900px) {
     footer {
         margin-top: 20rem;
     }
-    
+
     .botao-container {
         height: 100px;
     }
+
     .botao-container .botao-cancelar {
         min-width: 25%;
     }
+
     .botao-container .botao-salvar {
         min-width: 25%;
     }
+
     #campoEditar {
         display: flex;
         align-items: center;
         justify-self: center;
         justify-content: space-evenly;
     }
-    .nickspace{
+
+    .nickspace {
         width: 30%;
         position: absolute;
     }
+
     #uploadbtn {
         height: 40px;
         width: 40px;
     }
+
     .user-img label {
         font-size: 20px;
     }
+
     .user-img {
         max-width: 25%;
         min-height: auto;
         margin-top: 1.5rem;
     }
+
     #perfildiv {
         margin-bottom: 3rem;
     }
+
     #uploadbtn {
         transform: translate(-80%);
         margin-top: 11px;

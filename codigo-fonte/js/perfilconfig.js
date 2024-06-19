@@ -29,7 +29,7 @@ function saveChanges() {
     }
 
     // Atualiza a foto de perfil se houver uma imagem temporária
-    var img = document.getElementById('photo');
+    var img = document.getElementById('perfil');
     if (tempImage) {
         img.setAttribute('src', tempImage);
     }
@@ -112,7 +112,7 @@ function redirectToHomePage() {
 
 // Lógica para manipular a imagem de perfil
 document.addEventListener('DOMContentLoaded', function () {
-    const img = document.querySelector('#photo');
+    const img = document.querySelector('#perfil');
     const file = document.querySelector('#file');
     const MAX_SIZE_MB = 2; // Tamanho máximo de arquivo em MB
     const MIN_WIDTH = 300;

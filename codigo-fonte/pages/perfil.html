@@ -129,14 +129,20 @@ async function gerarCertificado(event) {
 
         const { width, height } = primeiraPagina.getSize();
         const fontSize = 35;
-        const x = width / 1.21 - fontSize * (nome.length / 2);
+
+        // Carregar a fonte Helvetica e medir a largura do texto
+        const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
+        const textWidth = font.widthOfTextAtSize(nome, fontSize);
+
+        // Calcular a posição x centralizada
+        const x = (width - textWidth) / 2;
         const y = height / 2;
 
         primeiraPagina.drawText(nome, {
             x: x,
             y: y,
             size: fontSize,
-            font: await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica),
+            font: font,
             color: PDFLib.rgb(0, 0, 0)
         });
 
@@ -149,7 +155,7 @@ async function gerarCertificado(event) {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
+
     } catch (error) {
         console.error('Erro ao gerar o certificado:', error);
     }
@@ -234,6 +240,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Erro ao executar o código principal:', error);
     }
 });
+
 
 
 

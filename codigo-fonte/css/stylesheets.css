@@ -92,7 +92,7 @@ p {
 }
 
 #searchBox {
-    background-color: #fff;
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));
     display: inline;
     border-radius: 30px;
 }
@@ -100,6 +100,7 @@ p {
 #searchInput {
     border: none;
     outline: none;
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));;
     width: 50%;
     margin: 10px 15px;
 }
@@ -113,6 +114,8 @@ p {
     width: 90px;
     display: flex;
     justify-content: end;
+    margin-left: 10%;
+    grid-column: 3;
 }
 
 .botaoDiv {
@@ -128,11 +131,40 @@ p {
     background-color: #355DC5;
     position: relative;
     bottom: 25px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainIndexText,
+.videoPromoText {
+    margin: 20px;
+    width: 90%;
+}
+
+.mainIndexTitle {
+    padding-top: 50px;
+}
+
+.mainIndexP h6,
+.videoPromoP h6 {
+    color: #050b78;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffffff8c;
+    border-radius: 10px;
+}
+
+.mainIndexP,
+.videoPromoP {
+    color: #fff;
+    text-align: left;
 }
 
 #quemSomos {
     position: relative;
-    margin: 20px;
+    margin: 20px 20px 70px;
     z-index: 1;
 }
 
@@ -159,16 +191,62 @@ p {
     margin-left: 10%;
 }
 
+/* Seção Iframe */
+#videoPromoSec {
+    position: relative;
+    top: 5%;
+    z-index: 1;
+    height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: -30px;
+    margin-bottom: 50px;
+    background: #355DC5;
+}
+
+.videoPromoWrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+#videoPromoIframe {
+    width: 100%;
+    height: 120%;
+    border: none;
+    border-radius: 10px;
+}
+
+.videoPromoP {
+    margin: 10px 0;
+}
 
 /* SEÇÃO DE ARTIGOS */
 #bg01Div {
+    margin-top: -1px;
     margin-bottom: 50px;
+}
+
+.artigosSecText {
+    margin: 20px;
+    color: #012355;
+}
+
+.artigosSecText .artigosSecTitle {
+    margin: 20px 0;
+}
+
+.artigosSecText h6 {
+    color: #01235581;
 }
 
 #artigosSec {
     position: relative;
     bottom: 50px;
-    margin-bottom: 20px;
+    margin-bottom: -50px;
 }
 
 .sliderConteiner {
@@ -263,7 +341,7 @@ p {
 }
 
 #perguntasSec {
-    margin: 70px 0;
+    margin: 70px 0 70px;
 }
 
 .perguntasMainTitle h2 {
@@ -855,7 +933,7 @@ p {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 0 0 90px;
+    margin: 90px 0 90px;
 }
 
 .secListasTxt {
@@ -1560,7 +1638,7 @@ p {
     background-color: transparent;
 }
 
-#pagPerfilConfig #campoEditar input:not(:placeholder-shown){
+#pagPerfilConfig #campoEditar input:not(:placeholder-shown) {
     border: none;
     outline: none;
     background-color: transparent !important;
@@ -1949,6 +2027,7 @@ footer {
     /* PAG INDEX */
     #quemSomos {
         top: 50px;
+        margin-bottom: 180px;
     }
 
     .banner {
@@ -1963,6 +2042,27 @@ footer {
     .perguntasImg img {
         width: 60%;
         height: 60%;
+    }
+
+    .videoPromoWrapper {
+        width: 100%;
+    }
+
+    .videoPromo {
+        width: 65%;
+    }
+
+    #videoPromoIframe {
+        width: 100%;
+        height: 200%;
+    }
+
+    .videoPromoP {
+        margin: 10px 0;
+    }
+
+    #perguntasSec {
+        margin: 100px 0 70px;
     }
 
     /* PAG ARTIGOS */
@@ -2363,7 +2463,8 @@ footer {
 
     /* PAG INDEX */
     #quemSomos {
-        top: 50px;
+        top: 10px;
+        margin-bottom: 100px;
     }
 
     .banner {
@@ -2391,6 +2492,49 @@ footer {
 
     #bg02Div {
         bottom: -2px;
+    }
+
+    .mainIndexText,
+    .videoPromoText {
+        width: 70%;
+    }
+
+    .mainIndexP h6,
+    .videoPromoP h6 {
+        color: #050b78;
+        margin: 80px 0 20px;
+        padding: 10px;
+        background-color: #ffffff8c;
+        border-radius: 10px;
+    }
+
+    .mainIndexP,
+    .videoPromoP {
+        color: #fff;
+        text-align: left;
+    }
+
+    /* Seção Iframe */
+    .videoPromoWrapper {
+        width: 100%;
+    }
+
+    .videoPromo {
+        width: 50%;
+    }
+
+    #videoPromoIframe {
+        width: 100%;
+        height: 200%;
+        margin-top: 20px;
+    }
+
+    .videoPromoP {
+        margin: 10px 0;
+    }
+
+    #perguntasSec {
+        margin: 150px 0 70px;
     }
 
     /* PAG ARTIGOS */

@@ -75,14 +75,12 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
     const email = localStorage.getItem('loggedInUserEmail');
     if (email) {
         header.innerHTML += botaoVoltar;
-        header.innerHTML += fotoPerfil;
         document.querySelector(".botaoDiv").addEventListener("click", () => {
             window.location.href = "pagCatalogo.html";
         });
 
     } else {
         header.innerHTML += logo;
-        header.innerHTML += searchBar;
         header.innerHTML += login;
         document.querySelector("#loginBtn").addEventListener("click", () => {
             window.location.href = "login.html";
@@ -97,7 +95,6 @@ if (body.id === 'pagLogin' || body.id === 'pagCadastro') {
 
 } else {
     header.innerHTML += logo;
-    header.innerHTML += searchBar;
     header.innerHTML += login;
     document.querySelector("#loginBtn").addEventListener("click", () => {
         window.location.href = "login.html";

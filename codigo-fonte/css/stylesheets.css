@@ -933,12 +933,12 @@ p {
     justify-content: center;
     justify-items: center;
     align-items: center;
-    margin: 90px 0 90px;
+    margin: 100px 0 90px;
 }
 
 .secListasTxt {
     width: 80%;
-    text-align: center;
+    text-align: left;
     color: #00288f;
 }
 
@@ -2211,6 +2211,11 @@ footer {
         margin: 400px 0 50px;
     }
 
+    .secListasTxt {
+        width: 90%;
+        margin-top: 50px;
+    }
+
     #artigos,
     #tutoriais,
     #quizzes {
@@ -2689,6 +2694,12 @@ footer {
     /* SECLISTAS */
     .secListas {
         margin: 400px 0 100px;
+    }
+
+    
+    .secListasTxt {
+        width: 85%;
+        margin-top: 50px;
     }
 
     #artigos,

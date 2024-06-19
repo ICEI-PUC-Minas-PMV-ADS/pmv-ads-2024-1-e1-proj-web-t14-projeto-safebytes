@@ -70,7 +70,7 @@ def send_code():
     conn.close()
 
     msg = Message('Password Reset Code', sender=mail_username, recipients=[email])
-    msg.body = f'Your password reset code is {code}.'
+    msg.body = f'Seu código de verificação é: {code}.'
     mail.send(msg)
 
     return render_template('code_verification.html', email=email)

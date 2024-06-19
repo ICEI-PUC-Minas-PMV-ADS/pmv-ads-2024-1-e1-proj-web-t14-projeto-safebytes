@@ -139,7 +139,7 @@ fetch('../Gersons/tutoriais.json')
                     img.alt = etapa.titulo ? etapa.titulo : "Imagem da Etapa";
 
                     const etapaTitulo = document.createElement("h3");
-                    etapaTitulo.textContent = etapa.titulo || '';
+                    etapaTitulo.textContent = `Etapa ${etapa.id}` || '';
 
                     etapaDiv.appendChild(img);
                     etapaDiv.appendChild(etapaTitulo);

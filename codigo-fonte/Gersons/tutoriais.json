@@ -9,20 +9,20 @@
           {
             "id": 1,
             "imagem": "../assets/etapa1.png",
-            "titulo": "Etapa 1",
-            "descricao": "Escolha e instale um software antivírus confiável e atualizado em todos os seus dispositivos, como computadores, smartphones e tablets. Certifique-se de que o antivírus esteja configurado para atualizar regularmente sua base de dados de definições de vírus para proteção contra as últimas ameaças."
+            "titulo": "Etapa 1: Mantenha seu Software Atualizado",
+            "descricao": "Manter seu sistema operacional, programas e aplicativos sempre atualizados é essencial para proteger seu dispositivo contra vulnerabilidades que os malwares exploram. Configure as atualizações automáticas sempre que possível e verifique regularmente por atualizações manualmente."
           },
           {
             "id": 2,
             "imagem": "../assets/etapa2.png",
-            "titulo": "Etapa 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus et malesuada. Convallis convallis tellus id interdum velit laoreet id. Congue quisque egestas diam in. Et malesuada fames ac turpis egestas maecenas. Metus dictum at tempor commodo ullamcorper a lacus. Viverra vitae congue eu consequat ac felis. Aliquam faucibus purus in massa tempor. Non sodales neque sodales ut etiam sit amet. Commodo odio aenean sed adipiscing diam donec adipiscing. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Viverra aliquet eget sit amet tellus. Ante metus dictum at tempor commodo. Viverra orci sagittis eu volutpat odio facilisis mauris sit. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Mauris cursus mattis molestie a iaculis at. Suspendisse ultrices gravida dictum fusce ut placerat. Dolor magna eget est lorem ipsum dolor sit amet consectetur. Odio facilisis mauris sit amet massa. Suspendisse faucibus interdum posuere lorem ipsum."
+            "titulo": "Etapa 2: Utilize um Antivírus e Antimalware Confiável",
+            "descricao": "Instale e mantenha um software antivírus e antimalware atualizado. Configure-o para realizar verificações regulares do sistema e das suas atividades online. Certifique-se de que o software escolhido oferece proteção em tempo real contra ameaças conhecidas e desconhecidas."
           },
           {
             "id": 3,
             "imagem": "../assets/etapa3.png",
-            "titulo": "Etapa 3",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Phasellus egestas tellus rutrum tellus pellentesque eu. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Arcu cursus euismod quis viverra nibh. Urna et pharetra pharetra massa massa ultricies mi quis. Id faucibus nisl tincidunt eget .Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis. am non nisi. Eros in cursus turpis massa. Mauris pellentesque pulvinar pellentesque habitant morbi. Et malesuada fames ac turpis egestas maecenas pharetra."
+            "titulo": "Etapa 3: Práticas Seguras de Navegação e Download",
+            "descricao": "Evite clicar em links suspeitos ou baixar software de fontes não confiáveis. Ao navegar na internet, verifique se o site é seguro (https://) e use uma conexão VPN ao se conectar a redes Wi-Fi públicas. Além disso, sempre faça backup regular de seus arquivos importantes para protegê-los contra ransomwares e outras formas de ataque. Seguindo estas três etapas simples, você pode significativamente reduzir o risco de infecção por malware e manter seus dados seguros."
         }
         ]
       },
@@ -35,20 +35,20 @@
           {
             "id": 1,
             "imagem": "../assets/etapa1.png",
-            "titulo": "Etapa 1",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 1: Ative a Autenticação de Dois Fatores (2FA)",
+            "descricao": "Primeiramente, habilite a autenticação de dois fatores em todas as contas que oferecem esse recurso. Normalmente, isso pode ser configurado nas configurações de segurança da sua conta. A 2FA adiciona uma camada extra de segurança exigindo um segundo método de verificação além da senha, como um código enviado por SMS ou gerado por um aplicativo autenticador."
           },
           {
             "id": 2,
             "imagem": "../assets/etapa2.png",
-            "titulo": "Etapa 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 2: Utilize Aplicativos Autenticadores",
+            "descricao": "Opte por aplicativos autenticadores em vez de SMS sempre que possível. Aplicativos como Google Authenticator, Authy ou Microsoft Authenticator são mais seguros contra ataques de phishing de SMS. Configure o aplicativo com suas contas para gerar códigos de autenticação temporários."
           },
           {
             "id": 3,
             "imagem": "../assets/etapa3.png",
-            "titulo": "Etapa 3",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 3: Mantenha seus Dispositivos Seguros",
+            "descricao": "Assegure-se de que seus dispositivos (celulares, computadores) estão protegidos com senhas fortes e atualizações regulares. Evite fazer root ou jailbreak em dispositivos móveis, pois isso pode comprometer sua segurança. Se possível, use biometria (como impressão digital ou reconhecimento facial) para desbloquear seus dispositivos. Ao seguir estas três etapas, você aumenta significativamente a segurança das suas contas online com a autenticação de dois fatores, tornando mais difícil para os invasores acessarem suas informações mesmo que tenham sua senha."
           }
         ]
       },
@@ -61,20 +61,20 @@
           {
             "id": 1,
             "imagem": "../assets/etapa1.png",
-            "titulo": "Etapa 1",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 1: Escolha uma Solução de Backup Confiável",
+            "descricao": "Primeiramente, escolha uma solução de backup confiável que atenda às suas necessidades. Você pode optar por backup em nuvem, dispositivos externos (como HDs ou SSDs) ou uma combinação de ambos. Certifique-se de que a solução escolhida ofereça criptografia para proteger seus dados durante o armazenamento e a transmissão."
           },
           {
             "id": 2,
             "imagem": "../assets/etapa2.png",
-            "titulo": "Etapa 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 2: Defina uma Rotina de Backup Regular",
+            "descricao": "Estabeleça uma rotina de backup regular para garantir que seus dados importantes sejam salvos com frequência. Determine a frequência adequada com base na quantidade e na importância dos dados que você está protegendo. Automatize, se possível, para garantir que os backups sejam feitos de forma consistente e sem falhas humanas."
           },
           {
             "id": 3,
             "imagem": "../assets/etapa3.png",
-            "titulo": "Etapa 3",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 3: Teste e Verifique seus Backups",
+            "descricao": "Não confie cegamente nos backups. Regularmente, teste a recuperação dos dados para garantir que seus backups estão funcionando conforme o esperado e que os arquivos podem ser restaurados integralmente quando necessário. Revise e atualize seu plano de backup conforme novos dados são adicionados ou alterados. Seguindo estas três etapas, você estará melhor preparado para proteger seus dados importantes contra perda acidental, corrupção de dados ou ataques cibernéticos."
           }
         ]
       },
@@ -87,20 +87,20 @@
           {
             "id": 1,
             "imagem": "../assets/etapa1.png",
-            "titulo": "Etapa 1",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 1: Mantenha seu Sistema Operacional Atualizado",
+            "descricao": "Sempre mantenha seu sistema operacional (como Windows, macOS, Linux) atualizado. Configure as atualizações automáticas para que novas correções de segurança e melhorias sejam instaladas assim que estiverem disponíveis."
           },
           {
             "id": 2,
             "imagem": "../assets/etapa2.png",
-            "titulo": "Etapa 2",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 2: Atualize seus Aplicativos e Programas Regularmente",
+            "descricao": "Além do sistema operacional, mantenha todos os seus aplicativos e programas atualizados. Isso inclui navegadores da web, plugins, programas de produtividade e qualquer outro software que você utilize regularmente. Verifique manualmente por atualizações se necessário."
           },
           {
             "id": 3,
             "imagem": "../assets/etapa3.png",
-            "titulo": "Etapa 3",
-            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Erat imperdiet sed euismod nisi porta lorem mollis. Nec feugiat nisl pretium fusce id. Donec ultrices tincidunt arcu non. Tellus orci ac auctor augue mauris. Facilisis leo vel fringilla est. Viverra nibh cras pulvinar mattis. Lectus proin nibh nisl condimentum id venenatis a condimentum. Sagittis eu volutpat odio facilisis."
+            "titulo": "Etapa 3: Verifique as Configurações de Atualização Automática",
+            "descricao": "Certifique-se de que todos os dispositivos que você utiliza, como computadores, smartphones e tablets, tenham suas configurações de atualização automática ativadas. Isso garante que você receba as últimas correções de segurança e funcionalidades sem precisar se preocupar com a atualização manual. Ao seguir estas três etapas simples, você reduz significativamente o risco de vulnerabilidades de segurança exploradas por malwares e outros tipos de ataques cibernéticos."
           }
         ]
       }

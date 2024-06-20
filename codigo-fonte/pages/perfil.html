@@ -132,16 +132,30 @@ async function gerarCertificado(event) {
 
         // Carregar a fonte Helvetica e medir a largura do texto
         const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
-        const textWidth = font.widthOfTextAtSize(nome, fontSize);
+        const textWidthNome = font.widthOfTextAtSize(nome, fontSize);
 
-        // Calcular a posição x centralizada
-        const x = (width - textWidth) / 2;
-        const y = height / 2;
+        // Calcular a posição x centralizada para o nome
+        const xNome = (width - textWidthNome) / 2;
+        const yNome = height / 2;
 
+        // Adicionar nome ao certificado
         primeiraPagina.drawText(nome, {
-            x: x,
-            y: y,
+            x: xNome,
+            y: yNome,
             size: fontSize,
+            font: font,
+            color: PDFLib.rgb(0, 0, 0)
+        });
+
+        // Adicionar data de emissão ao certificado
+        const dataEmissao = new Date().toLocaleDateString('pt-BR'); // Exemplo de formato de data
+        const textWidthData = font.widthOfTextAtSize(dataEmissao, 12); // Tamanho da fonte para a data
+        const xData = (width - textWidthData) / 2;
+        const yData = height / 4; // Posição aproximada 3/4 abaixo da página
+        primeiraPagina.drawText(dataEmissao, {
+            x: xData,
+            y: yData,
+            size: 12,
             font: font,
             color: PDFLib.rgb(0, 0, 0)
         });
@@ -240,6 +254,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.error('Erro ao executar o código principal:', error);
     }
 });
+
 
 
 

@@ -1,4 +1,6 @@
-/* CONFIGURAÇÕES GERAIS */
+/* ===============================================
+   CONFIGURAÇÕES GERAIS
+================================================== */
 * {
     font-family: "Open Sans", "Roboto", "Montserrat", "Poppins", sans-serif;
     margin: 0;
@@ -60,7 +62,10 @@ p {
     border: 0.1px solid #00112b;
 }
 
-/* HEADER */
+
+/* =====================================================
+   CABEÇALHOS
+======================================================== */
 .header {
     background-color: #355DC5;
     padding: 20px;
@@ -100,7 +105,8 @@ p {
 #searchInput {
     border: none;
     outline: none;
-    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));;
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4));
+    ;
     width: 50%;
     margin: 10px 15px;
 }
@@ -125,8 +131,11 @@ p {
     cursor: pointer;
 }
 
-/* PAGINA INDEX */
-/* SEÇÃO PRINCIPAL */
+
+/* =====================================================
+   PÁGINA INDEX
+======================================================== */
+/* Seção Principal */
 #mainIndex {
     background-color: #355DC5;
     position: relative;
@@ -191,7 +200,7 @@ p {
     margin-left: 10%;
 }
 
-/* Seção Iframe */
+/* Seção Video Promo */
 #videoPromoSec {
     position: relative;
     top: 5%;
@@ -224,7 +233,7 @@ p {
     margin: 10px 0;
 }
 
-/* SEÇÃO DE ARTIGOS */
+/* Seção Artigos */
 #bg01Div {
     margin-top: -1px;
     margin-bottom: 50px;
@@ -321,7 +330,7 @@ p {
 }
 
 
-/* SEÇÃO PERGUNTAS FREQUENTES */
+/* Seção Perguntas Frequentes */
 .modal-content {
     background-color: #355ec5 !important;
     color: #fff !important;
@@ -384,7 +393,11 @@ p {
     color: #00288F;
 }
 
-/* PAGINA QUEM SOMOS */
+
+/* =====================================================
+   PÁGINA QUEM SOMOS
+======================================================== */
+/* Seção Principal */
 #bg05Div {
     position: relative;
     top: -2px;
@@ -453,8 +466,11 @@ p {
     grid-row: 1;
 }
 
-/* PAGINA ARTIGOS */
-/* MAIN ARTIGOS */
+
+/* =====================================================
+   PÁGINA ARTIGOS
+======================================================== */
+/* Seção Principal */
 #mainArtigos {
     background: rgb(163, 200, 255);
     background: linear-gradient(0deg, rgba(163, 200, 255, 1) -50%, rgba(0, 41, 143, 0.445) 100%);
@@ -493,7 +509,7 @@ p {
     padding-right: 15px;
 }
 
-/* SEÇÃO ARTIGOS01 */
+/* Seção artigos01 */
 #bg02Div {
     position: relative;
     bottom: -2px;
@@ -554,8 +570,7 @@ p {
     border-radius: 10px;
 }
 
-
-/* SEÇÃO ARTIGOS02 */
+/* Seção Artigos02 */
 #secArtigos02 {
     margin-bottom: 30px;
 }
@@ -617,7 +632,7 @@ p {
     height: auto;
 }
 
-/* BOTÃO PAGINICIAL */
+/* Botão Concluir */
 #btnConteiner {
     display: flex;
     justify-content: center;
@@ -630,8 +645,9 @@ p {
     justify-content: center;
 }
 
-
-/* PÁGINA DE LOGIN E CADASTRO */
+/* =====================================================
+   PÁGINAS LOGIN E CADASTRO
+======================================================== */
 #pagCadastro i {
     color: black;
 }
@@ -644,7 +660,6 @@ p {
 #pagLogin #inputemail {
     height: 1.7rem;
 }
-
 
 .entrar-login {
     width: 50%;
@@ -828,7 +843,22 @@ p {
     color: rgba(128, 0, 128, 0.664);
 }
 
-/* PÁGINA INICIAL */
+
+/* =====================================================
+  PÁGINA INICIAL
+======================================================== */
+/* Seção Principal */
+.carousel-caption {
+    color: #00112b;
+}
+
+.carousel-caption .button {
+    width: 40%;
+    padding: 4px;
+    margin-top: 5px;
+}
+
+/* Seção Cards */
 .secCards {
     height: 60vh;
     padding-top: 100px;
@@ -883,7 +913,7 @@ p {
     border: solid 1px #00288F;
 }
 
-/* SECCONTINUE */
+/* Seção Continue */
 #bg07Div svg {
     width: 100%;
     position: relative;
@@ -925,7 +955,7 @@ p {
     transition: 0.5s ease-in-out;
 }
 
-/* SECLISTAS */
+/* Seção Listas */
 .secListas {
     height: 50vh;
     display: flex;
@@ -983,17 +1013,11 @@ p {
     box-shadow: -3px 3px 42px 3px rgba(5, 57, 172, 0.36);
 }
 
-.carousel-caption {
-    color: #00112b;
-}
 
-.carousel-caption .button {
-    width: 40%;
-    padding: 4px;
-    margin-top: 5px;
-}
-
-/* PÁGINA CATALOGO */
+/* =====================================================
+  PÁGINA CATÁLOGO
+======================================================== */
+/* Seção Principal */
 #pagCatalogo .header {
     position: fixed;
     top: 0;
@@ -1025,6 +1049,7 @@ p {
     margin: 5%;
 }
 
+/* Seção Filtros */
 .catalogoFiltros {
     display: flex;
     flex-flow: column;
@@ -1043,22 +1068,6 @@ p {
     align-items: center;
     justify-content: center;
     gap: 5px;
-}
-
-.catalogoWrapper {
-    display: grid;
-    grid-template-columns: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.catalogoList {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 5px;
-    margin-top: 60px;
 }
 
 .filterBtn {
@@ -1108,6 +1117,22 @@ p {
     background: #7575724d;
 }
 
+/* Seção artigos */
+.catalogoWrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.catalogoList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5px;
+    margin-top: 60px;
+}
 
 #pagCatalogo .catalogoItem {
     cursor: pointer;
@@ -1144,7 +1169,10 @@ p {
 }
 
 
-/* PÁGINAS QUIZZES E TUTORIAIS */
+/* =====================================================
+  PÁGINAS QUIZZES E TUTORIAIS
+======================================================== */
+/* Seção Principal */
 #bg06Div {
     position: relative;
     top: -1px;
@@ -1162,12 +1190,11 @@ p {
     z-index: 1;
 }
 
-/* SEC PRINCIPAL */
 .tituloPrincipal {
     margin: 20px 0 80px 0;
 }
 
-/* LISTA */
+/* Seção Listas */
 .lista {
     margin: 20% 5% -125px 5%;
     padding: 15px 0;
@@ -1203,7 +1230,7 @@ p {
     font-size: 45px;
 }
 
-/* CONTEUDO TUTORIAIS */
+/* Conteúdo Tutoriais */
 .secPrincipalTutoriais,
 .secPrincipalQuizzes {
     display: flex;
@@ -1312,7 +1339,9 @@ p {
     border: none;
 }
 
-/* PÁGINAS QUIZ */
+/* =====================================================
+  PÁGINAS QUIZ
+======================================================== */
 #bg08Div {
     position: relative;
     top: -2px;
@@ -1426,7 +1455,10 @@ p {
     color: #00112b;
 }
 
-/* POP-UP NICKNAME */
+
+/* =====================================================
+  POP-UP NICKNAME
+======================================================== */
 #nicknamePopup {
     display: none;
     position: fixed;
@@ -1489,7 +1521,10 @@ p {
     background: black;
 }
 
-/* PÁGINA PERFIL */
+
+/* =====================================================
+  PÁGINA PERFIL
+======================================================== */
 #pagPerfil .setaVoltar {
     position: absolute;
     width: 50px;
@@ -1526,7 +1561,6 @@ p {
     margin-left: 0;
 }
 
-/*------------------------------------------------*/
 /* parte branca */
 
 #pagPerfil .nick-box {
@@ -1561,8 +1595,7 @@ p {
     height: 3rem;
 }
 
-/*-------------------------------------------*/
-/*  // caixa de opções*/
+/* caixa de opções */
 #perfilOptions {
     margin: 200px 0 270px;
 }
@@ -1619,7 +1652,10 @@ p {
     font-size: 20px;
 }
 
-/* PÁGINA PERFIL CONFIG */
+
+/* =====================================================
+  PÁGINA PERFIL CONFIG
+======================================================== */
 #pagPerfilConfig #campoEditar {
     display: grid;
     grid-template-columns: 45% 5%;
@@ -1740,7 +1776,10 @@ p {
 }
 
 
-/* PÁGINA O QUE FOI FEITO */
+/* =====================================================
+  PÁGINA HISTÓRICO
+======================================================== */
+/* Seção Principal */
 #bg09Div {
     position: relative;
     top: -2px;
@@ -1756,6 +1795,7 @@ p {
     display: none;
 }
 
+/* Seção Barra de Progresso */
 .progressDiv {
     display: flex;
     justify-content: center;
@@ -1816,6 +1856,7 @@ p {
 }
 
 
+/* Seção Histórico */
 #historicoMain .secText {
     margin-top: -180px;
     z-index: 1;
@@ -1895,7 +1936,10 @@ p {
     margin: 10px 0;
 }
 
-/* FOOTER */
+
+/* =====================================================
+  FOOTER
+======================================================== */
 footer {
     margin: 30px 0;
 }
@@ -1925,8 +1969,12 @@ footer {
     text-decoration: none;
 }
 
-/* RESPONSIVIDADE: CELULAR */
+
+/* =====================================================
+  RESPONSIVIDADE PARA CELULAR
+======================================================== */
 @media screen and (max-width:600px) {
+    /* PÁGINAS LOGIN E CADASTRO */
     header img {
         width: 22%;
         height: 22%;
@@ -1993,8 +2041,11 @@ footer {
 }
 
 
-/* RESPONSIVIDADE: TABLET */
+/* =====================================================
+  RESPONSIVIDADE PARA TABLET
+======================================================== */
 @media screen and (max-width: 900px) and (min-width: 600px) {
+    /* CONFIGURAÇÕES GERAIS */
     h6 {
         font-size: 20px !important;
     }
@@ -2003,6 +2054,7 @@ footer {
         font-size: 18px;
     }
 
+    /* CABEÇALHOS */
     .header {
         grid-template-columns: 85px 250px 100px;
     }
@@ -2024,7 +2076,8 @@ footer {
         margin-left: 65px !important;
     }
 
-    /* PAG INDEX */
+
+    /* PÁGINA INDEX */
     #quemSomos {
         top: 50px;
         margin-bottom: 180px;
@@ -2065,7 +2118,8 @@ footer {
         margin: 100px 0 70px;
     }
 
-    /* PAG ARTIGOS */
+
+    /* PÁGINAS ARTIGOS */
     .artConteiner {
         grid-template-columns: 50% 40%;
     }
@@ -2135,7 +2189,8 @@ footer {
         width: 30%;
     }
 
-    /* PAG QUEM SOMOS */
+
+    /* PÁGINAS QUEM SOMOS */
     #mainQuemSomos {
         top: -300px;
     }
@@ -2144,7 +2199,8 @@ footer {
         margin: 250px 0 -200px 0;
     }
 
-    /* PAG LOGIN */
+
+    /* PÁGINAS LOGIN */
     #conteudo {
         margin-top: 5%;
         width: 50%;
@@ -2164,6 +2220,7 @@ footer {
         margin-top: 10%;
     }
 
+
     /* PÁGINA INICIAL */
     .secCards {
         height: 600px;
@@ -2180,7 +2237,6 @@ footer {
         height: 150px;
     }
 
-    /* SECCONTINUE */
     #bg07Div svg {
         width: 100%;
         top: -2px;
@@ -2206,7 +2262,6 @@ footer {
         margin-top: 20px;
     }
 
-    /* SECLISTAS */
     .secListas {
         margin: 400px 0 50px;
     }
@@ -2227,7 +2282,6 @@ footer {
         grid-template-columns: 25% 25% 25%;
         gap: 60px;
     }
-
 
     .carousel-caption {
         height: 150px;
@@ -2266,6 +2320,7 @@ footer {
         height: 275px;
     }
 
+
     /* PÁGINAS TUTORIAIS E QUIZZES */
     .botaoDiv {
         margin-left: 5%;
@@ -2285,7 +2340,6 @@ footer {
         margin: 0;
     }
 
-    /* LISTA */
     .lista {
         width: 80%;
         margin: 130px;
@@ -2300,6 +2354,7 @@ footer {
         padding: 5px;
         vertical-align: baseline;
     }
+
 
     /* CONTEUDO TUTORIAIS */
     #pagTutoriais iframe {
@@ -2370,6 +2425,7 @@ footer {
         width: 60%;
     }
 
+
     /* PÁGINA PERFIL */
     .setaVoltar {
         width: 50px;
@@ -2388,6 +2444,7 @@ footer {
         width: 65%;
         margin-bottom: 50px;
     }
+
 
     /* PÁGINA PERFIL CONFIG */
     #pagPerfilConfig #uploadbtn {
@@ -2416,7 +2473,7 @@ footer {
     }
 
 
-    /* PÁGINA O QUE FOI FEITO */
+    /* PÁGINA HISTÓRICO */
     #historicoMain {
         height: 30vh;
         margin-bottom: 100px;
@@ -2435,12 +2492,14 @@ footer {
         width: 225px;
         height: 225px;
     }
-
 }
 
 
-/* RESPONSIVIDADE: PC */
+/* =====================================================
+  RESPONSIVIDADE PARA PC
+======================================================== */
 @media screen and (min-width: 900px) {
+    /* CONFIGURAÇÕES GERAIS */
     h6 {
         font-size: 22px !important;
     }
@@ -2449,6 +2508,7 @@ footer {
         font-size: 20px;
     }
 
+    /* CABEÇALHOS */
     .header {
         grid-template-columns: 85px 350px 100px;
     }
@@ -2466,7 +2526,8 @@ footer {
         width: 95px;
     }
 
-    /* PAG INDEX */
+
+    /* PÁGINA INDEX */
     #quemSomos {
         top: 10px;
         margin-bottom: 100px;
@@ -2519,7 +2580,6 @@ footer {
         text-align: left;
     }
 
-    /* Seção Iframe */
     .videoPromoWrapper {
         width: 100%;
     }
@@ -2542,7 +2602,8 @@ footer {
         margin: 150px 0 70px;
     }
 
-    /* PAG ARTIGOS */
+
+    /* PÁGINA ARTIGOS */
     .artConteiner {
         grid-template-columns: 35% 50%;
     }
@@ -2617,7 +2678,8 @@ footer {
         width: 20%;
     }
 
-    /* PAG QUEM SOMOS */
+
+    /* PÁGINAS QUEM SOMOS */
     #mainQuemSomos {
         top: -450px;
     }
@@ -2641,12 +2703,13 @@ footer {
     }
 
 
-    /* PAGINA LOGIN */
+    /* PÁGINA LOGIN */
     #loginForm button {
         width: 30%;
         height: 40px;
         padding-bottom: 10px;
     }
+
 
     /* PÁGINA INICIAL */
     .secCards {
@@ -2664,8 +2727,6 @@ footer {
         height: 200px;
     }
 
-
-    /* SECCONTINUE */
     #bg07Div svg {
         width: 100%;
         top: -2px;
@@ -2691,12 +2752,10 @@ footer {
         margin-top: 20px;
     }
 
-    /* SECLISTAS */
     .secListas {
         margin: 400px 0 100px;
     }
 
-    
     .secListasTxt {
         width: 85%;
         margin-top: 50px;
@@ -2763,6 +2822,7 @@ footer {
         height: 375px;
     }
 
+
     /* PÁGINAS TUTORIAIS E QUIZZES */
     .tituloPrincipal,
     .tituloSecundario,
@@ -2781,7 +2841,6 @@ footer {
         margin-bottom: -650px;
     }
 
-    /* LISTA */
     .tituloPrincipal {
         margin-bottom: 20px;
     }
@@ -2806,6 +2865,7 @@ footer {
     .listaIcon {
         margin-top: 2%;
     }
+
 
     /* CONTEUDO TUTORIAIS */
     #pagTutoriais iframe {
@@ -2856,6 +2916,7 @@ footer {
         width: 120px;
     }
 
+
     /* PÁGINAS QUIZ */
     .quizTitle {
         bottom: 200px;
@@ -2870,6 +2931,7 @@ footer {
     .false-button button {
         max-width: 10%;
     }
+
 
     /* PÁGINA PERFIL */
     .setaVoltar {
@@ -2893,6 +2955,7 @@ footer {
         width: 50%;
         margin-bottom: 0;
     }
+
 
     /* PÁGINA PERFIL CONFIG */
     #pagPerfilConfig #uploadbtn {
@@ -2922,7 +2985,6 @@ footer {
     #pagPerfilConfig .botao-container .button {
         width: 15%;
     }
-
 
 
     /* PÁGINA O QUE FOI FEITO */

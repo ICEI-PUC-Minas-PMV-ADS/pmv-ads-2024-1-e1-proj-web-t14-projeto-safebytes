@@ -13,12 +13,12 @@ const footerDiv =
         "</div>" +
         "<div class='footerIcons'>" +
             "<div class='footerIcon'>" +
-                "<a href='' class='footerIconLink'>" +
+                "<a href='https://wa.me/15551234567' class='footerIconLink' target='_blank'>" +
                     "<i class='bi bi-whatsapp'></i>" +
                 "</a>" +
             "</div>" +
             "<div class='footerIcon'>" +
-                "<a href='' class='footerIconLink'>" +
+                "<a href='mailto:vigiavirtual@gmail.com' class='footerIconLink' target='_blank'>" +
                     "<i class='bi bi-envelope'></i>" +
                 "</a>" +
             "</div>" +

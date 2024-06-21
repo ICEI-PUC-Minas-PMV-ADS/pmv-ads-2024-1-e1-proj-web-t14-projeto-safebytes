@@ -29,4 +29,4 @@ A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a a
 
 ## Hospedagem
 
-[Adicione o endereço eletrônico público onde o site encontra-se hospedado.]
+*<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/codigo-fonte/pages/index.html">Vigia Virtual</a>

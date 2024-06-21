@@ -44,11 +44,11 @@ Fornecer informações atualizadas sobre as últimas tendências no mundo do cri
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/codigo-fonte/pages/index.html">Vigia Virtual</a>
 
 # Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+* <a href="codigo-fonte/pages/index">Código Fonte</a>
 
 # Apresentação
 

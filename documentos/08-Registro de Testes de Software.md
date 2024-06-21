@@ -141,7 +141,23 @@ Considero que ao seguir os passos descritos no Caso de Teste CT-05, presentes no
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/2eb0ea45-1b9e-49d6-80b9-687fed3503aa
 
-### CT-06: Verificar o funcionamento dos Tutoriais
+### CT-06: Verificar o funcionamento da Barra de Pesquisa
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-06, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/63df8e9e-0979-4cbf-8f59-262c4b8412d8
+
+### CT-07: Verificar o funcionamento dos Filtros
+
+Responsável: Emily Gabriela.
+
+Considero que ao seguir os passos descritos no Caso de Teste CT-07, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, a funcionalidade em questão obtêm êxito ao atender os requisitos associados.
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/28f848b7-5164-45c8-aea2-ae09a8368630
+
+### CT-08: Verificar o funcionamento dos Tutoriais
 
 Responsável: Emily Gabriela.
 
@@ -149,7 +165,7 @@ Considero que ao seguir os passos descritos no Caso de Teste CT-06, presentes no
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/3fca43b4-cb0b-4ce4-ad7b-6108b80df221
 
-### CT-07: Verificar se o sistema salva o último tutorial visualizado
+### CT-09: Verificar se o sistema salva o último tutorial visualizado
 
 Responsável: Emily Gabriela.
 
@@ -157,14 +173,10 @@ Considero que ao seguir os passos descritos no Caso de Teste CT-07, presentes no
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/acafa2ec-c592-42c9-a2f8-8eef0d6a7b28
 
+### CT-13: Verificar o funcionamento da Barra de Progresso e CT-14: Verificar o funcionamento do Histórico
 
+Responsável: Emily Gabriela.
 
+Considero que ao seguir os passos descritos nos Casos de Teste CT-13 e CT-14, presentes no <a href="07-Plano de Testes de Software.md">Plano de Testes de Software</a>, as funcionalidades em questão obtêm êxito ao atender os requisitos associados.
 
-
-
-
-
-
-
-
-
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/a39d949d-49bc-41d5-8000-d00579275f4b

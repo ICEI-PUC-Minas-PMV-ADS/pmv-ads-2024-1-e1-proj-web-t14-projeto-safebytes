@@ -847,6 +847,36 @@ p {
 /* =====================================================
   PÁGINA INICIAL
 ======================================================== */
+/* Estilo do Pop-up */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.pop-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* Seção Principal */
 .carousel-caption {
     color: #00112b;
@@ -1974,6 +2004,7 @@ footer {
   RESPONSIVIDADE PARA CELULAR
 ======================================================== */
 @media screen and (max-width:600px) {
+
     /* PÁGINAS LOGIN E CADASTRO */
     header img {
         width: 22%;
@@ -2045,6 +2076,7 @@ footer {
   RESPONSIVIDADE PARA TABLET
 ======================================================== */
 @media screen and (max-width: 900px) and (min-width: 600px) {
+
     /* CONFIGURAÇÕES GERAIS */
     h6 {
         font-size: 20px !important;
@@ -2499,6 +2531,7 @@ footer {
   RESPONSIVIDADE PARA PC
 ======================================================== */
 @media screen and (min-width: 900px) {
+
     /* CONFIGURAÇÕES GERAIS */
     h6 {
         font-size: 22px !important;

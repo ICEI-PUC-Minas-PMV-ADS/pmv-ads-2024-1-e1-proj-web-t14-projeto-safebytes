@@ -172,3 +172,67 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+// modal congratulações
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+        if (!loggedInUserEmail) {
+            throw new Error('Nenhum usuário logado!');
+        }
+
+        // Atualiza a barra de progresso com base nos itens concluídos
+        await atualizarBarraProgresso();
+
+        // Cria cards de artigos concluídos
+        await createArtCards();
+
+        // Cria lista de tutoriais concluídos
+        await createTutorialItem();
+
+        // Cria lista de quizzes concluídos
+        await createQuizItem();
+
+        // Verifica se todas as atividades foram concluídas
+        const totalProgresso = await total();
+        const totalConcluidosProgresso = await totalConcluidos();
+
+        if (totalConcluidosProgresso >= totalProgresso) {
+            const popUpJaExibido = localStorage.getItem('popUpCongratsShown');
+            if (!popUpJaExibido) {
+                mostrarPopUpCongratulacoes();
+                localStorage.setItem('popUpCongratsShown', 'true');
+            }
+        }
+
+        // Verifica se há itens concluídos para exibir as seções relevantes
+        if (totalConcluidosProgresso > 0) {
+            const progressNullSec = document.querySelector('#historicoProgressNull');
+            progressNullSec.style.display = 'none';
+
+            const artigosSec = document.querySelector('#historicoArtigosSec');
+            artigosSec.style.display = 'block';
+
+            const tutoriaisSec = document.querySelector('#historicoTutoriaisSec');
+            tutoriaisSec.style.display = 'block';
+
+            const quizzesSec = document.querySelector('#historicoQuizzesSec');
+            quizzesSec.style.display = 'block';
+        }
+
+    } catch (error) {
+        console.error('Erro ao executar o código principal:', error);
+    }
+});
+
+function mostrarPopUpCongratulacoes() {
+    // Exibe o pop-up de congratulações
+    const congratsPopup = document.getElementById('congratsPopup');
+    congratsPopup.style.display = 'flex';
+
+    // Fecha o pop-up ao clicar no botão de fechar
+    const popBtn = document.querySelector('.pop-btn');
+    popBtn.addEventListener('click', () => {
+        congratsPopup.style.display = 'none';
+    });
+}

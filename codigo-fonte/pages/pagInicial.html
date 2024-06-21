@@ -15,12 +15,50 @@
   <script defer src="../js/footer.js"></script>
   <script defer src="../js/perfil.js"></script>
   <script defer src="../js/cadastro.js"></script>
+  <script defer src="../js/historico.js"></script>
 
   <title>Home | Vigia Virtual</title>
 </head>
 
 <body id="pagInicial">
 
+  <!-- Pop-up de Parabéns -->
+  <div id="congratsPopup" class="popup" style="display:none;">
+    <div class="popup-content">
+      <span class="pop-btn">&times;</span>
+      <p>🎉 Parabéns! Você concluiu todas as atividades! 🎉</p>
+      <p>Por favor, resgate seu certificado clicando no cadeado na aba de certificados no seu perfil.</p>
+    </div>
+  </div>
+  <style>/* Estilo do Pop-up */
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .popup-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+    }
+    
+    .pop-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }</style>
   <!-- Modal para entrada de Nickname -->
   <div id="overlay"></div>
   <div id="nicknamePopup" class="popup-container">
@@ -84,7 +122,8 @@
         <h2>Teste Seus Conhecimentos em Cibersegurança</h2>
       </div>
       <div class="secCardsP">
-        <p>Desafie-se com nossos quizzes interativos e descubra o quanto você sabe sobre segurança digital. Prepare-se e proteja-se!</p>
+        <p>Desafie-se com nossos quizzes interativos e descubra o quanto você sabe sobre segurança digital. Prepare-se e
+          proteja-se!</p>
       </div>
     </div>
 
@@ -146,7 +185,8 @@
         <h2> Explore Nossos Recursos de Cibersegurança</h2>
       </div>
       <div class="secListasP">
-        <p>Acesse nosso catálogo de artigos, tutoriais detalhados e quizzes interativos para fortalecer seu conhecimento e habilidades em segurança digital.</p>
+        <p>Acesse nosso catálogo de artigos, tutoriais detalhados e quizzes interativos para fortalecer seu conhecimento
+          e habilidades em segurança digital.</p>
       </div>
     </div>
     <div id="listasImg">
@@ -169,5 +209,73 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const loggedInUserEmail = localStorage.getItem('loggedInUserEmail');
+        if (!loggedInUserEmail) {
+            throw new Error('Nenhum usuário logado!');
+        }
+
+        // Atualiza a barra de progresso com base nos itens concluídos
+        await atualizarBarraProgresso();
+
+        // Cria cards de artigos concluídos
+        await createArtCards();
+
+        // Cria lista de tutoriais concluídos
+        await createTutorialItem();
+
+        // Cria lista de quizzes concluídos
+        await createQuizItem();
+
+        // Verifica se todas as atividades foram concluídas
+        const totalProgresso = await total();
+        const totalConcluidosProgresso = await totalConcluidos();
+
+        if (totalConcluidosProgresso >= totalProgresso) {
+            const popUpJaExibido = localStorage.getItem('popUpCongratsShown');
+            if (!popUpJaExibido) {
+                mostrarPopUpCongratulacoes();
+                localStorage.setItem('popUpCongratsShown', 'true');
+            }
+        }
+
+        // Verifica se há itens concluídos para exibir as seções relevantes
+        if (totalConcluidosProgresso > 0) {
+            const progressNullSec = document.querySelector('#historicoProgressNull');
+            progressNullSec.style.display = 'none';
+
+            const artigosSec = document.querySelector('#historicoArtigosSec');
+            artigosSec.style.display = 'block';
+
+            const tutoriaisSec = document.querySelector('#historicoTutoriaisSec');
+            tutoriaisSec.style.display = 'block';
+
+            const quizzesSec = document.querySelector('#historicoQuizzesSec');
+            quizzesSec.style.display = 'block';
+        }
+
+    } catch (error) {
+        console.error('Erro ao executar o código principal:', error);
+    }
+});
+
+function mostrarPopUpCongratulacoes() {
+    // Exibe o pop-up de congratulações
+    const congratsPopup = document.getElementById('congratsPopup');
+    congratsPopup.style.display = 'flex';
+
+    // Fecha o pop-up ao clicar no botão de fechar
+    const popBtn = document.querySelector('.pop-btn');
+    popBtn.addEventListener('click', () => {
+        congratsPopup.style.display = 'none';
+    });
+}
+
+
+
+
+</script>
 
 </html>

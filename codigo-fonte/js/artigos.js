@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 localStorage.setItem('users', JSON.stringify(users));
 
                 if (email) {
-                    window.location.href = "pagInicial.html";
+                    window.location.href = "pagCatalogo.html";
                 } else {
                     window.location.href = "index.html";
                 }

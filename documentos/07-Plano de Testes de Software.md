@@ -137,7 +137,80 @@ O requisito para a realização dos testes de software foi:
   <th>Responsável</th>
  </tr>
  <tr>
-  <td>CT-06: Verificar o funcionamento dos Tutoriais</td>
+  <td>CT-06: Verificar o funcionamento da Barra de Pesquisa</td>
+  <td>
+   <ul>
+    <li>RF- 05 - O sistema deve propiciar mecanismos de busca por interesse do usuário.</li>
+   </ul>
+  </td>
+  <td>
+   Certificar que a barra de pesquisa retorna resultados satisfatórios.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar a página login.html e/ou cadastro.html</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página pagCatalogo.html, através do 'Saiba Mais' ou card 'Artigos'</li>
+    <li>Digitar algo na barra de pesquisa. Ex: download</li>
+    <li>Verificar se o resultado apresentado condiz com a pesquisa</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-07: Verificar o funcionamento dos Filtros</td>
+  <td>
+   <ul>
+    <li>RF- 05 - O sistema deve propiciar mecanismos de busca por interesse do usuário.</li>
+   </ul>
+  </td>
+  <td>
+   Certificar que os Filtros retornem resultados satisfatórios.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar a página login.html e/ou cadastro.html</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página pagCatalogo.html, através do 'Saiba Mais' ou card 'Artigos'</li>
+    <li>Selecionar cada um dos filtros</li>
+    <li>Verificar se o resultado apresentado em cada um deles é satisfatório</li>
+    <li>Selecionar a opção 'X' para limpar os filtros</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-08: Verificar o funcionamento dos Tutoriais</td>
   <td>
    <ul>
     <li>RF- 04 O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.</li>
@@ -178,7 +251,7 @@ O requisito para a realização dos testes de software foi:
   <th>Responsável</th>
  </tr>
  <tr>
-  <td>CT-07: Verificar se o sistema salva o último tutorial visualizado</td>
+  <td>CT-09: Verificar se o sistema salva o último tutorial visualizado</td>
   <td>
    <ul>
     <li>RF- 08	O website deve ser capaz de contabilizar o progresso do usuário.</li>
@@ -207,7 +280,7 @@ O requisito para a realização dos testes de software foi:
  </tr>
 </table>
 <table>
-  <td>CT-08: Tipos de arquivos aceitos na foto de perfil</td>
+  <td>CT-10: Tipos de arquivos aceitos na foto de perfil</td>
   <td>
     <li> | RNF-O7 | O usuário deve ser capaz de alterar sua foto de perfil na página de configuração do perfil.</li>
    <ul>
@@ -259,7 +332,7 @@ Garantir que o usuário não possa inserir imagens menores que 300x300.
  </tr>
 </table>
 <table>
-  <td>CT-09: Alteração nos dados e login posteiormente com os dados inseridos</td>
+  <td>CT-11: Alteração nos dados e login posteiormente com os dados inseridos</td>
   <td>
    <ul>
     <li>| RF-10 | O usuário deve ser capaz de atualizar seus dados pessoais (nome, e-mail e senha) na página de configuração do perfil. Após a atualização, o usuário deve ser capaz de realizar login utilizando os novos dados fornecidos.</li>
@@ -304,4 +377,79 @@ Garantir que o usuário consiga efetuar login novamente mesmo ao alterar seus da
 
 |Caso de Teste   |   Requisitos Associados   |Objetivo do Teste|Passos   |Critérios de êxito   |Responsável|
 |----------------|---------------------------|------------------|--------|----------------------|--------------------------------------------|
-| CT-10: Verificar o sistema de quizzes.  |<ul> <li> RF-07 </li> <br> </ul> | Verificar se o sistema de quizzes está funcionando corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Ir para a lista de quizzes. </li> <br> <li> Selecionar um quiz de seu interesse. </li> <br> <li> Marcar as alternativas. </li> </ol> | <ul> <li> O sistema deve verificar as respostas corretamente. </li> <br> <li> A barra de progresso deve progredir de acordo com a quantidade de perguntas </li> <br> <li> Após o fim do quiz, deve ser informado a quantidade de respostas corretas o usuário obteve. </li> </ul> | Arthur Chain | 
+| CT-12: Verificar o sistema de quizzes.  |<ul> <li> RF-07 </li> <br> </ul> | Verificar se o sistema de quizzes está funcionando corretamente.| <ol> <li> Acessar o Navegador. </li> <br> <li> Acessar o website. </li> <br> <li> Ir para a lista de quizzes. </li> <br> <li> Selecionar um quiz de seu interesse. </li> <br> <li> Marcar as alternativas. </li> </ol> | <ul> <li> O sistema deve verificar as respostas corretamente. </li> <br> <li> A barra de progresso deve progredir de acordo com a quantidade de perguntas </li> <br> <li> Após o fim do quiz, deve ser informado a quantidade de respostas corretas o usuário obteve. </li> </ul> | Arthur Chain | 
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-13: Verificar o funcionamento da Barra de Progresso</td>
+  <td>
+   <ul>
+    <li>RF- 08 - O website deve ser capaz de contabilizar o progresso do usuário.</li>
+   </ul>
+  </td>
+  <td>
+   Certificar que a Barra de Progresso está funcionando.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar a página login.html e/ou cadastro.html</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página perfil.html, através da foto de perfil</li>
+    <li>Selecionar a opçaõ "O que foi feito", acessando a pagHistorico.html</li>
+    <li>Verificar a posiçaõ da barra de progresso</li>
+    <li>Acessar alguns quizzes, tutoriais e artigos</li>
+    <li>Voltar na página pagHistorico.html e verrificar a nova posisão da barra</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+
+<table>
+ <tr>
+  <th>Caso de teste</th>
+  <th>Requisitos associados</th>
+  <th>Objetivo do teste</th>
+  <th>Passos</th>
+  <th>Critérios de êxito</th>
+  <th>Responsável</th>
+ </tr>
+ <tr>
+  <td>CT-14: Verificar o funcionamento do Histórico</td>
+  <td>
+   <ul>
+    <li>RF- 08 - O website deve ser capaz de contabilizar o progresso do usuário.</li>
+   </ul>
+  </td>
+  <td>
+   Certificar que todo o conteúdo acessado esteja registrado na página pagHistorico.html.
+  </td>
+  <td>
+   <ol>
+    <li>Acessar a página index.html</li>
+    <li>Acessar a página login.html e/ou cadastro.html</li>
+    <li>Acessar a página pagInicial.html</li>
+    <li>Acessar a página perfil.html, através da foto de perfil</li>
+    <li>Selecionar a opçaõ "O que foi feito", acessando a pagHistorico.html</li>
+    <li>Verificar se os quizzes, tutoriais e artigos acessados estão disponíveis na página</li>
+   </ol>
+   </td>
+  <td>
+   Conseguir seguir todos os passos com êxito.
+  </td>
+  <td>Emily Gabriela</td>
+ </tr>
+</table>
+

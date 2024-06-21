@@ -79,7 +79,65 @@ RF- 04: O sistema deve disponibilizar módulos de aprendizagem sobre cibersegura
 
 #### Instruções de acesso
 
-Acesse a página index.html (página principal), e selecione o card do artigo que deseja ler. Desta forma você poderá vizualizar a pagArtigos.html com o conteúdo referente ao artigo escolhido.
+Acesse a página index.html (página principal) ou/e a página pagCatalogo.html, e selecione o card do artigo que deseja ler. Desta forma você poderá vizualizar a pagArtigos.html com o conteúdo referente ao artigo escolhido.
+
+#### Responsável
+
+Emily Gabriela Avelino Rodrigues
+
+
+### Barra de Pesquisa
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/6023d62b-8e1c-4ad0-851a-a1b7238a46c5)
+
+#### Requisito atendido
+
+RF- 05	O sistema deve propiciar mecanismos de busca por interesse do usuário.
+
+#### Artefatos da funcionalidade
+
+* <a href="../codigo-fonte/pages/pagCatalogo.html">pagCatalogo.html</a>
+* <a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/js/catalogo.js">catalogo.js</a>
+* <a href="../codigo-fonte/js/header.js">header.js</a>
+
+
+#### Estrutura de Dados
+
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+
+
+#### Instruções de acesso
+
+Acesse a página pagCatalogo.html, e pesquise algo relacionado aos artigos existentes.
+
+#### Responsável
+
+Emily Gabriela Avelino Rodrigues
+
+
+### Filtros para artigos
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/6287166d-d83a-46ce-a9fd-d585fa98aef3)
+
+#### Requisito atendido
+
+RF- 05	O sistema deve propiciar mecanismos de busca por interesse do usuário.
+
+#### Artefatos da funcionalidade
+
+* <a href="../codigo-fonte/pages/pagCatalogo.html">pagCatalogo.html</a>
+* <a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/js/catalogo.js">catalogo.js</a>
+
+#### Estrutura de Dados
+
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+
+
+#### Instruções de acesso
+
+Acesse a página pagCatalogo.html, e selecione algum filtro, observando a resposta do sistema. Se desejar, limpe o filtro selecionado clicando no 'X'.
 
 #### Responsável
 
@@ -127,6 +185,7 @@ Emily Gabriela Avelino Rodrigues
 
 * RF- 04: O sistema deve disponibilizar módulos de aprendizagem sobre cibersegurança.
 * RF- 07:	O sistema deve disponibilizar um processo gamificado onde o usuário poderá, a cada etapa, ampliar sua segurança.
+* RF- 09	A partir da etapa 1, o sistema deve liberar uma etapa somente a partir da conclusão da anterior.
 
 #### Artefatos da funcionalidade
 
@@ -325,5 +384,69 @@ A partir da Lista de Quizzes, onde você vai escolher o tema e será direcionado
 
 Arthur Chain
 
+### Barra de Progresso
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/1fe7c952-6931-48cf-9c2b-3718ee885550)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/6b9e01b2-cdbc-40e3-b2aa-5b83d00a153b)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/66fa5438-19a6-468c-8254-d65717896bfe)
 
 
+#### Requisito atendido
+
+RF- 08	O website deve ser capaz de contabilizar o progresso do usuário.
+
+#### Artefatos da funcionalidade
+
+* <a href="../codigo-fonte/pages/pagHistorico.html">pagHistorico.html</a>
+* <a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/Gersons/tutoriais.json">tutoriais.json</a>
+* <a href="../codigo-fonte/Gersons/quizzes.json">quizzes.json</a>
+* <a href="../codigo-fonte/js/historico.js">historico.js</a>
+
+#### Estrutura de Dados
+
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/Gersons/tutoriais.json">tutoriais.json</a>
+* <a href="../codigo-fonte/Gersons/quizzes.json">quizzes.json</a>
+
+#### Instruções de acesso
+
+Após realizar o processo de login/cadastro, selecione a foto de perfil e em seguida a opção "O que foi feito" para acessar a barra de progresso, que se preencherá a medida em que os conteúdos do website forem concluídos.
+
+#### Responsável
+
+Emily Gabriela Avelino Rodrigues
+
+
+### Histórico
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/18a457a5-3622-4a2e-8a59-4e4d9081d71f)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/17b6b5f5-42ad-4c3b-b826-51567d0a2433)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/dd038030-674d-4499-b1e4-fca595387415)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes/assets/140619083/b581c974-7469-42fa-a430-13104eaa8a9b)
+
+#### Requisito atendido
+
+RF- 08	O website deve ser capaz de contabilizar o progresso do usuário.
+
+#### Artefatos da funcionalidade
+
+* <a href="../codigo-fonte/pages/pagHistorico.html">pagHistorico.html</a>
+* <a href="../codigo-fonte/css/stylesheets.css">stylesheets.css</a>
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/Gersons/tutoriais.json">tutoriais.json</a>
+* <a href="../codigo-fonte/Gersons/quizzes.json">quizzes.json</a>
+* <a href="../codigo-fonte/js/historico.js">historico.js</a>
+
+#### Estrutura de Dados
+
+* <a href="../codigo-fonte/Gersons/artigos.json">artigos.json</a>
+* <a href="../codigo-fonte/Gersons/tutoriais.json">tutoriais.json</a>
+* <a href="../codigo-fonte/Gersons/quizzes.json">quizzes.json</a>
+
+#### Instruções de acesso
+
+Após realizar o processo de login/cadastro, selecione a foto de perfil e em seguida a opção "O que foi feito" para acessar o histórico, que se preencherá a medida em que os conteúdos do website forem concluídos.
+
+#### Responsável
+
+Emily Gabriela Avelino Rodrigues

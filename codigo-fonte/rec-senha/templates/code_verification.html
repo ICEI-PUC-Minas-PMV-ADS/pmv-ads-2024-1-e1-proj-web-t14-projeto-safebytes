@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificação de Código</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/csspagrec1.css') }}">
+</head>
 <body>
     <main class="principal">
         <h1 class="titulo">Confira o seu e-mail</h1>
@@ -19,15 +20,14 @@
             <input type="text" name="code3" id="code3" maxlength="1" class="quadrado-individual" required>
             <input type="text" name="code4" id="code4" maxlength="1" class="quadrado-individual" required>
           </div>
-          <p class="texto-inferior">O código expira em: 03:12</p>
           <div class="botoes">
             <button type="submit" class="botao-verificar">Verificar</button>
-            <form action="/send-code" method="post" class="resend-form">
-              <input type="hidden" name="email" id="email" value="{{email}}">
-              <button type="submit" class="botao-reenviar">Mandar Novamente</button>
-            </form>
-          </div>
         </form>
+        <form action="/send-code" method="post" class="resend-form">
+          <input type="hidden" name="email" id="email" value="{{email}}">
+          <button type="submit" class="botao-reenviar">Mandar Novamente</button>
+        </form>
+          </div>
       </main>
 </body>
 </html>

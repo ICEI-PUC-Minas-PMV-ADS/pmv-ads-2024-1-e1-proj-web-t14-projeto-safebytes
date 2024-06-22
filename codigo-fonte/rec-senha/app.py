@@ -73,6 +73,7 @@ def send_code():
     msg.body = f'Seu código de verificação é: {code}.'
     mail.send(msg)
 
+    flash('Novo código enviado para seu e-mail.')
     return render_template('code_verification.html', email=email)
 
 @app.route('/verify-code', methods=['POST'])

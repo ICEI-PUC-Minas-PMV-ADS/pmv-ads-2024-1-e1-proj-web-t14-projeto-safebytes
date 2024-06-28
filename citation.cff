@@ -1,29 +1,29 @@
 message: Please cite this software using these metadata.
-title:
+title: Vigia Virtual
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Chain
+    given-names: Arthur
+  - family-names: Cândido de Carvalho Junior
+    given-names: Emerson
+  - family-names: Avelino Rodrigues
+    given-names: Emily Gabriela
+  - family-names: Lino Gonçalves
+    given-names: Kevin Gabriel
+  - family-names: Rodrigues Antunes
+    given-names: Maria Eduarda
+  - family-names: Macedo Barbosa
+    given-names: Rodrigo
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Nepomuceno Curto
+    given-names: Hayala
 keywords:
-  - 
-  - 
-repository-code: 
+  - CyberSegurança
+  - Proteção
+  - Dados
+  - Conhecimento
+  - Segurança
+  - Digital
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t14-projeto-safebytes
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-06-27
